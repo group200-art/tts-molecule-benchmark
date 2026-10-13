@@ -1,0 +1,136 @@
+{
+  "status": "PASS",
+  "reviewed_utc": "2026-10-13T04:37:08.641581+00:00",
+  "read_only_manuscript": true,
+  "compiled": false,
+  "scope": "New quality claims plus unchanged data placement; layout and pagination remain root responsibility.",
+  "table1_byte_identical_to_before_update": true,
+  "table1_sha256": "329fb51a7acc10beae01e1f2a9a092955e4068d115b1197260d8509bd524ece9",
+  "table2_preserved_workload_numeric_cells": 54,
+  "table2_preserved_tool_categories": 18,
+  "table3_preserved_quality_numeric_cells": 90,
+  "table4_preserved_difficulty_numeric_cells": 108,
+  "table4_preserved_bold": true,
+  "quality_and_difficulty_csv_exact_field_identity": true,
+  "csv_line_ending_only_normalization": "Contributions CRLF; manuscript LF. All field contents and row order are identical.",
+  "new_result_numeric_claims": [
+    {
+      "method": "got",
+      "metric": "SR_delta",
+      "displayed": [
+        "41.27",
+        "62.13"
+      ],
+      "expected": [
+        "41.27",
+        "62.13"
+      ],
+      "status": "PASS"
+    },
+    {
+      "method": "sampling_verifier20",
+      "metric": "SR_delta",
+      "displayed": [
+        "19.83",
+        "25.60"
+      ],
+      "expected": [
+        "19.83",
+        "25.60"
+      ],
+      "status": "PASS"
+    },
+    {
+      "method": "tot_lm_vote",
+      "metric": "final_validity",
+      "displayed": [
+        "75.47",
+        "50.97"
+      ],
+      "expected": [
+        "75.47",
+        "50.97"
+      ],
+      "status": "PASS"
+    },
+    {
+      "method": "got",
+      "metric": "RI_eps01",
+      "displayed": [
+        "1.691",
+        "2.223"
+      ],
+      "expected": [
+        "1.691",
+        "2.223"
+      ],
+      "status": "PASS"
+    },
+    {
+      "method": "got",
+      "metric": "Sim",
+      "displayed": [
+        "0.393",
+        "0.257"
+      ],
+      "expected": [
+        "0.393",
+        "0.257"
+      ],
+      "status": "PASS"
+    },
+    {
+      "method": "sampling_verifier20",
+      "metric": "RI_eps01",
+      "displayed": [
+        "0.947",
+        "1.153"
+      ],
+      "expected": [
+        "0.947",
+        "1.153"
+      ],
+      "status": "PASS"
+    },
+    {
+      "method": "sampling_verifier20",
+      "metric": "Sim",
+      "displayed": [
+        "0.561",
+        "0.453"
+      ],
+      "expected": [
+        "0.561",
+        "0.453"
+      ],
+      "status": "PASS"
+    }
+  ],
+  "got_final_validity_100_both_models_verified": true,
+  "abstract_quality_conclusion_verified": true,
+  "scientific_review": {
+    "conditional_success_subsets_caveat_present": true,
+    "no_quality_pairwise_causal_gain_claim": true,
+    "ten_task_macro_caption_present": true,
+    "rate_denominator_preserves_failures": true,
+    "sampling_directional_vs_magnitude_criterion_distinguished": true,
+    "tot_validity_observation_not_exclusive_causal_explanation": true,
+    "public_tool_and_unequal_compute_scope_disclosed": true
+  },
+  "must_fix": [],
+  "reviewed_file_sha256": {
+    "/tmp/overleaf-k1-eight-20261011/sections/results.tex": "822855dec4b7509f4c78f6a8227aee0cf325adfe71deb56b53ee4b670456bd18",
+    "/tmp/overleaf-k1-eight-20261011/sections/abstract.tex": "8124282f14458b00c8ca4785b5aac69bdf833c50ab7b23192173627c05e21ac6",
+    "/tmp/overleaf-k1-eight-20261011/tables/table1_effectiveness.tex": "329fb51a7acc10beae01e1f2a9a092955e4068d115b1197260d8509bd524ece9",
+    "/tmp/overleaf-k1-eight-20261011/tables/table2_workload.tex": "0a278b906e788977a4082ea22a23952cd727c00b835a98e9d7469077c18c156e",
+    "/tmp/overleaf-k1-eight-20261011/tables/table3_quality.tex": "e75b19bbb76b304f7ce3436d90798cda114cd834d8e1c269942efdb739005468",
+    "/tmp/overleaf-k1-eight-20261011/tables/table4_difficulty.tex": "6bd90afee87893a107a22cf37dd896a381a5be64cb74c97959ce04b821a06367",
+    "/tmp/overleaf-k1-eight-20261011/data/table3_k1_quality.csv": "5551cebeae2e09ef33dc919c16274631d94ce6b1d3ae03b20d55f19dad4d0068",
+    "/tmp/overleaf-k1-eight-20261011/data/table4_k1_difficulty.csv": "7515cba995182ad8fcdb96fbee2b3f943915a2a1e13792fb48999ec1e6117dd6"
+  },
+  "source_data_sha256": {
+    "BenchmarkV2/naacl_long_paper_20261012_v1/contributions/tables/table3_quality.csv": "e05d454c7992873ac38226ff245a41f1b908ae055af0f1a6c7a8bf050a250f47",
+    "BenchmarkV2/naacl_long_paper_20261012_v1/contributions/tables/table4_difficulty.csv": "e8ae158a9d7cfec1a365a02450ea9ac0f18ad5097c4085c1ab36bb4aabde2566",
+    "BenchmarkV2/naacl_long_paper_20261012_v1/contributions/tables/audit.json": "851f355418e96cda9e8b82afa6237385def0b92ede1bdcdc48c51a0d4c694766"
+  }
+}

@@ -1,0 +1,36 @@
+{
+    "description" : "Template used by mistral and llama models for simple optimization tasks.",
+    "system_prompt": "You are an expert medicinal chemist specializing in molecular optimization. You understand how structural modifications affect key ADMET properties and inhibitions of common receptor targets like DRD2.",
+    "task_prompt_no_explain": "Your task is to modify the given molecule to adjust specific molecular properties while keeping structural changes as minimal as possible. Use the examples (if provided) as a guide. Your response should only contain a valid SMILES representation of the modified molecule enclosed with <SMILES> </SMILES> tag.",
+    "task_prompt_llasmol": "Your task is to modify the given molecule to adjust specific molecular properties while keeping structural changes as minimal as possible. Use the examples (if provided) as a guide. Your response should contain only the SMILES of the modified molecule.",
+    "task_prompt" : "Your task is to modify the given molecule to adjust specific molecular properties while keeping structural changes as minimal as possible. Use the examples (if provided) as a guide. Your response should first contain a valid SMILES representation of the modified molecule enclosed with <SMILES> </SMILES> tag, followed by a brief explanation for the proposed modification.",
+
+    "base_inst" : "Your task is to modify the given molecule to adjust specific molecular properties while keeping structural changes as minimal as possible. Your response should only contain a valid SMILES representation of the modified molecule enclosed with <SMILES> </SMILES> tag.",
+    "instructions" : [
+        "Modify the given molecule to adjust the specified molecular properties by substituting functional groups while keeping changes to the core structure minimal. Output only the SMILES of the modified molecule, wrapped in <SMILES> </SMILES> tags.",
+        "Your goal is to fine-tune the specified molecular properties of the given compound with minimal structural changes. Make the necessary adjustments and return the modified molecule in a SMILES format enclosed in <SMILES> </SMILES> tags.",
+        "Adjust the structure of the given molecule to target the specified adjustments in molecular properties. Retain the core structure as much as possible. Respond with only the SMILES of the modified molecule enclosed in <SMILES> </SMILES> tags.",
+        "Modify the given molecular structure to target specific property changes, aiming to keep structural adjustments minimal. Respond solely with the SMILES notation for the adjusted molecule, enclosed within <SMILES> </SMILES> tags.",
+        "Alter the given molecule to meet the desired property changes with the least structural alteration possible. Output only the adjusted molecule in SMILES format, using <SMILES> </SMILES> tags."
+    ],
+
+    "template_icl": 
+    {
+        "prop1": "{change1} {property1}",
+        "prop2": "{change1} {property1} and {change2} {property2}",
+        "prop3": "{change1} {property1}, {change2} {property2} and {change3} {property3}",
+        "prop4": "{change1} {property1}, {change2} {property2}, {change3} {property3} and {change4} {property4}",
+        "prop5": "{change1} {property1}, {change2} {property2}, {change3} {property3}, {change4} {property4} and {change5} {property5}",
+        "prop6": "{change1} {property1}, {change2} {property2}, {change3} {property3}, {change4} {property4}, {change5} {property5} and {change6} {property6}"
+    },
+
+    "template" :
+    {
+        "prop1": "Modify the molecule <SMILES> {smiles} </SMILES> to {change1} its {property1} value. Keep the modifications to the molecule structure as minimal as possible.",
+        "prop2": "Modify the molecule <SMILES> {smiles} </SMILES> to {change1} its {property1} value, and {change2} its {property2} value. Keep the modifications to the molecule structure as minimal as possible.",
+        "prop3": "Modify the molecule <SMILES> {smiles} </SMILES> to {change1} its {property1} value, {change2} its {property2} value, and {change3} its {property3} value. Keep the modifications to the molecule structure as minimal as possible.",
+        "prop4": "Modify the molecule <SMILES> {smiles} </SMILES> to {change1} its {property1} value, {change2} its {property2} value, {change3} its {property3} value, and {change4} its {property4} value. Keep the modifications to the molecule structure as minimal as possible.",
+        "prop5": "Modify the molecule <SMILES> {smiles} </SMILES> to {change1} its {property1} value, {change2} its {property2} value, {change3} its {property3} value, {change4} its {property4} value, and {change5} its {property5} value. Keep the modifications to the molecule structure as minimal as possible.",
+        "prop6": "Modify the molecule <SMILES> {smiles} </SMILES> to {change1} its {property1} value, {change2} its {property2} value, {change3} its {property3} value, {change4} its {property4} value, {change5} its {property5} value, and {change6} its {property6} value. Keep the modifications to the molecule structure as minimal as possible."
+    }
+}

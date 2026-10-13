@@ -1,0 +1,156 @@
+{
+  "SR_mismatch_groups": [],
+  "completed_utc": "2026-10-13T06:21:51.323740+00:00",
+  "configurations": 18,
+  "endpoint_changes": 0,
+  "endpoints": 70290,
+  "environment": {
+    "numpy": "1.18.5",
+    "pandas": "1.0.5",
+    "platform": "Linux-5.14.0-611.16.1.el9_7.x86_64-x86_64-with-redhat-9.7-Plow",
+    "python": "3.6.13 | packaged by conda-forge | (default, Sep 23 2021, 07:56:31) \n[GCC 9.4.0]",
+    "rdkit": "2020.03.3",
+    "slurm_job_id": "4721532"
+  },
+  "final_k": 1,
+  "new_generation": 0,
+  "new_target_property_predictions": 0,
+  "output_sha256": {
+    "README.md": "0f7b90c6bb9eb8256500e1abf0689c3467b3cb50f4c93d6bd668b1d29c07b6a3",
+    "aps_by_property_macro.csv": "b81c74adbbd7b1d57c52ea15e03a152f138ab6c01eb02761a3e84d9a52d603b6",
+    "aps_by_task.csv": "9262441e157eea710d85d2297a8f608cfe1d186d8c65d73fa3951e303121001d",
+    "compatibility_examples.json": "97deebacb4e8e8020d1f25d638515b18d6795e02562097178f389f85c3eb5b61",
+    "macro_metrics.csv": "78b3407156179db38c434f46d6f259eba88995279c50042ff848ebb07e674436",
+    "metric_contract.json": "73fb79e75cdc58562a7ad41fb432f0eb77309ea5dbf556349266178b6d9cbda3",
+    "metrics.json": "e8d868697308945d3a0a9a8a195ad62d596c37739f0606be5afcacc729141304",
+    "per_input_metrics.jsonl.gz": "135d75810d29f77c023be5b5a5cf62f25ba55afc270712481d37e2c44d29fb32",
+    "task_metrics.csv": "b94daedbfae9f107f1526ea751e3284a5911e6854250bb70e978f6ef1296e77b"
+  },
+  "per_configuration_inputs": 3905,
+  "per_input_uncompressed_sha256": "643e5e5aee71ff2d24399ebc7b839db73e0e0457f6f11bf659840dbfeca186a0",
+  "provenance": {
+    "endpoint_source_hashes": {
+      "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/k1_nine_methods_execution_20261011_v2/results/cached_llama__beam20.jsonl.gz": "916beb61a0251af6578dd38cc54eb14ea39595e82415bb78cff05555bb655c22",
+      "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/k1_nine_methods_execution_20261011_v2/results/cached_llama__ev.jsonl.gz": "7cf930e2de6f66b135bdd6026dcfeca7e5dd4b3770ecb94a6564f57c33f5eee5",
+      "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/k1_nine_methods_execution_20261011_v2/results/cached_llama__fewshot.jsonl.gz": "fee80525c4f504f1b23445d796934980e739c2aad83fa2361e46efa3b12a6fbe",
+      "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/k1_nine_methods_execution_20261011_v2/results/cached_llama__got.jsonl.gz": "64549994c56e0adc84ffbd2aa659016c3b2ac8b88e85a286bdd0996f9008304c",
+      "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/k1_nine_methods_execution_20261011_v2/results/cached_llama__reflexion.jsonl.gz": "c84e461f8e52ced79c5e5e9a1b35ae3e9598574798898e1f5bf1dbaedf58e6d8",
+      "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/k1_nine_methods_execution_20261011_v2/results/cached_llama__s1.jsonl.gz": "828832463eb3be5de31d8b4f0fa4b0020c17c700804a28aebaf79d8b06fb91c6",
+      "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/k1_nine_methods_execution_20261011_v2/results/cached_llama__sampling_verifier20.jsonl.gz": "dddd2c43952da3f4cc9b1a80d88793c3db84b65c49d2afcfa7fa53c6041180c9",
+      "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/k1_nine_methods_execution_20261011_v2/results/cached_mistral__beam20.jsonl.gz": "da83826038ea3793223a6d174cf4fabd7138459f7f6a16959fb53e0a90e57163",
+      "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/k1_nine_methods_execution_20261011_v2/results/cached_mistral__ev.jsonl.gz": "493ea887a97c502400f0fac4e55b20f25d84e8ce766350820e3e3c698ca4d369",
+      "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/k1_nine_methods_execution_20261011_v2/results/cached_mistral__fewshot.jsonl.gz": "5e7f73831e6204d758b2674dba1683e365fc40d82521de3392d63ac87b4fd3e3",
+      "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/k1_nine_methods_execution_20261011_v2/results/cached_mistral__got.jsonl.gz": "b3e3fbf7a5e9b0f1b0c788e0e97725033cedaff0cfeb9cc9b1faaf5b81b7228a",
+      "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/k1_nine_methods_execution_20261011_v2/results/cached_mistral__reflexion.jsonl.gz": "78629d18c5286244e9ef5e2a45a6b424606d9376d5469d84378b5c5def8361fd",
+      "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/k1_nine_methods_execution_20261011_v2/results/cached_mistral__s1.jsonl.gz": "149afef9d5a4800fb207935fd5fe9b809730fb42cda8ba2171d5331ada829b47",
+      "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/k1_nine_methods_execution_20261011_v2/results/cached_mistral__sampling_verifier20.jsonl.gz": "73c4525dc243f1ed4997cc602064cc357133a6b74d50897d69ee3ce6629c51f8",
+      "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/k1_nine_methods_execution_20261011_v2/results/self_refine_llama__self_refine_r1.jsonl.gz": "83e56b5b82c8a4232d0c597afd763c7aed47fba5f38f791d336c15e0e889fc21",
+      "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/k1_nine_methods_execution_20261011_v2/results/self_refine_mistral__self_refine_r1.jsonl.gz": "1748f608a031d501bbdc3ca37997a53a302093768408650b9b6d313e8a563d78",
+      "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/k1_nine_methods_execution_20261011_v2/results/tot_llama__tot_lm_vote.jsonl.gz": "aa69b8ae283a535d9593a67b3b6ba542d23744c7d7467cc07ec358a158a96b30",
+      "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/k1_nine_methods_execution_20261011_v2/results/tot_mistral__tot_lm_vote.jsonl.gz": "27c0d22dd7f7e8342bc0c4cd6e250e994e4c787724ab34ad83fcf38d351b574f"
+    },
+    "manifest_hashes": {
+      "BDMQ": {
+        "inputs": 500,
+        "path": "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/manifests/BDMQ.test.seen.jsonl",
+        "sha256": "f006228bc34f3d43f0b5e8e3f64690db5de2b052f36680153a7c3feb071c91b8"
+      },
+      "BDP": {
+        "inputs": 500,
+        "path": "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/manifests/BDP.test.seen.jsonl",
+        "sha256": "0c511a5096a3073e97f136db279d75f56c451b56ffe2ec2c850f0f323113fe6d"
+      },
+      "BDPQ": {
+        "inputs": 500,
+        "path": "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/manifests/BDPQ.test.seen.jsonl",
+        "sha256": "5f10871232f7900e8fccc8a5627ff86efe1c1d3cb06ebec4c4b26d5c290b04f1"
+      },
+      "BDQ": {
+        "inputs": 500,
+        "path": "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/manifests/BDQ.test.seen.jsonl",
+        "sha256": "0e82627a5cd6226b36eaab3dbff5263fb1e40b1b6cc0ce64b297b3715d22d628"
+      },
+      "BHMQ": {
+        "inputs": 118,
+        "path": "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/manifests/BHMQ.test.seen.jsonl",
+        "sha256": "0f35f585621778f66a821baa33aa7c98c4cb2a62036651732434e00118f23c9e"
+      },
+      "BMPQ": {
+        "inputs": 191,
+        "path": "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/manifests/BMPQ.test.seen.jsonl",
+        "sha256": "29fb32e8afd59faf95ea90a9acd2866bd21ba8659f5f941be5eaf30f24fe6fa4"
+      },
+      "BPQ": {
+        "inputs": 500,
+        "path": "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/manifests/BPQ.test.seen.jsonl",
+        "sha256": "0ebd16ceec314f3cbd933054c626dda77cf91abfb15f97a8a2ae739f2696b6d5"
+      },
+      "DPQ": {
+        "inputs": 500,
+        "path": "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/manifests/DPQ.test.seen.jsonl",
+        "sha256": "dfb357759910a2b1719c2e7ccc5cc4226733943cd1dacc4c7bf624f214a05bb0"
+      },
+      "HMPQ": {
+        "inputs": 96,
+        "path": "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/manifests/HMPQ.test.seen.jsonl",
+        "sha256": "bc8933875e188b0d5b650bc7448d464e81a5ba20b03cd1b12e22ff68d84af3e8"
+      },
+      "MPQ": {
+        "inputs": 500,
+        "path": "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/manifests/MPQ.test.seen.jsonl",
+        "sha256": "2fa40cde8cb1311fbed747a69a11711a2625f0f6f58e923fe8e6b32c703d98af"
+      }
+    },
+    "reference_sha256": "f255ccdc988a441e23f57e67b896be3443addb10ef1a12bfb35264c4be089b9a",
+    "sas_fragments_sha256": "10dcef9340c873e7b987924461b0af5365eb8dd96be607203debe8ddf80c1e73",
+    "sascorer_sha256": "343dfb39a99e78d4d1b552e25d3de48d90e68947d337057b281d4c0c9d4370a8",
+    "script_sha256": "b019c666ffa647680914abfff62dff9b0db8c86d794904ae7511f80886b55140",
+    "snapshots": {
+      "endpoint_audit.json": {
+        "sha256": "660d917f67dbb0753ee17199369e9b9f52539ddbf72753e551f7d277c70437d0",
+        "source_path": "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/naacl_long_paper_20261012_v1/contributions/tables/sources/endpoint_audit.json"
+      },
+      "evaluate.ipynb": {
+        "sha256": "19ead8954a57946d7ee5ff5844f0bcee5a72886ae9506d6e6d3418f7b39b039d",
+        "source_path": "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/evaluate.ipynb"
+      },
+      "manifests.json": {
+        "sha256": "a4ba8e3563f042dd0b49a46567b45cead441ffcc830044c1a5a0e33fa533bc05",
+        "source_path": "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/naacl_long_paper_20261012_v1/contributions/tables/sources/manifests.json"
+      },
+      "methods.json": {
+        "sha256": "49f8f90956ae06af88065b6bdba16dcf088f067dbd9b0da2ee97014eba51c275",
+        "source_path": "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/naacl_long_paper_20261012_v1/contributions/tables/sources/methods.json"
+      },
+      "process-output.ipynb": {
+        "sha256": "a0211d4f2091c52f6ed1f44cbfb4e38cc7357a6a83f61d4645846c7c06874cdf",
+        "source_path": "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/process-output.ipynb"
+      },
+      "sascorer.py": {
+        "sha256": "343dfb39a99e78d4d1b552e25d3de48d90e68947d337057b281d4c0c9d4370a8",
+        "source_path": "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/data/props/sascorer.py"
+      },
+      "task_metrics.json": {
+        "sha256": "045f8d79b2a8d7a97b1971630dd714aa5bfc6cdd098de4416be9f1afa4618014",
+        "source_path": "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/naacl_long_paper_20261012_v1/contributions/tables/sources/task_metrics.json"
+      }
+    }
+  },
+  "statistics": {
+    "RI_legacy_cached_mismatches": 0,
+    "SAS_raw_raw_cache_available": 30034,
+    "SAS_raw_raw_cache_mismatches": 0,
+    "Sim_raw_raw_cache_available": 30034,
+    "Sim_raw_raw_cache_mismatches": 0,
+    "current_vs_legacy_valid_mismatch": 7,
+    "negative_source_target_values": 22475,
+    "novelty_official_vs_canonical_mismatches": 0,
+    "novelty_official_vs_raw_literal_mismatches": 16,
+    "rounding_csv_checked": 38384,
+    "source_zero_target_values": 6139,
+    "success": 30034
+  },
+  "status": "PASS",
+  "successes": 30034,
+  "task_groups": 180
+}

@@ -1,0 +1,25 @@
+{
+  "status": "PASS_COMPLETE_TWO_MODELS_FULL3905_N20_R20_K20",
+  "generated_utc": "2026-10-13T07:14:03.149277Z",
+  "models": 2,
+  "inputs_per_model": 3905,
+  "voting_endpoints": 156200,
+  "per_input_readouts": 23430,
+  "task_groups": 60,
+  "new_LLM_generations": 0,
+  "all_old_N400_success_labels_unchanged": true,
+  "Mistral_historical_N20_results_match": true,
+  "first_group_is_paired_K1": true,
+  "duplicate_and_invalid_winners_retained": true,
+  "group_diagnostics": {
+    "mistral_top_vote_one": 0,
+    "mistral_tied_maximum": 1556,
+    "llama_top_vote_one": 0,
+    "llama_tied_maximum": 2190
+  },
+  "quality": "Same representative for RI/Sim/SAS/Novelty/APS; original code selector on stable round order.",
+  "scope": "N20 budget variant with 20 complete vote endpoints; not 20 N400 runs and not the original bootstrap scaling experiment.",
+  "source_files_unchanged": true,
+  "original_input_hashes_unchanged": true,
+  "script_sha256": "d45fd3b7380baeea2a1229f3516e27e0e202d1b56138988f42c9f0851971ee23"
+}

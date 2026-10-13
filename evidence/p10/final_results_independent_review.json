@@ -1,0 +1,33 @@
+{
+  "status": "PASS_INDEPENDENT_FINAL_RESULTS_REVIEW",
+  "input_readouts": 23430,
+  "paired_inputs": 7810,
+  "task_groups": 60,
+  "exact_representative_membership_verified": true,
+  "original_RI_all_successes_recomputed": true,
+  "all_task_macro_and_APS_values_recomputed": true,
+  "all_denominators_full": true,
+  "all_source_hashes_match": true,
+  "paired_counts": {
+    "mistral": {
+      "N20_K1_success": 1331,
+      "N20_K20_success": 1436,
+      "N400_K1_success": 1333,
+      "N20_K20_vs_N400_K1_gains": 103,
+      "N20_K20_vs_N400_K1_losses": 0,
+      "N20_K20_vs_N20_K1_gains": 105,
+      "N20_K20_vs_N20_K1_losses": 0
+    },
+    "llama": {
+      "N20_K1_success": 1136,
+      "N20_K20_success": 1279,
+      "N400_K1_success": 1130,
+      "N20_K20_vs_N400_K1_gains": 149,
+      "N20_K20_vs_N400_K1_losses": 0,
+      "N20_K20_vs_N20_K1_gains": 143,
+      "N20_K20_vs_N20_K1_losses": 0
+    }
+  },
+  "interpretation": "N20R20 versus N400R1 changes N and K together. Gains/losses are observed paired outcomes, not an assumed ordering or a causal isolated budget effect.",
+  "reviewed_evaluator_sha256": "d45fd3b7380baeea2a1229f3516e27e0e202d1b56138988f42c9f0851971ee23"
+}

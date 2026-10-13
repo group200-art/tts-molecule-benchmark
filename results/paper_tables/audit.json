@@ -1,0 +1,379 @@
+{
+  "status": "PASS",
+  "checked_utc": "2026-10-13T04:30:14.165044+00:00",
+  "configurations": 18,
+  "task_groups": 180,
+  "final_endpoints": 70290,
+  "final_k": 1,
+  "per_configuration_inputs": 3905,
+  "task_counts": {
+    "BDP": 500,
+    "BDQ": 500,
+    "BPQ": 500,
+    "DPQ": 500,
+    "BDPQ": 500,
+    "MPQ": 500,
+    "BDMQ": 500,
+    "BHMQ": 118,
+    "BMPQ": 191,
+    "HMPQ": 96
+  },
+  "success_endpoints_with_complete_quality": 30034,
+  "missing_quality": 0,
+  "unknown_property_failures": 0,
+  "endpoint_source_hashes": {
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/k1_nine_methods_execution_20261011_v2/results/cached_llama__beam20.jsonl.gz": "916beb61a0251af6578dd38cc54eb14ea39595e82415bb78cff05555bb655c22",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/k1_nine_methods_execution_20261011_v2/results/cached_llama__ev.jsonl.gz": "7cf930e2de6f66b135bdd6026dcfeca7e5dd4b3770ecb94a6564f57c33f5eee5",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/k1_nine_methods_execution_20261011_v2/results/cached_llama__fewshot.jsonl.gz": "fee80525c4f504f1b23445d796934980e739c2aad83fa2361e46efa3b12a6fbe",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/k1_nine_methods_execution_20261011_v2/results/cached_llama__got.jsonl.gz": "64549994c56e0adc84ffbd2aa659016c3b2ac8b88e85a286bdd0996f9008304c",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/k1_nine_methods_execution_20261011_v2/results/cached_llama__reflexion.jsonl.gz": "c84e461f8e52ced79c5e5e9a1b35ae3e9598574798898e1f5bf1dbaedf58e6d8",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/k1_nine_methods_execution_20261011_v2/results/cached_llama__s1.jsonl.gz": "828832463eb3be5de31d8b4f0fa4b0020c17c700804a28aebaf79d8b06fb91c6",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/k1_nine_methods_execution_20261011_v2/results/cached_llama__sampling_verifier20.jsonl.gz": "dddd2c43952da3f4cc9b1a80d88793c3db84b65c49d2afcfa7fa53c6041180c9",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/k1_nine_methods_execution_20261011_v2/results/cached_mistral__beam20.jsonl.gz": "da83826038ea3793223a6d174cf4fabd7138459f7f6a16959fb53e0a90e57163",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/k1_nine_methods_execution_20261011_v2/results/cached_mistral__ev.jsonl.gz": "493ea887a97c502400f0fac4e55b20f25d84e8ce766350820e3e3c698ca4d369",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/k1_nine_methods_execution_20261011_v2/results/cached_mistral__fewshot.jsonl.gz": "5e7f73831e6204d758b2674dba1683e365fc40d82521de3392d63ac87b4fd3e3",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/k1_nine_methods_execution_20261011_v2/results/cached_mistral__got.jsonl.gz": "b3e3fbf7a5e9b0f1b0c788e0e97725033cedaff0cfeb9cc9b1faaf5b81b7228a",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/k1_nine_methods_execution_20261011_v2/results/cached_mistral__reflexion.jsonl.gz": "78629d18c5286244e9ef5e2a45a6b424606d9376d5469d84378b5c5def8361fd",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/k1_nine_methods_execution_20261011_v2/results/cached_mistral__s1.jsonl.gz": "149afef9d5a4800fb207935fd5fe9b809730fb42cda8ba2171d5331ada829b47",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/k1_nine_methods_execution_20261011_v2/results/cached_mistral__sampling_verifier20.jsonl.gz": "73c4525dc243f1ed4997cc602064cc357133a6b74d50897d69ee3ce6629c51f8",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/k1_nine_methods_execution_20261011_v2/results/self_refine_llama__self_refine_r1.jsonl.gz": "83e56b5b82c8a4232d0c597afd763c7aed47fba5f38f791d336c15e0e889fc21",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/k1_nine_methods_execution_20261011_v2/results/self_refine_mistral__self_refine_r1.jsonl.gz": "1748f608a031d501bbdc3ca37997a53a302093768408650b9b6d313e8a563d78",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/k1_nine_methods_execution_20261011_v2/results/tot_llama__tot_lm_vote.jsonl.gz": "aa69b8ae283a535d9593a67b3b6ba542d23744c7d7467cc07ec358a158a96b30",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/k1_nine_methods_execution_20261011_v2/results/tot_mistral__tot_lm_vote.jsonl.gz": "27c0d22dd7f7e8342bc0c4cd6e250e994e4c787724ab34ad83fcf38d351b574f"
+  },
+  "endpoint_and_auxiliary_selectors_unchanged": true,
+  "task_metrics_independently_recomputed": true,
+  "ten_task_macro_uses_unrounded_task_means": true,
+  "table2_18_rows_cost_and_tool_cells_unchanged": true,
+  "table2_removed_only_success_column": true,
+  "table4_data_and_bold_unchanged": true,
+  "new_generation": 0,
+  "new_property_predictions": 0,
+  "original_table2_rows": [
+    [
+      "Beam ($w=20$)",
+      "20.00",
+      "20.00",
+      "1,339",
+      "None",
+      "35.74"
+    ],
+    [
+      "Sampling + task verifier",
+      "40.00",
+      "40.00",
+      "2,596",
+      "Terminal verification",
+      "\\textbf{81.13}"
+    ],
+    [
+      "Self-Refine ($r=1$)",
+      "2.00",
+      "4.00",
+      "858",
+      "None",
+      "34.49"
+    ],
+    [
+      "ToT (LM voting)",
+      "20.00",
+      "30.00",
+      "2,350",
+      "None",
+      "30.28"
+    ],
+    [
+      "GoT (G12)",
+      "28.00",
+      "28.00",
+      "3,212",
+      "Search and selection",
+      "70.62"
+    ],
+    [
+      "s1-style ($B=512$)",
+      "1.00",
+      "3.00",
+      "441",
+      "None",
+      "38.94"
+    ],
+    [
+      "Exact Voting ($N=400$)",
+      "400.00",
+      "400.00",
+      "26,423",
+      "None",
+      "36.40"
+    ],
+    [
+      "4-shot ICL",
+      "4.00",
+      "4.00",
+      "322",
+      "None",
+      "30.41"
+    ],
+    [
+      "Reflexion (max 3 trials)",
+      "2.37",
+      "6.12",
+      "1,223",
+      "Feedback and stopping",
+      "45.75"
+    ],
+    [
+      "Beam ($w=20$)",
+      "20.00",
+      "20.00",
+      "1,015",
+      "None",
+      "33.03"
+    ],
+    [
+      "Sampling + task verifier",
+      "40.00",
+      "40.00",
+      "1,889",
+      "Terminal verification",
+      "\\textbf{86.18}"
+    ],
+    [
+      "Self-Refine ($r=1$)",
+      "2.00",
+      "4.00",
+      "480",
+      "None",
+      "31.99"
+    ],
+    [
+      "ToT (LM voting)",
+      "20.00",
+      "30.00",
+      "3,994",
+      "None",
+      "21.26"
+    ],
+    [
+      "GoT (G12)",
+      "28.00",
+      "28.00",
+      "4,695",
+      "Search and selection",
+      "83.26"
+    ],
+    [
+      "s1-style ($B=512$)",
+      "1.00",
+      "3.00",
+      "212",
+      "None",
+      "31.06"
+    ],
+    [
+      "Exact Voting ($N=400$)",
+      "400.00",
+      "400.00",
+      "18,957",
+      "None",
+      "32.34"
+    ],
+    [
+      "4-shot ICL",
+      "4.00",
+      "4.00",
+      "180",
+      "None",
+      "48.18"
+    ],
+    [
+      "Reflexion (max 3 trials)",
+      "2.27",
+      "5.81",
+      "965",
+      "Feedback and stopping",
+      "53.12"
+    ]
+  ],
+  "updated_table2_rows": [
+    [
+      "Beam ($w=20$)",
+      "20.00",
+      "20.00",
+      "1,339",
+      "None"
+    ],
+    [
+      "Sampling + task verifier",
+      "40.00",
+      "40.00",
+      "2,596",
+      "Terminal verification"
+    ],
+    [
+      "Self-Refine ($r=1$)",
+      "2.00",
+      "4.00",
+      "858",
+      "None"
+    ],
+    [
+      "ToT (LM voting)",
+      "20.00",
+      "30.00",
+      "2,350",
+      "None"
+    ],
+    [
+      "GoT (G12)",
+      "28.00",
+      "28.00",
+      "3,212",
+      "Search and selection"
+    ],
+    [
+      "s1-style ($B=512$)",
+      "1.00",
+      "3.00",
+      "441",
+      "None"
+    ],
+    [
+      "Exact Voting ($N=400$)",
+      "400.00",
+      "400.00",
+      "26,423",
+      "None"
+    ],
+    [
+      "4-shot ICL",
+      "4.00",
+      "4.00",
+      "322",
+      "None"
+    ],
+    [
+      "Reflexion (max 3 trials)",
+      "2.37",
+      "6.12",
+      "1,223",
+      "Feedback and stopping"
+    ],
+    [
+      "Beam ($w=20$)",
+      "20.00",
+      "20.00",
+      "1,015",
+      "None"
+    ],
+    [
+      "Sampling + task verifier",
+      "40.00",
+      "40.00",
+      "1,889",
+      "Terminal verification"
+    ],
+    [
+      "Self-Refine ($r=1$)",
+      "2.00",
+      "4.00",
+      "480",
+      "None"
+    ],
+    [
+      "ToT (LM voting)",
+      "20.00",
+      "30.00",
+      "3,994",
+      "None"
+    ],
+    [
+      "GoT (G12)",
+      "28.00",
+      "28.00",
+      "4,695",
+      "Search and selection"
+    ],
+    [
+      "s1-style ($B=512$)",
+      "1.00",
+      "3.00",
+      "212",
+      "None"
+    ],
+    [
+      "Exact Voting ($N=400$)",
+      "400.00",
+      "400.00",
+      "18,957",
+      "None"
+    ],
+    [
+      "4-shot ICL",
+      "4.00",
+      "4.00",
+      "180",
+      "None"
+    ],
+    [
+      "Reflexion (max 3 trials)",
+      "2.27",
+      "5.81",
+      "965",
+      "Feedback and stopping"
+    ]
+  ],
+  "sources": {
+    "table2_workload.tex": {
+      "source_path": "/tmp/overleaf-k1-eight-20261011/tables/table2_workload.tex",
+      "sha256": "683f82a5e30688e8491740d811bec3701335d074a989167f2227a780958bbdcf"
+    },
+    "table3_generalization.tex": {
+      "source_path": "/tmp/overleaf-k1-eight-20261011/tables/table3_generalization.tex",
+      "sha256": "a7ff4162fc6cca2aad7b599824c06fc307d158506e6c2ec8656653bd53cdac2b"
+    },
+    "task_metrics.json": {
+      "source_path": "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/k1_nine_methods_execution_20261011_v2/results/task_metrics.json",
+      "sha256": "045f8d79b2a8d7a97b1971630dd714aa5bfc6cdd098de4416be9f1afa4618014"
+    },
+    "endpoint_audit.json": {
+      "source_path": "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/k1_nine_methods_execution_20261011_v2/results/endpoint_audit.json",
+      "sha256": "660d917f67dbb0753ee17199369e9b9f52539ddbf72753e551f7d277c70437d0"
+    },
+    "table3_prior_audit.json": {
+      "source_path": "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/table23_k1_feasibility_20261012_v1/contributions/table3/audit.json",
+      "sha256": "d16acab73a59d8be01832419b813d91fd3eced27686da0ff0556b7cc96c987cb"
+    },
+    "task_metrics_prior.csv": {
+      "source_path": "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/table23_k1_feasibility_20261012_v1/contributions/table3/task_metrics.csv",
+      "sha256": "ed9068bdcf8bec2ea95b68f75ede87380524ab18b6111e67df6da2e87a16094c"
+    },
+    "difficulty_prior.csv": {
+      "source_path": "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/table23_k1_feasibility_20261012_v1/contributions/table3/panel_b.csv",
+      "sha256": "e8ae158a9d7cfec1a365a02450ea9ac0f18ad5097c4085c1ab36bb4aabde2566"
+    },
+    "methods.json": {
+      "source_path": "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/k1_nine_methods_execution_20261011_v2/config/methods.json",
+      "sha256": "49f8f90956ae06af88065b6bdba16dcf088f067dbd9b0da2ee97014eba51c275"
+    },
+    "manifests.json": {
+      "source_path": "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/k1_nine_methods_execution_20261011_v2/config/manifests.json",
+      "sha256": "a4ba8e3563f042dd0b49a46567b45cead441ffcc830044c1a5a0e33fa533bc05"
+    }
+  },
+  "output_sha256": {
+    "table3_quality.csv": "e05d454c7992873ac38226ff245a41f1b908ae055af0f1a6c7a8bf050a250f47",
+    "task_metrics.csv": "b65d005c5e681d7a84a2a9ec5896cac9041fddcf7ece42bb3cd00c9c36dc56b4",
+    "table3_quality.json": "318dc8cb52afd1c5b86afb2eae6ae53e9dbe9f1fd1df4bc59742fd0574991da5",
+    "table3_quality.tex": "3cb9fe4aff0a17b6eed12c3ce6a8684916097a931a9f514bbf456c5f40b798cb",
+    "table2_workload.tex": "a91f4e0b8c3ee5a91118148810e8217c1c2f9dee124cd4cb47514c656d0a089b",
+    "table4_difficulty.tex": "6bd90afee87893a107a22cf37dd896a381a5be64cb74c97959ce04b821a06367",
+    "table4_difficulty.csv": "e8ae158a9d7cfec1a365a02450ea9ac0f18ad5097c4085c1ab36bb4aabde2566"
+  },
+  "limitations": [
+    "Conditional quality uses differing successful subsets; it is not a paired quality comparison.",
+    "SR_delta and RI_eps01 are supplementary benchmark metrics, not unmodified original-paper metrics.",
+    "Difficulty partition is retrospective and Mistral-reference dependent; both models nevertheless use exactly the same input subsets.",
+    "Equal final K does not equalize internal generation budgets, public property tools, or total compute."
+  ]
+}

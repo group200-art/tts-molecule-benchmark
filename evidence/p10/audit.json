@@ -1,0 +1,53 @@
+{
+  "status": "PASS_FULL_TWO_MODEL_N20_R20_WINNERS",
+  "generated_utc": "2026-10-13T07:05:10.303794+00:00",
+  "full_inputs_per_model": 3905,
+  "terminal_slots_per_model": 78100,
+  "total_terminal_slots": 156200,
+  "classified_proposals_examined": 3124000,
+  "groups_examined": 156200,
+  "same_original_classifier": true,
+  "original_frozen_proposal_hashes_verified": true,
+  "all_global_slot_block_seed_identities_verified": true,
+  "all_groups_are_disjoint_original_calls": true,
+  "independent_counter_per_group": true,
+  "invalid_and_empty_votes_retained": true,
+  "tie_rule": "earliest original slot of tied class; earliest member of winning class",
+  "original_N400_winner_identity_preserved": true,
+  "first_N20_prefix_original_function_identity": true,
+  "mistral_all20_winners_match_complete_previous_grouped_evaluation": true,
+  "mistral_three_reference_SR_macros_match": true,
+  "no_success_based_group_or_seed_selection": true,
+  "no_new_LLM_generation": true,
+  "no_new_property_prediction": true,
+  "inference_identity_environment": "RDKit2024.03.6 classified proposals, unchanged",
+  "scope": "New operating point N20,R20,Kout20; original N400,R1,Kout1 retained separately. Not twenty N400 repeats.",
+  "results": {
+    "llama": {
+      "inputs": 3905,
+      "groups": 78100,
+      "tied_max_groups": 2190,
+      "all_unique_groups": 0,
+      "all_same_groups": 22009,
+      "invalid_winner_groups": 11446,
+      "model_id": "gellmo_p6_llama",
+      "mean_distinct_winner_identities": 1.4020486555697824,
+      "all20_winners_same_identity_inputs": 2849
+    },
+    "mistral": {
+      "inputs": 3905,
+      "groups": 78100,
+      "tied_max_groups": 1556,
+      "all_unique_groups": 0,
+      "all_same_groups": 29472,
+      "invalid_winner_groups": 7998,
+      "model_id": "gellmo_p6_mistral",
+      "mean_distinct_winner_identities": 1.2573623559539053,
+      "all20_winners_same_identity_inputs": 3128,
+      "N20_K1_Macro10_SR": 36.427338494986245,
+      "N20_R20_K20_Macro10_SR": 39.25886162629042,
+      "N400_K1_Macro10_SR": 36.402592732274385
+    }
+  },
+  "elapsed_seconds": 154.49453401565552
+}

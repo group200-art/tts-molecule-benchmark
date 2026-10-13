@@ -1,0 +1,274 @@
+{
+  "identity_files": {
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/data/props/clf_py36.pkl": "dbc473fca922c834dbaee6eaba832caaff26d4f891734078fb1af359a111100f",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/data/props/drd2_scorer.py": "54cd87c364fbe865d8376063dd64204a13c1e1cbda7368c6f5fc5a38c7c021e0",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/data/props/fpscores.pkl.gz": "10dcef9340c873e7b987924461b0af5365eb8dd96be607203debe8ddf80c1e73",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/data/props/properties.py": "771722423bdb76955724e6d8a3c8298cedf29c55cf631b847640b4dfc6bec812",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/data/props/sascorer.py": "343dfb39a99e78d4d1b552e25d3de48d90e68947d337057b281d4c0c9d4370a8",
+    "/work/users/w/a/wanzhou/conda_envs/gellmo_inf/lib/python3.10/site-packages/admet_ai/admet_model.py": "d4a3397ae069a1bc831019d51313763bfaa4050a03931a0a7b2945e0492c95cd",
+    "/work/users/w/a/wanzhou/conda_envs/gellmo_inf/lib/python3.10/site-packages/admet_ai/constants.py": "6643981d71dd05aa9070755e445228a2dbc726f34d0ba7b4bef080563c0a67f9",
+    "/work/users/w/a/wanzhou/conda_envs/gellmo_inf/lib/python3.10/site-packages/admet_ai/physchem.py": "8905bb64d58f2a40d49de9c075264992d68a9a0c1b7ae358bde13854c390be0c",
+    "/work/users/w/a/wanzhou/conda_envs/gellmo_inf/lib/python3.10/site-packages/admet_ai/resources/data/drugbank_approved.csv": "0cf42db285b0657b024d9b7e30ca99ecca12f4283c271b5d7da6a27e334d94ee",
+    "/work/users/w/a/wanzhou/conda_envs/gellmo_inf/lib/python3.10/site-packages/admet_ai/resources/models/admet_classification/model_0.pt": "48ed42c3ec284b027dbc054ceae76b0520eb9aff8bf0b3e37b26a446ee537137",
+    "/work/users/w/a/wanzhou/conda_envs/gellmo_inf/lib/python3.10/site-packages/admet_ai/resources/models/admet_classification/model_1.pt": "52a6bdac71c851ea8325c4860e913d3ed79017dd03b3d40116481dd6e1a48433",
+    "/work/users/w/a/wanzhou/conda_envs/gellmo_inf/lib/python3.10/site-packages/admet_ai/resources/models/admet_classification/model_2.pt": "28be5980c28b2618da25fa6dbabc7f92ede130c675c66b75b259d4beb2d449cb",
+    "/work/users/w/a/wanzhou/conda_envs/gellmo_inf/lib/python3.10/site-packages/admet_ai/resources/models/admet_classification/model_3.pt": "6a34383cd726e51aa8f87ba3d65debba448a43ffee9b1f8dfdaf42d034b7b187",
+    "/work/users/w/a/wanzhou/conda_envs/gellmo_inf/lib/python3.10/site-packages/admet_ai/resources/models/admet_classification/model_4.pt": "766dffd5317e575752758444eccca96181d50a9cd47eb5faf0b46b5081b23c0c",
+    "/work/users/w/a/wanzhou/conda_envs/gellmo_inf/lib/python3.10/site-packages/admet_ai/resources/models/admet_regression/model_0.pt": "2b6093958103bf0876f75599a94aee6ec7848ac4bed22b39201e63071833cdfe",
+    "/work/users/w/a/wanzhou/conda_envs/gellmo_inf/lib/python3.10/site-packages/admet_ai/resources/models/admet_regression/model_1.pt": "7ef5ab57bc28c2b3ed13b08ddf8e6a201135abd98456c0eef3b4af1baad71254",
+    "/work/users/w/a/wanzhou/conda_envs/gellmo_inf/lib/python3.10/site-packages/admet_ai/resources/models/admet_regression/model_2.pt": "7e68e5b08587f6fe99cc794bd37e359a9bed28b2d95486ed50016be85c1ac42d",
+    "/work/users/w/a/wanzhou/conda_envs/gellmo_inf/lib/python3.10/site-packages/admet_ai/resources/models/admet_regression/model_3.pt": "cd5e074bb000ce615673448333a92ce71fdda05d72b0bf2d4caedb881841c341",
+    "/work/users/w/a/wanzhou/conda_envs/gellmo_inf/lib/python3.10/site-packages/admet_ai/resources/models/admet_regression/model_4.pt": "0142b80c70f175a1275cce98904658d17cabafa42cdfe197ecc090d7c11d9640"
+  },
+  "versions_static": {
+    "gellmo_inf": {
+      "admet_ai-1.3.1.dist-info": {
+        "Name": "admet_ai",
+        "Version": "1.3.1"
+      },
+      "torch-2.5.1.dist-info": {
+        "Name": "torch",
+        "Version": "2.5.1"
+      },
+      "rdkit-2024.3.6.dist-info": {
+        "Name": "rdkit",
+        "Version": "2024.3.6"
+      },
+      "pandas-2.1.4.dist-info": {
+        "Name": "pandas",
+        "Version": "2.1.4"
+      },
+      "numpy-1.26.4.dist-info": {
+        "Name": "numpy",
+        "Version": "1.26.4"
+      },
+      "chemprop-1.6.1.dist-info": {
+        "Name": "chemprop",
+        "Version": "1.6.1"
+      },
+      "scikit_learn-1.5.2.dist-info": {
+        "Name": "scikit-learn",
+        "Version": "1.5.2"
+      }
+    },
+    "gellmo_eval_py36": {
+      "pandas-1.0.5.dist-info": {
+        "Name": "pandas",
+        "Version": "1.0.5"
+      },
+      "numpy-1.18.5.dist-info": {
+        "Name": "numpy",
+        "Version": "1.18.5"
+      },
+      "scikit_learn-0.21.3.dist-info": {
+        "Name": "scikit-learn",
+        "Version": "0.21.3"
+      }
+    },
+    "gellmo_mistral_gen": {
+      "torch-2.7.0+cu128.dist-info": {
+        "Name": "torch",
+        "Version": "2.7.0+cu128"
+      },
+      "pandas-2.3.3.dist-info": {
+        "Name": "pandas",
+        "Version": "2.3.3"
+      },
+      "numpy-2.2.6.dist-info": {
+        "Name": "numpy",
+        "Version": "2.2.6"
+      }
+    }
+  },
+  "identity_digest": "c48e56d25ff63821373762ced20c5d70d6e0b6e44b1b0cefca4a8f8dc71f65eb",
+  "tasks": {
+    "BDP": {
+      "admet_columns": {
+        "bbbp": "BBB_Martins"
+      },
+      "cache_contract": {
+        "calculators": {
+          "bbbp": "original calculator and local assets sha256-set:c48e56d25ff63821373762ced20c5d70d6e0b6e44b1b0cefca4a8f8dc71f65eb",
+          "drd2": "original calculator and local assets sha256-set:c48e56d25ff63821373762ced20c5d70d6e0b6e44b1b0cefca4a8f8dc71f65eb",
+          "plogp": "original calculator and local assets sha256-set:c48e56d25ff63821373762ced20c5d70d6e0b6e44b1b0cefca4a8f8dc71f65eb",
+          "sas": "original calculator and local assets sha256-set:c48e56d25ff63821373762ced20c5d70d6e0b6e44b1b0cefca4a8f8dc71f65eb",
+          "sim": "original calculator and local assets sha256-set:c48e56d25ff63821373762ced20c5d70d6e0b6e44b1b0cefca4a8f8dc71f65eb"
+        },
+        "preprocessing": "raw candidate -> inf RDKit nonempty Mol -> original ADMET predict CPU; eval_py36 original standard SMILES APIs; binary Morgan radius2 2048 useChirality=False Tanimoto; source targets unchanged",
+        "precision": "raw_then_pandas_numpy_round2_csv_v1",
+        "chemistry_environment": "gellmo_inf",
+        "fixture": false
+      }
+    },
+    "BDQ": {
+      "admet_columns": {
+        "bbbp": "BBB_Martins"
+      },
+      "cache_contract": {
+        "calculators": {
+          "bbbp": "original calculator and local assets sha256-set:c48e56d25ff63821373762ced20c5d70d6e0b6e44b1b0cefca4a8f8dc71f65eb",
+          "drd2": "original calculator and local assets sha256-set:c48e56d25ff63821373762ced20c5d70d6e0b6e44b1b0cefca4a8f8dc71f65eb",
+          "qed": "original calculator and local assets sha256-set:c48e56d25ff63821373762ced20c5d70d6e0b6e44b1b0cefca4a8f8dc71f65eb",
+          "sas": "original calculator and local assets sha256-set:c48e56d25ff63821373762ced20c5d70d6e0b6e44b1b0cefca4a8f8dc71f65eb",
+          "sim": "original calculator and local assets sha256-set:c48e56d25ff63821373762ced20c5d70d6e0b6e44b1b0cefca4a8f8dc71f65eb"
+        },
+        "preprocessing": "raw candidate -> inf RDKit nonempty Mol -> original ADMET predict CPU; eval_py36 original standard SMILES APIs; binary Morgan radius2 2048 useChirality=False Tanimoto; source targets unchanged",
+        "precision": "raw_then_pandas_numpy_round2_csv_v1",
+        "chemistry_environment": "gellmo_inf",
+        "fixture": false
+      }
+    },
+    "BPQ": {
+      "admet_columns": {
+        "bbbp": "BBB_Martins"
+      },
+      "cache_contract": {
+        "calculators": {
+          "bbbp": "original calculator and local assets sha256-set:c48e56d25ff63821373762ced20c5d70d6e0b6e44b1b0cefca4a8f8dc71f65eb",
+          "plogp": "original calculator and local assets sha256-set:c48e56d25ff63821373762ced20c5d70d6e0b6e44b1b0cefca4a8f8dc71f65eb",
+          "qed": "original calculator and local assets sha256-set:c48e56d25ff63821373762ced20c5d70d6e0b6e44b1b0cefca4a8f8dc71f65eb",
+          "sas": "original calculator and local assets sha256-set:c48e56d25ff63821373762ced20c5d70d6e0b6e44b1b0cefca4a8f8dc71f65eb",
+          "sim": "original calculator and local assets sha256-set:c48e56d25ff63821373762ced20c5d70d6e0b6e44b1b0cefca4a8f8dc71f65eb"
+        },
+        "preprocessing": "raw candidate -> inf RDKit nonempty Mol -> original ADMET predict CPU; eval_py36 original standard SMILES APIs; binary Morgan radius2 2048 useChirality=False Tanimoto; source targets unchanged",
+        "precision": "raw_then_pandas_numpy_round2_csv_v1",
+        "chemistry_environment": "gellmo_inf",
+        "fixture": false
+      }
+    },
+    "DPQ": {
+      "admet_columns": {},
+      "cache_contract": {
+        "calculators": {
+          "drd2": "original calculator and local assets sha256-set:c48e56d25ff63821373762ced20c5d70d6e0b6e44b1b0cefca4a8f8dc71f65eb",
+          "plogp": "original calculator and local assets sha256-set:c48e56d25ff63821373762ced20c5d70d6e0b6e44b1b0cefca4a8f8dc71f65eb",
+          "qed": "original calculator and local assets sha256-set:c48e56d25ff63821373762ced20c5d70d6e0b6e44b1b0cefca4a8f8dc71f65eb",
+          "sas": "original calculator and local assets sha256-set:c48e56d25ff63821373762ced20c5d70d6e0b6e44b1b0cefca4a8f8dc71f65eb",
+          "sim": "original calculator and local assets sha256-set:c48e56d25ff63821373762ced20c5d70d6e0b6e44b1b0cefca4a8f8dc71f65eb"
+        },
+        "preprocessing": "raw candidate -> inf RDKit nonempty Mol -> original ADMET predict CPU; eval_py36 original standard SMILES APIs; binary Morgan radius2 2048 useChirality=False Tanimoto; source targets unchanged",
+        "precision": "raw_then_pandas_numpy_round2_csv_v1",
+        "chemistry_environment": "gellmo_inf",
+        "fixture": false
+      }
+    },
+    "BDPQ": {
+      "admet_columns": {
+        "bbbp": "BBB_Martins"
+      },
+      "cache_contract": {
+        "calculators": {
+          "bbbp": "original calculator and local assets sha256-set:c48e56d25ff63821373762ced20c5d70d6e0b6e44b1b0cefca4a8f8dc71f65eb",
+          "drd2": "original calculator and local assets sha256-set:c48e56d25ff63821373762ced20c5d70d6e0b6e44b1b0cefca4a8f8dc71f65eb",
+          "plogp": "original calculator and local assets sha256-set:c48e56d25ff63821373762ced20c5d70d6e0b6e44b1b0cefca4a8f8dc71f65eb",
+          "qed": "original calculator and local assets sha256-set:c48e56d25ff63821373762ced20c5d70d6e0b6e44b1b0cefca4a8f8dc71f65eb",
+          "sas": "original calculator and local assets sha256-set:c48e56d25ff63821373762ced20c5d70d6e0b6e44b1b0cefca4a8f8dc71f65eb",
+          "sim": "original calculator and local assets sha256-set:c48e56d25ff63821373762ced20c5d70d6e0b6e44b1b0cefca4a8f8dc71f65eb"
+        },
+        "preprocessing": "raw candidate -> inf RDKit nonempty Mol -> original ADMET predict CPU; eval_py36 original standard SMILES APIs; binary Morgan radius2 2048 useChirality=False Tanimoto; source targets unchanged",
+        "precision": "raw_then_pandas_numpy_round2_csv_v1",
+        "chemistry_environment": "gellmo_inf",
+        "fixture": false
+      }
+    },
+    "MPQ": {
+      "admet_columns": {
+        "mutagenicity": "AMES"
+      },
+      "cache_contract": {
+        "calculators": {
+          "mutagenicity": "original calculator and local assets sha256-set:c48e56d25ff63821373762ced20c5d70d6e0b6e44b1b0cefca4a8f8dc71f65eb",
+          "plogp": "original calculator and local assets sha256-set:c48e56d25ff63821373762ced20c5d70d6e0b6e44b1b0cefca4a8f8dc71f65eb",
+          "qed": "original calculator and local assets sha256-set:c48e56d25ff63821373762ced20c5d70d6e0b6e44b1b0cefca4a8f8dc71f65eb",
+          "sas": "original calculator and local assets sha256-set:c48e56d25ff63821373762ced20c5d70d6e0b6e44b1b0cefca4a8f8dc71f65eb",
+          "sim": "original calculator and local assets sha256-set:c48e56d25ff63821373762ced20c5d70d6e0b6e44b1b0cefca4a8f8dc71f65eb"
+        },
+        "preprocessing": "raw candidate -> inf RDKit nonempty Mol -> original ADMET predict CPU; eval_py36 original standard SMILES APIs; binary Morgan radius2 2048 useChirality=False Tanimoto; source targets unchanged",
+        "precision": "raw_then_pandas_numpy_round2_csv_v1",
+        "chemistry_environment": "gellmo_inf",
+        "fixture": false
+      }
+    },
+    "BDMQ": {
+      "admet_columns": {
+        "bbbp": "BBB_Martins",
+        "mutagenicity": "AMES"
+      },
+      "cache_contract": {
+        "calculators": {
+          "bbbp": "original calculator and local assets sha256-set:c48e56d25ff63821373762ced20c5d70d6e0b6e44b1b0cefca4a8f8dc71f65eb",
+          "drd2": "original calculator and local assets sha256-set:c48e56d25ff63821373762ced20c5d70d6e0b6e44b1b0cefca4a8f8dc71f65eb",
+          "mutagenicity": "original calculator and local assets sha256-set:c48e56d25ff63821373762ced20c5d70d6e0b6e44b1b0cefca4a8f8dc71f65eb",
+          "qed": "original calculator and local assets sha256-set:c48e56d25ff63821373762ced20c5d70d6e0b6e44b1b0cefca4a8f8dc71f65eb",
+          "sas": "original calculator and local assets sha256-set:c48e56d25ff63821373762ced20c5d70d6e0b6e44b1b0cefca4a8f8dc71f65eb",
+          "sim": "original calculator and local assets sha256-set:c48e56d25ff63821373762ced20c5d70d6e0b6e44b1b0cefca4a8f8dc71f65eb"
+        },
+        "preprocessing": "raw candidate -> inf RDKit nonempty Mol -> original ADMET predict CPU; eval_py36 original standard SMILES APIs; binary Morgan radius2 2048 useChirality=False Tanimoto; source targets unchanged",
+        "precision": "raw_then_pandas_numpy_round2_csv_v1",
+        "chemistry_environment": "gellmo_inf",
+        "fixture": false
+      }
+    },
+    "BHMQ": {
+      "admet_columns": {
+        "bbbp": "BBB_Martins",
+        "hia": "HIA_Hou",
+        "mutagenicity": "AMES"
+      },
+      "cache_contract": {
+        "calculators": {
+          "bbbp": "original calculator and local assets sha256-set:c48e56d25ff63821373762ced20c5d70d6e0b6e44b1b0cefca4a8f8dc71f65eb",
+          "hia": "original calculator and local assets sha256-set:c48e56d25ff63821373762ced20c5d70d6e0b6e44b1b0cefca4a8f8dc71f65eb",
+          "mutagenicity": "original calculator and local assets sha256-set:c48e56d25ff63821373762ced20c5d70d6e0b6e44b1b0cefca4a8f8dc71f65eb",
+          "qed": "original calculator and local assets sha256-set:c48e56d25ff63821373762ced20c5d70d6e0b6e44b1b0cefca4a8f8dc71f65eb",
+          "sas": "original calculator and local assets sha256-set:c48e56d25ff63821373762ced20c5d70d6e0b6e44b1b0cefca4a8f8dc71f65eb",
+          "sim": "original calculator and local assets sha256-set:c48e56d25ff63821373762ced20c5d70d6e0b6e44b1b0cefca4a8f8dc71f65eb"
+        },
+        "preprocessing": "raw candidate -> inf RDKit nonempty Mol -> original ADMET predict CPU; eval_py36 original standard SMILES APIs; binary Morgan radius2 2048 useChirality=False Tanimoto; source targets unchanged",
+        "precision": "raw_then_pandas_numpy_round2_csv_v1",
+        "chemistry_environment": "gellmo_inf",
+        "fixture": false
+      }
+    },
+    "BMPQ": {
+      "admet_columns": {
+        "bbbp": "BBB_Martins",
+        "mutagenicity": "AMES"
+      },
+      "cache_contract": {
+        "calculators": {
+          "bbbp": "original calculator and local assets sha256-set:c48e56d25ff63821373762ced20c5d70d6e0b6e44b1b0cefca4a8f8dc71f65eb",
+          "mutagenicity": "original calculator and local assets sha256-set:c48e56d25ff63821373762ced20c5d70d6e0b6e44b1b0cefca4a8f8dc71f65eb",
+          "plogp": "original calculator and local assets sha256-set:c48e56d25ff63821373762ced20c5d70d6e0b6e44b1b0cefca4a8f8dc71f65eb",
+          "qed": "original calculator and local assets sha256-set:c48e56d25ff63821373762ced20c5d70d6e0b6e44b1b0cefca4a8f8dc71f65eb",
+          "sas": "original calculator and local assets sha256-set:c48e56d25ff63821373762ced20c5d70d6e0b6e44b1b0cefca4a8f8dc71f65eb",
+          "sim": "original calculator and local assets sha256-set:c48e56d25ff63821373762ced20c5d70d6e0b6e44b1b0cefca4a8f8dc71f65eb"
+        },
+        "preprocessing": "raw candidate -> inf RDKit nonempty Mol -> original ADMET predict CPU; eval_py36 original standard SMILES APIs; binary Morgan radius2 2048 useChirality=False Tanimoto; source targets unchanged",
+        "precision": "raw_then_pandas_numpy_round2_csv_v1",
+        "chemistry_environment": "gellmo_inf",
+        "fixture": false
+      }
+    },
+    "HMPQ": {
+      "admet_columns": {
+        "hia": "HIA_Hou",
+        "mutagenicity": "AMES"
+      },
+      "cache_contract": {
+        "calculators": {
+          "hia": "original calculator and local assets sha256-set:c48e56d25ff63821373762ced20c5d70d6e0b6e44b1b0cefca4a8f8dc71f65eb",
+          "mutagenicity": "original calculator and local assets sha256-set:c48e56d25ff63821373762ced20c5d70d6e0b6e44b1b0cefca4a8f8dc71f65eb",
+          "plogp": "original calculator and local assets sha256-set:c48e56d25ff63821373762ced20c5d70d6e0b6e44b1b0cefca4a8f8dc71f65eb",
+          "qed": "original calculator and local assets sha256-set:c48e56d25ff63821373762ced20c5d70d6e0b6e44b1b0cefca4a8f8dc71f65eb",
+          "sas": "original calculator and local assets sha256-set:c48e56d25ff63821373762ced20c5d70d6e0b6e44b1b0cefca4a8f8dc71f65eb",
+          "sim": "original calculator and local assets sha256-set:c48e56d25ff63821373762ced20c5d70d6e0b6e44b1b0cefca4a8f8dc71f65eb"
+        },
+        "preprocessing": "raw candidate -> inf RDKit nonempty Mol -> original ADMET predict CPU; eval_py36 original standard SMILES APIs; binary Morgan radius2 2048 useChirality=False Tanimoto; source targets unchanged",
+        "precision": "raw_then_pandas_numpy_round2_csv_v1",
+        "chemistry_environment": "gellmo_inf",
+        "fixture": false
+      }
+    }
+  }
+}

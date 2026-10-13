@@ -1,0 +1,378 @@
+{
+  "schema_version": 1,
+  "status": "draft",
+  "tasks": [
+    {
+      "task_id": "BDP",
+      "task_key": "bbbp+drd2+plogp",
+      "domain": "IND",
+      "actual_n": 500,
+      "manifest_path": "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/manifests/BDP.test.seen.jsonl",
+      "manifest_sha256": "0c511a5096a3073e97f136db279d75f56c451b56ffe2ec2c850f0f323113fe6d",
+      "split": "test",
+      "instruction_setting": "seen",
+      "expected_n": 500,
+      "objectives": [
+        {
+          "property": "bbbp",
+          "direction": 1,
+          "supplementary_success_delta": 0.2
+        },
+        {
+          "property": "drd2",
+          "direction": 1,
+          "supplementary_success_delta": 0.2
+        },
+        {
+          "property": "plogp",
+          "direction": 1,
+          "supplementary_success_delta": 1.0
+        }
+      ],
+      "test_inclusion_thresholds_from_legacy_config": {
+        "bbbp": 0.5,
+        "drd2": 0.1,
+        "plogp": -0.2
+      },
+      "thresholds_are_not_primary_SR_cutoffs": true
+    },
+    {
+      "task_id": "BDQ",
+      "task_key": "bbbp+drd2+qed",
+      "domain": "IND",
+      "actual_n": 500,
+      "manifest_path": "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/manifests/BDQ.test.seen.jsonl",
+      "manifest_sha256": "0e82627a5cd6226b36eaab3dbff5263fb1e40b1b6cc0ce64b297b3715d22d628",
+      "split": "test",
+      "instruction_setting": "seen",
+      "expected_n": 500,
+      "objectives": [
+        {
+          "property": "bbbp",
+          "direction": 1,
+          "supplementary_success_delta": 0.2
+        },
+        {
+          "property": "drd2",
+          "direction": 1,
+          "supplementary_success_delta": 0.2
+        },
+        {
+          "property": "qed",
+          "direction": 1,
+          "supplementary_success_delta": 0.1
+        }
+      ],
+      "test_inclusion_thresholds_from_legacy_config": {
+        "bbbp": 0.6,
+        "drd2": 0.1,
+        "qed": 0.4
+      },
+      "thresholds_are_not_primary_SR_cutoffs": true
+    },
+    {
+      "task_id": "BPQ",
+      "task_key": "bbbp+plogp+qed",
+      "domain": "IND",
+      "actual_n": 500,
+      "manifest_path": "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/manifests/BPQ.test.seen.jsonl",
+      "manifest_sha256": "0ebd16ceec314f3cbd933054c626dda77cf91abfb15f97a8a2ae739f2696b6d5",
+      "split": "test",
+      "instruction_setting": "seen",
+      "expected_n": 500,
+      "objectives": [
+        {
+          "property": "bbbp",
+          "direction": 1,
+          "supplementary_success_delta": 0.2
+        },
+        {
+          "property": "plogp",
+          "direction": 1,
+          "supplementary_success_delta": 1.0
+        },
+        {
+          "property": "qed",
+          "direction": 1,
+          "supplementary_success_delta": 0.1
+        }
+      ],
+      "test_inclusion_thresholds_from_legacy_config": {
+        "bbbp": 0.5,
+        "plogp": -1.5,
+        "qed": 0.7
+      },
+      "thresholds_are_not_primary_SR_cutoffs": true
+    },
+    {
+      "task_id": "DPQ",
+      "task_key": "drd2+plogp+qed",
+      "domain": "IND",
+      "actual_n": 500,
+      "manifest_path": "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/manifests/DPQ.test.seen.jsonl",
+      "manifest_sha256": "dfb357759910a2b1719c2e7ccc5cc4226733943cd1dacc4c7bf624f214a05bb0",
+      "split": "test",
+      "instruction_setting": "seen",
+      "expected_n": 500,
+      "objectives": [
+        {
+          "property": "drd2",
+          "direction": 1,
+          "supplementary_success_delta": 0.2
+        },
+        {
+          "property": "plogp",
+          "direction": 1,
+          "supplementary_success_delta": 1.0
+        },
+        {
+          "property": "qed",
+          "direction": 1,
+          "supplementary_success_delta": 0.1
+        }
+      ],
+      "test_inclusion_thresholds_from_legacy_config": {
+        "drd2": 0.1,
+        "plogp": -0.8,
+        "qed": 0.5
+      },
+      "thresholds_are_not_primary_SR_cutoffs": true
+    },
+    {
+      "task_id": "BDPQ",
+      "task_key": "bbbp+drd2+plogp+qed",
+      "domain": "IND",
+      "actual_n": 500,
+      "manifest_path": "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/manifests/BDPQ.test.seen.jsonl",
+      "manifest_sha256": "5f10871232f7900e8fccc8a5627ff86efe1c1d3cb06ebec4c4b26d5c290b04f1",
+      "split": "test",
+      "instruction_setting": "seen",
+      "expected_n": 500,
+      "objectives": [
+        {
+          "property": "bbbp",
+          "direction": 1,
+          "supplementary_success_delta": 0.2
+        },
+        {
+          "property": "drd2",
+          "direction": 1,
+          "supplementary_success_delta": 0.2
+        },
+        {
+          "property": "plogp",
+          "direction": 1,
+          "supplementary_success_delta": 1.0
+        },
+        {
+          "property": "qed",
+          "direction": 1,
+          "supplementary_success_delta": 0.1
+        }
+      ],
+      "test_inclusion_thresholds_from_legacy_config": {
+        "bbbp": 0.5,
+        "drd2": 0.1,
+        "plogp": -1.0,
+        "qed": 0.4
+      },
+      "thresholds_are_not_primary_SR_cutoffs": true
+    },
+    {
+      "task_id": "MPQ",
+      "task_key": "mutagenicity+plogp+qed",
+      "domain": "OOD",
+      "actual_n": 500,
+      "manifest_path": "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/manifests/MPQ.test.seen.jsonl",
+      "manifest_sha256": "2fa40cde8cb1311fbed747a69a11711a2625f0f6f58e923fe8e6b32c703d98af",
+      "split": "test",
+      "instruction_setting": "seen",
+      "expected_n": 500,
+      "objectives": [
+        {
+          "property": "mutagenicity",
+          "direction": -1,
+          "supplementary_success_delta": 0.1
+        },
+        {
+          "property": "plogp",
+          "direction": 1,
+          "supplementary_success_delta": 1.0
+        },
+        {
+          "property": "qed",
+          "direction": 1,
+          "supplementary_success_delta": 0.1
+        }
+      ],
+      "test_inclusion_thresholds_from_legacy_config": {
+        "mutagenicity": 0.5,
+        "plogp": -0.5,
+        "qed": 0.7
+      },
+      "thresholds_are_not_primary_SR_cutoffs": true
+    },
+    {
+      "task_id": "BDMQ",
+      "task_key": "bbbp+drd2+mutagenicity+qed",
+      "domain": "OOD",
+      "actual_n": 500,
+      "manifest_path": "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/manifests/BDMQ.test.seen.jsonl",
+      "manifest_sha256": "f006228bc34f3d43f0b5e8e3f64690db5de2b052f36680153a7c3feb071c91b8",
+      "split": "test",
+      "instruction_setting": "seen",
+      "expected_n": 500,
+      "objectives": [
+        {
+          "property": "bbbp",
+          "direction": 1,
+          "supplementary_success_delta": 0.2
+        },
+        {
+          "property": "drd2",
+          "direction": 1,
+          "supplementary_success_delta": 0.2
+        },
+        {
+          "property": "mutagenicity",
+          "direction": -1,
+          "supplementary_success_delta": 0.1
+        },
+        {
+          "property": "qed",
+          "direction": 1,
+          "supplementary_success_delta": 0.1
+        }
+      ],
+      "test_inclusion_thresholds_from_legacy_config": {
+        "bbbp": 0.5,
+        "drd2": 0.1,
+        "mutagenicity": 0.4,
+        "qed": 0.3
+      },
+      "thresholds_are_not_primary_SR_cutoffs": true
+    },
+    {
+      "task_id": "BHMQ",
+      "task_key": "bbbp+hia+mutagenicity+qed",
+      "domain": "OOD",
+      "actual_n": 118,
+      "manifest_path": "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/manifests/BHMQ.test.seen.jsonl",
+      "manifest_sha256": "0f35f585621778f66a821baa33aa7c98c4cb2a62036651732434e00118f23c9e",
+      "split": "test",
+      "instruction_setting": "seen",
+      "expected_n": 118,
+      "objectives": [
+        {
+          "property": "bbbp",
+          "direction": 1,
+          "supplementary_success_delta": 0.2
+        },
+        {
+          "property": "hia",
+          "direction": 1,
+          "supplementary_success_delta": 0.1
+        },
+        {
+          "property": "mutagenicity",
+          "direction": -1,
+          "supplementary_success_delta": 0.1
+        },
+        {
+          "property": "qed",
+          "direction": 1,
+          "supplementary_success_delta": 0.1
+        }
+      ],
+      "test_inclusion_thresholds_from_legacy_config": {
+        "bbbp": 0.4,
+        "hia": 0.7,
+        "mutagenicity": 0.4,
+        "qed": 0.7
+      },
+      "thresholds_are_not_primary_SR_cutoffs": true
+    },
+    {
+      "task_id": "BMPQ",
+      "task_key": "bbbp+mutagenicity+plogp+qed",
+      "domain": "OOD",
+      "actual_n": 191,
+      "manifest_path": "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/manifests/BMPQ.test.seen.jsonl",
+      "manifest_sha256": "29fb32e8afd59faf95ea90a9acd2866bd21ba8659f5f941be5eaf30f24fe6fa4",
+      "split": "test",
+      "instruction_setting": "seen",
+      "expected_n": 191,
+      "objectives": [
+        {
+          "property": "bbbp",
+          "direction": 1,
+          "supplementary_success_delta": 0.2
+        },
+        {
+          "property": "mutagenicity",
+          "direction": -1,
+          "supplementary_success_delta": 0.1
+        },
+        {
+          "property": "plogp",
+          "direction": 1,
+          "supplementary_success_delta": 1.0
+        },
+        {
+          "property": "qed",
+          "direction": 1,
+          "supplementary_success_delta": 0.1
+        }
+      ],
+      "test_inclusion_thresholds_from_legacy_config": {
+        "bbbp": 0.5,
+        "mutagenicity": 0.5,
+        "plogp": -0.7,
+        "qed": 0.7
+      },
+      "thresholds_are_not_primary_SR_cutoffs": true
+    },
+    {
+      "task_id": "HMPQ",
+      "task_key": "hia+mutagenicity+plogp+qed",
+      "domain": "OOD",
+      "actual_n": 96,
+      "manifest_path": "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/manifests/HMPQ.test.seen.jsonl",
+      "manifest_sha256": "bc8933875e188b0d5b650bc7448d464e81a5ba20b03cd1b12e22ff68d84af3e8",
+      "split": "test",
+      "instruction_setting": "seen",
+      "expected_n": 96,
+      "objectives": [
+        {
+          "property": "hia",
+          "direction": 1,
+          "supplementary_success_delta": 0.1
+        },
+        {
+          "property": "mutagenicity",
+          "direction": -1,
+          "supplementary_success_delta": 0.1
+        },
+        {
+          "property": "plogp",
+          "direction": 1,
+          "supplementary_success_delta": 1.0
+        },
+        {
+          "property": "qed",
+          "direction": 1,
+          "supplementary_success_delta": 0.1
+        }
+      ],
+      "test_inclusion_thresholds_from_legacy_config": {
+        "hia": 0.7,
+        "mutagenicity": 0.5,
+        "plogp": -2.0,
+        "qed": 0.6
+      },
+      "thresholds_are_not_primary_SR_cutoffs": true
+    }
+  ],
+  "primary_success_rule": "SR_dir",
+  "supplementary_success_rule": "SR_delta"
+}

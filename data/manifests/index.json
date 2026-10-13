@@ -1,0 +1,52 @@
+{
+  "BDP": {
+    "path": "data/manifests/BDP.test.seen.jsonl",
+    "sha256": "0c511a5096a3073e97f136db279d75f56c451b56ffe2ec2c850f0f323113fe6d",
+    "inputs": 500
+  },
+  "BDQ": {
+    "path": "data/manifests/BDQ.test.seen.jsonl",
+    "sha256": "0e82627a5cd6226b36eaab3dbff5263fb1e40b1b6cc0ce64b297b3715d22d628",
+    "inputs": 500
+  },
+  "BPQ": {
+    "path": "data/manifests/BPQ.test.seen.jsonl",
+    "sha256": "0ebd16ceec314f3cbd933054c626dda77cf91abfb15f97a8a2ae739f2696b6d5",
+    "inputs": 500
+  },
+  "DPQ": {
+    "path": "data/manifests/DPQ.test.seen.jsonl",
+    "sha256": "dfb357759910a2b1719c2e7ccc5cc4226733943cd1dacc4c7bf624f214a05bb0",
+    "inputs": 500
+  },
+  "BDPQ": {
+    "path": "data/manifests/BDPQ.test.seen.jsonl",
+    "sha256": "5f10871232f7900e8fccc8a5627ff86efe1c1d3cb06ebec4c4b26d5c290b04f1",
+    "inputs": 500
+  },
+  "MPQ": {
+    "path": "data/manifests/MPQ.test.seen.jsonl",
+    "sha256": "2fa40cde8cb1311fbed747a69a11711a2625f0f6f58e923fe8e6b32c703d98af",
+    "inputs": 500
+  },
+  "BDMQ": {
+    "path": "data/manifests/BDMQ.test.seen.jsonl",
+    "sha256": "f006228bc34f3d43f0b5e8e3f64690db5de2b052f36680153a7c3feb071c91b8",
+    "inputs": 500
+  },
+  "BHMQ": {
+    "path": "data/manifests/BHMQ.test.seen.jsonl",
+    "sha256": "0f35f585621778f66a821baa33aa7c98c4cb2a62036651732434e00118f23c9e",
+    "inputs": 118
+  },
+  "BMPQ": {
+    "path": "data/manifests/BMPQ.test.seen.jsonl",
+    "sha256": "29fb32e8afd59faf95ea90a9acd2866bd21ba8659f5f941be5eaf30f24fe6fa4",
+    "inputs": 191
+  },
+  "HMPQ": {
+    "path": "data/manifests/HMPQ.test.seen.jsonl",
+    "sha256": "bc8933875e188b0d5b650bc7448d464e81a5ba20b03cd1b12e22ff68d84af3e8",
+    "inputs": 96
+  }
+}

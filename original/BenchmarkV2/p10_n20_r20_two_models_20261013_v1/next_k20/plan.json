@@ -1,0 +1,169 @@
+{
+  "plan_id": "NEXT-K20-20261013-v1",
+  "updated_utc": "2026-10-13T07:18:06.071625+00:00",
+  "input_scope": {
+    "models": [
+      "GeLLMO-P6-Mistral",
+      "GeLLMO-P6-Llama"
+    ],
+    "inputs_per_model_per_method": 3905,
+    "output_slots_per_input": 20
+  },
+  "current_k1_results_modified": false,
+  "max_total_concurrent_gpus": 2,
+  "this_subtask_max_gpu_workers": 1,
+  "readout_definitions": {
+    "C20": "Twenty predeclared native pool candidates of one run; no claim of twenty complete searches.",
+    "R20": "Twenty fresh complete method executions, one terminal from each; state resets between executions."
+  },
+  "rows": [
+    {
+      "method": "Beam Search w20",
+      "readout": "C20",
+      "mistral": "saved original20 complete",
+      "llama": "saved original20 complete",
+      "new_generation": 0,
+      "same_current_k1_relation": "Same beam20 generation; K1 rank0 versus native20-pool readout."
+    },
+    {
+      "method": "Sampling + task verifier",
+      "readout": "pending explicit choice",
+      "mistral": "raw first20 C20 saved; only one complete verifier terminal currently",
+      "llama": "raw first20 C20 saved; only one complete verifier terminal currently",
+      "new_generation": null,
+      "cannot_silently_substitute": "Raw20 Sampling is a separate readout/label. Full verifier R20 means20 pools and20 selected terminals; baseline40 proposals/run and first20 verification retained unless separately changed."
+    },
+    {
+      "method": "Self-Refine r1",
+      "readout": "R20",
+      "mistral": "seeds51001..51020 complete",
+      "llama": "seed51001 complete",
+      "remaining_llama_terminal_slots_if_exact_prefix_reuse": 74195,
+      "implementation_state": "Llama native backend port and engineering test required; old Mistral GPU runner has hardcoded tokenizer IDs/hardware.",
+      "method_invariants": [
+        "T0.7",
+        "one init + feedback0 + refine1 + feedback1",
+        "fixed stop",
+        "no property feedback",
+        "keep invalid/empty/duplicate endpoints"
+      ]
+    },
+    {
+      "method": "ToT LM voting",
+      "readout": "R20",
+      "mistral": "one current complete search per input",
+      "llama": "one current complete search per input",
+      "remaining_terminal_slots_each_if_fixed_existing_repeat0": 74195,
+      "implementation_state": "R20 wrapper not implemented or GPU-tested",
+      "new_response_sequences_each": 2225850,
+      "method_invariants": [
+        "5 initial alternatives",
+        "5 initial votes",
+        "select3 parents",
+        "5 children/parent",
+        "5 final votes",
+        "native winning terminal"
+      ],
+      "not_reusable": "Old property-scored ToT pool is a different method configuration."
+    },
+    {
+      "method": "GoT G12",
+      "readout": "pending explicit choice",
+      "mistral": "saved native graph pool20 and current rank0 complete",
+      "llama": "saved native graph pool20 and current rank0 complete",
+      "new_generation": null,
+      "cannot_silently_substitute": "Native top20 from one graph is C20. R20 requires20 full graphs and20 original rank0 endpoints; intermediate nodes do not count as independent complete runs."
+    },
+    {
+      "method": "s1 B512 sampled",
+      "readout": "R20",
+      "mistral": "EngineeringPASS; remaining exact generation submitted withoneGPU array4722865",
+      "llama": "sampled extension requires native port/frozen model binding and engineering test",
+      "mistral_missing_generated_terminal_slots": 10020,
+      "mistral_missing_generation_inputs": 501,
+      "mistral_missing_property_terminal_slots": 11940,
+      "mistral_remaining_gpu_units": [
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111
+      ],
+      "one_gpu_linear_generation_hours": 4.526032853517848,
+      "current_k1_same_configuration": false
+    },
+    {
+      "method": "Exact Voting N20",
+      "readout": "R20",
+      "mistral": "parent coordinating reuse400proposals as20 consecutive groups",
+      "llama": "parent coordinating reuse400proposals as20 consecutive groups",
+      "new_generation": 0,
+      "current_k1_same_configuration": false,
+      "configuration_change": "N400 one vote ->N20 per vote x20groups explicitly approved; source proposal order frozen."
+    },
+    {
+      "method": "4-shot ICL sampled",
+      "readout": "R20",
+      "mistral": "old sampledR20 all3905 complete",
+      "llama": "Engineering240terminalPASS; fullsampledR20array4722924submitted; propertiespending",
+      "llama_new_terminal_slots": 78100,
+      "current_k1_same_configuration": false,
+      "configuration_change": "beam4 rank0 ->T1/top_p1/top_k0/beam1 sampled independent rows; same frozen prompts/demos/parser/cap100",
+      "engineering_probe": "first4 inputs of BDP,BDPQ,BHMQ;20rows each;240endpoints; reuse only if exact frozen contract remains"
+    },
+    {
+      "method": "Reflexion max3 sampled",
+      "readout": "R20",
+      "mistral": "old exact sampled pilot240 terminals only; no full units",
+      "llama": "no audited sampledR20 full completion",
+      "current_k1_same_configuration": false,
+      "configuration_change": "all generation roles T1 sampling; retain original binary/invalid feedback, max3trials, success stop, fresh memory",
+      "implementation_state": "Mistral same-config exact pilot reusable after hash/UID checks; Llama native port and property subprocess engineering needed",
+      "new_terminal_count_note": "Do not give an exact remaining count until unchanged pilot contract is frozen in new output root."
+    }
+  ],
+  "immediate_queue": [
+    {
+      "order": 1,
+      "task": "Mistral s1 exact sampled continuation smoke",
+      "job_id": "4722779",
+      "resources": "1 lab Blackwell; completed59seconds; reused2 calls,33.7secnewgeneration",
+      "full_condition": "saved80terminal batch;80 unique UID/repeat lanes; exact replay seeds and source hashes; no property calls; no old writes",
+      "status": "PASS",
+      "superseded_pending_job": "4722687"
+    },
+    {
+      "order": 2,
+      "task": "Mistral s1 remaining generation units102..111",
+      "resources": "hzhlab Blackwell array102-111%1;1 GPU maximum",
+      "submit_condition": "only after matching engineering PASS and no second duplicate continuation",
+      "evaluation": "CPU evaluation remains separate, including previously documented QED exception",
+      "job_id": "4722865",
+      "status": "SUBMITTED"
+    },
+    {
+      "order": 3,
+      "task": "Llama ICL engineering probe",
+      "resources": "1 lab Blackwell, array0-55%1",
+      "submit_condition": "Root explicitly authorized engineering and full run after PASS; total s1+ICL<=2GPUs",
+      "job_id": "4722924",
+      "status": "FULL_SUBMITTED",
+      "probe_job_id": "4722885",
+      "probe_status": "PASS"
+    }
+  ],
+  "claims_to_avoid": [
+    "Nine methods K20 are complete after Exact Voting",
+    "Greedy current s1/ICL/Reflexion K1 is repeat0 of sampled variant",
+    "Twenty repeated deterministic outputs create useful diversity",
+    "Old property-ToT outputs are current LM-vote ToT outputs",
+    "One graph20 nodes equals20 independent complete graphs",
+    "Missing property predictions mean chemical failure"
+  ],
+  "source_inventory": "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/p10_n20_r20_two_models_20261013_v1/next_k20/continuation_inventory.json"
+}

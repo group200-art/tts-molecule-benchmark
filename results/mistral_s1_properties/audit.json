@@ -1,0 +1,23 @@
+{
+  "status": "PASS_COMPLETE_SAMPLED_POLICY_R20_METRICS",
+  "generated_utc": "2026-10-13T10:14:00.496198Z",
+  "model_id": "gellmo_p6_mistral",
+  "method_id": "s1-B512-sampled-R20",
+  "inputs": 3905,
+  "terminal_slots": 78100,
+  "input_readouts": 7810,
+  "task_groups": 20,
+  "first_repeat_is_same_configuration_K1": true,
+  "old_greedy_or_beam_K1_not_mixed": true,
+  "all_source_hashes_unchanged": true,
+  "no_unknown_property_gaps": true,
+  "quality": "Same original-selector successful representative for RI/Sim/SAS/Novelty/APS, stable repeat order.",
+  "K20_interpretation": "At least one of twenty complete terminal outputs succeeds; evaluation coverage, not an inference selector.",
+  "versions": {
+    "rdkit": "2020.03.3",
+    "numpy": "1.18.5",
+    "pandas": "1.0.5"
+  },
+  "input_sha256": "05d8502c1d1a6af7dc956917a0d25ba76738d99bccf73c8620b94be3b232b287",
+  "evaluator_sha256": "80496249d17c28b88b4c2c58eaf64728b2b262c6b84c8055ff2ef781fbe82025"
+}

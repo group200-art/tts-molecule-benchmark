@@ -1,0 +1,19 @@
+{
+  "captured_utc": "2026-10-13T11:05:39.433711+00:00",
+  "main_k1": {
+    "models": 2,
+    "methods": 9,
+    "inputs_per_configuration": 3905,
+    "endpoint_records": 70290,
+    "recomputed_table1": "PASS"
+  },
+  "llama_icl_sampled_r20": {
+    "source": "BenchmarkV2/p10_n20_r20_two_models_20261013_v1/next_k20/llama_icl_sampled",
+    "expected_units": 56,
+    "completed_generation_units": 50,
+    "completed_generation_inputs": 3580,
+    "final_metrics_available": false
+  },
+  "mistral_s1_sampled_r20": "COMPLETE_3905_WITH_METRICS",
+  "p10_n20_r20": "COMPLETE_BOTH_MODELS_3905_WITH_METRICS"
+}

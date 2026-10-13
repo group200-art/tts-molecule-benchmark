@@ -1,0 +1,36 @@
+{
+  "schema": "BV2-K1-ENDPOINT-v2",
+  "models": [
+    "gellmo_p6_mistral",
+    "gellmo_p6_llama"
+  ],
+  "methods": [
+    "beam20",
+    "sampling_verifier20",
+    "self_refine_r1",
+    "tot_lm_vote",
+    "got",
+    "s1",
+    "ev",
+    "fewshot",
+    "reflexion"
+  ],
+  "tasks": [
+    "BDP",
+    "BDQ",
+    "BPQ",
+    "DPQ",
+    "BDPQ",
+    "MPQ",
+    "BDMQ",
+    "BHMQ",
+    "BMPQ",
+    "HMPQ"
+  ],
+  "methods_with_inference_property_tools": {
+    "sampling_verifier20": "terminal verification",
+    "got": "search and final graph ranking",
+    "reflexion": "feedback and success stopping"
+  },
+  "known_source_limitation": "s1 is budget-forcing component adaptation; fewshot is an ICL baseline; all methods are molecular task ports, not full original training reproductions."
+}

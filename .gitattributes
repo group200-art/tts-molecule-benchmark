@@ -1,0 +1,2 @@
+# Preserve exact source bytes, including original CSV line endings.
+* -text

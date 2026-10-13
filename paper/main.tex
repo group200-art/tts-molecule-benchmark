@@ -1,0 +1,51 @@
+\documentclass[11pt]{article}
+\usepackage[review]{acl}
+\usepackage{times}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{microtype}
+\usepackage{graphicx,booktabs,amsmath}
+\usepackage{url}
+% Permit line breaks inside recorded hexadecimal revision identifiers.
+\makeatletter
+\g@addto@macro\UrlBreaks{\do\0\do\1\do\2\do\3\do\4\do\5\do\6\do\7\do\8\do\9\do\a\do\b\do\c\do\d\do\e\do\f}
+\makeatother
+\newcommand{\EvalTableFont}{\fontsize{9}{11}\selectfont}
+\newcommand{\TableNoteFont}{\fontsize{9}{10.5}\selectfont}
+% Align result values with the method name, above its configuration note.
+\newcommand{\MethodWithNote}[2]{\begin{tabular}[t]{@{}l@{}}#1\\#2\end{tabular}}
+% Retain the existing top-aligned full-page table placement.
+\makeatletter
+\setlength{\@fptop}{0pt}
+\setlength{\@dblfptop}{0pt}
+\makeatother
+
+\newcommand{\gellmo}{GeLLM$^3$O}
+
+\title{Benchmarking Test-Time Scaling for Multi-Property Molecular Optimization}
+\author{Anonymous ACL submission}
+
+\begin{document}
+\maketitle
+\input{sections/abstract}
+\input{sections/introduction}
+\clearpage
+\input{tables/table1_effectiveness}
+\clearpage
+\input{sections/protocol}
+\input{sections/methods}
+\input{tables/table2_workload}
+\input{sections/metrics}
+\input{tables/table3_quality}
+\input{sections/results}
+\input{sections/related_work}
+\input{sections/conclusion}
+\clearpage
+\input{sections/limitations}
+\bibliography{bibliography}
+\clearpage
+\appendix
+\input{appendices/implementation}
+\input{appendices/reference_difficulty}
+\input{appendices/readout_diagnostics}
+\end{document}

@@ -1,0 +1,37 @@
+{
+  "APS": "Per target-property arithmetic mean over success-conditional selected outputs at retained comparison precision. Report separately by property, never mix units.",
+  "Novelty": "Primary Nov_official: Chem.MolToSmiles(selected) not in literal unique_mols_in_one_ds_pairs.txt set, reproducing original process-output + evaluate identity pipeline. Nov_raw_literal diagnostic uses raw selected string. Nov_canonical_reference sensitivity canonicalizes both sides in legacy RDKit.",
+  "RI": "Mean across target properties of abs(output-source)/abs(source) when source!=0, else (output-0.1)/0.1. Public notebook implementation; no normalization and no denominator flooring.",
+  "RI_paper_difference": "Printed paper formula and public code differ; RI_official_code names code branch explicitly. RI0.1 remains a separately labeled benchmark extension.",
+  "SAS": "Unrounded retained data/props/sascorer.py calculateScore on selected molecule in RDKit2020.03.3; cached round2 values retained separately.",
+  "SR": "Strict all-target directional improvement from frozen candidate round2/CSV values against unrounded stored source values; chemical and finite-property eligibility unchanged. Independently recomputed and compared with current SR.",
+  "Sim": "Unrounded Tanimoto of raw source and raw selected SMILES: binary Morgan radius2, 2048 bits, useChirality=False, RDKit2020.03.3.",
+  "aggregation": "Task rows; IND equal mean of five task metrics, OOD equal mean of five, Macro10 equal mean of ten. APS aggregates only tasks targeting that same property, with task count explicit.",
+  "endpoint_changes": 0,
+  "environment": {
+    "numpy": "1.18.5",
+    "pandas": "1.0.5",
+    "platform": "Linux-5.14.0-611.16.1.el9_7.x86_64-x86_64-with-redhat-9.7-Plow",
+    "python": "3.6.13 | packaged by conda-forge | (default, Sep 23 2021, 07:56:31) \n[GCC 9.4.0]",
+    "rdkit": "2020.03.3",
+    "slurm_job_id": "4721532"
+  },
+  "evaluator_repairs": "Preserve endpoint identity; never emulate original filtered-array index bug. K1 avoids multi-candidate set ordering and tie ambiguity.",
+  "final_k": 1,
+  "quality_subset": "Only directionally successful fixed terminal outputs; one candidate per input, no post-hoc replacement. Per-task success-conditional means, followed by equal-task macro.",
+  "reference": {
+    "canonical_changed": 0,
+    "canonical_count": 231038,
+    "canonical_snapshot_path": "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/gellmo_eval_alignment_20261013_v1/k1/sources/novelty_reference_canonical_rdkit2020.txt",
+    "canonical_snapshot_sha256": "1e4360b4d827427b886f35fa377e4a3b5f905000b0c0e86c98269740a7d333fc",
+    "invalid_strings": 3,
+    "literal_count": 231041,
+    "path": "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/data/unique_mols_in_one_ds_pairs.txt",
+    "sha256": "f255ccdc988a441e23f57e67b896be3443addb10ef1a12bfb35264c4be089b9a"
+  },
+  "reuse": "No target-property predictor runs; target values reused after input/source/hash and stored comparison-CSV checks.",
+  "scope": "Same 70290 fixed final outputs; not a K20 experiment and not a raw-text re-extraction.",
+  "validity": "Report RDKit 2020.03.3 parse of the unchanged selected SMILES; also retain current stored validity and legacy property-row eligibility separately.",
+  "version": "GELLMO-K1-OFFICIAL-METRICS-v1",
+  "zeros": "A task with no successful outputs would have undefined quality (null), not zero; all current groups have successes."
+}

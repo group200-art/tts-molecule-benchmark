@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "checked_utc": "2026-10-13T06:22:25.341901+00:00",
+  "endpoints": 70290,
+  "task_groups": 180,
+  "configurations": 18,
+  "APS_task_property_rows": 630,
+  "SR_identical_all_groups": true,
+  "current_validity_identical_all_groups": true,
+  "RI_official_matches_legacy_all_successful_endpoints": true,
+  "all_generated_output_hashes_verified": true,
+  "all_endpoint_source_hashes_unchanged": true,
+  "all_snapshot_originals_unchanged": true,
+  "quality_means_and_APS_verified": true,
+  "audit_sha256": "a29de342bc40e96600ad8b09a98e30876ef2585fa2935eb069dac62c873cc723",
+  "validation_script_sha256": "36cb171d2c9274c14a885ee55da9604763c950074b4fdd24308fff669da2bf3a"
+}

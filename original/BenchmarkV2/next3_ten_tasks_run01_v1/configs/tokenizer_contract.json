@@ -1,0 +1,40 @@
+{
+  "model_id": "gellmo_p6_mistral",
+  "runtime_status": "Phase1D pending actual worker initialization",
+  "context_model_config": 32768,
+  "bos_id": 1,
+  "eos_id": 2,
+  "add_bos_token": true,
+  "add_eos_token": false,
+  "chat_template_applied": false,
+  "beam_and_sampling": {
+    "fast": "AutoTokenizer default use_fast=True (static; actual class not instantiated this phase)",
+    "padding_side": "left",
+    "pad_id": 2,
+    "truncation": "False; context overflow fails",
+    "compile": "False in Phase1D; eager direct PEFT.generate approved before execution",
+    "dtype": "bfloat16",
+    "seed": "one process startup seed (42 or1), no reseed per input; ordered batch_size1; shard restart changes RNG stream and is not allowed"
+  },
+  "tot": {
+    "fast": false,
+    "padding_side": "tokenizer default right (legacy does not force left)",
+    "pad_id": "EOS only if tokenizer lacks pad; current static no pad so2",
+    "depth1_truncation": "False; fail if input tokens>2048",
+    "depth2_truncation": "count untruncated first; fail>2048; then truncation=True,max_length2048",
+    "seed_depth1": "601 + input_idx*100 + branch_idx",
+    "seed_depth2": "601 + 1000000 + input_idx*1000 + parent_selection_rank*10 + child_branch_idx",
+    "rank_base": 1,
+    "branch_base": 0,
+    "dtype_depth1": "fixed BF16 base, standard PEFT adapter dtype, no fallback",
+    "dtype_depth2": "fixed BF16 base, standard PEFT adapter dtype, no fallback"
+  },
+  "decoding_static_top_k": {
+    "beam": "irrelevant do_sample=False",
+    "sampling": 50,
+    "tot": 0
+  },
+  "runtime_effective_config": "Recorded in each actual initialization.json and each physical call",
+  "TypeError_top_k_retry": "intentionally fail closed per Phase1B request; old drop-top_k fallback not silently reproduced",
+  "source_contract_path": "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/phase1b_pilotprep_v1/configs/tokenizer_contract.json"
+}

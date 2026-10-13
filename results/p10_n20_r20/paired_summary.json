@@ -1,0 +1,20 @@
+{
+  "gellmo_p6_mistral": {
+    "inputs": 3905,
+    "N20_K20_vs_N20_K1_gains": 105,
+    "N20_K20_vs_N20_K1_losses": 0,
+    "N20_K20_vs_N400_K1_gains": 103,
+    "N20_K20_vs_N400_K1_losses": 0,
+    "N20_K1_vs_N400_K1_gains": 22,
+    "N20_K1_vs_N400_K1_losses": 24
+  },
+  "gellmo_p6_llama": {
+    "inputs": 3905,
+    "N20_K20_vs_N20_K1_gains": 143,
+    "N20_K20_vs_N20_K1_losses": 0,
+    "N20_K20_vs_N400_K1_gains": 149,
+    "N20_K20_vs_N400_K1_losses": 0,
+    "N20_K1_vs_N400_K1_gains": 36,
+    "N20_K1_vs_N400_K1_losses": 30
+  }
+}

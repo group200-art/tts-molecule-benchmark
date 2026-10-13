@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "endpoint_records": 70290,
+  "configurations": 18,
+  "task_groups": 180,
+  "recomputed_SR_and_delta_and_RI_match": true,
+  "table1_matches": true,
+  "property_values": "Saved original precision; not new property predictions.",
+  "verified_utc": "2026-10-13T11:06:39.299033+00:00",
+  "source_manifest_sha256": "0c11fd739c69f8b1943837a4a8f8bdb31b466734c4f63635db08e48c039e099a"
+}

@@ -1,0 +1,36 @@
+% Existing workload values preserved; Table 1 alone reports main success rates.
+\begin{table*}[t]
+\centering\EvalTableFont
+\setlength{\tabcolsep}{3pt}\renewcommand{\arraystretch}{1.10}
+\caption{Recorded generation workload and inference-time property-tool access. Means include all 3,905 inputs per configuration, including failures, for the same final-output procedures ($K=1$) as Table~\ref{tab:effectiveness}.}
+\label{tab:workload}\label{tab:tts_efficiency}
+\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}l r r r l@{}}
+\toprule
+Method & \shortstack{Molecular\\proposals} & \shortstack{LM response\\sequences} & \shortstack{Output\\tokens} & \shortstack[l]{Inference-time\\property tools} \\
+\midrule
+\multicolumn{5}{l}{\textbf{GeLLMO-P6-Mistral (7B)}} \\
+Beam ($w=20$) & 20.00 & 20.00 & 1,339 & None \\
+Sampling + task verifier & 40.00 & 40.00 & 2,596 & Terminal verification \\
+Self-Refine ($r=1$) & 2.00 & 4.00 & 858 & None \\
+ToT (LM voting) & 20.00 & 30.00 & 2,350 & None \\
+GoT (G12) & 28.00 & 28.00 & 3,212 & Search and selection \\
+s1-style ($B=512$) & 1.00 & 3.00 & 441 & None \\
+Exact Voting ($N=400$) & 400.00 & 400.00 & 26,423 & None \\
+4-shot ICL & 4.00 & 4.00 & 322 & None \\
+Reflexion (max 3 trials) & 2.37 & 6.12 & 1,223 & Feedback and stopping \\
+\midrule
+\multicolumn{5}{l}{\textbf{GeLLMO-P6-Llama (8B)}} \\
+Beam ($w=20$) & 20.00 & 20.00 & 1,015 & None \\
+Sampling + task verifier & 40.00 & 40.00 & 1,889 & Terminal verification \\
+Self-Refine ($r=1$) & 2.00 & 4.00 & 480 & None \\
+ToT (LM voting) & 20.00 & 30.00 & 3,994 & None \\
+GoT (G12) & 28.00 & 28.00 & 4,695 & Search and selection \\
+s1-style ($B=512$) & 1.00 & 3.00 & 212 & None \\
+Exact Voting ($N=400$) & 400.00 & 400.00 & 18,957 & None \\
+4-shot ICL & 4.00 & 4.00 & 180 & None \\
+Reflexion (max 3 trials) & 2.27 & 5.81 & 965 & Feedback and stopping \\
+\bottomrule\end{tabular*}
+\par\vspace{5pt}\noindent\begin{minipage}{\linewidth}\TableNoteFont
+Proposals include unselected candidates; LM sequences additionally include reasoning, feedback, reflection, and judging. Reused prefixes are charged once. Sampling counts all 40 proposals; Self-Refine includes terminal feedback. Tokens use native tokenizers, include the first EOS, and exclude prompts and later padding. Unreturned beam-search work and property-tool costs are excluded: these are output-workload statistics, not total compute or latency. Tool categories describe inference use, not query counts; \emph{None} still permits final evaluation. See Section~\ref{sec:metrics} for counting rules.
+\end{minipage}
+\end{table*}

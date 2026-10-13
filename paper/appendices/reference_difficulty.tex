@@ -1,0 +1,8 @@
+\section{Reference-Relative Difficulty}
+\label{app:reference_difficulty}
+Table~\ref{tab:difficulty} separately analyzes one fixed, retrospective partition of all 3,905 inputs, shared by both models. The reference runs use Mistral Beam20, Beam100, and Sample160, with the beam widths and sample count indicated by their names. The table defines group membership and pools success within each group. These reference pools define labels only; all displayed method outcomes remain $K=1$.
+
+The construction imposes zero-success constraints on Mistral Beam and Sampling that do not apply to Llama. Thus the groups preserve paired inputs but do not measure model-independent difficulty. Their cross-model differences cannot establish causal superiority, and the 27-input OOD Hard group is especially sensitive to individual outcomes.
+
+\input{tables/table4_difficulty}
+\clearpage

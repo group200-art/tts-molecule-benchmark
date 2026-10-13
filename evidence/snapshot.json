@@ -1,0 +1,14 @@
+{
+  "created_utc": "2026-10-13T10:57:41.139051+00:00",
+  "intended_owner": "group200-art",
+  "intended_repository": "tts-molecule-benchmark",
+  "visibility_required": "private",
+  "source_file_count": 323,
+  "source_bytes": 73570393,
+  "main_k1_endpoints": 70290,
+  "models": 2,
+  "methods": 9,
+  "inputs_per_model_method": 3905,
+  "source_code_mode": "unchanged archival copies; see docs/RUN.md for runnable analysis and external generation dependencies",
+  "original_experiments_modified": false
+}

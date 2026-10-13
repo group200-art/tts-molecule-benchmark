@@ -1,0 +1,43 @@
+{
+  "interface_version": "BV2-metrics-only-pilot-v1",
+  "status": "engineering_version_not_formal_freeze",
+  "parent_registry": "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/registries/metric_registry.draft.json",
+  "parent_registry_sha256": "01d0f44d03c12c996f551f751078ae53c86c95fb852065cbe4085697c620cd7e",
+  "task_registry_sha256": "439a6229ff92113d92c3ec4a7c36f795050ea4d675b55df472efc4e04b5afe87",
+  "kernel_sha256": "00acb727adecd58b84f434dcf82c18053bc817858d52079fbcc9c7125896ad07",
+  "main": "SR_dir strict all objectives, no similarity cutoff or epsilon",
+  "supplement": "SR_delta Decimal(str) inclusive registered positive thresholds, independent winner",
+  "rank": "unchanged legacy sum relative gain; source zero contributes candidate value; >= ties later original slot",
+  "RI_legacy": "mean((y-.1)/.1 if source==0 else abs(x-y)/abs(x))",
+  "RI_abs_eps01": "mean(direction*(y-x)/max(abs(x),.1))",
+  "source_precision": "stored unchanged",
+  "candidate_precision": "raw separate; pandas1.0.5/numpy1.18.5 float DataFrame.round(2),to_csv,read_csv; kernel does not round",
+  "legacy_cache_raw": "null/unavailable, not reconstructed",
+  "eligibility": "chemical valid AND nonempty raw SMILES AND finite complete target properties",
+  "missing_candidate": "preserve slot; explicit cache miss; no inference",
+  "bad_source": "entire input validation error; do not change denominator",
+  "Val": [
+    "Val_input",
+    "Val_slot",
+    "property_row_coverage_pct",
+    "finite_target_property_coverage_pct",
+    "property_eligible_slot_pct"
+  ],
+  "legacy_Val": "diagnostic properties-row presence only",
+  "zero_success": "N>0 SR0 conditional means null",
+  "empty": "N0 rates means null counts0",
+  "identity": "explicit request_id and candidate_id joins; never cross-environment canonical equality",
+  "aliases": {
+    "BBB_Martins": "bbbp",
+    "HIA_Hou": "hia",
+    "AMES": "mutagenicity"
+  },
+  "main_version": "v2_dir_registered_guarded_legacy_rank_v1",
+  "winner_initialization_guard": "select max(score, original_slot) inside independently formed success pools; no legacy -1 sentinel suppression of finite zero-source negative Mutag fixture",
+  "extra_cached_aggregates": [
+    "APS",
+    "Sim_cached",
+    "SAS_cached"
+  ],
+  "auxiliary_scope": "selected-success comparison cache only; null if any selected entry missing; no full legacy Sim/SAS equivalence claim"
+}

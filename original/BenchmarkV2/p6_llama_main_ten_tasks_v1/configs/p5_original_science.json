@@ -1,0 +1,38 @@
+{
+  "execution_id": "BV2-P5-SELFREFINE-E01-E03-v1",
+  "method_id": "p5_self_refine_neurips23_alg1_p6_v1",
+  "model_id": "gellmo_p6_mistral",
+  "refinements": 4,
+  "initial_in_refinements": false,
+  "feedback_count_including_terminal": 5,
+  "model_calls": 10,
+  "visible_k": 1,
+  "rep_seeds": [
+    51001,
+    51002,
+    51003
+  ],
+  "tokenizer_fast": true,
+  "padding_side": "left",
+  "context_limit": 32768,
+  "stop": "fixed timestep after fb4; no other stop",
+  "decoding": {
+    "do_sample": true,
+    "temperature": 0.7,
+    "top_p": 1.0,
+    "top_k": 0,
+    "num_beams": 1,
+    "num_return_sequences": 1
+  },
+  "max_new_tokens": {
+    "init": 250,
+    "refine": 250,
+    "feedback": 400
+  },
+  "inference_tool_calls": 0,
+  "output": "last y4; first complete uppercase SMILES tag; no selection/repair",
+  "seed_rule": "SHA256 UTF8 P5-SR-A1-v1|rep_seed|task_id|input_uid|role|r first8 digest bytes unsigned bigendian modulo2147483647",
+  "metric_version": "v2_dir_registered_guarded_legacy_rank_v1",
+  "delta_version": "SR_delta_decimal_v1",
+  "prompt_adaptation": "no examples; original seen instruction only; full ordered raw history"
+}

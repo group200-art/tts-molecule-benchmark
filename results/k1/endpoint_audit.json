@@ -1,0 +1,1523 @@
+{
+  "status": "COMPLETE_FULL3905_TWO_MODELS_NINE_METHODS_K1",
+  "checked_utc": "2026-10-12T19:36:48.050092+00:00",
+  "complete_model_method_configurations": 18,
+  "expected_configurations": 18,
+  "final_records": 70290,
+  "expected_records": 70290,
+  "task_groups": [
+    {
+      "model_id": "gellmo_p6_mistral",
+      "method_id": "beam20",
+      "task_id": "BDP",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_mistral",
+      "method_id": "beam20",
+      "task_id": "BDQ",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_mistral",
+      "method_id": "beam20",
+      "task_id": "BPQ",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_mistral",
+      "method_id": "beam20",
+      "task_id": "DPQ",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_mistral",
+      "method_id": "beam20",
+      "task_id": "BDPQ",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_mistral",
+      "method_id": "beam20",
+      "task_id": "MPQ",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_mistral",
+      "method_id": "beam20",
+      "task_id": "BDMQ",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_mistral",
+      "method_id": "beam20",
+      "task_id": "BHMQ",
+      "completed": 118,
+      "expected": 118,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_mistral",
+      "method_id": "beam20",
+      "task_id": "BMPQ",
+      "completed": 191,
+      "expected": 191,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_mistral",
+      "method_id": "beam20",
+      "task_id": "HMPQ",
+      "completed": 96,
+      "expected": 96,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_llama",
+      "method_id": "beam20",
+      "task_id": "BDP",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_llama",
+      "method_id": "beam20",
+      "task_id": "BDQ",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_llama",
+      "method_id": "beam20",
+      "task_id": "BPQ",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_llama",
+      "method_id": "beam20",
+      "task_id": "DPQ",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_llama",
+      "method_id": "beam20",
+      "task_id": "BDPQ",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_llama",
+      "method_id": "beam20",
+      "task_id": "MPQ",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_llama",
+      "method_id": "beam20",
+      "task_id": "BDMQ",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_llama",
+      "method_id": "beam20",
+      "task_id": "BHMQ",
+      "completed": 118,
+      "expected": 118,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_llama",
+      "method_id": "beam20",
+      "task_id": "BMPQ",
+      "completed": 191,
+      "expected": 191,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_llama",
+      "method_id": "beam20",
+      "task_id": "HMPQ",
+      "completed": 96,
+      "expected": 96,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_mistral",
+      "method_id": "sampling_verifier20",
+      "task_id": "BDP",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_mistral",
+      "method_id": "sampling_verifier20",
+      "task_id": "BDQ",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_mistral",
+      "method_id": "sampling_verifier20",
+      "task_id": "BPQ",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_mistral",
+      "method_id": "sampling_verifier20",
+      "task_id": "DPQ",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_mistral",
+      "method_id": "sampling_verifier20",
+      "task_id": "BDPQ",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_mistral",
+      "method_id": "sampling_verifier20",
+      "task_id": "MPQ",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_mistral",
+      "method_id": "sampling_verifier20",
+      "task_id": "BDMQ",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_mistral",
+      "method_id": "sampling_verifier20",
+      "task_id": "BHMQ",
+      "completed": 118,
+      "expected": 118,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_mistral",
+      "method_id": "sampling_verifier20",
+      "task_id": "BMPQ",
+      "completed": 191,
+      "expected": 191,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_mistral",
+      "method_id": "sampling_verifier20",
+      "task_id": "HMPQ",
+      "completed": 96,
+      "expected": 96,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_llama",
+      "method_id": "sampling_verifier20",
+      "task_id": "BDP",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_llama",
+      "method_id": "sampling_verifier20",
+      "task_id": "BDQ",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_llama",
+      "method_id": "sampling_verifier20",
+      "task_id": "BPQ",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_llama",
+      "method_id": "sampling_verifier20",
+      "task_id": "DPQ",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_llama",
+      "method_id": "sampling_verifier20",
+      "task_id": "BDPQ",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_llama",
+      "method_id": "sampling_verifier20",
+      "task_id": "MPQ",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_llama",
+      "method_id": "sampling_verifier20",
+      "task_id": "BDMQ",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_llama",
+      "method_id": "sampling_verifier20",
+      "task_id": "BHMQ",
+      "completed": 118,
+      "expected": 118,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_llama",
+      "method_id": "sampling_verifier20",
+      "task_id": "BMPQ",
+      "completed": 191,
+      "expected": 191,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_llama",
+      "method_id": "sampling_verifier20",
+      "task_id": "HMPQ",
+      "completed": 96,
+      "expected": 96,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_mistral",
+      "method_id": "self_refine_r1",
+      "task_id": "BDP",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_mistral",
+      "method_id": "self_refine_r1",
+      "task_id": "BDQ",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_mistral",
+      "method_id": "self_refine_r1",
+      "task_id": "BPQ",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_mistral",
+      "method_id": "self_refine_r1",
+      "task_id": "DPQ",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_mistral",
+      "method_id": "self_refine_r1",
+      "task_id": "BDPQ",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_mistral",
+      "method_id": "self_refine_r1",
+      "task_id": "MPQ",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_mistral",
+      "method_id": "self_refine_r1",
+      "task_id": "BDMQ",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_mistral",
+      "method_id": "self_refine_r1",
+      "task_id": "BHMQ",
+      "completed": 118,
+      "expected": 118,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_mistral",
+      "method_id": "self_refine_r1",
+      "task_id": "BMPQ",
+      "completed": 191,
+      "expected": 191,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_mistral",
+      "method_id": "self_refine_r1",
+      "task_id": "HMPQ",
+      "completed": 96,
+      "expected": 96,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_llama",
+      "method_id": "self_refine_r1",
+      "task_id": "BDP",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_llama",
+      "method_id": "self_refine_r1",
+      "task_id": "BDQ",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_llama",
+      "method_id": "self_refine_r1",
+      "task_id": "BPQ",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_llama",
+      "method_id": "self_refine_r1",
+      "task_id": "DPQ",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_llama",
+      "method_id": "self_refine_r1",
+      "task_id": "BDPQ",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_llama",
+      "method_id": "self_refine_r1",
+      "task_id": "MPQ",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_llama",
+      "method_id": "self_refine_r1",
+      "task_id": "BDMQ",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_llama",
+      "method_id": "self_refine_r1",
+      "task_id": "BHMQ",
+      "completed": 118,
+      "expected": 118,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_llama",
+      "method_id": "self_refine_r1",
+      "task_id": "BMPQ",
+      "completed": 191,
+      "expected": 191,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_llama",
+      "method_id": "self_refine_r1",
+      "task_id": "HMPQ",
+      "completed": 96,
+      "expected": 96,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_mistral",
+      "method_id": "tot_lm_vote",
+      "task_id": "BDP",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_mistral",
+      "method_id": "tot_lm_vote",
+      "task_id": "BDQ",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_mistral",
+      "method_id": "tot_lm_vote",
+      "task_id": "BPQ",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_mistral",
+      "method_id": "tot_lm_vote",
+      "task_id": "DPQ",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_mistral",
+      "method_id": "tot_lm_vote",
+      "task_id": "BDPQ",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_mistral",
+      "method_id": "tot_lm_vote",
+      "task_id": "MPQ",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_mistral",
+      "method_id": "tot_lm_vote",
+      "task_id": "BDMQ",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_mistral",
+      "method_id": "tot_lm_vote",
+      "task_id": "BHMQ",
+      "completed": 118,
+      "expected": 118,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_mistral",
+      "method_id": "tot_lm_vote",
+      "task_id": "BMPQ",
+      "completed": 191,
+      "expected": 191,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_mistral",
+      "method_id": "tot_lm_vote",
+      "task_id": "HMPQ",
+      "completed": 96,
+      "expected": 96,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_llama",
+      "method_id": "tot_lm_vote",
+      "task_id": "BDP",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_llama",
+      "method_id": "tot_lm_vote",
+      "task_id": "BDQ",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_llama",
+      "method_id": "tot_lm_vote",
+      "task_id": "BPQ",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_llama",
+      "method_id": "tot_lm_vote",
+      "task_id": "DPQ",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_llama",
+      "method_id": "tot_lm_vote",
+      "task_id": "BDPQ",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_llama",
+      "method_id": "tot_lm_vote",
+      "task_id": "MPQ",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_llama",
+      "method_id": "tot_lm_vote",
+      "task_id": "BDMQ",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_llama",
+      "method_id": "tot_lm_vote",
+      "task_id": "BHMQ",
+      "completed": 118,
+      "expected": 118,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_llama",
+      "method_id": "tot_lm_vote",
+      "task_id": "BMPQ",
+      "completed": 191,
+      "expected": 191,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_llama",
+      "method_id": "tot_lm_vote",
+      "task_id": "HMPQ",
+      "completed": 96,
+      "expected": 96,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_mistral",
+      "method_id": "got",
+      "task_id": "BDP",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_mistral",
+      "method_id": "got",
+      "task_id": "BDQ",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_mistral",
+      "method_id": "got",
+      "task_id": "BPQ",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_mistral",
+      "method_id": "got",
+      "task_id": "DPQ",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_mistral",
+      "method_id": "got",
+      "task_id": "BDPQ",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_mistral",
+      "method_id": "got",
+      "task_id": "MPQ",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_mistral",
+      "method_id": "got",
+      "task_id": "BDMQ",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_mistral",
+      "method_id": "got",
+      "task_id": "BHMQ",
+      "completed": 118,
+      "expected": 118,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_mistral",
+      "method_id": "got",
+      "task_id": "BMPQ",
+      "completed": 191,
+      "expected": 191,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_mistral",
+      "method_id": "got",
+      "task_id": "HMPQ",
+      "completed": 96,
+      "expected": 96,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_llama",
+      "method_id": "got",
+      "task_id": "BDP",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_llama",
+      "method_id": "got",
+      "task_id": "BDQ",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_llama",
+      "method_id": "got",
+      "task_id": "BPQ",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_llama",
+      "method_id": "got",
+      "task_id": "DPQ",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_llama",
+      "method_id": "got",
+      "task_id": "BDPQ",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_llama",
+      "method_id": "got",
+      "task_id": "MPQ",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_llama",
+      "method_id": "got",
+      "task_id": "BDMQ",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_llama",
+      "method_id": "got",
+      "task_id": "BHMQ",
+      "completed": 118,
+      "expected": 118,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_llama",
+      "method_id": "got",
+      "task_id": "BMPQ",
+      "completed": 191,
+      "expected": 191,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_llama",
+      "method_id": "got",
+      "task_id": "HMPQ",
+      "completed": 96,
+      "expected": 96,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_mistral",
+      "method_id": "s1",
+      "task_id": "BDP",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_mistral",
+      "method_id": "s1",
+      "task_id": "BDQ",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_mistral",
+      "method_id": "s1",
+      "task_id": "BPQ",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_mistral",
+      "method_id": "s1",
+      "task_id": "DPQ",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_mistral",
+      "method_id": "s1",
+      "task_id": "BDPQ",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_mistral",
+      "method_id": "s1",
+      "task_id": "MPQ",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_mistral",
+      "method_id": "s1",
+      "task_id": "BDMQ",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_mistral",
+      "method_id": "s1",
+      "task_id": "BHMQ",
+      "completed": 118,
+      "expected": 118,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_mistral",
+      "method_id": "s1",
+      "task_id": "BMPQ",
+      "completed": 191,
+      "expected": 191,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_mistral",
+      "method_id": "s1",
+      "task_id": "HMPQ",
+      "completed": 96,
+      "expected": 96,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_llama",
+      "method_id": "s1",
+      "task_id": "BDP",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_llama",
+      "method_id": "s1",
+      "task_id": "BDQ",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_llama",
+      "method_id": "s1",
+      "task_id": "BPQ",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_llama",
+      "method_id": "s1",
+      "task_id": "DPQ",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_llama",
+      "method_id": "s1",
+      "task_id": "BDPQ",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_llama",
+      "method_id": "s1",
+      "task_id": "MPQ",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_llama",
+      "method_id": "s1",
+      "task_id": "BDMQ",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_llama",
+      "method_id": "s1",
+      "task_id": "BHMQ",
+      "completed": 118,
+      "expected": 118,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_llama",
+      "method_id": "s1",
+      "task_id": "BMPQ",
+      "completed": 191,
+      "expected": 191,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_llama",
+      "method_id": "s1",
+      "task_id": "HMPQ",
+      "completed": 96,
+      "expected": 96,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_mistral",
+      "method_id": "ev",
+      "task_id": "BDP",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_mistral",
+      "method_id": "ev",
+      "task_id": "BDQ",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_mistral",
+      "method_id": "ev",
+      "task_id": "BPQ",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_mistral",
+      "method_id": "ev",
+      "task_id": "DPQ",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_mistral",
+      "method_id": "ev",
+      "task_id": "BDPQ",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_mistral",
+      "method_id": "ev",
+      "task_id": "MPQ",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_mistral",
+      "method_id": "ev",
+      "task_id": "BDMQ",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_mistral",
+      "method_id": "ev",
+      "task_id": "BHMQ",
+      "completed": 118,
+      "expected": 118,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_mistral",
+      "method_id": "ev",
+      "task_id": "BMPQ",
+      "completed": 191,
+      "expected": 191,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_mistral",
+      "method_id": "ev",
+      "task_id": "HMPQ",
+      "completed": 96,
+      "expected": 96,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_llama",
+      "method_id": "ev",
+      "task_id": "BDP",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_llama",
+      "method_id": "ev",
+      "task_id": "BDQ",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_llama",
+      "method_id": "ev",
+      "task_id": "BPQ",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_llama",
+      "method_id": "ev",
+      "task_id": "DPQ",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_llama",
+      "method_id": "ev",
+      "task_id": "BDPQ",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_llama",
+      "method_id": "ev",
+      "task_id": "MPQ",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_llama",
+      "method_id": "ev",
+      "task_id": "BDMQ",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_llama",
+      "method_id": "ev",
+      "task_id": "BHMQ",
+      "completed": 118,
+      "expected": 118,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_llama",
+      "method_id": "ev",
+      "task_id": "BMPQ",
+      "completed": 191,
+      "expected": 191,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_llama",
+      "method_id": "ev",
+      "task_id": "HMPQ",
+      "completed": 96,
+      "expected": 96,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_mistral",
+      "method_id": "fewshot",
+      "task_id": "BDP",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_mistral",
+      "method_id": "fewshot",
+      "task_id": "BDQ",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_mistral",
+      "method_id": "fewshot",
+      "task_id": "BPQ",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_mistral",
+      "method_id": "fewshot",
+      "task_id": "DPQ",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_mistral",
+      "method_id": "fewshot",
+      "task_id": "BDPQ",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_mistral",
+      "method_id": "fewshot",
+      "task_id": "MPQ",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_mistral",
+      "method_id": "fewshot",
+      "task_id": "BDMQ",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_mistral",
+      "method_id": "fewshot",
+      "task_id": "BHMQ",
+      "completed": 118,
+      "expected": 118,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_mistral",
+      "method_id": "fewshot",
+      "task_id": "BMPQ",
+      "completed": 191,
+      "expected": 191,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_mistral",
+      "method_id": "fewshot",
+      "task_id": "HMPQ",
+      "completed": 96,
+      "expected": 96,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_llama",
+      "method_id": "fewshot",
+      "task_id": "BDP",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_llama",
+      "method_id": "fewshot",
+      "task_id": "BDQ",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_llama",
+      "method_id": "fewshot",
+      "task_id": "BPQ",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_llama",
+      "method_id": "fewshot",
+      "task_id": "DPQ",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_llama",
+      "method_id": "fewshot",
+      "task_id": "BDPQ",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_llama",
+      "method_id": "fewshot",
+      "task_id": "MPQ",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_llama",
+      "method_id": "fewshot",
+      "task_id": "BDMQ",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_llama",
+      "method_id": "fewshot",
+      "task_id": "BHMQ",
+      "completed": 118,
+      "expected": 118,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_llama",
+      "method_id": "fewshot",
+      "task_id": "BMPQ",
+      "completed": 191,
+      "expected": 191,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_llama",
+      "method_id": "fewshot",
+      "task_id": "HMPQ",
+      "completed": 96,
+      "expected": 96,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_mistral",
+      "method_id": "reflexion",
+      "task_id": "BDP",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_mistral",
+      "method_id": "reflexion",
+      "task_id": "BDQ",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_mistral",
+      "method_id": "reflexion",
+      "task_id": "BPQ",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_mistral",
+      "method_id": "reflexion",
+      "task_id": "DPQ",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_mistral",
+      "method_id": "reflexion",
+      "task_id": "BDPQ",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_mistral",
+      "method_id": "reflexion",
+      "task_id": "MPQ",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_mistral",
+      "method_id": "reflexion",
+      "task_id": "BDMQ",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_mistral",
+      "method_id": "reflexion",
+      "task_id": "BHMQ",
+      "completed": 118,
+      "expected": 118,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_mistral",
+      "method_id": "reflexion",
+      "task_id": "BMPQ",
+      "completed": 191,
+      "expected": 191,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_mistral",
+      "method_id": "reflexion",
+      "task_id": "HMPQ",
+      "completed": 96,
+      "expected": 96,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_llama",
+      "method_id": "reflexion",
+      "task_id": "BDP",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_llama",
+      "method_id": "reflexion",
+      "task_id": "BDQ",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_llama",
+      "method_id": "reflexion",
+      "task_id": "BPQ",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_llama",
+      "method_id": "reflexion",
+      "task_id": "DPQ",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_llama",
+      "method_id": "reflexion",
+      "task_id": "BDPQ",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_llama",
+      "method_id": "reflexion",
+      "task_id": "MPQ",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_llama",
+      "method_id": "reflexion",
+      "task_id": "BDMQ",
+      "completed": 500,
+      "expected": 500,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_llama",
+      "method_id": "reflexion",
+      "task_id": "BHMQ",
+      "completed": 118,
+      "expected": 118,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_llama",
+      "method_id": "reflexion",
+      "task_id": "BMPQ",
+      "completed": 191,
+      "expected": 191,
+      "complete": true
+    },
+    {
+      "model_id": "gellmo_p6_llama",
+      "method_id": "reflexion",
+      "task_id": "HMPQ",
+      "completed": 96,
+      "expected": 96,
+      "complete": true
+    }
+  ],
+  "source_files": {
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/k1_nine_methods_execution_20261011_v2/results/cached_llama__beam20.jsonl.gz": "916beb61a0251af6578dd38cc54eb14ea39595e82415bb78cff05555bb655c22",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/k1_nine_methods_execution_20261011_v2/results/cached_llama__ev.jsonl.gz": "7cf930e2de6f66b135bdd6026dcfeca7e5dd4b3770ecb94a6564f57c33f5eee5",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/k1_nine_methods_execution_20261011_v2/results/cached_llama__fewshot.jsonl.gz": "fee80525c4f504f1b23445d796934980e739c2aad83fa2361e46efa3b12a6fbe",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/k1_nine_methods_execution_20261011_v2/results/cached_llama__got.jsonl.gz": "64549994c56e0adc84ffbd2aa659016c3b2ac8b88e85a286bdd0996f9008304c",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/k1_nine_methods_execution_20261011_v2/results/cached_llama__reflexion.jsonl.gz": "c84e461f8e52ced79c5e5e9a1b35ae3e9598574798898e1f5bf1dbaedf58e6d8",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/k1_nine_methods_execution_20261011_v2/results/cached_llama__s1.jsonl.gz": "828832463eb3be5de31d8b4f0fa4b0020c17c700804a28aebaf79d8b06fb91c6",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/k1_nine_methods_execution_20261011_v2/results/cached_llama__sampling_verifier20.jsonl.gz": "dddd2c43952da3f4cc9b1a80d88793c3db84b65c49d2afcfa7fa53c6041180c9",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/k1_nine_methods_execution_20261011_v2/results/cached_mistral__beam20.jsonl.gz": "da83826038ea3793223a6d174cf4fabd7138459f7f6a16959fb53e0a90e57163",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/k1_nine_methods_execution_20261011_v2/results/cached_mistral__ev.jsonl.gz": "493ea887a97c502400f0fac4e55b20f25d84e8ce766350820e3e3c698ca4d369",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/k1_nine_methods_execution_20261011_v2/results/cached_mistral__fewshot.jsonl.gz": "5e7f73831e6204d758b2674dba1683e365fc40d82521de3392d63ac87b4fd3e3",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/k1_nine_methods_execution_20261011_v2/results/cached_mistral__got.jsonl.gz": "b3e3fbf7a5e9b0f1b0c788e0e97725033cedaff0cfeb9cc9b1faaf5b81b7228a",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/k1_nine_methods_execution_20261011_v2/results/cached_mistral__reflexion.jsonl.gz": "78629d18c5286244e9ef5e2a45a6b424606d9376d5469d84378b5c5def8361fd",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/k1_nine_methods_execution_20261011_v2/results/cached_mistral__s1.jsonl.gz": "149afef9d5a4800fb207935fd5fe9b809730fb42cda8ba2171d5331ada829b47",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/k1_nine_methods_execution_20261011_v2/results/cached_mistral__sampling_verifier20.jsonl.gz": "73c4525dc243f1ed4997cc602064cc357133a6b74d50897d69ee3ce6629c51f8",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/k1_nine_methods_execution_20261011_v2/results/self_refine_llama__self_refine_r1.jsonl.gz": "83e56b5b82c8a4232d0c597afd763c7aed47fba5f38f791d336c15e0e889fc21",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/k1_nine_methods_execution_20261011_v2/results/self_refine_mistral__self_refine_r1.jsonl.gz": "1748f608a031d501bbdc3ca37997a53a302093768408650b9b6d313e8a563d78",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/k1_nine_methods_execution_20261011_v2/results/tot_llama__tot_lm_vote.jsonl.gz": "aa69b8ae283a535d9593a67b3b6ba542d23744c7d7467cc07ec358a158a96b30",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/k1_nine_methods_execution_20261011_v2/results/tot_mistral__tot_lm_vote.jsonl.gz": "27c0d22dd7f7e8342bc0c4cd6e250e994e4c787724ab34ad83fcf38d351b574f"
+  },
+  "unknown_property_failures": 0,
+  "accepted_property_failures": [
+    {
+      "model_id": "gellmo_p6_llama",
+      "method_id": "ev",
+      "task_id": "MPQ",
+      "input_uid": "mumo-v1-a24ec45a7c1a90c1e8f11fac0cd18f50b21215f692e229b03803cd120a27dbf9",
+      "reason": "accepted_rdkit_2024_valid_2020_unsupported"
+    },
+    {
+      "model_id": "gellmo_p6_llama",
+      "method_id": "s1",
+      "task_id": "DPQ",
+      "input_uid": "mumo-v1-127a961da165f9db3f5946e9a554dbfe55dc0d85afc348ea6bfd7aa238d78793",
+      "reason": "accepted_rdkit_2024_valid_2020_unsupported"
+    },
+    {
+      "model_id": "gellmo_p6_llama",
+      "method_id": "s1",
+      "task_id": "DPQ",
+      "input_uid": "mumo-v1-eebd90792513533865997dc9642de2387c7b3099d83eafa5c733dbf5faba0abf",
+      "reason": "accepted_rdkit_2024_valid_2020_unsupported"
+    },
+    {
+      "model_id": "gellmo_p6_llama",
+      "method_id": "s1",
+      "task_id": "MPQ",
+      "input_uid": "mumo-v1-de1b7f9c94ac29ef4241105a7548eb320c73bd6a505fc957245e25d3bf91be5f",
+      "reason": "accepted_rdkit_2024_valid_2020_unsupported"
+    },
+    {
+      "model_id": "gellmo_p6_llama",
+      "method_id": "tot_lm_vote",
+      "task_id": "BDP",
+      "input_uid": "mumo-v1-f3253f26d1dfe9b3631a2087921c0a55404e7ac275bc7896b09818e51af4b190",
+      "reason": "accepted_rdkit_2024_valid_2020_unsupported"
+    },
+    {
+      "model_id": "gellmo_p6_llama",
+      "method_id": "tot_lm_vote",
+      "task_id": "DPQ",
+      "input_uid": "mumo-v1-7a1d6cfbab19aa08ac4178684487677b981e86eaacac5e4abdda20055393a90f",
+      "reason": "accepted_rdkit_2024_valid_2020_unsupported"
+    },
+    {
+      "model_id": "gellmo_p6_llama",
+      "method_id": "tot_lm_vote",
+      "task_id": "BDPQ",
+      "input_uid": "mumo-v1-4f80468dfc872102b3a7c583e7fdc0a15878328559744ceec1aec36efcddea56",
+      "reason": "accepted_rdkit_2024_valid_2020_unsupported"
+    }
+  ],
+  "scope": "Same final output count and evaluation; method-specific internal compute and public property-tool use differ."
+}

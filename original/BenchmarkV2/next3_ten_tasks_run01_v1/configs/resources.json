@@ -1,0 +1,23 @@
+{
+  "account": "rc_hzh_pi",
+  "partition": "hzhlab",
+  "qos": "normal",
+  "gres": "gpu:nvidia_rtx_pro_6000_blackwell_server_edition:1",
+  "expected_gpu_name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+  "nodelist": null,
+  "gpus": 1,
+  "cpus": 8,
+  "memory_gib": 64,
+  "time_limit": "03:00:00",
+  "array": "0-59%8",
+  "cpu_post": {
+    "partition": "general",
+    "qos": "normal",
+    "account": "rc_hzh_pi",
+    "cpus": 4,
+    "memory_gib": 16,
+    "gpus": 0,
+    "time_limit": "02:00:00"
+  },
+  "basis": "control/resources_probe_01.json; A100 80GB requires account/group not held; public A100 is 40GB outside approved hardware; public Blackwell QoS not in user association"
+}

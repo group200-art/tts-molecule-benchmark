@@ -1,0 +1,51 @@
+{
+  "protocol_id": "GELLMO-EVAL-ALIGN-20261013-v1",
+  "status": "EVALUATION_SUPPLEMENT_FROZEN_R20_GENERATION_NOT_LAUNCHED",
+  "main_table_changed": false,
+  "models": ["gellmo_p6_mistral", "gellmo_p6_llama"],
+  "inputs_per_configuration": 3905,
+  "current_k1_configurations": 18,
+  "current_k1_endpoint_records": 70290,
+  "equal_compute_required": false,
+  "readouts": {
+    "C20": "Twenty predeclared candidates from a specified native pool; GeLLMO any-success and oracle quality representative evaluation.",
+    "K1": "Actual terminal output of one complete method including its native selection and stopping.",
+    "R20": "Twenty complete method terminal outputs, with fresh state and stochastic RNG where the original method samples."
+  },
+  "primary_next_action": "Complete original evaluation metrics on saved Beam/Sampling pools and existing K1 endpoints; keep historical configurations clearly labeled.",
+  "invariants": [
+    "No new decoding rule silently applied to a current K1 row",
+    "No intermediate states, failed trials, rejected nodes, or losing proposals substituted for complete-policy endpoints",
+    "No quality-selected seeds or quality-dependent repetitions",
+    "No dropout or hardware nondeterminism used as a diversity mechanism",
+    "No fake duplicated endpoint observations for deterministic policies",
+    "Preserve failed, invalid, empty, and repeated slots without refill",
+    "Keep metric implementation version and candidate identity in representative selection"
+  ],
+  "current_policy_R20": {
+    "beam20": {"do_sample": false, "native_output": "beam rank0", "behavior": "analytical repetition equality to K1", "additional_gpu_repeats_justified": 0, "separate_C20_available_both_models": true},
+    "sampling_verifier20": {"do_sample": true, "proposals_per_repeat": 40, "verified_original_slots": [0,19], "selector": "first verifier pass or original slot0", "R20_required_terminal_slots_per_model": 78100, "additional_repeats_if_only_current_run_reusable": 74195},
+    "self_refine_r1": {"do_sample": true, "temperature": 0.7, "refinements": 1, "model_calls_per_repeat": 4, "fixed_seed_order": [51001,51002,51003,51004,51005,51006,51007,51008,51009,51010,51011,51012,51013,51014,51015,51016,51017,51018,51019,51020], "mistral_accepted_existing_R20_complete": true, "llama_known_complete_seed": 51001, "legacy_serial_and_batch_execution_difference_disclosed": true},
+    "tot_lm_vote": {"do_sample": true, "initials": 5, "judge_votes_per_frontier": 5, "selected_parents": 3, "children_per_parent": 5, "final_endpoint": "one terminal child chosen by LM votes", "new_responses_per_fresh_repeat": 30, "old_property_tree_reusable_as_current_repeat": false},
+    "got": {"do_sample": true, "graph_nodes_per_repeat": 28, "topology": "12 Generate +6 Refine +6 Merge +4 Aggregate", "endpoint": "native full-graph rank0", "native_top20_pool_equals_R20": false},
+    "s1": {"do_sample": false, "thinking_budget": 512, "max_wait": 1, "final_cap": 256, "behavior": "analytical repetition equality to K1", "additional_gpu_repeats_justified": 0},
+    "ev": {"do_sample": true, "proposals_per_vote": 400, "calls_per_vote": 20, "sequences_per_call": 20, "temperature": 0.1, "old_N20xR20_equals_current_N400xR20": false, "additional_proposal_sequences_per_model_if_one_run_reusable": 29678000},
+    "fewshot": {"do_sample": false, "shots": 4, "beams": 4, "native_output": "rank0", "behavior": "analytical repetition equality to K1", "additional_gpu_repeats_justified": 0},
+    "reflexion": {"all_roles_do_sample": false, "max_trials": 3, "feedback": "binary/invalid", "stop": "first success or third trial", "fresh_memory_per_repeat": true, "behavior": "analytical repetition equality to K1", "additional_gpu_repeats_justified": 0}
+  },
+  "explicit_old_stochastic_variants": {
+    "source": "BenchmarkV2/k20_remaining_three_v1/plan.json",
+    "user_previously_authorized_extensions": true,
+    "current_greedy_K1_rows_same_configuration": false,
+    "variant_K1_readout": "first predeclared sampled repeat of this exact variant",
+    "variants": ["s1-B512-sampled-R20", "ICL-4shot-sampled-R20", "Reflexion-3trials-sampled-R20"],
+    "sampling": {"temperature": 1.0, "top_p": 1.0, "top_k": 0, "num_beams": 1},
+    "resumption_rule": "Preserve existing exact four-input by twenty-trajectory batches, RNG identity, prompt/tokenizer, controller, and property protocol; new Llama port requires model-specific freeze and engineering check."
+  },
+  "new_stochastic_repeat_seed_rule": "For repeats1..19 only, unsigned big-endian first8 bytes SHA256 UTF8 GELLMO-EVAL-ALIGN-20261013-v1|model|method|task|input_uid|repeat|phase|call mod2147483647. Existing Self-Refine/legacy sampled contracts retain their own frozen RNG.",
+  "max_concurrent_gpu_workers": 2,
+  "jobs_launched_by_this_subtask": 0,
+  "walltime_estimate_hours": null,
+  "walltime_reason": "No new R20 runner throughput measurement; old configuration estimates do not predict this unchanged-policy experiment.",
+  "open_scientific_choice": "Whether the desired follow-up is native C20 evaluation, unchanged complete-policy R20 (partly degenerate), or explicitly sampled variants. Do not conflate them; immediate CPU alignment work is independent."
+}

@@ -1,0 +1,101 @@
+[
+  {
+    "method_id": "beam20",
+    "gellmo_p6_mistral_completed_inputs": 3905,
+    "gellmo_p6_mistral_IND": 28.48,
+    "gellmo_p6_mistral_OOD": 42.9973424142929,
+    "gellmo_p6_mistral_Macro10": 35.73867120714645,
+    "gellmo_p6_llama_completed_inputs": 3905,
+    "gellmo_p6_llama_IND": 24.68,
+    "gellmo_p6_llama_OOD": 41.38770417369184,
+    "gellmo_p6_llama_Macro10": 33.033852086845926
+  },
+  {
+    "method_id": "sampling_verifier20",
+    "gellmo_p6_mistral_completed_inputs": 3905,
+    "gellmo_p6_mistral_IND": 72.96,
+    "gellmo_p6_mistral_OOD": 89.2914261839264,
+    "gellmo_p6_mistral_Macro10": 81.1257130919632,
+    "gellmo_p6_llama_completed_inputs": 3905,
+    "gellmo_p6_llama_IND": 79.72,
+    "gellmo_p6_llama_OOD": 92.63449063803355,
+    "gellmo_p6_llama_Macro10": 86.17724531901678
+  },
+  {
+    "method_id": "self_refine_r1",
+    "gellmo_p6_mistral_completed_inputs": 3905,
+    "gellmo_p6_mistral_IND": 28.52,
+    "gellmo_p6_mistral_OOD": 40.46776525571627,
+    "gellmo_p6_mistral_Macro10": 34.493882627858135,
+    "gellmo_p6_llama_completed_inputs": 3905,
+    "gellmo_p6_llama_IND": 25.96,
+    "gellmo_p6_llama_OOD": 38.028573520276865,
+    "gellmo_p6_llama_Macro10": 31.994286760138436
+  },
+  {
+    "method_id": "tot_lm_vote",
+    "gellmo_p6_mistral_completed_inputs": 3905,
+    "gellmo_p6_mistral_IND": 26.560000000000002,
+    "gellmo_p6_mistral_OOD": 34.00594373946224,
+    "gellmo_p6_mistral_Macro10": 30.282971869731124,
+    "gellmo_p6_llama_completed_inputs": 3905,
+    "gellmo_p6_llama_IND": 16.56,
+    "gellmo_p6_llama_OOD": 25.959772828112524,
+    "gellmo_p6_llama_Macro10": 21.25988641405626
+  },
+  {
+    "method_id": "got",
+    "gellmo_p6_mistral_completed_inputs": 3905,
+    "gellmo_p6_mistral_IND": 62.44,
+    "gellmo_p6_mistral_OOD": 78.79365516017393,
+    "gellmo_p6_mistral_Macro10": 70.61682758008695,
+    "gellmo_p6_llama_completed_inputs": 3905,
+    "gellmo_p6_llama_IND": 77.24000000000001,
+    "gellmo_p6_llama_OOD": 89.27099787026356,
+    "gellmo_p6_llama_Macro10": 83.25549893513178
+  },
+  {
+    "method_id": "s1",
+    "gellmo_p6_mistral_completed_inputs": 3905,
+    "gellmo_p6_mistral_IND": 33.12,
+    "gellmo_p6_mistral_OOD": 44.75915668352708,
+    "gellmo_p6_mistral_Macro10": 38.93957834176354,
+    "gellmo_p6_llama_completed_inputs": 3905,
+    "gellmo_p6_llama_IND": 24.36,
+    "gellmo_p6_llama_OOD": 37.76849424675363,
+    "gellmo_p6_llama_Macro10": 31.06424712337681
+  },
+  {
+    "method_id": "ev",
+    "gellmo_p6_mistral_completed_inputs": 3905,
+    "gellmo_p6_mistral_IND": 29.96,
+    "gellmo_p6_mistral_OOD": 42.84518546454876,
+    "gellmo_p6_mistral_Macro10": 36.402592732274385,
+    "gellmo_p6_llama_completed_inputs": 3905,
+    "gellmo_p6_llama_IND": 25.32,
+    "gellmo_p6_llama_OOD": 39.35241621557665,
+    "gellmo_p6_llama_Macro10": 32.33620810778833
+  },
+  {
+    "method_id": "fewshot",
+    "gellmo_p6_mistral_completed_inputs": 3905,
+    "gellmo_p6_mistral_IND": 27.439999999999998,
+    "gellmo_p6_mistral_OOD": 33.37493226254918,
+    "gellmo_p6_mistral_Macro10": 30.40746613127458,
+    "gellmo_p6_llama_completed_inputs": 3905,
+    "gellmo_p6_llama_IND": 41.12,
+    "gellmo_p6_llama_OOD": 55.24829635874228,
+    "gellmo_p6_llama_Macro10": 48.184148179371135
+  },
+  {
+    "method_id": "reflexion",
+    "gellmo_p6_mistral_completed_inputs": 3905,
+    "gellmo_p6_mistral_IND": 37.04,
+    "gellmo_p6_mistral_OOD": 54.45975981305647,
+    "gellmo_p6_mistral_Macro10": 45.749879906528236,
+    "gellmo_p6_llama_completed_inputs": 3905,
+    "gellmo_p6_llama_IND": 44.12,
+    "gellmo_p6_llama_OOD": 62.11363430650457,
+    "gellmo_p6_llama_Macro10": 53.116817153252285
+  }
+]
