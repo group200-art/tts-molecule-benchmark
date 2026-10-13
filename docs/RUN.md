@@ -5,11 +5,13 @@
 ```bash
 python3 analysis/reproduce_table1.py
 python3 analysis/verify_snapshot.py
+python3 analysis/export_results.py --check
 ```
 
-只需 Python 3.9+ 标准库。输出放在 `analysis_output/`。
+只需 Python 3.9+ 标准库。主表重算输出放在 `analysis_output/`。
 第一条命令重用原评价函数，从保存的候选性质重算K1结果；不重新生成分子或预测性质。
 第二条命令检查仓库中实验原件的哈希。
+第三条命令检查 `results/` 中的新名称 CSV 与原件数值一致；去掉 `--check` 可重新导出。
 
 ## 重新运行生成实验
 
@@ -30,6 +32,7 @@ python3 analysis/verify_snapshot.py
 
 `evidence/source_manifest.json` 记录每个原件的来源、仓库位置和SHA256。
 新写的可移植分析入口位于 `analysis/`；原生成算法、参数和已有结果未修改。
-`paper/` 是整理时服务器上的TeX快照，Overleaf后续编辑需另行同步。
+`original/paper/` 和 `original/results/` 保存改名前的原件；`paper/` 和 `results/` 使用新名称。
+名称对照见 [NAMING](NAMING.md)。Overleaf 后续编辑需另行同步。
 
 上游代码与模型保留原作者归属及许可；参考文献在 `paper/bibliography.bib`。

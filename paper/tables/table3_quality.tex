@@ -6,31 +6,31 @@
 \label{tab:quality}
 \begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}l r r r r r@{}}
 \toprule
-Method & \shortstack{Final validity\\(\%)} & \shortstack{SR$_\Delta$\\(\%)} & RI$_{0.1}$ & Sim & SAS \\
+Method & \shortstack{Final validity\\(\%)} & \shortstack{Threshold SR\\(\%)} & \shortstack{Stabilized\\RI} & Sim & SAS \\
 \midrule
 \multicolumn{6}{l}{\textbf{GeLLMO-P6-Mistral (7B)}} \\
 Beam ($w=20$) & 90.64 & 11.28 & 0.989 & 0.622 & 3.144 \\
-Sampling + task verifier & 94.39 & 19.83 & 0.947 & 0.561 & 3.246 \\
-Self-Refine ($r=1$) & 84.52 & 13.74 & 1.187 & 0.501 & 3.028 \\
-ToT (LM voting) & 75.47 & 11.20 & 1.120 & 0.489 & 3.135 \\
-GoT (G12) & 100.00 & 41.27 & 1.691 & 0.393 & 2.811 \\
-s1-style ($B=512$) & 86.11 & 16.28 & 1.278 & 0.491 & 3.017 \\
-Exact Voting ($N=400$) & 90.26 & 11.30 & 1.021 & 0.603 & 3.153 \\
+Sampling + verification & 94.39 & 19.83 & 0.947 & 0.561 & 3.246 \\
+Self-Refine (1 revision) & 84.52 & 13.74 & 1.187 & 0.501 & 3.028 \\
+ToT (model voting) & 75.47 & 11.20 & 1.120 & 0.489 & 3.135 \\
+GoT (12 initial nodes) & 100.00 & 41.27 & 1.691 & 0.393 & 2.811 \\
+s1 budget forcing & 86.11 & 16.28 & 1.278 & 0.491 & 3.017 \\
+Vote ($N=400$) & 90.26 & 11.30 & 1.021 & 0.603 & 3.153 \\
 4-shot ICL & 90.14 & 12.51 & 1.394 & 0.396 & 3.091 \\
 Reflexion (max 3 trials) & 87.86 & 18.27 & 1.209 & 0.486 & 2.928 \\
 \midrule
 \multicolumn{6}{l}{\textbf{GeLLMO-P6-Llama (8B)}} \\
 Beam ($w=20$) & 91.38 & 13.30 & 1.128 & 0.578 & 2.946 \\
-Sampling + task verifier & 96.07 & 25.60 & 1.153 & 0.453 & 3.131 \\
-Self-Refine ($r=1$) & 76.19 & 15.38 & 1.448 & 0.405 & 2.952 \\
-ToT (LM voting) & 50.97 & 10.72 & 1.444 & 0.319 & 2.918 \\
-GoT (G12) & 100.00 & 62.13 & 2.223 & 0.257 & 2.566 \\
-s1-style ($B=512$) & 68.56 & 16.35 & 1.525 & 0.385 & 2.816 \\
-Exact Voting ($N=400$) & 85.62 & 14.39 & 1.251 & 0.518 & 2.898 \\
+Sampling + verification & 96.07 & 25.60 & 1.153 & 0.453 & 3.131 \\
+Self-Refine (1 revision) & 76.19 & 15.38 & 1.448 & 0.405 & 2.952 \\
+ToT (model voting) & 50.97 & 10.72 & 1.444 & 0.319 & 2.918 \\
+GoT (12 initial nodes) & 100.00 & 62.13 & 2.223 & 0.257 & 2.566 \\
+s1 budget forcing & 68.56 & 16.35 & 1.525 & 0.385 & 2.816 \\
+Vote ($N=400$) & 85.62 & 14.39 & 1.251 & 0.518 & 2.898 \\
 4-shot ICL & 94.73 & 28.06 & 1.802 & 0.296 & 2.801 \\
 Reflexion (max 3 trials) & 82.51 & 25.08 & 1.445 & 0.394 & 2.827 \\
 \bottomrule\end{tabular*}
 \par\vspace{5pt}\noindent\begin{minipage}{\linewidth}\TableNoteFont
-Validity and SR$_\Delta$ retain all inputs in their denominators; validity does not imply property success. RI$_{0.1}$, Sim, and SAS average successful final outputs within each task, then average tasks equally. Successful subsets differ across methods, so these means are descriptive, not paired quality gains. Lower SAS indicates predicted easier synthesis. No auxiliary metric changes output selection. Section~\ref{sec:metrics} defines thresholds, the stabilized RI variant, fingerprint settings, and precision.
+Validity and Threshold SR retain all inputs in their denominators; validity does not imply property success. Stabilized RI, Sim, and SAS average successful final outputs within each task, then average tasks equally. Successful subsets differ across methods, so these means are descriptive, not paired quality gains. Lower SAS indicates predicted easier synthesis. No auxiliary metric changes output selection. Section~\ref{sec:metrics} defines thresholds, the stabilized RI variant, fingerprint settings, and precision.
 \end{minipage}
 \end{table*}

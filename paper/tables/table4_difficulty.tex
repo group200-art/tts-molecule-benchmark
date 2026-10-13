@@ -2,39 +2,39 @@
 \begin{table*}[t]
 \centering\EvalTableFont
 \setlength{\tabcolsep}{3pt}\renewcommand{\arraystretch}{1.10}
-\caption{Success by shared Mistral-reference difficulty. Both models and all nine methods use the same fixed input groups; every displayed method result evaluates a single final output ($K=1$). Rates pool inputs within each group.}
+\caption{Success by Mistral reference coverage. Both models and all nine methods use the same fixed input groups; every displayed method result evaluates a single final output ($K=1$). Rates pool inputs within each group.}
 \label{tab:difficulty}
 \begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}l r r r r r r@{}}
 \toprule
-\multicolumn{7}{l}{\textbf{Shared Mistral-reference difficulty groups (pooled input rates)}} \\
-Method & \shortstack{Easy\\SR (\%)} & \shortstack{Medium\\SR (\%)} & \shortstack{Hard\\SR (\%)} & \shortstack{Hard\\solved} & \shortstack{OOD Hard\\SR (\%)} & \shortstack{OOD Hard\\solved} \\
+\multicolumn{7}{l}{\textbf{Shared Mistral reference groups (pooled input rates)}} \\
+Method & \shortstack{Beam20\\solved\\SR (\%)} & \shortstack{Larger pools\\only\\SR (\%)} & \shortstack{Ref. unsolved\\SR (\%)} & \shortstack{Ref. unsolved\\count} & \shortstack{OOD ref.\\unsolved\\SR (\%)} & \shortstack{OOD ref.\\unsolved\\count} \\
 Stratum size & 3,147 & 531 & 227 & /227 & 27 & /27 \\
 \midrule
 \multicolumn{7}{l}{\textit{GeLLMO-P6-Mistral (7B)}} \\
 Beam ($w=20$)$^{\dagger}$ & 41.09 & 0.00 & 0.00 & 0 & 0.00 & 0 \\
-Sampling + task verifier$^{\dagger}$ & \textbf{91.48} & 32.02 & 0.00 & 0 & 0.00 & 0 \\
-Self-Refine ($r=1$) & 37.97 & 8.29 & 2.64 & 6 & 0.00 & 0 \\
-ToT (LM voting) & 34.10 & 9.98 & 0.88 & 2 & 0.00 & 0 \\
-GoT (G12) & 75.15 & \textbf{39.17} & \textbf{11.01} & 25 & \textbf{18.52} & 5 \\
-s1-style ($B=512$) & 42.90 & 11.86 & 3.52 & 8 & 3.70 & 1 \\
-Exact Voting ($N=400$) & 42.04 & 1.69 & 0.44 & 1 & 0.00 & 0 \\
+Sampling + verification$^{\dagger}$ & \textbf{91.48} & 32.02 & 0.00 & 0 & 0.00 & 0 \\
+Self-Refine (1 revision) & 37.97 & 8.29 & 2.64 & 6 & 0.00 & 0 \\
+ToT (model voting) & 34.10 & 9.98 & 0.88 & 2 & 0.00 & 0 \\
+GoT (12 initial nodes) & 75.15 & \textbf{39.17} & \textbf{11.01} & 25 & \textbf{18.52} & 5 \\
+s1 budget forcing & 42.90 & 11.86 & 3.52 & 8 & 3.70 & 1 \\
+Vote ($N=400$) & 42.04 & 1.69 & 0.44 & 1 & 0.00 & 0 \\
 4-shot ICL & 33.46 & 14.88 & 9.25 & 21 & 7.41 & 2 \\
 Reflexion (max 3 trials) & 49.70 & 15.44 & 4.41 & 10 & 0.00 & 0 \\
 \midrule
 \multicolumn{7}{l}{\textit{GeLLMO-P6-Llama (8B)}} \\
 Beam ($w=20$) & 34.25 & 6.97 & 0.44 & 1 & 0.00 & 0 \\
-Sampling + task verifier & \textbf{90.34} & 65.91 & 26.87 & 61 & 25.93 & 7 \\
-Self-Refine ($r=1$) & 32.98 & 15.63 & 4.85 & 11 & 11.11 & 3 \\
-ToT (LM voting) & 21.54 & 11.30 & 5.29 & 12 & 11.11 & 3 \\
-GoT (G12) & 83.92 & \textbf{68.55} & \textbf{48.90} & 111 & 44.44 & 12 \\
-s1-style ($B=512$) & 31.87 & 15.25 & 3.08 & 7 & 7.41 & 2 \\
-Exact Voting ($N=400$) & 34.03 & 10.36 & 1.76 & 4 & 7.41 & 2 \\
+Sampling + verification & \textbf{90.34} & 65.91 & 26.87 & 61 & 25.93 & 7 \\
+Self-Refine (1 revision) & 32.98 & 15.63 & 4.85 & 11 & 11.11 & 3 \\
+ToT (model voting) & 21.54 & 11.30 & 5.29 & 12 & 11.11 & 3 \\
+GoT (12 initial nodes) & 83.92 & \textbf{68.55} & \textbf{48.90} & 111 & 44.44 & 12 \\
+s1 budget forcing & 31.87 & 15.25 & 3.08 & 7 & 7.41 & 2 \\
+Vote ($N=400$) & 34.03 & 10.36 & 1.76 & 4 & 7.41 & 2 \\
 4-shot ICL & 44.84 & 33.90 & 33.48 & 76 & \textbf{48.15} & 13 \\
 Reflexion (max 3 trials) & 54.69 & 28.25 & 13.66 & 31 & 22.22 & 6 \\
 \bottomrule\end{tabular*}
 \par\vspace{5pt}\noindent\begin{minipage}{\linewidth}\TableNoteFont
-The retrospective reference partition uses Mistral candidate-pool coverage: Easy if Beam20 succeeds; Medium if Beam20 fails but Beam100 or Sample160 succeeds; Hard otherwise. These historical pools define labels only and are not the displayed evaluation setting. Failures remain in all rate denominators. Bold marks the highest displayed success rate per column within each model.
+The retrospective reference partition uses Mistral candidate-pool coverage: ``Beam20 solved'' if Beam20 succeeds; ``Larger pools only'' if Beam20 fails but Beam100 or Sample160 succeeds; ``Ref. unsolved'' if all three reference pools fail. Counts give successes of the displayed method within the reference-unsolved group. These historical pools define labels only and are not the displayed evaluation setting. Failures remain in all rate denominators. Bold marks the highest displayed success rate per column within each model.
 \par\smallskip
-$\dagger$ Mistral Beam has zero Medium/Hard success and Mistral Sampling zero Hard success by construction; Llama has no corresponding constraint. These are reference-relative groups, not model-independent difficulty, and cannot establish causal cross-model superiority. The 27 OOD Hard inputs comprise 2 MPQ, 24 BDMQ, and 1 BMPQ cases; one success changes the pooled rate by 3.70 percentage points.
+$\dagger$ Mistral Beam has zero success in the latter two groups and Mistral Sampling zero success in the unsolved group by construction; Llama has no corresponding constraint. These are reference-relative groups, not model-independent difficulty, and cannot establish causal cross-model superiority. The 27 OOD reference-unsolved inputs comprise 2 MPQ, 24 BDMQ, and 1 BMPQ cases; one success changes the pooled rate by 3.70 percentage points.
 \end{minipage}
 \end{table*}

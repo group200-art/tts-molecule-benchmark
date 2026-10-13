@@ -1,0 +1,6 @@
+\section{Output-Selection Diagnostics}
+\label{app:readouts}
+The diagnostics in Table~\ref{tab:readout_diagnostics} retain the recorded candidates and change only which outputs are evaluated. Thus, the Sampling first-candidate result is a cached readout of the original 40-candidate generation calls, not a new single-sample run. An independent check over all 7,810 model--input records and 156,200 prefix slots found no mismatch between the declared first-pass selector and the stored endpoints. There were 856 Mistral inputs and 651 Llama inputs with no successful candidate in the first twenty slots; these remain failures. The high verifier-assisted rates do not remove these inputs from the denominator.
+
+The published \gellmo{} reference in the table is our arithmetic mean of its rounded per-task rates, rather than an author-reported macro statistic. Published results and our local generation realization are distinct; exact upstream per-input equivalence is not established. Their coverage metrics must also be distinguished from the final-output metric in Table~\ref{tab:effectiveness}.
+\input{tables/comparison_readouts}

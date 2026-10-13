@@ -1527,28 +1527,28 @@
   },
   {
     "source": "BenchmarkV2/k1_nine_methods_execution_20261011_v2/results/table1.csv",
-    "destination": "results/k1/table1.csv",
+    "destination": "original/results/k1/table1.csv",
     "sha256": "9ca0530f60cef5d838b14469a2a2733242884bf8377480b45d74726155cc3915",
     "bytes": 1037,
     "transformation": "none"
   },
   {
     "source": "BenchmarkV2/k1_nine_methods_execution_20261011_v2/results/table1.json",
-    "destination": "results/k1/table1.json",
+    "destination": "original/results/k1/table1.json",
     "sha256": "8742f3c057bcd233be0c9f102047523e17f9854a124b513a2ac036b582d95d4d",
     "bytes": 3622,
     "transformation": "none"
   },
   {
     "source": "BenchmarkV2/k1_nine_methods_execution_20261011_v2/results/task_metrics.json",
-    "destination": "results/k1/task_metrics.json",
+    "destination": "original/results/k1/task_metrics.json",
     "sha256": "045f8d79b2a8d7a97b1971630dd714aa5bfc6cdd098de4416be9f1afa4618014",
     "bytes": 212846,
     "transformation": "none"
   },
   {
     "source": "BenchmarkV2/k1_nine_methods_execution_20261011_v2/results/endpoint_audit.json",
-    "destination": "results/k1/endpoint_audit.json",
+    "destination": "original/results/k1/endpoint_audit.json",
     "sha256": "660d917f67dbb0753ee17199369e9b9f52539ddbf72753e551f7d277c70437d0",
     "bytes": 38008,
     "transformation": "none"
@@ -1625,91 +1625,91 @@
   },
   {
     "source": "BenchmarkV2/gellmo_eval_alignment_20261013_v1/k1/macro_metrics.csv",
-    "destination": "results/original_metrics_k1/macro_metrics.csv",
+    "destination": "original/results/original_metrics_k1/macro_metrics.csv",
     "sha256": "78b3407156179db38c434f46d6f259eba88995279c50042ff848ebb07e674436",
     "bytes": 15613,
     "transformation": "none"
   },
   {
     "source": "BenchmarkV2/gellmo_eval_alignment_20261013_v1/k1/task_metrics.csv",
-    "destination": "results/original_metrics_k1/task_metrics.csv",
+    "destination": "original/results/original_metrics_k1/task_metrics.csv",
     "sha256": "b94daedbfae9f107f1526ea751e3284a5911e6854250bb70e978f6ef1296e77b",
     "bytes": 45689,
     "transformation": "none"
   },
   {
     "source": "BenchmarkV2/gellmo_eval_alignment_20261013_v1/k1/aps_by_task.csv",
-    "destination": "results/original_metrics_k1/aps_by_task.csv",
+    "destination": "original/results/original_metrics_k1/aps_by_task.csv",
     "sha256": "9262441e157eea710d85d2297a8f608cfe1d186d8c65d73fa3951e303121001d",
     "bytes": 45810,
     "transformation": "none"
   },
   {
     "source": "BenchmarkV2/gellmo_eval_alignment_20261013_v1/k1/aps_by_property_macro.csv",
-    "destination": "results/original_metrics_k1/aps_by_property_macro.csv",
+    "destination": "original/results/original_metrics_k1/aps_by_property_macro.csv",
     "sha256": "b81c74adbbd7b1d57c52ea15e03a152f138ab6c01eb02761a3e84d9a52d603b6",
     "bytes": 19875,
     "transformation": "none"
   },
   {
     "source": "BenchmarkV2/gellmo_eval_alignment_20261013_v1/k1/metric_contract.json",
-    "destination": "results/original_metrics_k1/metric_contract.json",
+    "destination": "original/results/original_metrics_k1/metric_contract.json",
     "sha256": "73fb79e75cdc58562a7ad41fb432f0eb77309ea5dbf556349266178b6d9cbda3",
     "bytes": 3470,
     "transformation": "none"
   },
   {
     "source": "BenchmarkV2/gellmo_eval_alignment_20261013_v1/k1/audit.json",
-    "destination": "results/original_metrics_k1/audit.json",
+    "destination": "original/results/original_metrics_k1/audit.json",
     "sha256": "a29de342bc40e96600ad8b09a98e30876ef2585fa2935eb069dac62c873cc723",
     "bytes": 10876,
     "transformation": "none"
   },
   {
     "source": "BenchmarkV2/gellmo_eval_alignment_20261013_v1/k1/final_validation.json",
-    "destination": "results/original_metrics_k1/final_validation.json",
+    "destination": "original/results/original_metrics_k1/final_validation.json",
     "sha256": "7894d4acbff8d74fa851fd352ae125d9c66f3172f8afadd1707b1a8e4376a353",
     "bytes": 690,
     "transformation": "none"
   },
   {
     "source": "BenchmarkV2/p10_n20_r20_two_models_20261013_v1/results/macro.csv",
-    "destination": "results/p10_n20_r20/macro.csv",
+    "destination": "original/results/p10_n20_r20/macro.csv",
     "sha256": "49001ef7225217f790fca6c2a6e93ebcebb6bdf177868ba6eed61ec9c0df31bf",
     "bytes": 3077,
     "transformation": "none"
   },
   {
     "source": "BenchmarkV2/p10_n20_r20_two_models_20261013_v1/results/per_task.csv",
-    "destination": "results/p10_n20_r20/per_task.csv",
+    "destination": "original/results/p10_n20_r20/per_task.csv",
     "sha256": "11d773446141a066d20adca5e0c2f294c6541efd5f256792dde31896bc61c41a",
     "bytes": 8541,
     "transformation": "none"
   },
   {
     "source": "BenchmarkV2/p10_n20_r20_two_models_20261013_v1/results/aps_by_task.csv",
-    "destination": "results/p10_n20_r20/aps_by_task.csv",
+    "destination": "original/results/p10_n20_r20/aps_by_task.csv",
     "sha256": "e8f5d1757852f1753ededff1c14075fa0cf374374cbcb487917b846d98b0676b",
     "bytes": 13686,
     "transformation": "none"
   },
   {
     "source": "BenchmarkV2/p10_n20_r20_two_models_20261013_v1/results/audit.json",
-    "destination": "results/p10_n20_r20/audit.json",
+    "destination": "original/results/p10_n20_r20/audit.json",
     "sha256": "b3f9afb6db3ee7b910bc0955e27ff036d8cc1db1ae9881d192a703190f57769e",
     "bytes": 1013,
     "transformation": "none"
   },
   {
     "source": "BenchmarkV2/p10_n20_r20_two_models_20261013_v1/results/paired_summary.json",
-    "destination": "results/p10_n20_r20/paired_summary.json",
+    "destination": "original/results/p10_n20_r20/paired_summary.json",
     "sha256": "e7c99c5aefd706815cad08f017b98303f2b31fab57115c53c8000c5a7a9d6b3b",
     "bytes": 529,
     "transformation": "none"
   },
   {
     "source": "BenchmarkV2/p10_n20_r20_two_models_20261013_v1/results/per_input.jsonl.gz",
-    "destination": "results/p10_n20_r20/per_input.jsonl.gz",
+    "destination": "original/results/p10_n20_r20/per_input.jsonl.gz",
     "sha256": "cc0a2c1c88441df1a438a5db167fd33f20e947c24630c975089b1e2324d4d568",
     "bytes": 1274018,
     "transformation": "none"
@@ -1744,35 +1744,35 @@
   },
   {
     "source": "BenchmarkV2/p10_n20_r20_two_models_20261013_v1/next_k20/mistral_s1_properties/metrics/macro.csv",
-    "destination": "results/mistral_s1_properties/macro.csv",
+    "destination": "original/results/mistral_s1_properties/macro.csv",
     "sha256": "c2b04c00c463dee938c82df9b6ce435aeef1e5d7b37c52346b2ce872399c21a1",
     "bytes": 1224,
     "transformation": "none"
   },
   {
     "source": "BenchmarkV2/p10_n20_r20_two_models_20261013_v1/next_k20/mistral_s1_properties/metrics/per_task.csv",
-    "destination": "results/mistral_s1_properties/per_task.csv",
+    "destination": "original/results/mistral_s1_properties/per_task.csv",
     "sha256": "cf369c622bf48f734f4ca6f602b6186cfb1695cca757ebb8559386d8a90d1f99",
     "bytes": 3323,
     "transformation": "none"
   },
   {
     "source": "BenchmarkV2/p10_n20_r20_two_models_20261013_v1/next_k20/mistral_s1_properties/metrics/aps_by_task.csv",
-    "destination": "results/mistral_s1_properties/aps_by_task.csv",
+    "destination": "original/results/mistral_s1_properties/aps_by_task.csv",
     "sha256": "289161d7d997a81039dc1cd43d74046c5e638a35fd61d47d4af39bba3617f67b",
     "bytes": 6031,
     "transformation": "none"
   },
   {
     "source": "BenchmarkV2/p10_n20_r20_two_models_20261013_v1/next_k20/mistral_s1_properties/metrics/audit.json",
-    "destination": "results/mistral_s1_properties/audit.json",
+    "destination": "original/results/mistral_s1_properties/audit.json",
     "sha256": "c24503c5e2a62873b188febe7082409df67019d6903be16b5e96d05544f79821",
     "bytes": 957,
     "transformation": "none"
   },
   {
     "source": "BenchmarkV2/p10_n20_r20_two_models_20261013_v1/next_k20/mistral_s1_properties/metrics/per_input.jsonl.gz",
-    "destination": "results/mistral_s1_properties/per_input.jsonl.gz",
+    "destination": "original/results/mistral_s1_properties/per_input.jsonl.gz",
     "sha256": "27776750c567646ffb252de619424ebd62f332cce4e2bea8ea54481c76cb530e",
     "bytes": 883779,
     "transformation": "none"
@@ -1786,203 +1786,203 @@
   },
   {
     "source": "BenchmarkV2/self_refine_r1_k20_v1/results/summary.json",
-    "destination": "results/mistral_self_refine_r1_r20/summary.json",
+    "destination": "original/results/mistral_self_refine_r1_r20/summary.json",
     "sha256": "2ad4e4e0dc5f31ad7214010b1833ebb88f15d99cc46f2cc98a30f087c17372c1",
     "bytes": 13099,
     "transformation": "none"
   },
   {
     "source": "BenchmarkV2/self_refine_r1_k20_v1/results/table1_self_refine_row.csv",
-    "destination": "results/mistral_self_refine_r1_r20/table1_self_refine_row.csv",
+    "destination": "original/results/mistral_self_refine_r1_r20/table1_self_refine_row.csv",
     "sha256": "ad71aa20113cb118be3d4e121963a49ccfd3c5857e595a47f01826c122a66cc2",
     "bytes": 189,
     "transformation": "none"
   },
   {
     "source": "BenchmarkV2/naacl_long_paper_20261012_v1/final_sources/acl.sty",
-    "destination": "paper/acl.sty",
+    "destination": "original/paper/acl.sty",
     "sha256": "19dfeddc2c0e448f3926a0bef048a9db3f3611b46265b760caabd7ada4f361de",
     "bytes": 11615,
     "transformation": "none"
   },
   {
     "source": "BenchmarkV2/naacl_long_paper_20261012_v1/final_sources/acl_natbib.bst",
-    "destination": "paper/acl_natbib.bst",
+    "destination": "original/paper/acl_natbib.bst",
     "sha256": "e332fd51dcea48e2a8a89754892c3cb99674a1cd70b527b661e9aaffc235e83c",
     "bytes": 45186,
     "transformation": "none"
   },
   {
     "source": "BenchmarkV2/naacl_long_paper_20261012_v1/final_sources/bibliography.bib",
-    "destination": "paper/bibliography.bib",
+    "destination": "original/paper/bibliography.bib",
     "sha256": "e2f831f4471ec5776d64112a8c4aa5a1c1973d5b497d1b7625847288b10759a4",
     "bytes": 6615,
     "transformation": "none"
   },
   {
     "source": "BenchmarkV2/naacl_long_paper_20261012_v1/final_sources/main.tex",
-    "destination": "paper/main.tex",
+    "destination": "original/paper/main.tex",
     "sha256": "aa0930500f47e22221eb0421c68c2de46c2b3e1d2abfbf35bdef74c3af8d04c6",
     "bytes": 1552,
     "transformation": "none"
   },
   {
     "source": "BenchmarkV2/naacl_long_paper_20261012_v1/final_sources/appendices/implementation.tex",
-    "destination": "paper/appendices/implementation.tex",
+    "destination": "original/paper/appendices/implementation.tex",
     "sha256": "06b637c68b95ae84c46ded65a24bb691a90dedc2b280acad6f273da3a1b0c816",
     "bytes": 13328,
     "transformation": "none"
   },
   {
     "source": "BenchmarkV2/naacl_long_paper_20261012_v1/final_sources/appendices/readout_diagnostics.tex",
-    "destination": "paper/appendices/readout_diagnostics.tex",
+    "destination": "original/paper/appendices/readout_diagnostics.tex",
     "sha256": "503e05ef877e0372d6c04deaec1ec770c42f0d7edf1fb73c864a680cac79d854",
     "bytes": 1132,
     "transformation": "none"
   },
   {
     "source": "BenchmarkV2/naacl_long_paper_20261012_v1/final_sources/appendices/reference_difficulty.tex",
-    "destination": "paper/appendices/reference_difficulty.tex",
+    "destination": "original/paper/appendices/reference_difficulty.tex",
     "sha256": "a16776558a5748ea09452303e44591a6dd00ea017d9a88b9096a3f37058ecca1",
     "bytes": 872,
     "transformation": "none"
   },
   {
     "source": "BenchmarkV2/naacl_long_paper_20261012_v1/final_sources/sections/abstract.tex",
-    "destination": "paper/sections/abstract.tex",
+    "destination": "original/paper/sections/abstract.tex",
     "sha256": "8124282f14458b00c8ca4785b5aac69bdf833c50ab7b23192173627c05e21ac6",
     "bytes": 1381,
     "transformation": "none"
   },
   {
     "source": "BenchmarkV2/naacl_long_paper_20261012_v1/final_sources/sections/conclusion.tex",
-    "destination": "paper/sections/conclusion.tex",
+    "destination": "original/paper/sections/conclusion.tex",
     "sha256": "ae473be551176acbdd8a9069645f404af458bbb37fc5ada3e7dfae92db745ea0",
     "bytes": 635,
     "transformation": "none"
   },
   {
     "source": "BenchmarkV2/naacl_long_paper_20261012_v1/final_sources/sections/introduction.tex",
-    "destination": "paper/sections/introduction.tex",
+    "destination": "original/paper/sections/introduction.tex",
     "sha256": "3732bc1cc338407b2a34c226589fbf0629c242ee632eb64c880bc318d3cee0ad",
     "bytes": 2100,
     "transformation": "none"
   },
   {
     "source": "BenchmarkV2/naacl_long_paper_20261012_v1/final_sources/sections/limitations.tex",
-    "destination": "paper/sections/limitations.tex",
+    "destination": "original/paper/sections/limitations.tex",
     "sha256": "4c17050c725e883856fb0afc32a765fb02418970586ceedb2f5f48e7b182489a",
     "bytes": 2115,
     "transformation": "none"
   },
   {
     "source": "BenchmarkV2/naacl_long_paper_20261012_v1/final_sources/sections/methods.tex",
-    "destination": "paper/sections/methods.tex",
+    "destination": "original/paper/sections/methods.tex",
     "sha256": "231cec55a13c99fd731cce382c8983affefad990400240010a68b6310ddca535",
     "bytes": 5264,
     "transformation": "none"
   },
   {
     "source": "BenchmarkV2/naacl_long_paper_20261012_v1/final_sources/sections/metrics.tex",
-    "destination": "paper/sections/metrics.tex",
+    "destination": "original/paper/sections/metrics.tex",
     "sha256": "b200da5819b0c9cccb5c1bd92e8a38a187c1175a85f25652a0a18aeefd453350",
     "bytes": 3469,
     "transformation": "none"
   },
   {
     "source": "BenchmarkV2/naacl_long_paper_20261012_v1/final_sources/sections/protocol.tex",
-    "destination": "paper/sections/protocol.tex",
+    "destination": "original/paper/sections/protocol.tex",
     "sha256": "49c76f62e83faf41a19cf3f652871d677e7c82186ca039910da55397044b4181",
     "bytes": 3589,
     "transformation": "none"
   },
   {
     "source": "BenchmarkV2/naacl_long_paper_20261012_v1/final_sources/sections/related_work.tex",
-    "destination": "paper/sections/related_work.tex",
+    "destination": "original/paper/sections/related_work.tex",
     "sha256": "6ce07ef73e8bc231f554ca471f3114505f576414dcae81c39d4dd0ed7c92690a",
     "bytes": 1995,
     "transformation": "none"
   },
   {
     "source": "BenchmarkV2/naacl_long_paper_20261012_v1/final_sources/sections/results.tex",
-    "destination": "paper/sections/results.tex",
+    "destination": "original/paper/sections/results.tex",
     "sha256": "822855dec4b7509f4c78f6a8227aee0cf325adfe71deb56b53ee4b670456bd18",
     "bytes": 5575,
     "transformation": "none"
   },
   {
     "source": "BenchmarkV2/naacl_long_paper_20261012_v1/final_sources/tables/comparison_readouts.tex",
-    "destination": "paper/tables/comparison_readouts.tex",
+    "destination": "original/paper/tables/comparison_readouts.tex",
     "sha256": "49b2f49bf6d376c2700f30ba40e63e44ce35b10a4dc443e377d4e7ec791c36cc",
     "bytes": 1518,
     "transformation": "none"
   },
   {
     "source": "BenchmarkV2/naacl_long_paper_20261012_v1/final_sources/tables/table1_effectiveness.tex",
-    "destination": "paper/tables/table1_effectiveness.tex",
+    "destination": "original/paper/tables/table1_effectiveness.tex",
     "sha256": "329fb51a7acc10beae01e1f2a9a092955e4068d115b1197260d8509bd524ece9",
     "bytes": 5260,
     "transformation": "none"
   },
   {
     "source": "BenchmarkV2/naacl_long_paper_20261012_v1/final_sources/tables/table2_workload.tex",
-    "destination": "paper/tables/table2_workload.tex",
+    "destination": "original/paper/tables/table2_workload.tex",
     "sha256": "0a278b906e788977a4082ea22a23952cd727c00b835a98e9d7469077c18c156e",
     "bytes": 2567,
     "transformation": "none"
   },
   {
     "source": "BenchmarkV2/naacl_long_paper_20261012_v1/final_sources/tables/table3_quality.tex",
-    "destination": "paper/tables/table3_quality.tex",
+    "destination": "original/paper/tables/table3_quality.tex",
     "sha256": "e75b19bbb76b304f7ce3436d90798cda114cd834d8e1c269942efdb739005468",
     "bytes": 2515,
     "transformation": "none"
   },
   {
     "source": "BenchmarkV2/naacl_long_paper_20261012_v1/final_sources/tables/table4_difficulty.tex",
-    "destination": "paper/tables/table4_difficulty.tex",
+    "destination": "original/paper/tables/table4_difficulty.tex",
     "sha256": "6bd90afee87893a107a22cf37dd896a381a5be64cb74c97959ce04b821a06367",
     "bytes": 3078,
     "transformation": "none"
   },
   {
     "source": "BenchmarkV2/naacl_long_paper_20261012_v1/contributions/tables/audit.json",
-    "destination": "results/paper_tables/audit.json",
+    "destination": "original/results/paper_tables/audit.json",
     "sha256": "851f355418e96cda9e8b82afa6237385def0b92ede1bdcdc48c51a0d4c694766",
     "bytes": 12380,
     "transformation": "none"
   },
   {
     "source": "BenchmarkV2/naacl_long_paper_20261012_v1/contributions/tables/final_integration_review.json",
-    "destination": "results/paper_tables/final_integration_review.json",
+    "destination": "original/results/paper_tables/final_integration_review.json",
     "sha256": "543c2b34c4be6060bf7fb3a8358ed71a444ac5920c7ef1c1940dfe7934c7832a",
     "bytes": 4511,
     "transformation": "none"
   },
   {
     "source": "BenchmarkV2/naacl_long_paper_20261012_v1/contributions/tables/table3_quality.csv",
-    "destination": "results/paper_tables/table3_quality.csv",
+    "destination": "original/results/paper_tables/table3_quality.csv",
     "sha256": "e05d454c7992873ac38226ff245a41f1b908ae055af0f1a6c7a8bf050a250f47",
     "bytes": 2651,
     "transformation": "none"
   },
   {
     "source": "BenchmarkV2/naacl_long_paper_20261012_v1/contributions/tables/table3_quality.json",
-    "destination": "results/paper_tables/table3_quality.json",
+    "destination": "original/results/paper_tables/table3_quality.json",
     "sha256": "318dc8cb52afd1c5b86afb2eae6ae53e9dbe9f1fd1df4bc59742fd0574991da5",
     "bytes": 7395,
     "transformation": "none"
   },
   {
     "source": "BenchmarkV2/naacl_long_paper_20261012_v1/contributions/tables/table4_difficulty.csv",
-    "destination": "results/paper_tables/table4_difficulty.csv",
+    "destination": "original/results/paper_tables/table4_difficulty.csv",
     "sha256": "e8ae158a9d7cfec1a365a02450ea9ac0f18ad5097c4085c1ab36bb4aabde2566",
     "bytes": 2328,
     "transformation": "none"
   },
   {
     "source": "BenchmarkV2/naacl_long_paper_20261012_v1/contributions/tables/task_metrics.csv",
-    "destination": "results/paper_tables/task_metrics.csv",
+    "destination": "original/results/paper_tables/task_metrics.csv",
     "sha256": "b65d005c5e681d7a84a2a9ec5896cac9041fddcf7ece42bb3cd00c9c36dc56b4",
     "bytes": 21499,
     "transformation": "none"

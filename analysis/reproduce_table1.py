@@ -12,6 +12,8 @@ import math
 from collections import defaultdict
 from pathlib import Path
 
+from names import renamed_row
+
 ROOT = Path(__file__).resolve().parents[1]
 ORIGINAL = ROOT / 'original/BenchmarkV2'
 
@@ -61,7 +63,7 @@ def main():
     verify()
     evaluate, aggregate = load_evaluator()
     cfg = read(ORIGINAL / 'k1_nine_methods_execution_20261011_v2/config/methods.json')
-    expected_audit = read(ROOT / 'results/k1/endpoint_audit.json')
+    expected_audit = read(ROOT / 'original/results/k1/endpoint_audit.json')
     assert expected_audit['status'] == 'COMPLETE_FULL3905_TWO_MODELS_NINE_METHODS_K1'
     manifests = {}
     for task, spec in read(ROOT / 'data/manifests/index.json').items():
@@ -120,7 +122,8 @@ def main():
             for scope, tasks in [('IND', cfg['tasks'][:5]), ('OOD', cfg['tasks'][5:]), ('Macro10', cfg['tasks'])]:
                 table_row[model + '_' + scope] = sum(rates[t] for t in tasks) / len(tasks)
         table_rows.append(table_row)
-    expected = read(ROOT / 'results/k1/table1.json')
+    expected = read(ROOT / 'original/results/k1/table1.json')
+    assert len(table_rows) == len(expected)
     for row, reference in zip(table_rows, expected):
         assert row['method_id'] == reference['method_id']
         for key, value in row.items():
@@ -130,8 +133,8 @@ def main():
     assert count == 70290
     output = ROOT / 'analysis_output'
     output.mkdir(exist_ok=True)
-    write_csv(output / 'table1.csv', table_rows)
-    write_csv(output / 'task_metrics.csv', task_rows)
+    write_csv(output / 'table1.csv', [renamed_row(row) for row in table_rows])
+    write_csv(output / 'task_metrics.csv', [renamed_row(row) for row in task_rows])
     audit = dict(status='PASS', endpoint_records=count, configurations=18, task_groups=180,
                  recomputed_SR_and_delta_and_RI_match=True, table1_matches=True,
                  property_values='Saved original precision; not new property predictions.')

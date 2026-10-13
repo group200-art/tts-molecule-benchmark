@@ -10,23 +10,23 @@ Method & \shortstack{Molecular\\proposals} & \shortstack{LM response\\sequences}
 \midrule
 \multicolumn{5}{l}{\textbf{GeLLMO-P6-Mistral (7B)}} \\
 Beam ($w=20$) & 20.00 & 20.00 & 1,339 & None \\
-Sampling + task verifier & 40.00 & 40.00 & 2,596 & Terminal verification \\
-Self-Refine ($r=1$) & 2.00 & 4.00 & 858 & None \\
-ToT (LM voting) & 20.00 & 30.00 & 2,350 & None \\
-GoT (G12) & 28.00 & 28.00 & 3,212 & Search and selection \\
-s1-style ($B=512$) & 1.00 & 3.00 & 441 & None \\
-Exact Voting ($N=400$) & 400.00 & 400.00 & 26,423 & None \\
+Sampling + verification & 40.00 & 40.00 & 2,596 & Terminal verification \\
+Self-Refine (1 revision) & 2.00 & 4.00 & 858 & None \\
+ToT (model voting) & 20.00 & 30.00 & 2,350 & None \\
+GoT (12 initial nodes) & 28.00 & 28.00 & 3,212 & Search and selection \\
+s1 budget forcing & 1.00 & 3.00 & 441 & None \\
+Vote ($N=400$) & 400.00 & 400.00 & 26,423 & None \\
 4-shot ICL & 4.00 & 4.00 & 322 & None \\
 Reflexion (max 3 trials) & 2.37 & 6.12 & 1,223 & Feedback and stopping \\
 \midrule
 \multicolumn{5}{l}{\textbf{GeLLMO-P6-Llama (8B)}} \\
 Beam ($w=20$) & 20.00 & 20.00 & 1,015 & None \\
-Sampling + task verifier & 40.00 & 40.00 & 1,889 & Terminal verification \\
-Self-Refine ($r=1$) & 2.00 & 4.00 & 480 & None \\
-ToT (LM voting) & 20.00 & 30.00 & 3,994 & None \\
-GoT (G12) & 28.00 & 28.00 & 4,695 & Search and selection \\
-s1-style ($B=512$) & 1.00 & 3.00 & 212 & None \\
-Exact Voting ($N=400$) & 400.00 & 400.00 & 18,957 & None \\
+Sampling + verification & 40.00 & 40.00 & 1,889 & Terminal verification \\
+Self-Refine (1 revision) & 2.00 & 4.00 & 480 & None \\
+ToT (model voting) & 20.00 & 30.00 & 3,994 & None \\
+GoT (12 initial nodes) & 28.00 & 28.00 & 4,695 & Search and selection \\
+s1 budget forcing & 1.00 & 3.00 & 212 & None \\
+Vote ($N=400$) & 400.00 & 400.00 & 18,957 & None \\
 4-shot ICL & 4.00 & 4.00 & 180 & None \\
 Reflexion (max 3 trials) & 2.27 & 5.81 & 965 & Feedback and stopping \\
 \bottomrule\end{tabular*}

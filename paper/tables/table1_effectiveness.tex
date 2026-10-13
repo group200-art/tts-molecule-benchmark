@@ -8,38 +8,38 @@
 \toprule
  & \multicolumn{5}{c}{IND property combinations} & \multicolumn{5}{c}{OOD property combinations} & \\
 \cmidrule(lr){2-6}\cmidrule(lr){7-11}
-Method & BDP & BDQ & BPQ & DPQ & BDPQ & MPQ & BDMQ & BHMQ & BMPQ & HMPQ & Macro10 \\
+Method & BDP & BDQ & BPQ & DPQ & BDPQ & MPQ & BDMQ & BHMQ & BMPQ & HMPQ & Macro avg. \\
 Test inputs & 500 & 500 & 500 & 500 & 500 & 500 & 500 & 118 & 191 & 96 & All: 3,905 \\
 \midrule
 \multicolumn{12}{l}{\textbf{Panel A: GeLLMO-P6-Mistral (7B)}} \\
 Beam ($w=20$) & 28.80 & 27.40 & 60.80 & 13.60 & 11.80 & 56.00 & 24.20 & 42.37 & 43.46 & 48.96 & 35.74 \\
-Sampling + task verifier & \textbf{78.00} & \textbf{81.00} & \textbf{95.20} & \textbf{58.40} & \textbf{52.20} & \textbf{95.80} & \textbf{75.00} & \textbf{92.37} & \textbf{90.58} & \textbf{92.71} & \textbf{81.13} \\
-Self-Refine ($r=1$) & 30.20 & 28.00 & 53.00 & 17.20 & 14.20 & 44.40 & 27.20 & 44.07 & 40.84 & 45.83 & 34.49 \\
-ToT (LM voting) & 29.20 & 29.20 & 46.00 & 15.20 & 13.20 & 39.60 & 25.00 & 33.90 & 34.03 & 37.50 & 30.28 \\
-GoT (G12) & 71.40 & 56.80 & 93.40 & 51.80 & 38.80 & 86.60 & 52.40 & 84.75 & 82.72 & 87.50 & 70.62 \\
-s1-style ($B=512$) & 35.00 & 35.00 & 57.80 & 18.60 & 19.20 & 53.00 & 27.40 & 45.76 & 45.55 & 52.08 & 38.94 \\
-Exact Voting ($N=400$) & 29.60 & 31.00 & 60.20 & 15.60 & 13.40 & 57.00 & 23.40 & 39.83 & 47.12 & 46.88 & 36.40 \\
+Sampling + verification & \textbf{78.00} & \textbf{81.00} & \textbf{95.20} & \textbf{58.40} & \textbf{52.20} & \textbf{95.80} & \textbf{75.00} & \textbf{92.37} & \textbf{90.58} & \textbf{92.71} & \textbf{81.13} \\
+Self-Refine (1 revision) & 30.20 & 28.00 & 53.00 & 17.20 & 14.20 & 44.40 & 27.20 & 44.07 & 40.84 & 45.83 & 34.49 \\
+ToT (model voting) & 29.20 & 29.20 & 46.00 & 15.20 & 13.20 & 39.60 & 25.00 & 33.90 & 34.03 & 37.50 & 30.28 \\
+GoT (12 initial nodes) & 71.40 & 56.80 & 93.40 & 51.80 & 38.80 & 86.60 & 52.40 & 84.75 & 82.72 & 87.50 & 70.62 \\
+s1 budget forcing & 35.00 & 35.00 & 57.80 & 18.60 & 19.20 & 53.00 & 27.40 & 45.76 & 45.55 & 52.08 & 38.94 \\
+Vote ($N=400$) & 29.60 & 31.00 & 60.20 & 15.60 & 13.40 & 57.00 & 23.40 & 39.83 & 47.12 & 46.88 & 36.40 \\
 4-shot ICL & 29.80 & 23.80 & 45.80 & 21.80 & 16.00 & 44.20 & 22.20 & 30.51 & 33.51 & 36.46 & 30.41 \\
 Reflexion (max 3 trials) & 34.20 & 37.40 & 68.60 & 25.80 & 19.20 & 63.40 & 35.60 & 61.02 & 58.12 & 54.17 & 45.75 \\
 \midrule
 \multicolumn{12}{l}{\textbf{Panel B: GeLLMO-P6-Llama (8B)}} \\
 Beam ($w=20$) & 22.40 & 13.80 & 63.20 & 13.00 & 11.00 & 46.20 & 15.40 & 44.07 & 43.98 & 57.29 & 33.03 \\
-Sampling + task verifier & \textbf{84.80} & \textbf{79.80} & \textbf{98.20} & \textbf{72.80} & 63.00 & \textbf{96.20} & \textbf{77.80} & 94.92 & \textbf{97.38} & \textbf{96.88} & \textbf{86.18} \\
-Self-Refine ($r=1$) & 27.80 & 21.40 & 49.00 & 16.20 & 15.40 & 41.80 & 20.60 & 38.98 & 41.88 & 46.88 & 31.99 \\
-ToT (LM voting) & 21.60 & 13.60 & 27.00 & 10.80 & 9.80 & 27.00 & 16.60 & 31.36 & 29.84 & 25.00 & 21.26 \\
-GoT (G12) & 79.80 & 77.00 & 96.20 & 66.80 & \textbf{66.40} & 89.00 & 71.00 & \textbf{95.76} & 93.72 & \textbf{96.88} & 83.26 \\
-s1-style ($B=512$) & 24.20 & 21.20 & 46.60 & 15.80 & 14.00 & 45.40 & 17.00 & 42.37 & 41.36 & 42.71 & 31.06 \\
-Exact Voting ($N=400$) & 25.00 & 17.60 & 57.60 & 15.40 & 11.00 & 44.40 & 19.00 & 44.07 & 44.50 & 44.79 & 32.34 \\
+Sampling + verification & \textbf{84.80} & \textbf{79.80} & \textbf{98.20} & \textbf{72.80} & 63.00 & \textbf{96.20} & \textbf{77.80} & 94.92 & \textbf{97.38} & \textbf{96.88} & \textbf{86.18} \\
+Self-Refine (1 revision) & 27.80 & 21.40 & 49.00 & 16.20 & 15.40 & 41.80 & 20.60 & 38.98 & 41.88 & 46.88 & 31.99 \\
+ToT (model voting) & 21.60 & 13.60 & 27.00 & 10.80 & 9.80 & 27.00 & 16.60 & 31.36 & 29.84 & 25.00 & 21.26 \\
+GoT (12 initial nodes) & 79.80 & 77.00 & 96.20 & 66.80 & \textbf{66.40} & 89.00 & 71.00 & \textbf{95.76} & 93.72 & \textbf{96.88} & 83.26 \\
+s1 budget forcing & 24.20 & 21.20 & 46.60 & 15.80 & 14.00 & 45.40 & 17.00 & 42.37 & 41.36 & 42.71 & 31.06 \\
+Vote ($N=400$) & 25.00 & 17.60 & 57.60 & 15.40 & 11.00 & 44.40 & 19.00 & 44.07 & 44.50 & 44.79 & 32.34 \\
 4-shot ICL & 39.80 & 23.60 & 69.80 & 36.80 & 35.60 & 47.20 & 28.00 & 69.49 & 57.59 & 73.96 & 48.18 \\
 Reflexion (max 3 trials) & 45.40 & 38.80 & 73.00 & 32.00 & 31.40 & 63.20 & 40.20 & 70.34 & 71.20 & 65.62 & 53.12 \\
 \bottomrule\end{tabular*}
 \par\vspace{4pt}\noindent\begin{minipage}{\linewidth}\TableNoteFont
 \textbf{Tasks and data.} B: blood--brain barrier permeability (BBBP); D: dopamine D2 receptor activity (DRD2); P: penalized logP; Q: drug-likeness (QED); M: mutagenicity; H: human intestinal absorption (HIA). M is minimized; other targets are maximized. Both models use the same seen-instruction test manifests. IND/OOD follow the paper-defined property-combination split, whose source filters also differ.
 \par\smallskip
-\textbf{Common evaluation.} Each input has one terminal output ($K=1$). Success requires a chemically valid, evaluable molecule that strictly improves every target under the same property evaluators and original two-decimal comparison conversion. Empty, invalid, and documented non-evaluable outputs remain failures in the full denominator; no replacement is made. Macro10 equally averages the ten unrounded task rates; \emph{All: 3,905} denotes the total input count. Bold marks all highest displayed rates per column within each model.
+\textbf{Common evaluation.} Each input has one terminal output ($K=1$). Success requires a chemically valid, evaluable molecule that strictly improves every target under the same property evaluators and original two-decimal comparison conversion. Empty, invalid, and documented non-evaluable outputs remain failures in the full denominator; no replacement is made. The macro-average gives equal weight to the ten unrounded task rates; \emph{All: 3,905} denotes the total input count. Bold marks all highest displayed rates per column within each model.
 \par\smallskip
-\textbf{Methods and tools.} Beam and beam-4 ICL return model rank~0; Self-Refine returns its one-revision endpoint; ToT returns its final-frontier LM-vote winner; GoT returns rank~0 of its original 28-node G12 graph; Exact Voting retains 400-proposal voting; Reflexion retains success stopping within three trials. Public property tools are available during inference and used by Sampling, GoT, and Reflexion. Sampling checks original slots 0--19 in order, returns the first verifier pass, and otherwise returns original slot~0. Its verifier and final success criterion coincide, so its $K=1$ success rate equals prefix-20 coverage; actual generation cost remains 40 proposals.
+\textbf{Methods and tools.} Beam and beam-4 ICL return model rank~0; Self-Refine returns its one-revision endpoint; ToT returns its final-frontier LM-vote winner; GoT returns rank~0 of its original 28-node graph with 12 initial nodes; Vote retains 400-proposal voting; Reflexion retains success stopping within three trials. Public property tools are available during inference and used by Sampling, GoT, and Reflexion. Sampling checks original slots 0--19 in order, returns the first verifier pass, and otherwise returns original slot~0. Its verifier and final success criterion coincide, so its $K=1$ success rate equals prefix-20 coverage; actual generation cost remains 40 proposals.
 \par\smallskip
-\textbf{Scope.} Internal compute budgets and tool use differ. These are molecular-task adaptations: s1 denotes the B512 budget-forcing component without s1K training; ICL is a few-shot baseline. Results describe one recorded realization per configuration under the specified proxy-property tools, including documented molecular exceptions.
+\textbf{Scope.} Internal compute budgets and tool use differ. These are molecular-task adaptations: s1 denotes the budget-forcing component with 512 reasoning tokens without s1K training; ICL is a few-shot baseline. Results describe one recorded realization per configuration under the specified proxy-property tools, including documented molecular exceptions.
 \end{minipage}
 \end{table*}

@@ -5,14 +5,14 @@ We use the fixed \gellmo{} P6 checkpoints based on Mistral-7B-Instruct-v0.3 and 
 
 Source inputs, instruction scope, checkpoints, and final evaluators are fixed within each paired comparison. OOD denotes combinations excluded from the original P6 training scope, not unseen component properties, instructions, or scaffolds. Source filters also differ, so IND/OOD differences cannot be attributed solely to novel combinations. Appendix~\ref{app:implementation} gives checkpoint and evaluator details.
 
-\subsection{A common terminal-output contract}
+\subsection{Shared final-output protocol}
 Each strategy maps a source molecule $x$ and its target set $T$ to one terminal output $y$. Internal candidate count $N$, search width, and revision count are distinct from evaluated output count $K=1$. With frozen property functions $f_j$, directional success for a chemically valid and property-evaluable output is
 \begin{equation}
  S(x,y,T)=\prod_{j\in T}\mathbf{1}\!\left[d_j(f_j(y)-f_j(x))>0\right],
 \end{equation}
 where $d_j=-1$ for mutagenicity and $+1$ otherwise. Candidate comparison values use the retained two-decimal conversion; source values remain as stored. Every requested property must strictly improve. Similarity and minimum improvement magnitude are not part of this primary success predicate.
 
-Empty, invalid, and documented molecule-level non-evaluable outputs have $S=0$; infrastructure failures and unexpected missing evaluations instead block completion. Failed outputs are neither replaced nor removed from the denominator. For task $t$, $\mathrm{SR}_t=100\sum_{i=1}^{n_t}S_i/n_t$. Macro10 is the unweighted mean of the ten task rates, rather than a pooled input average.
+Empty, invalid, and documented molecule-level non-evaluable outputs have $S=0$; infrastructure failures and unexpected missing evaluations instead block completion. Failed outputs are neither replaced nor removed from the denominator. For task $t$, $\mathrm{SR}_t=100\sum_{i=1}^{n_t}S_i/n_t$. The macro-average is the unweighted mean of the ten task rates, rather than a pooled input average.
 
 \subsection{Feedback access and scope of comparison}
 Public property tools are available during inference. Sampling, GoT, and Reflexion query them; other methods retain model-based or identity-based decisions. All receive the same final evaluation. The tools supply computational proxies, not experimental measurements or independent biological ground truth.
