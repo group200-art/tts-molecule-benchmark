@@ -14,7 +14,7 @@
 \newcommand{\TableNoteFont}{\fontsize{9}{10.5}\selectfont}
 % Align result values with the method name, above its configuration note.
 \newcommand{\MethodWithNote}[2]{\begin{tabular}[t]{@{}l@{}}#1\\#2\end{tabular}}
-% Retain the existing top-aligned full-page table placement.
+% Top-align float pages.
 \makeatletter
 \setlength{\@fptop}{0pt}
 \setlength{\@dblfptop}{0pt}
@@ -29,9 +29,7 @@
 \maketitle
 \input{sections/abstract}
 \input{sections/introduction}
-\clearpage
 \input{tables/table1_effectiveness}
-\clearpage
 \input{sections/protocol}
 \input{sections/methods}
 \input{tables/table2_workload}

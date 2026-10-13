@@ -1,8 +1,7 @@
-% Reproducible ten-task macro means of unchanged final K=1 endpoints.
 \begin{table*}[t]
 \centering\EvalTableFont
 \setlength{\tabcolsep}{4pt}\renewcommand{\arraystretch}{1.10}
-\caption{Final-output validity, magnitude-sensitive success, and molecular quality. All five columns are equal macro averages over all ten tasks, using the same 3,905 inputs per model--method configuration and single final outputs ($K=1$) as Table~\ref{tab:effectiveness}.}
+\caption{Molecular quality of the final outputs from Table~\ref{tab:effectiveness}. All metrics are macro averages over ten tasks.}
 \label{tab:quality}
 \begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}l r r r r r@{}}
 \toprule
@@ -31,6 +30,6 @@ Vote ($N=400$) & 85.62 & 14.39 & 1.251 & 0.518 & 2.898 \\
 Reflexion (max 3 trials) & 82.51 & 25.08 & 1.445 & 0.394 & 2.827 \\
 \bottomrule\end{tabular*}
 \par\vspace{5pt}\noindent\begin{minipage}{\linewidth}\TableNoteFont
-Validity and Threshold SR retain all inputs in their denominators; validity does not imply property success. Stabilized RI, Sim, and SAS average successful final outputs within each task, then average tasks equally. Successful subsets differ across methods, so these means are descriptive, not paired quality gains. Lower SAS indicates predicted easier synthesis. No auxiliary metric changes output selection. Section~\ref{sec:metrics} defines thresholds, the stabilized RI variant, fingerprint settings, and precision.
+Stabilized RI, Sim, and SAS average each method's successful outputs within tasks, then average tasks equally. Lower SAS is better. Section~\ref{sec:metrics} defines the metrics and thresholds.
 \end{minipage}
 \end{table*}

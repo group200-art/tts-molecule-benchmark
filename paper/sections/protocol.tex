@@ -1,23 +1,15 @@
 \section{Benchmark Protocol}
 \label{sec:protocol}
-\subsection{Tasks, models, and paired coverage}
-We use the fixed \gellmo{} P6 checkpoints based on Mistral-7B-Instruct-v0.3 and Llama-3.1-8B-Instruct, without additional training. Each configuration covers the same ten seen-instruction tasks from the original multi-property benchmark \citep{gellmo2025}. The five IND property combinations contain 2,500 task--input pairs, and the five OOD combinations contain 1,405. Table~\ref{tab:effectiveness} defines all properties, combinations, and task sizes. The evaluation unit is a task--input pair: a source molecule may occur in more than one task, with a different requested property combination.
+\subsection{Tasks and models}
+We use frozen GeLLMO-P6 adapters on Mistral-7B-Instruct-v0.3 and Llama-3.1-8B-Instruct. All configurations share the original seen-instruction test manifests: five IND tasks with 2,500 task--input pairs and five OOD tasks with 1,405 pairs \citep{gellmo2025}. OOD refers to held-out property combinations. Table~\ref{tab:effectiveness} gives task definitions and sizes.
 
-Source inputs, instruction scope, checkpoints, and final evaluators are fixed within each paired comparison. OOD denotes combinations excluded from the original P6 training scope, not unseen component properties, instructions, or scaffolds. Source filters also differ, so IND/OOD differences cannot be attributed solely to novel combinations. Appendix~\ref{app:implementation} gives checkpoint and evaluator details.
-
-\subsection{Shared final-output protocol}
-Each strategy maps a source molecule $x$ and its target set $T$ to one terminal output $y$. Internal candidate count $N$, search width, and revision count are distinct from evaluated output count $K=1$. With frozen property functions $f_j$, directional success for a chemically valid and property-evaluable output is
+\subsection{Final-output evaluation}
+Each method returns one molecule $y$ for source $x$ and target set $T$ ($K=1$). For a chemically valid, property-evaluable output, success is
 \begin{equation}
  S(x,y,T)=\prod_{j\in T}\mathbf{1}\!\left[d_j(f_j(y)-f_j(x))>0\right],
 \end{equation}
-where $d_j=-1$ for mutagenicity and $+1$ otherwise. Candidate comparison values use the retained two-decimal conversion; source values remain as stored. Every requested property must strictly improve. Similarity and minimum improvement magnitude are not part of this primary success predicate.
+where $f_j$ is the fixed property evaluator and $d_j=-1$ for mutagenicity and $+1$ otherwise. Candidate values use the original two-decimal comparison conversion; source values retain their stored precision.
 
-Empty, invalid, and documented molecule-level non-evaluable outputs have $S=0$; infrastructure failures and unexpected missing evaluations instead block completion. Failed outputs are neither replaced nor removed from the denominator. For task $t$, $\mathrm{SR}_t=100\sum_{i=1}^{n_t}S_i/n_t$. The macro-average is the unweighted mean of the ten task rates, rather than a pooled input average.
+Empty, invalid, and documented non-evaluable outputs receive $S=0$ and remain in the denominator. Task success is $\mathrm{SR}_t=100\sum_i S_i/n_t$; the macro-average weights the ten task rates equally.
 
-\subsection{Feedback access and scope of comparison}
-Public property tools are available during inference. Sampling, GoT, and Reflexion query them; other methods retain model-based or identity-based decisions. All receive the same final evaluation. The tools supply computational proxies, not experimental measurements or independent biological ground truth.
-
-We preserve method-specific output rules. Adding a common property reranker would define different procedures, for example changing Beam from likelihood to objective-based selection. The benchmark standardizes inputs, output count, and final scoring, while exposing internal budget and feedback differences. It evaluates specified operating points, not optimal budgets or compute--performance scaling curves.
-
-\subsection{Endpoint integrity and reuse}
-Each configuration contains all 3,905 registered input identifiers, yielding 70,290 final outcomes. Endpoint records retain the returned molecule, original position, selection provenance, and evaluation status. Cache reuse requires matching input identity, model, generation configuration, and causal position; it never permits post-hoc reselection for a better reported score. Reused generation work is counted once. Each configuration has one recorded realization, without estimates of generation-seed variability.
+Methods retain their own output rules and internal budgets. Sampling, GoT, and Reflexion use property tools during inference; Table~\ref{tab:workload} records this access. The paired comparison contains 70,290 final outputs. Appendix~\ref{app:implementation} details evaluation precision, cache reuse, and decoding.

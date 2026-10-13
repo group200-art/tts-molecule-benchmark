@@ -1,33 +1,22 @@
 # TTS Molecular Benchmark
 
-把已发表的 TTS 方法接到 GeLLMO，比较它们在分子优化任务上的表现。
-
-- 两个模型：GeLLMO-P6-Mistral 7B、GeLLMO-P6-Llama 8B。
-- 九种方法，每个模型、每种方法使用全部 3,905 个任务输入。
-- 主结果统一 K=1；K20 扩展单独记录。
-
-## 先看这些
+在固定 GeLLMO 模型上测评已发表的 TTS 方法：Mistral 7B、Llama 8B，九种方法、十个任务、每配置 3,905 个输入。主表 K=1；K=20 扩展进度见 STATUS。
 
 | 内容 | 文件 |
 |---|---|
-| 最新进度 | [STATUS](docs/STATUS.md) |
-| 九种方法及代码入口 | [METHODS](docs/METHODS.md) |
-| 新旧名称对照 | [NAMING](docs/NAMING.md) |
-| 运行方式 | [RUN](docs/RUN.md) |
-| 主表结果 | [Table 1](results/k1/table1.csv) |
-| 原 GeLLMO 指标补评 | [补充结果](results/original_metrics_k1/macro_metrics.csv) |
+| 实验进度 | [STATUS](docs/STATUS.md) |
+| 方法配置与代码入口 | [METHODS](docs/METHODS.md) |
+| 运行与依赖 | [RUN](docs/RUN.md) |
+| 名称对照 | [NAMING](docs/NAMING.md) |
+| 主表 | [Table 1](results/k1/table1.csv) |
+| 原 GeLLMO 指标 | [补评结果](results/original_metrics_k1/macro_metrics.csv) |
 | Vote 的 K1/K20 对照 | [Vote](results/vote_20_votes_20_runs/macro.csv) |
 | 论文源码 | [paper/main.tex](paper/main.tex) |
-
-## 重算主表
 
 ```bash
 python3 analysis/reproduce_table1.py
 ```
 
-只需 Python 3.9+，无需 GPU。脚本核对全部 70,290 个终端输出，并重算主表。
+Python 3.9+ 标准库即可从 70,290 个保存的输出重算主表，结果写入 `analysis_output/`。
 
-`results/` 使用清晰名称；`original/` 保存实验代码、配置和改名前的结果及论文原件。`data/` 保存测试清单和 K1 终端结果。
-模型权重、原始训练集和大规模生成缓存保留在计算服务器；获取方式见 [RUN](docs/RUN.md)。
-
-这是当前实验快照；更新日期及文件哈希见 [snapshot](evidence/snapshot.json)。
+`data/` 保存测试清单与 K1 输出，`results/` 保存汇总，`original/` 保存实验原件。文件来源、哈希和快照时间见 [evidence](evidence/snapshot.json)。

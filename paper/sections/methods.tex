@@ -1,30 +1,35 @@
 \section{Inference Methods}
 \label{sec:methods}
-Appendix~\ref{app:implementation} gives decoding settings, molecular scoring details, and failure handling for the following adaptations.
+We specify each method's molecular interface and output rule below; decoding parameters and scoring formulas are in Appendix~\ref{app:implementation}.
 
 \paragraph{Beam search.}
-The deterministic baseline \citep{beam2014} uses width 20 and returns the first sequence in the model's native ordering. All 20 returned sequences contribute to workload, while only rank zero determines success. No property reranking or fallback to a lower-ranked valid molecule is added.
+Width-20 beam search returns model rank~0 \citep{beam2014}.
 
 \paragraph{Repeated Sampling with verification.}
-The recorded configuration generates 40 proposals and examines their fixed first 20 in original order, implementing sampling with task verification \citep{repeatedsampling2024}. The molecular verifier is exactly the benchmark's chemical eligibility and strict all-target directional-improvement predicate. The first passing proposal is returned; if none passes, proposal zero is returned unchanged. Duplicates and invalid strings retain their positions. No scalar property score or additional tie-breaker is introduced. Final-output SR therefore equals first-20 coverage by construction, rather than demonstrating a learned selector. All 40 generated proposals remain in workload accounting.
+We generate 40 proposals and verify the first 20 in order \citep{repeatedsampling2024}. The verifier uses the success predicate from Section~\ref{sec:protocol}. We return the first passing proposal, or proposal~0 if none passes. Duplicates and invalid strings retain their positions. Thus, for the returned output $y^*$,
+\begin{equation}
+ S(x,y^*,T)=\max_{0\leq i<20}S(x,y_i,T).
+ \label{eq:sampling-selection}
+\end{equation}
+Its single-output SR equals first-20 candidate coverage.
 
 \paragraph{Self-Refine.}
-The same model generates an answer, critiques it, and revises it \citep{selfrefine2023}. We fix one refinement and return that answer. The recorded prefix contains four responses: initial answer, initial feedback, refinement, and terminal feedback. The last feedback does not change the output. Feedback uses no external candidate properties, and initial and refined answers are not retrospectively compared. This evaluates one feedback--revision iteration, without establishing the benefit of longer trajectories.
+We return the first revised molecule \citep{selfrefine2023}. Feedback comes from the same model and uses no external properties. The saved execution also includes feedback on the revised answer, counted in workload.
 
 \paragraph{Tree of Thoughts.}
-ToT retains language-model evaluation that causally determines branches \citep{tot2023}. Five initial molecular states receive five voting responses from the same checkpoint, retaining three parents. Each parent produces five new children; five further voting responses select one terminal child. This gives 20 molecular proposals and ten judging responses. Voting prompts exclude externally computed candidate properties, validity labels, and success labels. Malformed votes contribute zero, and ties follow original frontier order. Molecular prompts, depth, and width are adaptation choices; final selection remains within the terminal frontier without property-based replacement.
+The generator model votes to retain three of five initial candidates, expands each retained candidate into five children, and votes for one final child \citep{tot2023}. Voting prompts contain no externally computed properties or validity labels.
 
 \paragraph{Graph of Thoughts.}
-Our GoT configuration instantiates its graph operations \citep{got2024}: 12 initial nodes are scored, six parents retained, and six refinements, six two-parent merges, and four four-parent aggregations generated, totaling 28 nodes. Multi-parent prompts combine molecular design ideas, rather than explicitly editing chemical graphs. Our task-specific scorer combines property improvements, source similarity, synthetic accessibility, and a duplicate penalty. Its features, weights, and molecular feedback are benchmark adaptations. The scorer selects parents and ranks the completed graph; the native full-graph rank-zero node is returned without another reranker.
+GoT generates 12 initial nodes, then refines, merges, and aggregates selected parents, producing 28 nodes \citep{got2024}. A task-specific score combines property improvements, source similarity, SAS, and a duplicate penalty. It selects parents and returns the highest-scoring node in the completed graph.
 
 \paragraph{s1 budget forcing.}
-We adapt s1's inference-time budget forcing \citep{s1_2025}, without s1K training or checkpoint replacement. Greedy reasoning permits at most one literal \texttt{Wait} continuation when the initial response ends before its allowance is exhausted. A separate final-answer cue requests the molecule; only that newly generated response supplies the output. This tests an inference component, not the complete trained s1 system.
+We use inference-time budget forcing without s1K training \citep{s1_2025}: greedy reasoning with a 512-token allowance and at most one \texttt{Wait} continuation, followed by a separate molecular answer.
 
 \paragraph{Vote.}
-Four hundred proposals each vote for an answer class \citep{voting2024}. Our molecular equivalence relation groups valid outputs by canonical isomeric SMILES; invalid outputs remain in classes defined by whitespace-normalized response text. The largest class wins, with ties resolved by first appearance and its earliest representative returned. Canonicalization introduces no property-quality preference. Invalid or empty classes can win, without replacement by another candidate.
+We aggregate 400 proposals by molecular identity \citep{voting2024}. Valid outputs use canonical isomeric SMILES; invalid outputs use whitespace-normalized response text. The largest class wins, with ties resolved by first appearance; its earliest representative is returned.
 
 \paragraph{Four-shot ICL.}
-This contextual baseline \citep{brown2020} draws four demonstrations deterministically from the permitted training pool, retaining their task labels. Declared held-out property combinations are excluded. Demonstration source and target molecules are screened against all evaluation sources by raw and canonical identity. No similarity retrieval is added. Four-beam decoding returns its native first beam. The baseline changes prompt context rather than reproducing a complete reasoning-time scaling system.
+The contextual baseline uses four fixed training demonstrations and returns rank~0 from four-beam decoding \citep{brown2020}. Demonstration filtering excludes held-out combinations and evaluation-source identities.
 
 \paragraph{Reflexion.}
-The adaptation retains actor generation, evaluator feedback, failure-conditioned reflection, and within-input memory \citep{reflexion2023}. Each trial generates a thought and molecular action. Property tools inform the evaluator, but model feedback exposes only binary success and invalid-output status, not numerical improvements. Failed nonterminal trials trigger reflection for the next trial. Execution stops on success or after three trials and returns that terminal action, without retrospective best-trial selection. Memory is not shared across inputs.
+We allow up to three trials, with evaluator feedback reporting binary success and invalid-output status \citep{reflexion2023}. Failed nonterminal trials trigger reflection; memory is confined to the current input. Execution stops on success or at the trial limit and returns the last action.

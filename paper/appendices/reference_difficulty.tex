@@ -1,8 +1,7 @@
 \section{Reference Coverage Groups}
 \label{app:reference_difficulty}
-Table~\ref{tab:difficulty} separately analyzes one fixed, retrospective partition of all 3,905 inputs, shared by both models. The reference runs use Mistral Beam20, Beam100, and Sample160, with the beam widths and sample count indicated by their names. The table defines group membership and pools success within each group. These reference pools define labels only; all displayed method outcomes remain $K=1$.
+Table~\ref{tab:difficulty} partitions the 3,905 inputs using Mistral Beam20, Beam100, and Sampling160 candidate coverage. Both models use the same groups, with success pooled over inputs. All displayed method outputs use $K=1$.
 
-The construction imposes zero-success constraints on Mistral Beam and Sampling that do not apply to Llama. Thus the groups preserve paired inputs but do not measure model-independent difficulty. Their cross-model differences cannot establish causal superiority, and the 27-input OOD reference-unsolved group is especially sensitive to individual outcomes.
-
+The OOD reference-unsolved group contains 27 inputs: 2 MPQ, 24 BDMQ, and 1 BMPQ. Each additional success changes its pooled SR by 3.70 percentage points.
 \input{tables/table4_difficulty}
 \clearpage

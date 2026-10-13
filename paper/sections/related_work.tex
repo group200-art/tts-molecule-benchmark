@@ -1,14 +1,5 @@
 \section{Related Work}
 \label{sec:related-work}
+\gellmo{} studies instruction-conditioned molecular optimization and generalization across property combinations \citep{gellmo2025}. We use its models and evaluation pipeline to compare inference strategies.
 
-\paragraph{Instruction-conditioned molecular optimization.}
-GeLLM$^3$O formulates multi-property optimization as instruction following and evaluates generalization across property combinations \citep{gellmo2025}. We use its frozen checkpoints to study inference procedures. A request may admit many successful structures, so identity agreement, model probability, and property improvement are distinct selection criteria. The evaluators, including ADMET-AI \citep{admet2024}, supply computational proxies rather than experimental biological measurements.
-
-\paragraph{Proposal generation and answer selection.}
-Beam decoding ranks sequences using the model \citep{beam2014}. Repeated sampling studies additional proposals and verification \citep{repeatedsampling2024}, while voting aggregates answer agreement \citep{voting2024}. Their molecular interfaces differ: verification tests property improvement, whereas exact voting requires molecular identity. Terminal success depends on both the generated candidates and the selector's available information.
-
-\paragraph{Feedback and structured search.}
-Self-Refine uses model-generated feedback to revise answers \citep{selfrefine2023}; Reflexion uses evaluator feedback and verbal reflections across attempts \citep{reflexion2023}. ToT evaluates search states \citep{tot2023}, and GoT supports dependencies and aggregation between outputs \citep{got2024}. We retain these distinctions while explicitly specifying molecular states, prompts, scores, feedback, and termination rules.
-
-\paragraph{Budget forcing and contextual baselines.}
-s1 combines training and inference-time budget forcing \citep{s1_2025}; our frozen-checkpoint setting studies only the latter. Few-shot prompting provides a contextual baseline \citep{brown2020}. Our benchmark pairs specified molecular adaptations under common inputs, output count, and evaluators, with internal budgets and feedback access disclosed separately.
+The benchmark spans beam search \citep{beam2014}, repeated sampling \citep{repeatedsampling2024}, voting \citep{voting2024}, feedback-based refinement \citep{selfrefine2023,reflexion2023}, and structured search \citep{tot2023,got2024}. We also include s1's budget-forcing component \citep{s1_2025} and few-shot prompting \citep{brown2020}. Their molecular adaptations specify candidate identity, property feedback, state scoring, and output selection under a shared final-output evaluation.

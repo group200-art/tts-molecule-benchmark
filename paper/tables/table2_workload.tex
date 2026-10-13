@@ -1,8 +1,7 @@
-% Existing workload values preserved; Table 1 alone reports main success rates.
 \begin{table*}[t]
 \centering\EvalTableFont
 \setlength{\tabcolsep}{3pt}\renewcommand{\arraystretch}{1.10}
-\caption{Recorded generation workload and inference-time property-tool access. Means include all 3,905 inputs per configuration, including failures, for the same final-output procedures ($K=1$) as Table~\ref{tab:effectiveness}.}
+\caption{Generation workload per input and inference-time property-tool access. Means cover all 3,905 inputs per configuration.}
 \label{tab:workload}\label{tab:tts_efficiency}
 \begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}l r r r l@{}}
 \toprule
@@ -31,6 +30,6 @@ Vote ($N=400$) & 400.00 & 400.00 & 18,957 & None \\
 Reflexion (max 3 trials) & 2.27 & 5.81 & 965 & Feedback and stopping \\
 \bottomrule\end{tabular*}
 \par\vspace{5pt}\noindent\begin{minipage}{\linewidth}\TableNoteFont
-Proposals include unselected candidates; LM sequences additionally include reasoning, feedback, reflection, and judging. Reused prefixes are charged once. Sampling counts all 40 proposals; Self-Refine includes terminal feedback. Tokens use native tokenizers, include the first EOS, and exclude prompts and later padding. Unreturned beam-search work and property-tool costs are excluded: these are output-workload statistics, not total compute or latency. Tool categories describe inference use, not query counts; \emph{None} still permits final evaluation. See Section~\ref{sec:metrics} for counting rules.
+Counts cover returned generations, including all 40 Sampling proposals and Self-Refine's terminal feedback. LM sequences include reasoning, feedback, reflection, and judging. Section~\ref{sec:metrics} defines token accounting; tool entries indicate inference-time use.
 \end{minipage}
 \end{table*}

@@ -1,7 +1,7 @@
 \begin{table}[t]
 \centering\EvalTableFont
 \setlength{\tabcolsep}{2.5pt}\renewcommand{\arraystretch}{1.08}
-\caption{Macro-average success (\%) under different output rules. Coverage counts an input if any evaluated candidate succeeds; single-output rows evaluate the returned candidate.}
+\caption{Macro SR (\%) for candidate coverage and single-output selection.}
 \label{tab:readout_diagnostics}
 \begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}lrrr@{}}
 \toprule
@@ -16,6 +16,6 @@ Sampling, prefix-20 coverage & 20 & 81.13 & 86.18 \\
 Sampling + verification & 1 & 81.13 & 86.18 \\
 \bottomrule\end{tabular*}
 \par\vspace{3pt}\noindent\begin{minipage}{\linewidth}\TableNoteFont
-$^{\dagger}$Our arithmetic mean of the rounded task rates in Tables~3--4 of the GeLLMO paper; this macro is derived, not reported by its authors. Local rows retain the same 3,905 inputs and frozen proxy-property evaluation. Beam rows share width-20 generated pools. Sampling rows share the original 40-candidate calls, using slot~0 or the fixed first 20 candidates. The task verifier uses the final success criterion, making its $K=1$ rate equal to prefix-20 coverage. The first-candidate row is a cached-output diagnostic, not an independently generated $N=1$ experiment. Budgets differ across strategies. No Beam-plus-verifier experiment is claimed.
+$^{\dagger}$Arithmetic mean of the rounded task rates in Tables~3--4 of \citet{gellmo2025}. Local Beam rows share width-20 pools; Sampling rows share 40-proposal calls and evaluate slot~0 or the first 20 candidates. The first-candidate result is a cached-output diagnostic. Equation~\ref{eq:sampling-selection} gives the verifier--coverage identity.
 \end{minipage}
 \end{table}

@@ -1,8 +1,7 @@
-% Former Table 3 Panel B, with every numeric cell and highlight unchanged.
 \begin{table*}[t]
 \centering\EvalTableFont
 \setlength{\tabcolsep}{3pt}\renewcommand{\arraystretch}{1.10}
-\caption{Success by Mistral reference coverage. Both models and all nine methods use the same fixed input groups; every displayed method result evaluates a single final output ($K=1$). Rates pool inputs within each group.}
+\caption{Success by Mistral reference coverage, using shared input groups and single final outputs ($K=1$). Rates pool inputs within each group.}
 \label{tab:difficulty}
 \begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}l r r r r r r@{}}
 \toprule
@@ -33,8 +32,8 @@ Vote ($N=400$) & 34.03 & 10.36 & 1.76 & 4 & 7.41 & 2 \\
 Reflexion (max 3 trials) & 54.69 & 28.25 & 13.66 & 31 & 22.22 & 6 \\
 \bottomrule\end{tabular*}
 \par\vspace{5pt}\noindent\begin{minipage}{\linewidth}\TableNoteFont
-The retrospective reference partition uses Mistral candidate-pool coverage: ``Beam20 solved'' if Beam20 succeeds; ``Larger pools only'' if Beam20 fails but Beam100 or Sample160 succeeds; ``Ref. unsolved'' if all three reference pools fail. Counts give successes of the displayed method within the reference-unsolved group. These historical pools define labels only and are not the displayed evaluation setting. Failures remain in all rate denominators. Bold marks the highest displayed success rate per column within each model.
+Reference groups: Beam20 succeeds; Beam20 fails but Beam100 or Sampling160 succeeds; or all three pools fail. Counts report method successes within reference-unsolved groups. Bold marks the highest displayed SR within each model.
 \par\smallskip
-$\dagger$ Mistral Beam has zero success in the latter two groups and Mistral Sampling zero success in the unsolved group by construction; Llama has no corresponding constraint. These are reference-relative groups, not model-independent difficulty, and cannot establish causal cross-model superiority. The 27 OOD reference-unsolved inputs comprise 2 MPQ, 24 BDMQ, and 1 BMPQ cases; one success changes the pooled rate by 3.70 percentage points.
+$\dagger$ By construction, Mistral Beam has zero success outside the first group, and Mistral Sampling has zero success in the reference-unsolved group.
 \end{minipage}
 \end{table*}

@@ -1,4 +1,3 @@
-% Audited nine-method K1 results; the original eight methods retain their values and presentation.
 \begin{table*}[t]
 \centering\EvalTableFont
 \setlength{\tabcolsep}{2pt}\renewcommand{\arraystretch}{1.07}
@@ -34,12 +33,6 @@ Vote ($N=400$) & 25.00 & 17.60 & 57.60 & 15.40 & 11.00 & 44.40 & 19.00 & 44.07 &
 Reflexion (max 3 trials) & 45.40 & 38.80 & 73.00 & 32.00 & 31.40 & 63.20 & 40.20 & 70.34 & 71.20 & 65.62 & 53.12 \\
 \bottomrule\end{tabular*}
 \par\vspace{4pt}\noindent\begin{minipage}{\linewidth}\TableNoteFont
-\textbf{Tasks and data.} B: blood--brain barrier permeability (BBBP); D: dopamine D2 receptor activity (DRD2); P: penalized logP; Q: drug-likeness (QED); M: mutagenicity; H: human intestinal absorption (HIA). M is minimized; other targets are maximized. Both models use the same seen-instruction test manifests. IND/OOD follow the paper-defined property-combination split, whose source filters also differ.
-\par\smallskip
-\textbf{Common evaluation.} Each input has one terminal output ($K=1$). Success requires a chemically valid, evaluable molecule that strictly improves every target under the same property evaluators and original two-decimal comparison conversion. Empty, invalid, and documented non-evaluable outputs remain failures in the full denominator; no replacement is made. The macro-average gives equal weight to the ten unrounded task rates; \emph{All: 3,905} denotes the total input count. Bold marks all highest displayed rates per column within each model.
-\par\smallskip
-\textbf{Methods and tools.} Beam and beam-4 ICL return model rank~0; Self-Refine returns its one-revision endpoint; ToT returns its final-frontier LM-vote winner; GoT returns rank~0 of its original 28-node graph with 12 initial nodes; Vote retains 400-proposal voting; Reflexion retains success stopping within three trials. Public property tools are available during inference and used by Sampling, GoT, and Reflexion. Sampling checks original slots 0--19 in order, returns the first verifier pass, and otherwise returns original slot~0. Its verifier and final success criterion coincide, so its $K=1$ success rate equals prefix-20 coverage; actual generation cost remains 40 proposals.
-\par\smallskip
-\textbf{Scope.} Internal compute budgets and tool use differ. These are molecular-task adaptations: s1 denotes the budget-forcing component with 512 reasoning tokens without s1K training; ICL is a few-shot baseline. Results describe one recorded realization per configuration under the specified proxy-property tools, including documented molecular exceptions.
+B: blood--brain barrier permeability; D: DRD2 activity; P: penalized logP; Q: QED; M: mutagenicity; H: human intestinal absorption. Macro avg.\ equally weights the ten unrounded task rates. Bold marks the highest displayed rate per column within each model, including ties. Evaluation and method settings appear in Sections~\ref{sec:protocol} and~\ref{sec:methods}.
 \end{minipage}
 \end{table*}

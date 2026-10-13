@@ -1,26 +1,18 @@
 \section{Workload and Output-Quality Measures}
 \label{sec:metrics}
-Tables~\ref{tab:workload} and~\ref{tab:quality} complement task success with generation workload and final-molecule quality. They use the same paired outputs; no auxiliary measure changes the method's selection.
+\subsection{Generation workload}
+Table~\ref{tab:workload} reports per-input means over all 3,905 inputs. Proposals count returned molecular candidates, including duplicates and failures. LM sequences additionally count reasoning, feedback, reflection, and judging responses. Reused generation prefixes are counted once. Output tokens use each model's tokenizer and include the first EOS, excluding prompts and padding. These totals omit unreturned beam-search work and property computation.
 
-\subsection{Recorded generation workload}
-Molecular proposals include all returned molecular candidates, including invalid, repeated, and unselected proposals. Returned LM sequences additionally include reasoning, feedback, reflection, and judging. A batch may return many sequences; these are not physical call counts or independent samples, notably for beam outputs.
-
-Output tokens sum returned continuations through their first EOS, if present, excluding prompts and later padding, using each backbone's tokenizer. Workload means divide complete totals by 3,905, including failures, and weight inputs equally. The tool column describes inference use, not physical predictor-call counts.
-
-The counts exclude unreturned beam-search work, prompt processing, property computation, and other pipeline costs. Physical-call and prompt-token totals are omitted because batching and prompt replication differ. These output-workload statistics cannot establish total compute, latency, or hardware-independent efficiency.
-
-\subsection{Final-molecule quality and magnitude}
-Table~\ref{tab:quality} summarizes all ten tasks with equal task weights. Final validity is the fraction of all returned molecules that pass the recorded RDKit validity check, distinct from property-evaluation coverage. Threshold success, $\mathrm{SR}_{\mathrm{threshold}}$, uses the same chemical and property eligibility as SR and requires every target to meet a minimum directional improvement:
+\subsection{Molecular quality}
+Table~\ref{tab:quality} reports equal-task macro averages. Validity uses the recorded RDKit checks. Threshold SR uses the same eligibility and denominator as SR, with
 \begin{equation}
  d_j\bigl(f_j(y)-f_j(x)\bigr)\geq\delta_j \quad\forall j\in T.
 \end{equation}
-We use $\delta_j=0.2$ for BBBP/DRD2, $1.0$ for penalized logP, and $0.1$ for QED/HIA/mutagenicity. These numerical thresholds come from the original dataset's training-pair construction \citep{gellmo2025}; using them as an auxiliary endpoint success measure is a benchmark extension, not the original paper's primary SR. Both validity and $\mathrm{SR}_{\mathrm{threshold}}$ retain the full task denominators.
+We set $\delta_j=0.2$ for BBBP/DRD2, $1.0$ for penalized logP, and $0.1$ for QED/HIA/mutagenicity. This auxiliary metric applies the original training-pair construction thresholds to evaluation \citep{gellmo2025}.
 
-For successful terminal outputs, we also report stabilized relative improvement:
+We also introduce a stabilized variant of GeLLMO's RI:
 \begin{equation}
  \mathrm{RI}_{\mathrm{stabilized}}=\frac{1}{|T|}\sum_{j\in T}
  \frac{d_j(f_j(y)-f_j(x))}{\max(|f_j(x)|,0.1)}.
 \end{equation}
-The absolute-value denominator and its lower bound avoid sign reversals and unstable ratios around zero. This is an explicitly modified RI definition, not a numerically interchangeable reproduction of the original paper's RI. Similarity (Sim) is source--output Tanimoto similarity on binary Morgan fingerprints (radius 2, 2,048 bits, no chirality). SAS is the retained synthetic-accessibility score; lower values indicate predicted easier synthesis, not experimental feasibility.
-
-RI, Sim, and SAS first average the directionally successful final outputs within each task, then average the ten task means. Sim and SAS retain the recorded two-decimal conversion. All task--method groups have successful outputs and complete auxiliary measurements. However, their successful subsets differ, so these quality averages do not establish paired improvements on a shared successful subset. The analysis neither selects another candidate for a better auxiliary score nor uses a different success predicate to define the quality subset.
+Sim is source--output Tanimoto similarity on binary Morgan fingerprints (radius~2, 2,048 bits, no chirality); SAS uses the retained synthetic-accessibility scorer. Stabilized RI, Sim, and SAS average successful outputs within each task, then average task means. Sim and SAS retain the original two-decimal conversion; every task--method group has successful outputs and complete measurements.
