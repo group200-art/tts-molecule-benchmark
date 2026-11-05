@@ -37,7 +37,7 @@
   },
   "validation_gate_sha256": "5a5c1a7b12896a57589011e08dca9ebd6a81b562e297fe50988a4afe89949fa6",
   "previous_proposal_sha256": "ad43f9b7fa915cda771b0393f1231843a144dd9e8a282466b426a640721a1781",
-  "authorization": "User asked to repair this issue without changing core methods or fairness.",
+  "repair_scope": "Preserve the core inference methods and comparison protocol.",
   "manuscript_changed": false,
   "completed_results_rewritten": false,
   "original_shared_scientific_sources_changed": false

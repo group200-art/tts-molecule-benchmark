@@ -492,9 +492,9 @@
       "source_origin": "accepted_main_execution_source",
       "role": "scientific_source_or_config",
       "raw_sha256": "7a4f249960bdf102219ffae46be304e730710921df725c1ae2d1bdab988cabef",
-      "released_sha256": "2a3affe3d566ac898a3178bc920054577085b8c8c6a660592a433db5cfebfda5",
+      "released_sha256": "5a6b314e738c0336a2c9dbc61fc71fbcd33a31f2d1cc6c5029b2ead4fe48f61a",
       "raw_bytes": 3045,
-      "released_bytes": 2793,
+      "released_bytes": 2778,
       "deployment_normalizations": [
         {
           "kind": "deployment_identifier",
@@ -502,7 +502,15 @@
           "count": 7
         }
       ],
-      "current_original_matches_snapshot": true
+      "current_original_matches_snapshot": true,
+      "publication_edits": [
+        {
+          "date": "2026-11-05",
+          "kind": "explanatory_text_only",
+          "previous_released_sha256": "2a3affe3d566ac898a3178bc920054577085b8c8c6a660592a433db5cfebfda5",
+          "reason": "Replace the internal authorization note with the technical scope of the repair; preserve every technical field, source hash and completion flag."
+        }
+      ]
     },
     {
       "path": "snapshot/BenchmarkV2/benchmark_completion_20261023_v1/recovery_20261027_v1/validation_gate.json",
@@ -1859,11 +1867,19 @@
       "source_origin": "accepted_main_execution_source",
       "role": "scientific_source_or_config",
       "raw_sha256": "717edb7c64e13d7690900fefad4e9d36d1dc9250be45bfa85a64feb02df11a06",
-      "released_sha256": "717edb7c64e13d7690900fefad4e9d36d1dc9250be45bfa85a64feb02df11a06",
+      "released_sha256": "56d41833e21310993f4679b2c77e11045d7cd2e8842ab74d2d3c82ccdd431150",
       "raw_bytes": 6547,
-      "released_bytes": 6547,
+      "released_bytes": 6530,
       "deployment_normalizations": [],
-      "current_original_matches_snapshot": true
+      "current_original_matches_snapshot": true,
+      "publication_edits": [
+        {
+          "date": "2026-11-05",
+          "kind": "explanatory_text_only",
+          "previous_released_sha256": "717edb7c64e13d7690900fefad4e9d36d1dc9250be45bfa85a64feb02df11a06",
+          "reason": "Remove administrative approval wording from a generated status report; preserve scheduling conditions and all control flow."
+        }
+      ]
     },
     {
       "path": "snapshot/BenchmarkV2/method_review_P8_v1/design_after_p9_v1/execution_v1/code/worker.py",

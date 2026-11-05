@@ -68,7 +68,7 @@ def refresh_submission_checkpoint():
         if r:
             text += '| {} | {} | {} | {} |\n'.format(stage, r['job_id'], r['dependency'],
                          'control/submitted_' + stage + '.json')
-    text += '\nPilot mechanical PASS submits full automatically within the second approval. No SR/validity/diversity gate, retries, or extra groups.\n'
+    text += '\nPilot mechanical PASS submits the full array automatically. No SR/validity/diversity gate, retries, or extra groups.\n'
     text += '\nExact logical map and two-wave seeds: configs/design_contract.json planned_logical_shards. Pilot10 UID are excluded from full157.\n'
     text += '\nMaximum requested allocation: pilot2h + full628h = 630 GPUh; CPU audit1h and final2h, each4CPU/16GiB.\n'
     text += '\nFinal reports, receipt, and archive are produced by the single final-summary job; external accounting appends its terminal allocation without rerunning metrics.\n'
