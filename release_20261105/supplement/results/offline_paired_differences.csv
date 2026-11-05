@@ -1,0 +1,59 @@
+analysis,backbone,method,contrast,metric,estimate,ci_low,ci_high,unit,n_inputs
+similarity,mistral,beam,Sim > 0.6 minus unconstrained,SR@20,-17.647912266690334,-19.50744980455034,-15.856684687865625,percentage points,3905
+similarity,mistral,sampling,Sim > 0.6 minus unconstrained,SR@20,-25.18785798799065,-27.141814039214847,-23.203455625085983,percentage points,3905
+similarity,mistral,self_refine,Sim > 0.6 minus unconstrained,SR@20,-35.76206835862395,-37.78843619238763,-33.72246593635596,percentage points,3905
+similarity,mistral,tot,Sim > 0.6 minus unconstrained,SR@20,-39.59406350755761,-41.73844220400886,-37.48907132365073,percentage points,3905
+similarity,mistral,got,Sim > 0.6 minus unconstrained,SR@20,-33.593333629130065,-35.61452401829558,-31.52199166301647,percentage points,3905
+similarity,mistral,s1,Sim > 0.6 minus unconstrained,SR@20,-47.858934983879074,-49.94536373170368,-45.72194629799594,percentage points,3905
+similarity,mistral,voting,Sim > 0.6 minus unconstrained,SR@20,-16.77506004673588,-18.61702489176521,-15.076531059683958,percentage points,3905
+similarity,mistral,icl,Sim > 0.6 minus unconstrained,SR@20,-55.31748380512911,-57.20710863635288,-53.248107508109996,percentage points,3905
+similarity,mistral,reflexion,Sim > 0.6 minus unconstrained,SR@20,-43.25163642145118,-45.30145691845305,-41.2404040749326,percentage points,3905
+got_ordering,mistral,got,same20_creation_order minus same20_score_order,SR@1,-40.13146870470612,-42.23190351888054,-37.93159909414544,percentage points,3905
+got_ordering,mistral,got,same20_creation_order minus same20_score_order,SR@5,-16.9801575857071,-18.50277542368946,-15.514927010767892,percentage points,3905
+got_ordering,mistral,got,same20_creation_order minus same20_score_order,SR@10,-6.95395250983524,-7.897807228960417,-6.047527336347931,percentage points,3905
+got_ordering,mistral,got,same20_creation_order minus same20_score_order,SR@20,0.0,0.0,0.0,percentage points,3905
+got_ordering,mistral,got,same20_uniform_permutation minus same20_score_order,SR@1,-34.20621985091846,-35.56607790028557,-32.697861580160854,percentage points,3905
+got_ordering,mistral,got,same20_uniform_permutation minus same20_score_order,SR@5,-12.929983084200904,-13.840516433174265,-12.044346485248777,percentage points,3905
+got_ordering,mistral,got,same20_uniform_permutation minus same20_score_order,SR@10,-5.774990473522109,-6.247192196983645,-5.310438551202354,percentage points,3905
+got_ordering,mistral,got,same20_uniform_permutation minus same20_score_order,SR@20,0.0,0.0,0.0,percentage points,3905
+vote_fixed_pool,mistral,voting,First proposal per group minus Vote,SR@1,-0.5123223001153607,-1.3200873860634241,0.3064752409681878,percentage points,3905
+vote_fixed_pool,mistral,voting,First proposal per group minus Vote,SR@5,5.199201274883899,4.214785113099983,6.2402168640990965,percentage points,3905
+vote_fixed_pool,mistral,voting,First proposal per group minus Vote,SR@10,6.856235616884078,5.804801939708078,7.946875495593047,percentage points,3905
+vote_fixed_pool,mistral,voting,First proposal per group minus Vote,SR@20,8.101024196172391,7.030019321372668,9.218166014290912,percentage points,3905
+vote_fixed_pool,mistral,voting,Uniform position per group minus Vote,SR@1,-0.33666559070606683,-0.7781041088935814,0.12463169302256208,percentage points,3905
+vote_fixed_pool,mistral,voting,Uniform position per group minus Vote,SR@5,5.07808088598975,4.372481546193888,5.884802009035794,percentage points,3905
+vote_fixed_pool,mistral,voting,Uniform position per group minus Vote,SR@10,6.630684361043765,5.745010117775683,7.606871929632004,percentage points,3905
+vote_fixed_pool,mistral,voting,Uniform position per group minus Vote,SR@20,7.918774658973035,7.012259016006492,8.960582367674522,percentage points,3905
+vote_fixed_pool,mistral,voting,Diagnostic group success upper bound minus Vote,SR@1,11.101971411246192,9.886285914386928,12.408060025815068,percentage points,3905
+vote_fixed_pool,mistral,voting,Diagnostic group success upper bound minus Vote,SR@5,13.898099062324372,12.54747823575112,15.371834011933176,percentage points,3905
+vote_fixed_pool,mistral,voting,Diagnostic group success upper bound minus Vote,SR@10,15.224012112876034,13.792685987831858,16.773013391240074,percentage points,3905
+vote_fixed_pool,mistral,voting,Diagnostic group success upper bound minus Vote,SR@20,16.203399296003788,14.779473445262104,17.702106179778117,percentage points,3905
+similarity,llama,beam,Sim > 0.6 minus unconstrained,SR@20,-29.13471507380128,-31.52728606577728,-26.91675810140777,percentage points,3905
+similarity,llama,sampling,Sim > 0.6 minus unconstrained,SR@20,-45.917425015529325,-48.08192885719245,-43.72065505639387,percentage points,3905
+similarity,llama,self_refine,Sim > 0.6 minus unconstrained,SR@20,-61.09731653207915,-63.11670719319342,-59.07451337342544,percentage points,3905
+similarity,llama,tot,Sim > 0.6 minus unconstrained,SR@20,-68.93159708048628,-70.6581735779222,-67.32382598771464,percentage points,3905
+similarity,llama,got,Sim > 0.6 minus unconstrained,SR@20,-64.63524255331735,-66.54392295434951,-62.64748184463163,percentage points,3905
+similarity,llama,s1,Sim > 0.6 minus unconstrained,SR@20,-72.32301268967966,-74.00386224968267,-70.54966851435121,percentage points,3905
+similarity,llama,voting,Sim > 0.6 minus unconstrained,SR@20,-25.188689472594433,-27.186970954284156,-23.172514084628798,percentage points,3905
+similarity,llama,icl,Sim > 0.6 minus unconstrained,SR@20,-81.31866876682344,-82.76637289005733,-79.7339253638316,percentage points,3905
+similarity,llama,reflexion,Sim > 0.6 minus unconstrained,SR@20,-73.3108339249268,-75.10014593036487,-71.43328415077772,percentage points,3905
+got_ordering,llama,got,same20_creation_order minus same20_score_order,SR@1,-51.115350593072435,-53.159116071141334,-49.0552839115257,percentage points,3905
+got_ordering,llama,got,same20_creation_order minus same20_score_order,SR@5,-22.078343760168018,-23.54612683216376,-20.615322078218938,percentage points,3905
+got_ordering,llama,got,same20_creation_order minus same20_score_order,SR@10,-8.824384447008017,-9.675680283854055,-7.986856340106408,percentage points,3905
+got_ordering,llama,got,same20_creation_order minus same20_score_order,SR@20,0.0,0.0,0.0,percentage points,3905
+got_ordering,llama,got,same20_uniform_permutation minus same20_score_order,SR@1,-41.49771806874316,-42.77598930681658,-40.17553619545081,percentage points,3905
+got_ordering,llama,got,same20_uniform_permutation minus same20_score_order,SR@5,-13.309100054112449,-14.015852940003963,-12.65152546570307,percentage points,3905
+got_ordering,llama,got,same20_uniform_permutation minus same20_score_order,SR@10,-4.990851707942775,-5.374780404039637,-4.6253011597425875,percentage points,3905
+got_ordering,llama,got,same20_uniform_permutation minus same20_score_order,SR@20,0.0,0.0,0.0,percentage points,3905
+vote_fixed_pool,llama,voting,First proposal per group minus Vote,SR@1,-0.438192534090573,-1.545338775461561,0.5935165624635217,percentage points,3905
+vote_fixed_pool,llama,voting,First proposal per group minus Vote,SR@5,6.504679208447955,5.403728666230116,7.636874869003322,percentage points,3905
+vote_fixed_pool,llama,voting,First proposal per group minus Vote,SR@10,8.95374197651374,7.719896569475146,10.26470647454534,percentage points,3905
+vote_fixed_pool,llama,voting,First proposal per group minus Vote,SR@20,11.564073194900464,10.260816464620207,13.083152638007032,percentage points,3905
+vote_fixed_pool,llama,voting,Uniform position per group minus Vote,SR@1,-0.23509310941520986,-0.7868298065950066,0.27485351152335236,percentage points,3905
+vote_fixed_pool,llama,voting,Uniform position per group minus Vote,SR@5,6.009567208319284,5.328359167942112,6.830249195520192,percentage points,3905
+vote_fixed_pool,llama,voting,Uniform position per group minus Vote,SR@10,8.79095827061893,7.880921729994864,9.8056131834055,percentage points,3905
+vote_fixed_pool,llama,voting,Uniform position per group minus Vote,SR@20,11.263818696319571,10.152878206448243,12.521084495613657,percentage points,3905
+vote_fixed_pool,llama,voting,Diagnostic group success upper bound minus Vote,SR@1,15.038604800780902,13.515580589669835,16.62324567057733,percentage points,3905
+vote_fixed_pool,llama,voting,Diagnostic group success upper bound minus Vote,SR@5,19.894193436270598,18.214441957591177,21.715599202841542,percentage points,3905
+vote_fixed_pool,llama,voting,Diagnostic group success upper bound minus Vote,SR@10,21.835639586476177,20.03472016604053,23.74683141813422,percentage points,3905
+vote_fixed_pool,llama,voting,Diagnostic group success upper bound minus Vote,SR@20,23.53817648711805,21.730959091944896,25.52812315546602,percentage points,3905

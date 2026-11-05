@@ -1,0 +1,15 @@
+backbone,seed,contrast,metric,primary,n_inputs,estimate,ci_low,ci_high
+mistral,1729,GoT minus Sampling with GoT scoring,SR@1,True,500,-3.2,-7.236165536155286,0.8856170733285341
+mistral,1729,GoT minus Sampling with GoT scoring,SR@5,False,500,-5.4,-8.511634365256946,-2.1280388285940597
+mistral,1729,GoT minus Sampling with GoT scoring,SR@10,False,500,-4.4,-7.311235370321013,-1.547770614720261
+mistral,1729,GoT minus Sampling with GoT scoring,SR@20,False,500,-3.2,-5.8294984030772214,-0.7350597553462471
+mistral,1729,GoT minus Sampling with GoT scoring,SR_sim>0.6@1,False,500,-4.2,-7.166011286078206,-1.1263949034648222
+mistral,1729,GoT minus Sampling with GoT scoring,SR_sim>0.6@20,False,500,-7.6,-10.876670838364596,-4.35517520169773
+mistral,1729,GoT minus Sampling with GoT scoring,validity,False,500,4.819999999999999,3.97247457174169,5.738565081788286
+llama,1729,GoT minus Sampling with GoT scoring,SR@1,True,500,3.4,-0.5460809076915039,7.272130656670262
+llama,1729,GoT minus Sampling with GoT scoring,SR@5,False,500,3.2,0.3033699740632864,6.003796723902538
+llama,1729,GoT minus Sampling with GoT scoring,SR@10,False,500,3.8,1.1333676613462338,6.444599482977785
+llama,1729,GoT minus Sampling with GoT scoring,SR@20,False,500,3.6,1.131329889947819,6.081554571092629
+llama,1729,GoT minus Sampling with GoT scoring,SR_sim>0.6@1,False,500,-1.2,-3.257139482885461,0.9372936564577602
+llama,1729,GoT minus Sampling with GoT scoring,SR_sim>0.6@20,False,500,-6.2,-9.057328546142132,-3.3515593985085728
+llama,1729,GoT minus Sampling with GoT scoring,validity,False,500,5.359999999999999,4.41174944139968,6.347380327868361

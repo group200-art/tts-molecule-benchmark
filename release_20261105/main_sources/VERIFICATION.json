@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "files": 287,
+  "python_compiled": 186,
+  "json_parsed": 97,
+  "frozen_icl_prompts": 3905,
+  "configurations": 18,
+  "model_calls": 0,
+  "property_prediction_calls": 0,
+  "checked_utc": "2026-11-05T08:54:51.692227+00:00",
+  "command": "python verify_sources.py",
+  "source_manifest_sha256": "6d7eef72b6c304961a9e093dafa4e4f44c482fd9715c290f9b07fc72560e243d",
+  "main_configuration_manifest_sha256": "e41eb7e41c57436afed58f8ff8c2ca9b11933874c7e8dc4ad63e5c5521fd3cf8",
+  "deployment_privacy_pattern_scan": "PASS: no original private filesystem prefix, account/host identifiers, or embedded token-shaped credentials found in text or compressed prompts",
+  "portability": "Syntax/source-integrity verification only; no fresh-generation or cross-platform environment test",
+  "assets_omitted": "Base/adapter/predictor weights; raw response caches; immutable run gates/read sets; five archived execution assets indexed in SOURCE_MANIFEST.json, including the excluded internal recovery archive",
+  "omitted_execution_assets": 5
+}

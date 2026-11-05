@@ -1,0 +1,53 @@
+{
+  "status": "PASS_COMPLETE_18_CONFIGURATION_WORKLOAD",
+  "complete_configurations": 18,
+  "preserved_previously_complete_rows": 14,
+  "newly_counted_configurations": 4,
+  "reused_prefixes_included": true,
+  "physical_calls_not_conflated_with_sequences": true,
+  "excludes": "prompt processing, property computation, unreturned beam work, model loading, discarded attempts and historical branches outside the evaluated configuration",
+  "sources_count": 49099,
+  "source_index_sha256": "9a42b6969370d93e63b7ac39769964b6f642a1e7fe3404aae4ad0d54d7f19e25",
+  "new_details": {
+    "Mistral/tot": {
+      "proposals": 97625,
+      "responses": 136675,
+      "tokens": 10837481,
+      "parent_vote_all_invalid_inputs": 143,
+      "parent_vote_valid_votes": 13939,
+      "terminal_vote_all_invalid_inputs": 68,
+      "terminal_vote_valid_votes": 15336,
+      "historical_children_outside_current_graph": 10,
+      "basis": "Five initial proposals, twenty children and two five-vote stages; original token costs of reused responses included once; historical branches outside this configuration excluded"
+    },
+    "Mistral/reflexion": {
+      "proposals": 192428,
+      "responses": 499184,
+      "tokens": 95050229,
+      "trajectories": 78100,
+      "unique_recorded_response_identities": 499184,
+      "basis": "All committed thought, action and reflection responses across twenty max-three-trial trajectories; reused generations counted once"
+    },
+    "Llama/tot": {
+      "proposals": 97625,
+      "responses": 136675,
+      "tokens": 18468052,
+      "parent_vote_all_invalid_inputs": 307,
+      "parent_vote_valid_votes": 11476,
+      "terminal_vote_all_invalid_inputs": 927,
+      "terminal_vote_valid_votes": 5715,
+      "historical_children_outside_current_graph": 785,
+      "basis": "Five initial proposals, twenty children and two five-vote stages; original token costs of reused responses included once; historical branches outside this configuration excluded"
+    },
+    "Llama/reflexion": {
+      "proposals": 193051,
+      "responses": 501053,
+      "tokens": 84558180,
+      "trajectories": 78100,
+      "unique_recorded_response_identities": 501053,
+      "basis": "All committed thought, action and reflection responses across twenty max-three-trial trajectories; reused generations counted once"
+    }
+  },
+  "generation_calls": 0,
+  "property_prediction_calls": 0
+}

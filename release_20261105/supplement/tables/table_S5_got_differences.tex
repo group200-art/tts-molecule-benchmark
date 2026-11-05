@@ -1,0 +1,18 @@
+\begin{table}[!htbp]
+\centering
+\setlength{\tabcolsep}{4pt}
+\caption{Paired GoT minus Sampling differences in percentage points for the complete 500-input, one-seed comparison. SR@1 is the prespecified primary endpoint. Pointwise 95\% intervals resample original source identifiers jointly across tasks and arms; they do not quantify variability across generation seeds.}
+\label{tab:supp-got-difference}
+\begin{tabular}{lll}
+\toprule
+Backbone & Endpoint & Difference [95\% CI] \\
+\midrule
+Mistral & SR@1 & $-$3.20 [$-$7.24, +0.89] \\
+Mistral & SR@20 & $-$3.20 [$-$5.83, $-$0.74] \\
+Mistral & SR@20, Sim $>0.6$ & $-$7.60 [$-$10.88, $-$4.36] \\
+Llama & SR@1 & +3.40 [$-$0.55, +7.27] \\
+Llama & SR@20 & +3.60 [+1.13, +6.08] \\
+Llama & SR@20, Sim $>0.6$ & $-$6.20 [$-$9.06, $-$3.35] \\
+\bottomrule
+\end{tabular}
+\end{table}

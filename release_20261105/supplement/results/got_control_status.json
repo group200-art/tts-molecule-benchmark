@@ -1,0 +1,41 @@
+{
+  "status": "PASS_COMPLETE_FIXED_SCOPE",
+  "mode": "generation",
+  "inputs_per_backbone": 500,
+  "paired_inputs": 1000,
+  "arm_inputs": 2000,
+  "generation_seeds": [
+    1729
+  ],
+  "bootstrap": {
+    "seed": 20261014,
+    "replicates": 2000,
+    "clusters": 458,
+    "inputs": 500,
+    "weight_sha256": "5cd6fba9d4b42c6e484bb1f51182cb4615d281c0d85319b0d60ceef8bbbbb652",
+    "zero_denominator_redraws": 0,
+    "raw_source_unit": "original/raw SMILES identifiers",
+    "tasks": [
+      "BDP",
+      "BDQ",
+      "BPQ",
+      "DPQ",
+      "BDPQ",
+      "MPQ",
+      "BDMQ",
+      "BHMQ",
+      "BMPQ",
+      "HMPQ"
+    ],
+    "task_weighting": "equal",
+    "source_weights_shared_across_methods_tasks_arms_seeds": true,
+    "conditional_on_saved_generation_runs": true,
+    "pointwise": true,
+    "multiple_comparison_adjustment": false
+  },
+  "wall_seconds": 228.36659750714898,
+  "completed_utc": "2026-11-04T08:17:58.372096+00:00",
+  "pilot_excluded_from_formal_results": true,
+  "all_raw_logs_preserved": true,
+  "runtime_identity_checks": 40
+}

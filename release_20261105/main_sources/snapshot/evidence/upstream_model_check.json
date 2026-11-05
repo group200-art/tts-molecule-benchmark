@@ -1,0 +1,524 @@
+{
+  "checked_utc": "2026-11-04T06:25:44.495163+00:00",
+  "metadata": {
+    "mistralai/Mistral-7B-Instruct-v0.3": {
+      "status": "READ",
+      "url": "https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3",
+      "revision": "c170c708c41dac9275d15a8fff4eca08d52bab71",
+      "private": false,
+      "gated": false,
+      "siblings": [
+        {
+          "rfilename": ".gitattributes",
+          "blobId": "a6344aac8c09253b3b630fb776ae94478aa0275b",
+          "size": 1519
+        },
+        {
+          "rfilename": "README.md",
+          "blobId": "2160488d137e4f9228cb407048093babea8958ef",
+          "size": 7893
+        },
+        {
+          "rfilename": "config.json",
+          "blobId": "9f913dc05d66cfb23c16e3c93b3cc4899813dfa6",
+          "size": 601
+        },
+        {
+          "rfilename": "consolidated.safetensors",
+          "blobId": "2218d03445a4e3602acef7a38d41f5f778644309",
+          "size": 14496078512,
+          "lfs": {
+            "sha256": "76d5729be995fb6510c7f103c5b8825d3d82f8126ac949db6be367a638694d1f",
+            "size": 14496078512,
+            "pointerSize": 136
+          }
+        },
+        {
+          "rfilename": "generation_config.json",
+          "blobId": "b6bea2642bc3fe80f392111d52af91d1563a8de2",
+          "size": 116
+        },
+        {
+          "rfilename": "model-00001-of-00003.safetensors",
+          "blobId": "cafc3eb94d702d9cd4f1a9810a369f572943faab",
+          "size": 4949453792,
+          "lfs": {
+            "sha256": "ce6fb6f6f4d0183f4813cbf4ece24109da629a08d4210da46f77e1d8b0bd5c19",
+            "size": 4949453792,
+            "pointerSize": 135
+          }
+        },
+        {
+          "rfilename": "model-00002-of-00003.safetensors",
+          "blobId": "efb567b14fb746e080edbdf1096383909ac3cf23",
+          "size": 4999819336,
+          "lfs": {
+            "sha256": "8c0e72f148366b6a3709e002a98706a33d31aec8515090c856c95b2044f92ae0",
+            "size": 4999819336,
+            "pointerSize": 135
+          }
+        },
+        {
+          "rfilename": "model-00003-of-00003.safetensors",
+          "blobId": "cb8d2d7a8006ba57034a2195f6e5339577d1aeb4",
+          "size": 4546807800,
+          "lfs": {
+            "sha256": "905dd405363e43d95779c1c1155a2dbfd36155914ae95dbd934e12e490cfb4ca",
+            "size": 4546807800,
+            "pointerSize": 135
+          }
+        },
+        {
+          "rfilename": "model.safetensors.index.json",
+          "blobId": "050e5515d49376fc01e4837d031902c63af98111",
+          "size": 23950
+        },
+        {
+          "rfilename": "params.json",
+          "blobId": "00dc7d10b86d793afaf3d6733a45ee4d8c557194",
+          "size": 202
+        },
+        {
+          "rfilename": "special_tokens_map.json",
+          "blobId": "451134b2ddc2e78555d1e857518c54b4bdc2e87d",
+          "size": 414
+        },
+        {
+          "rfilename": "tokenizer.json",
+          "blobId": "8d7d23136b474a3df1182ed829db19984e295ee7",
+          "size": 1961548
+        },
+        {
+          "rfilename": "tokenizer.model",
+          "blobId": "029a2451811177349803d8a4789f6861a7afb0e0",
+          "size": 587404,
+          "lfs": {
+            "sha256": "37f00374dea48658ee8f5d0f21895b9bc55cb0103939607c8185bfd1c6ca1f89",
+            "size": 587404,
+            "pointerSize": 130
+          }
+        },
+        {
+          "rfilename": "tokenizer.model.v3",
+          "blobId": "d8233e5b061987d32b63dbfb38fe86d7d4fc8a18",
+          "size": 587404
+        },
+        {
+          "rfilename": "tokenizer_config.json",
+          "blobId": "940a9c375c745ccbf0bebc5bedcec924d71827aa",
+          "size": 140874
+        }
+      ]
+    },
+    "meta-llama/Llama-3.1-8B-Instruct": {
+      "status": "READ",
+      "url": "https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct",
+      "revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+      "private": false,
+      "gated": "manual",
+      "siblings": [
+        {
+          "rfilename": ".gitattributes",
+          "blobId": "a6344aac8c09253b3b630fb776ae94478aa0275b",
+          "size": 1519
+        },
+        {
+          "rfilename": "LICENSE",
+          "blobId": "a7c3ca16cee30425ed6ad841a809590f2bcbf290",
+          "size": 7627
+        },
+        {
+          "rfilename": "README.md",
+          "blobId": "bbd5630a05b65c1a8b25141bd11ec44844107d58",
+          "size": 44044
+        },
+        {
+          "rfilename": "USE_POLICY.md",
+          "blobId": "81ebb55902285e8dd5804ccf423d17ffb2a622ee",
+          "size": 4691
+        },
+        {
+          "rfilename": "config.json",
+          "blobId": "0bb6fd75b3ad2fe988565929f329945262c2814e",
+          "size": 855
+        },
+        {
+          "rfilename": "generation_config.json",
+          "blobId": "cc7276afd599de091142c6ed3005faf8a74aa257",
+          "size": 184
+        },
+        {
+          "rfilename": "model-00001-of-00004.safetensors",
+          "blobId": "a59dca28867995c0d05384251ac5f4d62461a226",
+          "size": 4976698672,
+          "lfs": {
+            "sha256": "2b1879f356aed350030bb40eb45ad362c89d9891096f79a3ab323d3ba5607668",
+            "size": 4976698672,
+            "pointerSize": 135
+          }
+        },
+        {
+          "rfilename": "model-00002-of-00004.safetensors",
+          "blobId": "4ab0726caf5e75dd1e5700c7e7899ac8c0798428",
+          "size": 4999802720,
+          "lfs": {
+            "sha256": "09d433f650646834a83c580877bd60c6d1f88f7755305c12576b5c7058f9af15",
+            "size": 4999802720,
+            "pointerSize": 135
+          }
+        },
+        {
+          "rfilename": "model-00003-of-00004.safetensors",
+          "blobId": "5864b15557563e7700a3f95236afdee36f5fdb74",
+          "size": 4915916176,
+          "lfs": {
+            "sha256": "fc1cdddd6bfa91128d6e94ee73d0ce62bfcdb7af29e978ddcab30c66ae9ea7fa",
+            "size": 4915916176,
+            "pointerSize": 135
+          }
+        },
+        {
+          "rfilename": "model-00004-of-00004.safetensors",
+          "blobId": "b8babcaa5a888d6efd5c05206361b4685492ad13",
+          "size": 1168138808,
+          "lfs": {
+            "sha256": "92ecfe1a2414458b4821ac8c13cf8cb70aed66b5eea8dc5ad9eeb4ff309d6d7b",
+            "size": 1168138808,
+            "pointerSize": 135
+          }
+        },
+        {
+          "rfilename": "model.safetensors.index.json",
+          "blobId": "0fd8120f1c6acddc268ebc2583058efaf699a771",
+          "size": 23950
+        },
+        {
+          "rfilename": "original/consolidated.00.pth",
+          "blobId": "419e2d2c8b3fcbea2955c1177110fe777df351f7",
+          "size": 16060617592,
+          "lfs": {
+            "sha256": "ab33d910f405204e5d388bc3521503584800461dc96808e287821dd451c1edac",
+            "size": 16060617592,
+            "pointerSize": 136
+          }
+        },
+        {
+          "rfilename": "original/params.json",
+          "blobId": "f1131204e79d0c09d2bac93f11569a8a655d68ba",
+          "size": 199
+        },
+        {
+          "rfilename": "original/tokenizer.model",
+          "blobId": "a097ce5a06fce0fa3d685a8cfb175cef243dfde9",
+          "size": 2183982,
+          "lfs": {
+            "sha256": "82e9d31979e92ab929cd544440f129d9ecd797b69e327f80f17e1c50d5551b55",
+            "size": 2183982,
+            "pointerSize": 132
+          }
+        },
+        {
+          "rfilename": "special_tokens_map.json",
+          "blobId": "02ee80b6196926a5ad790a004d9efd6ab1ba6542",
+          "size": 296
+        },
+        {
+          "rfilename": "tokenizer.json",
+          "blobId": "5cc5f00a5b203e90a27a3bd60d1ec393b07971e8",
+          "size": 9085657
+        },
+        {
+          "rfilename": "tokenizer_config.json",
+          "blobId": "db88166e2bc4c799fd5d1ae643b75e84d03ee70e",
+          "size": 55351
+        }
+      ]
+    },
+    "NingLab/GeLLMO-P6-Mistral": {
+      "status": "READ",
+      "url": "https://huggingface.co/NingLab/GeLLMO-P6-Mistral",
+      "revision": "a6437ea4aedd75584bd9d30001c63e9808489531",
+      "private": false,
+      "gated": false,
+      "siblings": [
+        {
+          "rfilename": ".gitattributes",
+          "blobId": "a6344aac8c09253b3b630fb776ae94478aa0275b",
+          "size": 1519
+        },
+        {
+          "rfilename": "README.md",
+          "blobId": "e887b626dc3d2bc9c9a14e83e2873b24a9f80cf4",
+          "size": 1848
+        },
+        {
+          "rfilename": "adapter_config.json",
+          "blobId": "22c57e0938460a71326c9ee6cda49ce3dec45b05",
+          "size": 823
+        },
+        {
+          "rfilename": "adapter_model.safetensors",
+          "blobId": "c71da46b1681b6938c71b481a0efe41fdd949a9b",
+          "size": 438627360,
+          "lfs": {
+            "sha256": "0e4144bc79ccb76fb1c7cf6eab5ae2cfe84bcb175e26cfa889ba7dd2499698a6",
+            "size": 438627360,
+            "pointerSize": 134
+          }
+        },
+        {
+          "rfilename": "config.json",
+          "blobId": "e153c36db7fab5e21f9095685e2065127dbae15e",
+          "size": 92
+        }
+      ]
+    },
+    "NingLab/GeLLMO-P6-Llama": {
+      "status": "READ",
+      "url": "https://huggingface.co/NingLab/GeLLMO-P6-Llama",
+      "revision": "6a5b6ab53b8e6d3c2016370a980d57c39c749592",
+      "private": false,
+      "gated": false,
+      "siblings": [
+        {
+          "rfilename": ".gitattributes",
+          "blobId": "a6344aac8c09253b3b630fb776ae94478aa0275b",
+          "size": 1519
+        },
+        {
+          "rfilename": "README.md",
+          "blobId": "b4d2c8a4d189ea946243920908c0bb887e497830",
+          "size": 1846
+        },
+        {
+          "rfilename": "adapter_config.json",
+          "blobId": "52084eb687c7b70c3e1fd73c58a3f656250a6b3c",
+          "size": 821
+        },
+        {
+          "rfilename": "adapter_model.safetensors",
+          "blobId": "d677ceb4287b5aa4b4ac04c76b98c6317ea456c5",
+          "size": 1226976352,
+          "lfs": {
+            "sha256": "eec62a7365b6ff17fd99e5a4f73860418adee6a3572f282246e3319f5cd9147d",
+            "size": 1226976352,
+            "pointerSize": 135
+          }
+        },
+        {
+          "rfilename": "config.json",
+          "blobId": "09995e0ff4c83ec1461a72d2c70de698bb46ffd0",
+          "size": 90
+        }
+      ]
+    }
+  },
+  "hash_checks": [
+    {
+      "repo": "mistralai/Mistral-7B-Instruct-v0.3",
+      "file": "config.json",
+      "local_sha256": "affafc6478ec0fd07a32f0ca57aa2fc57743f4d17d6730f86a96ac24d1507f99",
+      "remote_lfs_sha256": null,
+      "status": "NO_PUBLIC_LFS_HASH"
+    },
+    {
+      "repo": "mistralai/Mistral-7B-Instruct-v0.3",
+      "file": "consolidated.safetensors",
+      "local_sha256": "76d5729be995fb6510c7f103c5b8825d3d82f8126ac949db6be367a638694d1f",
+      "remote_lfs_sha256": "76d5729be995fb6510c7f103c5b8825d3d82f8126ac949db6be367a638694d1f",
+      "status": "MATCH"
+    },
+    {
+      "repo": "mistralai/Mistral-7B-Instruct-v0.3",
+      "file": "generation_config.json",
+      "local_sha256": "b4669f1b8f4185324bd9b12a69e85a1ad2289bc48111ef739cfaaea3bba6b0a9",
+      "remote_lfs_sha256": null,
+      "status": "NO_PUBLIC_LFS_HASH"
+    },
+    {
+      "repo": "mistralai/Mistral-7B-Instruct-v0.3",
+      "file": "model-00001-of-00003.safetensors",
+      "local_sha256": "ce6fb6f6f4d0183f4813cbf4ece24109da629a08d4210da46f77e1d8b0bd5c19",
+      "remote_lfs_sha256": "ce6fb6f6f4d0183f4813cbf4ece24109da629a08d4210da46f77e1d8b0bd5c19",
+      "status": "MATCH"
+    },
+    {
+      "repo": "mistralai/Mistral-7B-Instruct-v0.3",
+      "file": "model-00002-of-00003.safetensors",
+      "local_sha256": "8c0e72f148366b6a3709e002a98706a33d31aec8515090c856c95b2044f92ae0",
+      "remote_lfs_sha256": "8c0e72f148366b6a3709e002a98706a33d31aec8515090c856c95b2044f92ae0",
+      "status": "MATCH"
+    },
+    {
+      "repo": "mistralai/Mistral-7B-Instruct-v0.3",
+      "file": "model-00003-of-00003.safetensors",
+      "local_sha256": "905dd405363e43d95779c1c1155a2dbfd36155914ae95dbd934e12e490cfb4ca",
+      "remote_lfs_sha256": "905dd405363e43d95779c1c1155a2dbfd36155914ae95dbd934e12e490cfb4ca",
+      "status": "MATCH"
+    },
+    {
+      "repo": "mistralai/Mistral-7B-Instruct-v0.3",
+      "file": "model.safetensors.index.json",
+      "local_sha256": "e489ba553b87cde188d921b1a8283c2e0b9d33d635b88147d96ff0fcd6250016",
+      "remote_lfs_sha256": null,
+      "status": "NO_PUBLIC_LFS_HASH"
+    },
+    {
+      "repo": "mistralai/Mistral-7B-Instruct-v0.3",
+      "file": "params.json",
+      "local_sha256": "8a64b8657de37af1f828eef1517dc186247938d66e7fea2c78c31d5b9071efe6",
+      "remote_lfs_sha256": null,
+      "status": "NO_PUBLIC_LFS_HASH"
+    },
+    {
+      "repo": "mistralai/Mistral-7B-Instruct-v0.3",
+      "file": "special_tokens_map.json",
+      "local_sha256": "6fa06efa2785e450051989a6f8fb4416b10149ded485ddd3f127a40734f5cfd0",
+      "remote_lfs_sha256": null,
+      "status": "NO_PUBLIC_LFS_HASH"
+    },
+    {
+      "repo": "mistralai/Mistral-7B-Instruct-v0.3",
+      "file": "tokenizer.json",
+      "local_sha256": "e553af6fff7d7ad76e830608b218c5c0b0822998d5a1a96099a74cd3c1cb1a49",
+      "remote_lfs_sha256": null,
+      "status": "NO_PUBLIC_LFS_HASH"
+    },
+    {
+      "repo": "mistralai/Mistral-7B-Instruct-v0.3",
+      "file": "tokenizer.model",
+      "local_sha256": "37f00374dea48658ee8f5d0f21895b9bc55cb0103939607c8185bfd1c6ca1f89",
+      "remote_lfs_sha256": "37f00374dea48658ee8f5d0f21895b9bc55cb0103939607c8185bfd1c6ca1f89",
+      "status": "MATCH"
+    },
+    {
+      "repo": "mistralai/Mistral-7B-Instruct-v0.3",
+      "file": "tokenizer_config.json",
+      "local_sha256": "0533dec9cfe319163801b6618d0f3ec9cfa126b6288e3df5deca6e32acb09cd2",
+      "remote_lfs_sha256": null,
+      "status": "NO_PUBLIC_LFS_HASH"
+    },
+    {
+      "repo": "NingLab/GeLLMO-P6-Mistral",
+      "file": "adapter_config.json",
+      "local_sha256": "8dce3572321a2b5c5348b97cf0215bdce54f3ea15c1f383ca5a5d5f5f491f991",
+      "remote_lfs_sha256": null,
+      "status": "NO_PUBLIC_LFS_HASH"
+    },
+    {
+      "repo": "NingLab/GeLLMO-P6-Mistral",
+      "file": "adapter_model.safetensors",
+      "local_sha256": "0e4144bc79ccb76fb1c7cf6eab5ae2cfe84bcb175e26cfa889ba7dd2499698a6",
+      "remote_lfs_sha256": "0e4144bc79ccb76fb1c7cf6eab5ae2cfe84bcb175e26cfa889ba7dd2499698a6",
+      "status": "MATCH"
+    },
+    {
+      "repo": "NingLab/GeLLMO-P6-Mistral",
+      "file": "config.json",
+      "local_sha256": "9c45f36447ada15e1f5597a0ea817d5591712273655b3a2f027c5f162a6e1b94",
+      "remote_lfs_sha256": null,
+      "status": "NO_PUBLIC_LFS_HASH"
+    },
+    {
+      "repo": "NingLab/GeLLMO-P6-Mistral",
+      "file": "download_complete.json",
+      "local_sha256": "64954da2f32c48f5696c403965bdb03d326722a3f6b2a1f21bd22f61bec2f381",
+      "remote_lfs_sha256": null,
+      "status": "NO_PUBLIC_LFS_HASH"
+    },
+    {
+      "repo": "meta-llama/Llama-3.1-8B-Instruct",
+      "file": "config.json",
+      "local_sha256": "29e4c210b0d6ac178b16b2a255a568bdb23b581e50ca1ef6a6d071dd85704e6e",
+      "remote_lfs_sha256": null,
+      "status": "NO_PUBLIC_LFS_HASH"
+    },
+    {
+      "repo": "meta-llama/Llama-3.1-8B-Instruct",
+      "file": "generation_config.json",
+      "local_sha256": "189fb0c0d7fd8a527db217c0a60a0e013f0394cd8800f9697a666a9e75e5f7fd",
+      "remote_lfs_sha256": null,
+      "status": "NO_PUBLIC_LFS_HASH"
+    },
+    {
+      "repo": "meta-llama/Llama-3.1-8B-Instruct",
+      "file": "model-00001-of-00004.safetensors",
+      "local_sha256": "2b1879f356aed350030bb40eb45ad362c89d9891096f79a3ab323d3ba5607668",
+      "remote_lfs_sha256": "2b1879f356aed350030bb40eb45ad362c89d9891096f79a3ab323d3ba5607668",
+      "status": "MATCH"
+    },
+    {
+      "repo": "meta-llama/Llama-3.1-8B-Instruct",
+      "file": "model-00002-of-00004.safetensors",
+      "local_sha256": "09d433f650646834a83c580877bd60c6d1f88f7755305c12576b5c7058f9af15",
+      "remote_lfs_sha256": "09d433f650646834a83c580877bd60c6d1f88f7755305c12576b5c7058f9af15",
+      "status": "MATCH"
+    },
+    {
+      "repo": "meta-llama/Llama-3.1-8B-Instruct",
+      "file": "model-00003-of-00004.safetensors",
+      "local_sha256": "fc1cdddd6bfa91128d6e94ee73d0ce62bfcdb7af29e978ddcab30c66ae9ea7fa",
+      "remote_lfs_sha256": "fc1cdddd6bfa91128d6e94ee73d0ce62bfcdb7af29e978ddcab30c66ae9ea7fa",
+      "status": "MATCH"
+    },
+    {
+      "repo": "meta-llama/Llama-3.1-8B-Instruct",
+      "file": "model-00004-of-00004.safetensors",
+      "local_sha256": "92ecfe1a2414458b4821ac8c13cf8cb70aed66b5eea8dc5ad9eeb4ff309d6d7b",
+      "remote_lfs_sha256": "92ecfe1a2414458b4821ac8c13cf8cb70aed66b5eea8dc5ad9eeb4ff309d6d7b",
+      "status": "MATCH"
+    },
+    {
+      "repo": "meta-llama/Llama-3.1-8B-Instruct",
+      "file": "model.safetensors.index.json",
+      "local_sha256": "146776fce3f6db1103aa6f249e65ee5544c5923ce6f971b092eee79aa6e5d37b",
+      "remote_lfs_sha256": null,
+      "status": "NO_PUBLIC_LFS_HASH"
+    },
+    {
+      "repo": "meta-llama/Llama-3.1-8B-Instruct",
+      "file": "special_tokens_map.json",
+      "local_sha256": "6f38c73729248f6c127296386e3cdde96e254636cc58b4169d3fd32328d9a8ec",
+      "remote_lfs_sha256": null,
+      "status": "NO_PUBLIC_LFS_HASH"
+    },
+    {
+      "repo": "meta-llama/Llama-3.1-8B-Instruct",
+      "file": "tokenizer.json",
+      "local_sha256": "79e3e522635f3171300913bb421464a87de6222182a0570b9b2ccba2a964b2b4",
+      "remote_lfs_sha256": null,
+      "status": "NO_PUBLIC_LFS_HASH"
+    },
+    {
+      "repo": "meta-llama/Llama-3.1-8B-Instruct",
+      "file": "tokenizer_config.json",
+      "local_sha256": "177c7b61e616fecb84c17ce0591acb92c6c4d60e9ac5ababfb940ff23bbcd424",
+      "remote_lfs_sha256": null,
+      "status": "NO_PUBLIC_LFS_HASH"
+    },
+    {
+      "repo": "NingLab/GeLLMO-P6-Llama",
+      "file": "adapter_config.json",
+      "local_sha256": "87b9fd6835f08d55c8a476b79f3dcc36d1e4e132989ba1b718dbc6c319e54cfc",
+      "remote_lfs_sha256": null,
+      "status": "NO_PUBLIC_LFS_HASH"
+    },
+    {
+      "repo": "NingLab/GeLLMO-P6-Llama",
+      "file": "adapter_model.safetensors",
+      "local_sha256": "eec62a7365b6ff17fd99e5a4f73860418adee6a3572f282246e3319f5cd9147d",
+      "remote_lfs_sha256": "eec62a7365b6ff17fd99e5a4f73860418adee6a3572f282246e3319f5cd9147d",
+      "status": "MATCH"
+    },
+    {
+      "repo": "NingLab/GeLLMO-P6-Llama",
+      "file": "config.json",
+      "local_sha256": "5fceaa205949d1a533200d72f8548e0e3fc96a4a97f90d248192de365c8abdd7",
+      "remote_lfs_sha256": null,
+      "status": "NO_PUBLIC_LFS_HASH"
+    }
+  ],
+  "weights_downloaded": false,
+  "local_models_modified": false,
+  "note": "Public LFS metadata verifies weight hashes where available; a missing public LFS hash is not a file mismatch. Local metadata files are not represented as upstream files."
+}

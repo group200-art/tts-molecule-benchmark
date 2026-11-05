@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "paired_inputs": 1000,
+  "arm_inputs": 2000,
+  "returned_positions": 40000,
+  "candidate_success_checks": 56000,
+  "original_scorer_calls": 3000,
+  "physical_response_records": 44000,
+  "pairs_sha256": "0a240da3e02a717dd71e70531aaddcbae9d1fc8d8be2f75918efcf31db1441cd",
+  "metrics_sha256": "3b5e3b72ed640d8bf3a9ed1a4f2498ef9ef37655a067c987cc2dcb78ed42ea26",
+  "manifest_sha256": "b5f4307bc72506f95a7c327749e049215883165bcc0a9a1fed821a40e324c680",
+  "scorer_sha256": "47f9e6d7c16862eb4bb4c029b15028688b73b3fe38540c7d04b02bd0d392c300",
+  "kernel_sha256": "00acb727adecd58b84f434dcf82c18053bc817858d52079fbcc9c7125896ad07",
+  "scope": "Exact saved-cache score and outcome reproduction; no new chemistry, predictor or generation calls.",
+  "cache_identity": {
+    "pairs_sha256": "0a240da3e02a717dd71e70531aaddcbae9d1fc8d8be2f75918efcf31db1441cd",
+    "metrics_sha256": "3b5e3b72ed640d8bf3a9ed1a4f2498ef9ef37655a067c987cc2dcb78ed42ea26",
+    "manifest_sha256": "b5f4307bc72506f95a7c327749e049215883165bcc0a9a1fed821a40e324c680",
+    "checker_sha256": "2237bdab5a75175646fcb543df16584536bb2968be16918eb22d78e156e626f7",
+    "scientific_source_manifest_sha256": "7675cfe0060c866434eafb65a56fd7646b44da221fc545a1ce4eb623a7eb9f86",
+    "bridge_sha256": "d933bcf269067c0299ad8af2c323a29413b4458897074db20a944bacd6139c70"
+  }
+}

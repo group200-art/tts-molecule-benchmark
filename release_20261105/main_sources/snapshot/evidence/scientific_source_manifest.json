@@ -1,0 +1,227 @@
+{
+  "copied": [
+    {
+      "path": "execution_snapshot/scientific_sources/BenchmarkV2/benchmark_completion_20261023_v1/recovery_20261027_v1/property_repair.py",
+      "sha256": "8c5862358788598fec18e019b0cbdf5672d96eda5b55f76220e5d026e1445a9b",
+      "original_sha256": "8c5862358788598fec18e019b0cbdf5672d96eda5b55f76220e5d026e1445a9b"
+    },
+    {
+      "path": "execution_snapshot/scientific_sources/BenchmarkV2/method_review_P8_v1/design_after_p9_v1/execution_v1/sources/runtime.json",
+      "sha256": "115fd309c2f0201825256c9a75ceec1edd7f47e5bef30388338fed1c681fe789",
+      "original_sha256": "115fd309c2f0201825256c9a75ceec1edd7f47e5bef30388338fed1c681fe789"
+    },
+    {
+      "path": "execution_snapshot/scientific_sources/BenchmarkV2/p10_n20_r20_two_models_20261013_v1/voting/extract.py",
+      "sha256": "038211157379b1777e9d318db78fea06fbf5b4d82145dce34460b0aaa0d4b431",
+      "original_sha256": "038211157379b1777e9d318db78fea06fbf5b4d82145dce34460b0aaa0d4b431"
+    },
+    {
+      "path": "execution_snapshot/scientific_sources/BenchmarkV2/p6_llama_failure_recovery_20261003_v1/admet_worker.py",
+      "sha256": "bdb3ebc4c0d7a4c26e23c5aeb0ca1520ab414bd5a3a4d53fef6e0eb2189a3bc4",
+      "original_sha256": "bdb3ebc4c0d7a4c26e23c5aeb0ca1520ab414bd5a3a4d53fef6e0eb2189a3bc4"
+    },
+    {
+      "path": "execution_snapshot/scientific_sources/BenchmarkV2/p6_llama_failure_recovery_20261003_v1/code/graph_adapter.py",
+      "sha256": "1812073c2ca3b1bab38e9ac398ebc74a2846732b91802a46c661eec14fcf10c5",
+      "original_sha256": "1812073c2ca3b1bab38e9ac398ebc74a2846732b91802a46c661eec14fcf10c5"
+    },
+    {
+      "path": "execution_snapshot/scientific_sources/BenchmarkV2/p6_llama_failure_recovery_20261003_v1/code/metrics_kernel.py",
+      "sha256": "00acb727adecd58b84f434dcf82c18053bc817858d52079fbcc9c7125896ad07",
+      "original_sha256": "00acb727adecd58b84f434dcf82c18053bc817858d52079fbcc9c7125896ad07"
+    },
+    {
+      "path": "execution_snapshot/scientific_sources/BenchmarkV2/p6_llama_failure_recovery_20261003_v1/code/precision.py",
+      "sha256": "1bac2fdbe31cebb59ef6e2683bd17ae25ebe7f4e41ec8016df3c03c09593f2b5",
+      "original_sha256": "1bac2fdbe31cebb59ef6e2683bd17ae25ebe7f4e41ec8016df3c03c09593f2b5"
+    },
+    {
+      "path": "execution_snapshot/scientific_sources/BenchmarkV2/p6_llama_failure_recovery_20261003_v1/code/property_service.py",
+      "sha256": "68266f36a227e6360f86a4430d3a2820f8637c4bd9913c265d6616e860e277f1",
+      "original_sha256": "68266f36a227e6360f86a4430d3a2820f8637c4bd9913c265d6616e860e277f1"
+    },
+    {
+      "path": "execution_snapshot/scientific_sources/BenchmarkV2/p6_llama_failure_recovery_20261003_v1/code/scorer.py",
+      "sha256": "47f9e6d7c16862eb4bb4c029b15028688b73b3fe38540c7d04b02bd0d392c300",
+      "original_sha256": "47f9e6d7c16862eb4bb4c029b15028688b73b3fe38540c7d04b02bd0d392c300"
+    },
+    {
+      "path": "execution_snapshot/scientific_sources/BenchmarkV2/p6_llama_failure_recovery_20261003_v1/configs/design_contract.json",
+      "sha256": "08f34c0bbca6b7010ffab4b9d01766b4056c4b6f85cbe7fb8dbc87f374077286",
+      "original_sha256": "08f34c0bbca6b7010ffab4b9d01766b4056c4b6f85cbe7fb8dbc87f374077286"
+    },
+    {
+      "path": "execution_snapshot/scientific_sources/BenchmarkV2/p6_llama_failure_recovery_20261003_v1/configs/mistral_generation_defaults.json",
+      "sha256": "b4669f1b8f4185324bd9b12a69e85a1ad2289bc48111ef739cfaaea3bba6b0a9",
+      "original_sha256": "b4669f1b8f4185324bd9b12a69e85a1ad2289bc48111ef739cfaaea3bba6b0a9"
+    },
+    {
+      "path": "execution_snapshot/scientific_sources/BenchmarkV2/p6_llama_failure_recovery_20261003_v1/sources/properties.json",
+      "sha256": "660c5da6e752e7dfd2611e566bd01ba877f59f4e47ce3f76f07735f3731eed36",
+      "original_sha256": "660c5da6e752e7dfd2611e566bd01ba877f59f4e47ce3f76f07735f3731eed36"
+    },
+    {
+      "path": "execution_snapshot/scientific_sources/BenchmarkV2/p6_llama_failure_recovery_20261003_v1/sources/runtime.json",
+      "sha256": "ca91a317d1321011faa3263a3a7619ce79e7e0c8dcf211210dfae3bea91ae093",
+      "original_sha256": "ca91a317d1321011faa3263a3a7619ce79e7e0c8dcf211210dfae3bea91ae093"
+    },
+    {
+      "path": "execution_snapshot/scientific_sources/BenchmarkV2/p6_llama_failure_recovery_20261003_v1/src/contracts.py",
+      "sha256": "b41bc3ce8f651854d30e401a7374f7d761475b889f030419ac26011dcd8d652f",
+      "original_sha256": "b41bc3ce8f651854d30e401a7374f7d761475b889f030419ac26011dcd8d652f"
+    },
+    {
+      "path": "execution_snapshot/scientific_sources/BenchmarkV2/p6_llama_failure_recovery_20261003_v1/src/property_bridge.py",
+      "sha256": "4c9d96d7dc1115f56c5b7422ac3346c162ff90e349d4f7e427012d9c32d27f07",
+      "original_sha256": "4c9d96d7dc1115f56c5b7422ac3346c162ff90e349d4f7e427012d9c32d27f07"
+    },
+    {
+      "path": "execution_snapshot/scientific_sources/BenchmarkV2/p6_llama_failure_recovery_20261003_v1/src/property_error_isolation.py",
+      "sha256": "fd182c75919026d0d25a557bf5829dbe76652997b1a332ee3b02fffb57893684",
+      "original_sha256": "fd182c75919026d0d25a557bf5829dbe76652997b1a332ee3b02fffb57893684"
+    },
+    {
+      "path": "execution_snapshot/scientific_sources/BenchmarkV2/p6_llama_failure_recovery_20261003_v1/standard_producer.py",
+      "sha256": "461b7d28243be5d873a3e9252db291599c24be1c22d3ea43343ca8a495af782d",
+      "original_sha256": "461b7d28243be5d873a3e9252db291599c24be1c22d3ea43343ca8a495af782d"
+    },
+    {
+      "path": "execution_snapshot/scientific_sources/BenchmarkV2/p6_llama_main_ten_tasks_v1/configs/properties_reflexion.json",
+      "sha256": "c8ee6bc4e8800d992fccd97ce09f9edb477829ba26bcf5b29a27cdcb4b181ee3",
+      "original_sha256": "c8ee6bc4e8800d992fccd97ce09f9edb477829ba26bcf5b29a27cdcb4b181ee3"
+    },
+    {
+      "path": "execution_snapshot/scientific_sources/BenchmarkV2/p6_llama_main_ten_tasks_v1/configs/reflexion_prompts.json",
+      "sha256": "6a2d922e8c644549a4484c7368535a1c985e8c1239a3e3f4d1f1b25b0fc2ba85",
+      "original_sha256": "6a2d922e8c644549a4484c7368535a1c985e8c1239a3e3f4d1f1b25b0fc2ba85"
+    },
+    {
+      "path": "execution_snapshot/scientific_sources/BenchmarkV2/p6_llama_main_ten_tasks_v1/src/reflexion.py",
+      "sha256": "d8dce0b317b7f9df51423c0a92231d15be7efcbaca18fe4f3d7c197046c54451",
+      "original_sha256": "d8dce0b317b7f9df51423c0a92231d15be7efcbaca18fe4f3d7c197046c54451"
+    },
+    {
+      "path": "execution_snapshot/scientific_sources/BenchmarkV2/recomb_full_results_20261028_v1/build_statistics.py",
+      "sha256": "5d0c05af7bcf11b99379b01c93dbd042b23be1d52aa757bb31a55a8a416eea3c",
+      "original_sha256": "5d0c05af7bcf11b99379b01c93dbd042b23be1d52aa757bb31a55a8a416eea3c"
+    },
+    {
+      "path": "execution_snapshot/scientific_sources/data/props/__init__.py",
+      "sha256": "7cfcd4e0c706996ccfd1dc2a446601f1f2bfed588b4afd703c6d7f28fb0c90c6",
+      "original_sha256": "7cfcd4e0c706996ccfd1dc2a446601f1f2bfed588b4afd703c6d7f28fb0c90c6"
+    },
+    {
+      "path": "execution_snapshot/scientific_sources/data/props/drd2_scorer.py",
+      "sha256": "54cd87c364fbe865d8376063dd64204a13c1e1cbda7368c6f5fc5a38c7c021e0",
+      "original_sha256": "54cd87c364fbe865d8376063dd64204a13c1e1cbda7368c6f5fc5a38c7c021e0"
+    },
+    {
+      "path": "execution_snapshot/scientific_sources/data/props/properties.py",
+      "sha256": "771722423bdb76955724e6d8a3c8298cedf29c55cf631b847640b4dfc6bec812",
+      "original_sha256": "771722423bdb76955724e6d8a3c8298cedf29c55cf631b847640b4dfc6bec812"
+    },
+    {
+      "path": "execution_snapshot/scientific_sources/data/props/sascorer.py",
+      "sha256": "343dfb39a99e78d4d1b552e25d3de48d90e68947d337057b281d4c0c9d4370a8",
+      "original_sha256": "343dfb39a99e78d4d1b552e25d3de48d90e68947d337057b281d4c0c9d4370a8"
+    }
+  ],
+  "external_assets": [
+    {
+      "original_path": "/REPOSITORY_ROOT/data/props/clf_py36.pkl",
+      "sha256": "dbc473fca922c834dbaee6eaba832caaff26d4f891734078fb1af359a111100f",
+      "provided": false,
+      "reason": "External predictor/model asset or non-code asset; not redistributed in the compact review package."
+    },
+    {
+      "original_path": "/REPOSITORY_ROOT/data/props/fpscores.pkl.gz",
+      "sha256": "10dcef9340c873e7b987924461b0af5365eb8dd96be607203debe8ddf80c1e73",
+      "provided": false,
+      "reason": "External predictor/model asset or non-code asset; not redistributed in the compact review package."
+    },
+    {
+      "original_path": "/ENVIRONMENT_ROOT/gellmo_inf/lib/python3.10/site-packages/admet_ai/admet_model.py",
+      "sha256": "d4a3397ae069a1bc831019d51313763bfaa4050a03931a0a7b2945e0492c95cd",
+      "provided": false,
+      "reason": "External predictor/model asset or non-code asset; not redistributed in the compact review package."
+    },
+    {
+      "original_path": "/ENVIRONMENT_ROOT/gellmo_inf/lib/python3.10/site-packages/admet_ai/constants.py",
+      "sha256": "6643981d71dd05aa9070755e445228a2dbc726f34d0ba7b4bef080563c0a67f9",
+      "provided": false,
+      "reason": "External predictor/model asset or non-code asset; not redistributed in the compact review package."
+    },
+    {
+      "original_path": "/ENVIRONMENT_ROOT/gellmo_inf/lib/python3.10/site-packages/admet_ai/physchem.py",
+      "sha256": "8905bb64d58f2a40d49de9c075264992d68a9a0c1b7ae358bde13854c390be0c",
+      "provided": false,
+      "reason": "External predictor/model asset or non-code asset; not redistributed in the compact review package."
+    },
+    {
+      "original_path": "/ENVIRONMENT_ROOT/gellmo_inf/lib/python3.10/site-packages/admet_ai/resources/data/drugbank_approved.csv",
+      "sha256": "0cf42db285b0657b024d9b7e30ca99ecca12f4283c271b5d7da6a27e334d94ee",
+      "provided": false,
+      "reason": "External predictor/model asset or non-code asset; not redistributed in the compact review package."
+    },
+    {
+      "original_path": "/ENVIRONMENT_ROOT/gellmo_inf/lib/python3.10/site-packages/admet_ai/resources/models/admet_classification/model_0.pt",
+      "sha256": "48ed42c3ec284b027dbc054ceae76b0520eb9aff8bf0b3e37b26a446ee537137",
+      "provided": false,
+      "reason": "External predictor/model asset or non-code asset; not redistributed in the compact review package."
+    },
+    {
+      "original_path": "/ENVIRONMENT_ROOT/gellmo_inf/lib/python3.10/site-packages/admet_ai/resources/models/admet_classification/model_1.pt",
+      "sha256": "52a6bdac71c851ea8325c4860e913d3ed79017dd03b3d40116481dd6e1a48433",
+      "provided": false,
+      "reason": "External predictor/model asset or non-code asset; not redistributed in the compact review package."
+    },
+    {
+      "original_path": "/ENVIRONMENT_ROOT/gellmo_inf/lib/python3.10/site-packages/admet_ai/resources/models/admet_classification/model_2.pt",
+      "sha256": "28be5980c28b2618da25fa6dbabc7f92ede130c675c66b75b259d4beb2d449cb",
+      "provided": false,
+      "reason": "External predictor/model asset or non-code asset; not redistributed in the compact review package."
+    },
+    {
+      "original_path": "/ENVIRONMENT_ROOT/gellmo_inf/lib/python3.10/site-packages/admet_ai/resources/models/admet_classification/model_3.pt",
+      "sha256": "6a34383cd726e51aa8f87ba3d65debba448a43ffee9b1f8dfdaf42d034b7b187",
+      "provided": false,
+      "reason": "External predictor/model asset or non-code asset; not redistributed in the compact review package."
+    },
+    {
+      "original_path": "/ENVIRONMENT_ROOT/gellmo_inf/lib/python3.10/site-packages/admet_ai/resources/models/admet_classification/model_4.pt",
+      "sha256": "766dffd5317e575752758444eccca96181d50a9cd47eb5faf0b46b5081b23c0c",
+      "provided": false,
+      "reason": "External predictor/model asset or non-code asset; not redistributed in the compact review package."
+    },
+    {
+      "original_path": "/ENVIRONMENT_ROOT/gellmo_inf/lib/python3.10/site-packages/admet_ai/resources/models/admet_regression/model_0.pt",
+      "sha256": "2b6093958103bf0876f75599a94aee6ec7848ac4bed22b39201e63071833cdfe",
+      "provided": false,
+      "reason": "External predictor/model asset or non-code asset; not redistributed in the compact review package."
+    },
+    {
+      "original_path": "/ENVIRONMENT_ROOT/gellmo_inf/lib/python3.10/site-packages/admet_ai/resources/models/admet_regression/model_1.pt",
+      "sha256": "7ef5ab57bc28c2b3ed13b08ddf8e6a201135abd98456c0eef3b4af1baad71254",
+      "provided": false,
+      "reason": "External predictor/model asset or non-code asset; not redistributed in the compact review package."
+    },
+    {
+      "original_path": "/ENVIRONMENT_ROOT/gellmo_inf/lib/python3.10/site-packages/admet_ai/resources/models/admet_regression/model_2.pt",
+      "sha256": "7e68e5b08587f6fe99cc794bd37e359a9bed28b2d95486ed50016be85c1ac42d",
+      "provided": false,
+      "reason": "External predictor/model asset or non-code asset; not redistributed in the compact review package."
+    },
+    {
+      "original_path": "/ENVIRONMENT_ROOT/gellmo_inf/lib/python3.10/site-packages/admet_ai/resources/models/admet_regression/model_3.pt",
+      "sha256": "cd5e074bb000ce615673448333a92ce71fdda05d72b0bf2d4caedb881841c341",
+      "provided": false,
+      "reason": "External predictor/model asset or non-code asset; not redistributed in the compact review package."
+    },
+    {
+      "original_path": "/ENVIRONMENT_ROOT/gellmo_inf/lib/python3.10/site-packages/admet_ai/resources/models/admet_regression/model_4.pt",
+      "sha256": "0142b80c70f175a1275cce98904658d17cabafa42cdfe197ecc090d7c11d9640",
+      "provided": false,
+      "reason": "External predictor/model asset or non-code asset; not redistributed in the compact review package."
+    }
+  ]
+}

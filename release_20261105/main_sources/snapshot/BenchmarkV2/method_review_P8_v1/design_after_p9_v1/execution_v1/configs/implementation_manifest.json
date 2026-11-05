@@ -1,0 +1,245 @@
+{
+  "purpose": "approved execution integrity inventory; not a formal benchmark freeze",
+  "files": [
+    {
+      "path": "code/accounting.py",
+      "sha256": "83b4a43e5046e10e5a940c787d6bfccfc8d9919f24f048186bd867a1774ca83e",
+      "bytes": 15756
+    },
+    {
+      "path": "code/audit.py",
+      "sha256": "0e81e6c06fa1d8ed744a9985e5dc6732597389d87e03ed4186f3e60cca718bba",
+      "bytes": 12340
+    },
+    {
+      "path": "code/common.py",
+      "sha256": "6a888936fbe8804ed0402b54e7575a40d483304a117484fe09a954a1763f7a02",
+      "bytes": 6224
+    },
+    {
+      "path": "code/final_summary.sbatch",
+      "sha256": "2a98b3391d950bb0506f85ca0baa0808c6db0909216ecaf6f479be71db17a13b",
+      "bytes": 1198
+    },
+    {
+      "path": "code/full.sbatch",
+      "sha256": "5d9ffe2bbe7de6e2bbac6c3a4a3e4e540878b5d7963a0e3067e2443fc027ab32",
+      "bytes": 1253
+    },
+    {
+      "path": "code/generation.py",
+      "sha256": "96b289abb3a4b8c50549da048358d0147f2ca2382e14f9c1ddf85252fa027374",
+      "bytes": 13211
+    },
+    {
+      "path": "code/graph_adapter.py",
+      "sha256": "1812073c2ca3b1bab38e9ac398ebc74a2846732b91802a46c661eec14fcf10c5",
+      "bytes": 13734
+    },
+    {
+      "path": "code/metrics.py",
+      "sha256": "b154b22ba22b2aa7ad8b909c520eec8eae4ca08ddf62d6db5d34ab6ddf06b74d",
+      "bytes": 4718
+    },
+    {
+      "path": "code/metrics_kernel.py",
+      "sha256": "00acb727adecd58b84f434dcf82c18053bc817858d52079fbcc9c7125896ad07",
+      "bytes": 7439
+    },
+    {
+      "path": "code/pilot.sbatch",
+      "sha256": "2d7b068cb7bf39d008e3a8b96fdcaec59ab8bf3aa1eb7e1b77949e1cbbdab42c",
+      "bytes": 1255
+    },
+    {
+      "path": "code/pilot_audit.sbatch",
+      "sha256": "6f6a04593244c0f9cee3389a79e904f86fcb3d4931ab1f08c18506c48cfcb41f",
+      "bytes": 1192
+    },
+    {
+      "path": "code/precision.py",
+      "sha256": "1bac2fdbe31cebb59ef6e2683bd17ae25ebe7f4e41ec8016df3c03c09593f2b5",
+      "bytes": 1278
+    },
+    {
+      "path": "code/property_service.py",
+      "sha256": "e89908264917fa986110eea9ea8eaa99b3115ef1f16d8953b42c2a1de91392d4",
+      "bytes": 19341
+    },
+    {
+      "path": "code/scorer.py",
+      "sha256": "cafe27be5dad779f85a6fe369adac7e82ef55d5a7971b641e0ec4f86a2b490b3",
+      "bytes": 3658
+    },
+    {
+      "path": "code/stages.py",
+      "sha256": "717edb7c64e13d7690900fefad4e9d36d1dc9250be45bfa85a64feb02df11a06",
+      "bytes": 6547
+    },
+    {
+      "path": "code/summarize.py",
+      "sha256": "99d18dc9427495e3592cea1b30a05882bf05e861a47fb3d3ef4e3577fdc5f1c3",
+      "bytes": 22928
+    },
+    {
+      "path": "code/worker.py",
+      "sha256": "b951267fc0e49446c38028ffeb36ceee849f01231c3d8e34aa651aa690479bb7",
+      "bytes": 4316
+    },
+    {
+      "path": "vendor/LICENSE",
+      "sha256": "5080658c0064dfbfee3e2baab373b39975b2741f4e06a23717895e6ac0dc2da4",
+      "bytes": 2532
+    },
+    {
+      "path": "vendor/graph_of_thoughts/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "vendor/graph_of_thoughts/controller/__init__.py",
+      "sha256": "473dfcc6c2c01c4c84c08b8992c7a3604c44ce794f25bf6d473c09ec91bd2f5b",
+      "bytes": 35
+    },
+    {
+      "path": "vendor/graph_of_thoughts/controller/controller.py",
+      "sha256": "09439582951eca87fee6598d808a8d660b44572e8347671be91178f377228814",
+      "bytes": 6111
+    },
+    {
+      "path": "vendor/graph_of_thoughts/language_models/__init__.py",
+      "sha256": "1835a4c5a553842b158bead7d697fa0c75e7724200a7303ab01892e6af107891",
+      "bytes": 59
+    },
+    {
+      "path": "vendor/graph_of_thoughts/language_models/abstract_language_model.py",
+      "sha256": "a51cc35e09d76e3c308e4b66fd282c14c8de41e9c910aad0bfe511ce2633f0de",
+      "bytes": 3007
+    },
+    {
+      "path": "vendor/graph_of_thoughts/operations/__init__.py",
+      "sha256": "105e780f61ccb5237ae1b678c216dc94e18e52b64907210c1d5255e58af7de54",
+      "bytes": 161
+    },
+    {
+      "path": "vendor/graph_of_thoughts/operations/graph_of_operations.py",
+      "sha256": "ae288617f3e2370a605062376868d03c6678d19aa39d9f3d17e6085b750d76ce",
+      "bytes": 2386
+    },
+    {
+      "path": "vendor/graph_of_thoughts/operations/operations.py",
+      "sha256": "fc784f32f0860e9ebb8b84c3a8bac4457b6b5a9d65cf10589e4adccaeff9de66",
+      "bytes": 33098
+    },
+    {
+      "path": "vendor/graph_of_thoughts/operations/thought.py",
+      "sha256": "d274ee951bf78923c242bca522c8f8ff2d215758e2f99b09e63a85e020a99495",
+      "bytes": 3370
+    },
+    {
+      "path": "vendor/graph_of_thoughts/parser/__init__.py",
+      "sha256": "11bf05426f7186ad7b15025da0c15b106f7b728bbbe3eab8462e1470d364569e",
+      "bytes": 27
+    },
+    {
+      "path": "vendor/graph_of_thoughts/parser/parser.py",
+      "sha256": "3761080be4abeb426e05b5d7261038c43c906780b292f0217878e87e74dd62fe",
+      "bytes": 3169
+    },
+    {
+      "path": "vendor/graph_of_thoughts/prompter/__init__.py",
+      "sha256": "baa4e245df492dd0e0934a74827c99279a0644c688de68ab2926759f924508c8",
+      "bytes": 31
+    },
+    {
+      "path": "vendor/graph_of_thoughts/prompter/prompter.py",
+      "sha256": "c754370e97620af12bf647e6b04d9f27d1ca55794a48dfa87d4e8477304b8afd",
+      "bytes": 2873
+    },
+    {
+      "path": "configs/asset_metadata.json",
+      "sha256": "1b20fe3d567192e83bef751d7d9246a8d8d8db335b7104905c522938447f69e6",
+      "bytes": 4676
+    },
+    {
+      "path": "configs/design_contract.json",
+      "sha256": "afccab6b16f2da02630ce85f7850bbb9a0baf367230a2162ca3406f5a1c7ad56",
+      "bytes": 164528
+    },
+    {
+      "path": "sources/BV2_P8_GWIDTH_SECOND_APPROVAL_v1.md",
+      "sha256": "63f1506d987f9dda4dcaad61d496a61c3efd7f092672d467a9a565df59edeb67",
+      "bytes": 8604
+    },
+    {
+      "path": "sources/CHANGES_FROM_P8_HISTORY_v1.md",
+      "sha256": "5c19819dee2eef29a763e0195a81abd5066d622cc115425e7aa38ca404b2bd19",
+      "bytes": 13584
+    },
+    {
+      "path": "sources/EXECUTION_SOURCE_INDEX_P8_v1.json",
+      "sha256": "4e1ab2455952a18068d49f1647068c8b66d7adb2d5ce33ae6ca2c0539a4b83fa",
+      "bytes": 9394
+    },
+    {
+      "path": "sources/FINAL_EXPERIMENT_DESIGN_P8_v1.md",
+      "sha256": "7829b6b18dbda23b919329fa74a6574885d19429cf896b359d417883ef408da4",
+      "bytes": 53022
+    },
+    {
+      "path": "sources/SOURCE_INDEX_P8_v1.json",
+      "sha256": "d5fb36da7b835ece9d2a75980847085bf73a3e66617cb528418b43905652495f",
+      "bytes": 504870
+    },
+    {
+      "path": "sources/gellmo_p6_mistral_model_provenance.json",
+      "sha256": "534bc3df82628f1a509c7e3a859742a051f410d1ecaf621241abe8bf7c77f872",
+      "bytes": 8104
+    },
+    {
+      "path": "sources/implementation_sources.json",
+      "sha256": "5c69b6a6850278ae5eae61e32f68a60a3b1ed1fa4f423b605effe0e544027519",
+      "bytes": 6484
+    },
+    {
+      "path": "sources/metrics_entry.py",
+      "sha256": "808480b1c9d0c9b647625c57da319774babd3ca717e4ba26414edcb28918bf20",
+      "bytes": 6888
+    },
+    {
+      "path": "sources/model_weight_metadata_before.json",
+      "sha256": "014f2e7ac694e3d1671d2c49007578321742f08ce1beb9dd5f433686f53e3740",
+      "bytes": 1026
+    },
+    {
+      "path": "sources/properties.json",
+      "sha256": "660c5da6e752e7dfd2611e566bd01ba877f59f4e47ce3f76f07735f3731eed36",
+      "bytes": 18045
+    },
+    {
+      "path": "sources/property_asset_identity_before.json",
+      "sha256": "4e497bc8bd30a9ed205365111c188d1709aa9968d3a59f94c18752bc82b67354",
+      "bytes": 5537
+    },
+    {
+      "path": "sources/property_bridge.py",
+      "sha256": "67114864e519e0504abb5189ba64b187ebf30ce329d12ccc0ff4d4f32b281be9",
+      "bytes": 7382
+    },
+    {
+      "path": "sources/resources.json",
+      "sha256": "eaf5206f1c7dc96ac5a8910a7bc5f84340b67f813fbc15246c04719df5652bec",
+      "bytes": 684
+    },
+    {
+      "path": "sources/runtime.json",
+      "sha256": "115fd309c2f0201825256c9a75ceec1edd7f47e5bef30388338fed1c681fe789",
+      "bytes": 884
+    },
+    {
+      "path": "sources/tokenizer_contract.json",
+      "sha256": "e5b3a38d957ea3f92b0bba59465055d7ea6113fdcf2b92a87d965a2b29796d8f",
+      "bytes": 1925
+    }
+  ]
+}

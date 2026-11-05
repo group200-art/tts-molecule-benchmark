@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "rows_checked": 538,
+  "paired_contrasts_checked": 58,
+  "independent_input_manifest_checked": true,
+  "input_count_per_configuration": 3905,
+  "clusters": 2860,
+  "replicates": 2000,
+  "bootstrap_seed": 20261014,
+  "weight_sha256": "5763bd1ba349cbdd531adc4a7eabf5b370c42da865d84e3b5837ebcab634f067",
+  "zero_denominator_redraws": 0,
+  "max_absolute_error": 2.842170943040401e-14,
+  "numpy_version": "2.2.6",
+  "scope": "Input-outcome aggregation and conditional source bootstrap; no new generation or chemical evaluation.",
+  "data_sha256": "891350476d097496cf81e20f0b26a2284790206cd6e165321faa01b593d87d72",
+  "summary_sha256": "3fd9d41800c1521fd10eeb7a62a92624149d3df43ddbd3fc333d5ccf722cd6a9",
+  "paired_sha256": "370c5fa7808c485b5c5abda35f2387336a5300175f94122330946e9500ea9d82",
+  "manifest_sha256": "0c322aff0022b86fba137d40383b7ca11f017a83bdf210d52320ca79d5a573a7",
+  "script_sha256": "a3d00058a7d908bb65c06b77a1efad572d2556d881f594ee6e511d7c99fc9062",
+  "reused_after_identical_data_and_code_hashes": true
+}

@@ -1,0 +1,14 @@
+{
+  "instruction": "Your goal is to fine-tune the specified molecular properties of the given compound with minimal structural changes. Make the necessary adjustments and return the modified molecule in a SMILES format enclosed in <SMILES> </SMILES> tags.",
+  "property_names": {
+    "plogp": "Penalized octanol-water partition coefficient (penalized logP)",
+    "qed": "QED",
+    "drd2": "DRD2 inhibition",
+    "bbbp": "BBB permeability",
+    "mutagenicity": "Mutagenicity",
+    "hia": "Intestinal adsorption"
+  },
+  "instruction_index": 1,
+  "wait_string": "Wait",
+  "final_cue": "\n%%% Response:"
+}

@@ -1,0 +1,245 @@
+{
+  "scope": "Completed main study,18 configurations; archived source subset",
+  "task_order": [
+    "BDP",
+    "BDQ",
+    "BPQ",
+    "DPQ",
+    "BDPQ",
+    "MPQ",
+    "BDMQ",
+    "BHMQ",
+    "BMPQ",
+    "HMPQ"
+  ],
+  "task_counts": [
+    500,
+    500,
+    500,
+    500,
+    500,
+    500,
+    500,
+    118,
+    191,
+    96
+  ],
+  "configurations": [
+    {
+      "method": "beam",
+      "backbone": "mistral",
+      "entrypoint": "snapshot/BenchmarkV2/next3_ten_tasks_run01_v1/pilot_worker.py",
+      "contracts": [
+        "snapshot/BenchmarkV2/next3_ten_tasks_run01_v1/configs/full.json"
+      ],
+      "accepted_output": "beam20 native rank; seed42; cap100",
+      "inputs": 3905,
+      "K": 20
+    },
+    {
+      "method": "sampling",
+      "backbone": "mistral",
+      "entrypoint": "snapshot/BenchmarkV2/next3_ten_tasks_run01_v1/pilot_worker.py",
+      "contracts": [
+        "snapshot/BenchmarkV2/next3_ten_tasks_run01_v1/configs/full.json"
+      ],
+      "accepted_output": "sampling40_prefix20; seed1; T1/top_p.95/top_k50; fixed first20; cap100",
+      "inputs": 3905,
+      "K": 20
+    },
+    {
+      "method": "self_refine",
+      "backbone": "mistral",
+      "entrypoint": "snapshot/BenchmarkV2/self_refine_r1_k20_v1/generate.py",
+      "contracts": [
+        "snapshot/BenchmarkV2/self_refine_r1_k20_v1/plan.json",
+        "snapshot/BenchmarkV2/method_review_P5_v1/execution_v1/configs/prompts.json"
+      ],
+      "accepted_output": "one revision per replicate51001..51020; T.7; four role calls including terminal feedback",
+      "inputs": 3905,
+      "K": 20
+    },
+    {
+      "method": "tot",
+      "backbone": "mistral",
+      "entrypoint": "snapshot/BenchmarkV2/benchmark_completion_20261023_v1/tot/runner.py",
+      "contracts": [
+        "snapshot/BenchmarkV2/benchmark_completion_20261023_v1/tot/contract.json"
+      ],
+      "accepted_output": "C20:5 initial,4 voted parents,5 children each,5 final LM votes; repaired explicit-integer vote parser",
+      "inputs": 3905,
+      "K": 20
+    },
+    {
+      "method": "got",
+      "backbone": "mistral",
+      "entrypoint": "snapshot/BenchmarkV2/method_review_P8_v1/design_after_p9_v1/execution_v1/code/worker.py",
+      "contracts": [
+        "snapshot/BenchmarkV2/method_review_P8_v1/design_after_p9_v1/execution_v1/configs/design_contract.json"
+      ],
+      "accepted_output": "G12:12 initial+6 refinements+6 merges+4 aggregations; score-ranked top20 from28",
+      "inputs": 3905,
+      "K": 20
+    },
+    {
+      "method": "s1",
+      "backbone": "mistral",
+      "entrypoint": "snapshot/BenchmarkV2/p10_n20_r20_two_models_20261013_v1/next_k20/resume_mistral_s1.py",
+      "contracts": [
+        "snapshot/BenchmarkV2/k20_remaining_three_v1/plan.json",
+        "snapshot/BenchmarkV2/k20_alignment_20261002_v1/configs/p9_original_science.json"
+      ],
+      "accepted_output": "20 sampled trajectories; cumulative512 thinking,one Wait maximum,final cap256",
+      "inputs": 3905,
+      "K": 20
+    },
+    {
+      "method": "voting",
+      "backbone": "mistral",
+      "entrypoint": "snapshot/BenchmarkV2/p10_n20_r20_two_models_20261013_v1/voting/extract.py",
+      "contracts": [
+        "snapshot/BenchmarkV2/p10_n20_r20_two_models_20261013_v1/protocol.json",
+        "snapshot/BenchmarkV2/method_review_P10_v1/execution_vote_ev_v1/configs/generation.json"
+      ],
+      "accepted_output": "20 winners; consecutive20-proposal groups from original400; exact vote; original position ties",
+      "inputs": 3905,
+      "K": 20
+    },
+    {
+      "method": "icl",
+      "backbone": "mistral",
+      "entrypoint": "snapshot/BenchmarkV2/k20_remaining_three_v1/worker.py",
+      "contracts": [
+        "snapshot/BenchmarkV2/k20_remaining_three_v1/plan.json"
+      ],
+      "accepted_output": "20 sampled rows of input-specific frozen4-shot prompt; cap100",
+      "inputs": 3905,
+      "K": 20
+    },
+    {
+      "method": "reflexion",
+      "backbone": "mistral",
+      "entrypoint": "snapshot/BenchmarkV2/benchmark_completion_20261023_v1/mistral_reflexion/runner.py",
+      "contracts": [
+        "snapshot/BenchmarkV2/benchmark_completion_20261023_v1/mistral_reflexion/plan.json",
+        "snapshot/BenchmarkV2/benchmark_completion_20261023_v1/mistral_reflexion/continuation_freeze_v2.json",
+        "snapshot/BenchmarkV2/k20_alignment_20261002_v1/configs/reflexion_prompts.json"
+      ],
+      "accepted_output": "20 fresh-memory sampled trajectories; first success or3trials; original actor reflection-memory channel",
+      "inputs": 3905,
+      "K": 20
+    },
+    {
+      "method": "beam",
+      "backbone": "llama",
+      "entrypoint": "snapshot/BenchmarkV2/p6_llama_failure_recovery_20261003_v1/worker.py",
+      "contracts": [
+        "snapshot/BenchmarkV2/p6_llama_failure_recovery_20261003_v1/configs/runtime.json"
+      ],
+      "accepted_output": "beam20 native rank; seed42; cap100",
+      "inputs": 3905,
+      "K": 20
+    },
+    {
+      "method": "sampling",
+      "backbone": "llama",
+      "entrypoint": "snapshot/BenchmarkV2/p6_llama_failure_recovery_20261003_v1/worker.py",
+      "contracts": [
+        "snapshot/BenchmarkV2/p6_llama_failure_recovery_20261003_v1/configs/runtime.json"
+      ],
+      "accepted_output": "sampling40_prefix20; seed1; T1/top_p.95/top_k50; fixed first20; cap100",
+      "inputs": 3905,
+      "K": 20
+    },
+    {
+      "method": "self_refine",
+      "backbone": "llama",
+      "entrypoint": "snapshot/BenchmarkV2/benchmark_paired_k1_k20_20261014_v1/llama_self_refine/code/run.py",
+      "contracts": [
+        "snapshot/BenchmarkV2/benchmark_paired_k1_k20_20261014_v1/llama_self_refine/contract.json",
+        "snapshot/BenchmarkV2/p6_llama_main_ten_tasks_v1/configs/p5_prompts.json"
+      ],
+      "accepted_output": "one revision per replicate51001..51020; T.7; four role calls including terminal feedback",
+      "inputs": 3905,
+      "K": 20
+    },
+    {
+      "method": "tot",
+      "backbone": "llama",
+      "entrypoint": "snapshot/BenchmarkV2/benchmark_completion_20261023_v1/tot/runner.py",
+      "contracts": [
+        "snapshot/BenchmarkV2/benchmark_completion_20261023_v1/tot/contract.json"
+      ],
+      "accepted_output": "C20:5 initial,4 voted parents,5 children each,5 final LM votes; repaired explicit-integer vote parser",
+      "inputs": 3905,
+      "K": 20
+    },
+    {
+      "method": "got",
+      "backbone": "llama",
+      "entrypoint": "snapshot/BenchmarkV2/p6_llama_failure_recovery_20261003_v1/worker.py",
+      "contracts": [
+        "snapshot/BenchmarkV2/p6_llama_failure_recovery_20261003_v1/configs/design_contract.json"
+      ],
+      "accepted_output": "G12:12 initial+6 refinements+6 merges+4 aggregations; score-ranked top20 from28",
+      "inputs": 3905,
+      "K": 20
+    },
+    {
+      "method": "s1",
+      "backbone": "llama",
+      "entrypoint": "snapshot/BenchmarkV2/benchmark_paired_k1_k20_20261014_v1/llama_s1/runner.py",
+      "contracts": [
+        "snapshot/BenchmarkV2/benchmark_paired_k1_k20_20261014_v1/llama_s1/contract.json"
+      ],
+      "accepted_output": "20 sampled trajectories; cumulative512 thinking,one Wait maximum,final cap256",
+      "inputs": 3905,
+      "K": 20
+    },
+    {
+      "method": "voting",
+      "backbone": "llama",
+      "entrypoint": "snapshot/BenchmarkV2/p10_n20_r20_two_models_20261013_v1/voting/extract.py",
+      "contracts": [
+        "snapshot/BenchmarkV2/p10_n20_r20_two_models_20261013_v1/protocol.json",
+        "snapshot/BenchmarkV2/p6_llama_main_ten_tasks_v1/configs/p10_original_generation.json"
+      ],
+      "accepted_output": "20 winners; consecutive20-proposal groups from original400; exact vote; original position ties",
+      "inputs": 3905,
+      "K": 20
+    },
+    {
+      "method": "icl",
+      "backbone": "llama",
+      "entrypoint": "snapshot/BenchmarkV2/p10_n20_r20_two_models_20261013_v1/next_k20/llama_icl_sampled.py",
+      "contracts": [
+        "snapshot/BenchmarkV2/p10_n20_r20_two_models_20261013_v1/next_k20/llama_icl_sampled/contract.json"
+      ],
+      "accepted_output": "20 sampled rows of input-specific frozen4-shot prompt; cap100",
+      "inputs": 3905,
+      "K": 20
+    },
+    {
+      "method": "reflexion",
+      "backbone": "llama",
+      "entrypoint": "snapshot/BenchmarkV2/benchmark_completion_20261023_v1/llama_reflexion/worker.py",
+      "contracts": [
+        "snapshot/BenchmarkV2/benchmark_completion_20261023_v1/llama_reflexion/contract.json",
+        "snapshot/BenchmarkV2/benchmark_completion_20261023_v1/llama_reflexion/freeze_v4.json",
+        "snapshot/BenchmarkV2/p6_llama_main_ten_tasks_v1/configs/reflexion_prompts.json"
+      ],
+      "accepted_output": "20 fresh-memory sampled trajectories; first success or3trials; original actor reflection-memory channel",
+      "inputs": 3905,
+      "K": 20
+    }
+  ],
+  "notes": [
+    "Read exact copied contracts for seed formulas,tokenizer,physical batching,and accepted continuations.",
+    "Historical status strings are provenance,not current completion status.",
+    "Llama Beam/Sampling full per-unit execution config is indexed among omitted assets; runtime.json only identifies frozen model assembly.",
+    "The internal failed-unit recovery.json archive is the fifth omitted execution asset. It does not define an additional method or alter the accepted algorithm, task, prompt, or decoding configuration."
+  ],
+  "omitted_operational_configs": [
+    "BenchmarkV2/p6_llama_failure_recovery_20261003_v1/configs/recovery.json"
+  ]
+}

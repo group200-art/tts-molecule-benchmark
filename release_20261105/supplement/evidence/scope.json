@@ -1,0 +1,49 @@
+{
+  "status": "FROZEN_SCOPE_AWAITING_END_TO_END_GATE",
+  "created_utc": "2026-11-04T05:45:41.276758+00:00",
+  "internal_freeze_utc": "2026-11-04T18:00:00+00:00",
+  "official_full_paper_deadline_utc": "2026-11-05T11:59:00+00:00",
+  "authorization": "User request: 50 inputs per task, 500 total, two backbones, GoT versus independent Sampling with the same scorer, one generation seed; launch only after a complete timing and validation gate.",
+  "inputs": 500,
+  "inputs_per_task": 50,
+  "backbones": [
+    "mistral",
+    "llama"
+  ],
+  "generation_seeds": [
+    1729
+  ],
+  "arms": [
+    "GoT",
+    "Sampling with GoT scoring"
+  ],
+  "arm_input_runs": 2000,
+  "selection": "First 50 in each task of the original frozen SHA-256 ranking. Same inputs for both models and both arms; no outcome-based selection.",
+  "subset_sha256": "4838ebd0fe819d6afb8da95ce668038f1c227da96b7b69ccf80c7cb0b9361afe",
+  "units_sha256": "ce8489f74ef670e22c3ac92fdf995085b614e53b4faffe7f2e4f0aa5a32c820d",
+  "parent_scientific_freeze_sha256": "bad2d013875abdda9a60a2967267f94519fb12fdd55304835778851269f14b53",
+  "scientific_generation_code_unchanged": true,
+  "legacy_raw_storage_profile": "subset_100",
+  "storage_note": "The immutable parent generator names raw chunks subset_100. This release includes only the independently frozen 500-input scope and never claims completion of the old 996-input, three-seed study.",
+  "partition": "rtx6k_gpu",
+  "qos": "gpu_rtx6k",
+  "max_concurrent_gpus": 4,
+  "gpus_per_worker": 1,
+  "cpus_per_worker": 8,
+  "memory_gb_per_worker": 64,
+  "runtime": "Original torch/transformers/PEFT, identical Blackwell Server Edition GPU, BF16 base and FP32 adapters, unchanged batching and response-specific random streams.",
+  "end_to_end_pilot": "Two hash-first inputs per task and model, GoT pair only, followed by scoring/log validation, full precision similarity, metrics, paired source intervals and export. Excluded from formal statistics.",
+  "formal_reuse": "Only complete matching GoT paired chunks at seed 1729 with exact source identity and frozen code are reusable; all other saved outputs remain separate.",
+  "minimum_finish_reserve_seconds": 10800,
+  "timing_safety_multiplier": 1.25,
+  "offline_inputs": 3905,
+  "offline_priorities": [
+    "Strict Tanimoto >0.6 on original returned prefixes K=1 and 20",
+    "GoT reordering of the same selected twenty candidates",
+    "Complete Vote fixed pools and property labels"
+  ],
+  "reflexion_ablation": false,
+  "three_seed_repeats": false,
+  "partial_scope_results_allowed": false,
+  "overleaf_push": false
+}

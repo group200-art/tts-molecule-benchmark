@@ -1,0 +1,19 @@
+model,method_id,n_inputs,output_slots_per_input,molecular_proposals_total,response_sequences_total,output_tokens_total,molecular_proposals_mean,response_sequences_mean,output_tokens_mean,inference_property_tools,status,basis
+Mistral,beam,3905,20,78100,78100,5230241,20.0,20.0,1339.3702944942381,None,complete_generation,Unchanged generated pool; audited original full-pool token accounting
+Mistral,sampling,3905,20,156200,156200,10135480,40.0,40.0,2595.5134443021766,None,complete_generation,Unchanged generated pool; audited original full-pool token accounting
+Mistral,self_refine,3905,20,156200,312400,67328042,40.0,80.0,17241.496030729835,None,complete_generation,"All 20 one-revision trajectories, including two feedback responses and original reused-prefix costs"
+Mistral,tot,3905,20,97625,136675,10837481,25.0,35.0,2775.283226632522,None,complete_generation,"Five initial proposals, twenty children and two five-vote stages; original token costs of reused responses included once; historical branches outside this configuration excluded"
+Mistral,got,3905,20,109340,109340,12541603,28.0,28.0,3211.678104993598,Search and selection,complete_generation,Unchanged generated pool; audited original full-pool token accounting
+Mistral,s1,3905,20,78100,234279,31934356,20.0,59.994622279129324,8177.8120358514725,None,complete_generation,"All initial reasoning, actual Wait continuations, and final-answer responses; successful retries counted once"
+Mistral,voting,3905,20,1562000,1562000,103181455,400.0,400.0,26422.90781049936,None,complete_generation,Unchanged generated pool; audited original full-pool token accounting
+Mistral,icl,3905,20,78100,78100,7109865,20.0,20.0,1820.708066581306,None,complete_generation,"Complete 20-terminal traces, one answer per repeat"
+Mistral,reflexion,3905,20,192428,499184,95050229,49.277336747759286,127.83201024327785,24340.647631241998,Feedback and stopping,complete_generation,"All committed thought, action and reflection responses across twenty max-three-trial trajectories; reused generations counted once"
+Llama,beam,3905,20,78100,78100,3963233,20.0,20.0,1014.9124199743918,None,complete_generation,Unchanged generated pool; audited original full-pool token accounting
+Llama,sampling,3905,20,156200,156200,7378413,40.0,40.0,1889.4783610755442,None,complete_generation,Unchanged generated pool; audited original full-pool token accounting
+Llama,self_refine,3905,20,156200,312400,37544659,40.0,80.0,9614.509346991037,None,complete_generation,"All 20 one-revision trajectories, including two feedback responses and original reused-prefix costs"
+Llama,tot,3905,20,97625,136675,18468052,25.0,35.0,4729.334699103713,None,complete_generation,"Five initial proposals, twenty children and two five-vote stages; original token costs of reused responses included once; historical branches outside this configuration excluded"
+Llama,got,3905,20,109340,109340,18335543,28.0,28.0,4695.401536491678,Search and selection,complete_generation,Unchanged generated pool; audited original full-pool token accounting
+Llama,s1,3905,20,78100,234269,16561647,20.0,59.99206145966709,4241.138796414853,None,complete_generation,"All initial reasoning, actual Wait continuations, and final-answer responses; successful retries counted once"
+Llama,voting,3905,20,1562000,1562000,74026041,400.0,400.0,18956.732650448143,None,complete_generation,Unchanged generated pool; audited original full-pool token accounting
+Llama,icl,3905,20,78100,78100,4375806,20.0,20.0,1120.5649167733675,None,complete_generation,All 20 sampled final-answer sequences per input
+Llama,reflexion,3905,20,193051,501053,84558180,49.43687580025608,128.31062740076825,21653.823303457106,Feedback and stopping,complete_generation,"All committed thought, action and reflection responses across twenty max-three-trial trajectories; reused generations counted once"

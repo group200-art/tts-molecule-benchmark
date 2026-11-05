@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "rows_checked": 44,
+  "paired_contrasts_checked": 14,
+  "independent_input_manifest_checked": true,
+  "input_count_per_configuration": 500,
+  "clusters": 458,
+  "replicates": 2000,
+  "bootstrap_seed": 20261014,
+  "weight_sha256": "5cd6fba9d4b42c6e484bb1f51182cb4615d281c0d85319b0d60ceef8bbbbb652",
+  "zero_denominator_redraws": 0,
+  "max_absolute_error": 2.842170943040401e-14,
+  "numpy_version": "2.2.6",
+  "scope": "Input-outcome aggregation and conditional source bootstrap; no new generation or chemical evaluation."
+}

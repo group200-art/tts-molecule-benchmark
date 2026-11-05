@@ -1,0 +1,120 @@
+{
+  "basis": "prior verified NEXT3 metadata; current size/mtime only, no model probe or weight rehash",
+  "files": [
+    {
+      "path": "/MODEL_ROOT/GeLLMO-P6-Mistral/adapter_model.safetensors",
+      "size": 438627360,
+      "mtime_ns": 1788564548229019032
+    },
+    {
+      "path": "/MODEL_ROOT/Mistral-7B-Instruct-v0.3/model-00001-of-00003.safetensors",
+      "size": 4949453792,
+      "mtime_ns": 1776483457244410657
+    },
+    {
+      "path": "/MODEL_ROOT/Mistral-7B-Instruct-v0.3/model-00002-of-00003.safetensors",
+      "size": 4999819336,
+      "mtime_ns": 1776483456985927920
+    },
+    {
+      "path": "/MODEL_ROOT/Mistral-7B-Instruct-v0.3/model-00003-of-00003.safetensors",
+      "size": 4546807800,
+      "mtime_ns": 1776483455833851942
+    },
+    {
+      "path": "/REPOSITORY_ROOT/data/props/clf_py36.pkl",
+      "size": 35417609,
+      "mtime_ns": 1748549829000000000
+    },
+    {
+      "path": "/REPOSITORY_ROOT/data/props/drd2_scorer.py",
+      "size": 1008,
+      "mtime_ns": 1748549829000000000
+    },
+    {
+      "path": "/REPOSITORY_ROOT/data/props/fpscores.pkl.gz",
+      "size": 3848394,
+      "mtime_ns": 1748549829000000000
+    },
+    {
+      "path": "/REPOSITORY_ROOT/data/props/properties.py",
+      "size": 2425,
+      "mtime_ns": 1748549829000000000
+    },
+    {
+      "path": "/REPOSITORY_ROOT/data/props/sascorer.py",
+      "size": 5791,
+      "mtime_ns": 1748549829000000000
+    },
+    {
+      "path": "/ENVIRONMENT_ROOT/gellmo_inf/lib/python3.10/site-packages/admet_ai/admet_model.py",
+      "size": 13201,
+      "mtime_ns": 1774653019952603382
+    },
+    {
+      "path": "/ENVIRONMENT_ROOT/gellmo_inf/lib/python3.10/site-packages/admet_ai/constants.py",
+      "size": 612,
+      "mtime_ns": 1774653019969346050
+    },
+    {
+      "path": "/ENVIRONMENT_ROOT/gellmo_inf/lib/python3.10/site-packages/admet_ai/physchem.py",
+      "size": 2215,
+      "mtime_ns": 1774653019981052958
+    },
+    {
+      "path": "/ENVIRONMENT_ROOT/gellmo_inf/lib/python3.10/site-packages/admet_ai/resources/data/drugbank_approved.csv",
+      "size": 2733700,
+      "mtime_ns": 1774653020162245988
+    },
+    {
+      "path": "/ENVIRONMENT_ROOT/gellmo_inf/lib/python3.10/site-packages/admet_ai/resources/models/admet_classification/model_0.pt",
+      "size": 1705141,
+      "mtime_ns": 1774653020204330806
+    },
+    {
+      "path": "/ENVIRONMENT_ROOT/gellmo_inf/lib/python3.10/site-packages/admet_ai/resources/models/admet_classification/model_1.pt",
+      "size": 1705141,
+      "mtime_ns": 1774653020236497586
+    },
+    {
+      "path": "/ENVIRONMENT_ROOT/gellmo_inf/lib/python3.10/site-packages/admet_ai/resources/models/admet_classification/model_2.pt",
+      "size": 1705141,
+      "mtime_ns": 1774653020272093650
+    },
+    {
+      "path": "/ENVIRONMENT_ROOT/gellmo_inf/lib/python3.10/site-packages/admet_ai/resources/models/admet_classification/model_3.pt",
+      "size": 1705141,
+      "mtime_ns": 1774653020312203660
+    },
+    {
+      "path": "/ENVIRONMENT_ROOT/gellmo_inf/lib/python3.10/site-packages/admet_ai/resources/models/admet_classification/model_4.pt",
+      "size": 1705141,
+      "mtime_ns": 1774653020348562045
+    },
+    {
+      "path": "/ENVIRONMENT_ROOT/gellmo_inf/lib/python3.10/site-packages/admet_ai/resources/models/admet_regression/model_0.pt",
+      "size": 1679605,
+      "mtime_ns": 1774653020383988007
+    },
+    {
+      "path": "/ENVIRONMENT_ROOT/gellmo_inf/lib/python3.10/site-packages/admet_ai/resources/models/admet_regression/model_1.pt",
+      "size": 1679605,
+      "mtime_ns": 1774653020410078215
+    },
+    {
+      "path": "/ENVIRONMENT_ROOT/gellmo_inf/lib/python3.10/site-packages/admet_ai/resources/models/admet_regression/model_2.pt",
+      "size": 1679605,
+      "mtime_ns": 1774653020442055143
+    },
+    {
+      "path": "/ENVIRONMENT_ROOT/gellmo_inf/lib/python3.10/site-packages/admet_ai/resources/models/admet_regression/model_3.pt",
+      "size": 1679605,
+      "mtime_ns": 1774653020488916356
+    },
+    {
+      "path": "/ENVIRONMENT_ROOT/gellmo_inf/lib/python3.10/site-packages/admet_ai/resources/models/admet_regression/model_4.pt",
+      "size": 1679605,
+      "mtime_ns": 1774653020517552750
+    }
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "execution_id": "GELLMO-LLAMA-ICL4-SAMPLED-R20-20261013-v1",
+  "label": "4-shot ICL sampled R20",
+  "model": "gellmo_p6_llama",
+  "shots": 4,
+  "visible_outputs": 20,
+  "inputs": 3905,
+  "total_endpoints": 78100,
+  "replaces_current_beam4_K1": false,
+  "current_K1_reusable_as_sampled_repeat": false,
+  "decoding": {
+    "do_sample": true,
+    "temperature": 1.0,
+    "top_p": 1.0,
+    "top_k": 0,
+    "num_beams": 1,
+    "num_return_sequences": 1,
+    "min_new_tokens": 0,
+    "max_new_tokens": 100,
+    "repetition_penalty": 1.0,
+    "length_penalty": 1.0,
+    "no_repeat_ngram_size": 0
+  },
+  "physical_batch": "Four consecutive manifest inputs x20 independent sampled rows; fresh row state. Last batch may be smaller.",
+  "seed": "First15hex SHA256 compactJSON([execution_id,batch_id,ordered(task,uid,repeat) lane keys]) modulo2147483647; reset per physical call.",
+  "method_adaptation": "Same frozen demonstration records, prompt, parser, cap100. Explicitly replaces deterministic beam4 with T1 sampling, as previously authorized for K20. No property-feedback selection.",
+  "generated_rows": "Retain all20, including duplicate/invalid/empty; no refill or quality-dependent retries.",
+  "model_assembly": {
+    "models": {
+      "mistral": {
+        "base_path": "/MODEL_ROOT/Mistral-7B-Instruct-v0.3",
+        "adapter_path": "/MODEL_ROOT/GeLLMO-P6-Mistral",
+        "adapter_revision": "a6437ea4aedd75584bd9d30001c63e9808489531",
+        "base_revision": null,
+        "dtype_request": "bfloat16",
+        "autocast_adapter_dtype": true,
+        "low_cpu_mem_usage_adapter": false,
+        "device_map": {
+          "": "cuda:0"
+        },
+        "quantization": null,
+        "offload": false,
+        "torch_compile": false,
+        "pipeline": false,
+        "attention_backend_override": null,
+        "weight_verification_basis": "reuse successful RUN01 result; standard unchanged PEFT assembly; lightweight active adapter status only",
+        "run01_result_path": "/REPOSITORY_ROOT/BenchmarkV2/phase1c_minruntime_bdp0_v1/run_01/result.json",
+        "run01_result_sha256": "758f191a8666567d682633900148787f82cde8ebe11e347d72b4decfb6196e1f"
+      },
+      "llama": {
+        "base_path": "/MODEL_ROOT/Llama-3.1-8B-Instruct",
+        "adapter_path": "/REPOSITORY_ROOT/BenchmarkV2/p6_llama_main_ten_tasks_v1/models/GeLLMO-P6-Llama",
+        "adapter_revision": "6a5b6ab53b8e6d3c2016370a980d57c39c749592",
+        "base_revision": null,
+        "dtype_request": "bfloat16",
+        "autocast_adapter_dtype": true,
+        "low_cpu_mem_usage_adapter": false,
+        "device_map": {
+          "": "cuda:0"
+        },
+        "quantization": null,
+        "offload": false,
+        "torch_compile": false,
+        "pipeline": false,
+        "attention_backend_override": null,
+        "weight_verification_basis": "complete local SHA256 and adapter/base safetensor header compatibility; real assembly checked in each worker"
+      }
+    },
+    "tokenizer": {
+      "mistral": {
+        "use_fast": false,
+        "bos": 1,
+        "eos": 2,
+        "pad": 2
+      },
+      "llama": {
+        "use_fast": true,
+        "bos": 128000,
+        "eos": 128009,
+        "pad": 128009
+      }
+    },
+    "generation_defaults_path": "/REPOSITORY_ROOT/BenchmarkV2/p6_llama_main_ten_tasks_v1/configs/mistral_generation_defaults.json"
+  },
+  "prompt_files": {
+    "BDP": "/REPOSITORY_ROOT/BenchmarkV2/p6_llama_main_ten_tasks_v1/configs/pplus_prompts_BDP.json",
+    "BDQ": "/REPOSITORY_ROOT/BenchmarkV2/p6_llama_main_ten_tasks_v1/configs/pplus_prompts_BDQ.json",
+    "BPQ": "/REPOSITORY_ROOT/BenchmarkV2/p6_llama_main_ten_tasks_v1/configs/pplus_prompts_BPQ.json",
+    "DPQ": "/REPOSITORY_ROOT/BenchmarkV2/p6_llama_main_ten_tasks_v1/configs/pplus_prompts_DPQ.json",
+    "BDPQ": "/REPOSITORY_ROOT/BenchmarkV2/p6_llama_main_ten_tasks_v1/configs/pplus_prompts_BDPQ.json",
+    "MPQ": "/REPOSITORY_ROOT/BenchmarkV2/p6_llama_main_ten_tasks_v1/configs/pplus_prompts_MPQ.json",
+    "BDMQ": "/REPOSITORY_ROOT/BenchmarkV2/p6_llama_main_ten_tasks_v1/configs/pplus_prompts_BDMQ.json",
+    "BHMQ": "/REPOSITORY_ROOT/BenchmarkV2/p6_llama_main_ten_tasks_v1/configs/pplus_prompts_BHMQ.json",
+    "BMPQ": "/REPOSITORY_ROOT/BenchmarkV2/p6_llama_main_ten_tasks_v1/configs/pplus_prompts_BMPQ.json",
+    "HMPQ": "/REPOSITORY_ROOT/BenchmarkV2/p6_llama_main_ten_tasks_v1/configs/pplus_prompts_HMPQ.json"
+  },
+  "immutable_sources": {
+    "/REPOSITORY_ROOT/BenchmarkV2/p6_llama_main_ten_tasks_v1/configs/pplus_prompts_BDP.json": "ef302ebbac7c1866f7bd07feea4f7bdf8b2a6aa3f3a1082a3fe664de9af04711",
+    "/REPOSITORY_ROOT/BenchmarkV2/p6_llama_main_ten_tasks_v1/configs/pplus_prompts_BDQ.json": "13df635571d413c29a61c0966e30b13000a598ae1b59d5ade49784c88011c4fe",
+    "/REPOSITORY_ROOT/BenchmarkV2/p6_llama_main_ten_tasks_v1/configs/pplus_prompts_BPQ.json": "aef3ed18fc07bb7380fd344c714a13bd75fc48c750a05b776e1cc0a4ab5b1d45",
+    "/REPOSITORY_ROOT/BenchmarkV2/p6_llama_main_ten_tasks_v1/configs/pplus_prompts_DPQ.json": "2c78601dadfcc7c5bfc8aee9a8cbe8dcad91be0c1b6061802ad637426b76bac6",
+    "/REPOSITORY_ROOT/BenchmarkV2/p6_llama_main_ten_tasks_v1/configs/pplus_prompts_BDPQ.json": "9e735f0444c84bb720f2d0f76d315a984a9bea4d60408bb0891281d33fbc2fd8",
+    "/REPOSITORY_ROOT/BenchmarkV2/p6_llama_main_ten_tasks_v1/configs/pplus_prompts_MPQ.json": "eb99b89c343ee5efadd6975dca637c6145e345aebe7db16c09c31e19e8fbe267",
+    "/REPOSITORY_ROOT/BenchmarkV2/p6_llama_main_ten_tasks_v1/configs/pplus_prompts_BDMQ.json": "7fa79d4a5edd2e755d235490964174a0de9a09d06d0c08ed025ab13edc883290",
+    "/REPOSITORY_ROOT/BenchmarkV2/p6_llama_main_ten_tasks_v1/configs/pplus_prompts_BHMQ.json": "ff4eef651e15da7598fb395707d3ae0e2f2682479c742ecd66b9ecb46cf9e548",
+    "/REPOSITORY_ROOT/BenchmarkV2/p6_llama_main_ten_tasks_v1/configs/pplus_prompts_BMPQ.json": "e61eae581976230f11cd6cf298c749212cd00cb1570ddf297d06fe2e14656c08",
+    "/REPOSITORY_ROOT/BenchmarkV2/p6_llama_main_ten_tasks_v1/configs/pplus_prompts_HMPQ.json": "85b2063a6cec57a5a4e87e07a593a6fecfa36ec85919065e267ba9305f2cea04",
+    "/REPOSITORY_ROOT/BenchmarkV2/k1_nine_methods_execution_20261011_v2/config/tot_contract.json": "c8b66c6c40a8bacd1d6b4ec5e7f7d04a7c6436ddcd442b9c27997083837a0bf7",
+    "/REPOSITORY_ROOT/BenchmarkV2/k1_nine_methods_execution_20261011_v2/code/tot_backend.py": "3cbc18494c316cc70e0b442c4fc53e25c8803380539d6f97a6a8038565e1e97e",
+    "/REPOSITORY_ROOT/BenchmarkV2/k1_nine_methods_execution_20261011_v2/code/tot_protocol.py": "9be012cbf9d65db62f85c4387d0144dc87e1c03439eaeab12be79cac5670cf09",
+    "/REPOSITORY_ROOT/BenchmarkV2/k20_alignment_20261002_v1/src/pplus_parser.py": "7b86f9a6ab93a4adf68bf4f9e587315c6c1b7d69f63f4318785566b5653572ce",
+    "/REPOSITORY_ROOT/BenchmarkV2/p6_llama_main_ten_tasks_v1/configs/mistral_generation_defaults.json": "b4669f1b8f4185324bd9b12a69e85a1ad2289bc48111ef739cfaaea3bba6b0a9"
+  },
+  "probe_unit_indices": [
+    0,
+    28,
+    49
+  ],
+  "probe_scope": "First4 inputs of BDP, BDPQ, BHMQ, all20 terminals. Engineering/time/memory only. Reused if exact final contract unchanged.",
+  "full_run_gate": "engineering_gate.json status PASS and matching contract hash; root GPU coordinator required",
+  "max_concurrent_gpu_workers": 1,
+  "property_evaluation": "Separate CPU step; generation-complete is not evaluation-complete."
+}

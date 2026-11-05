@@ -1,0 +1,23 @@
+\begin{table}[!htbp]
+\centering
+\setlength{\tabcolsep}{4pt}
+\caption{Alternative selectors on the saved Vote proposal groups, retaining all 400 proposals in twenty groups per input. All 3,905 inputs are included per backbone. Rates are percentages averaged equally over tasks. First proposal retains group position zero even if empty or invalid. Uniform position is the analytic expectation for independent uniform choices of positions. The success upper bound uses outcome labels and is diagnostic, not a selector with matched information; its validity is unspecified. Differences subtract Vote SR@20 in percentage points; intervals are paired source bootstrap pointwise 95\% intervals.}
+\label{tab:supp-vote-pool}
+\begin{tabular}{lrrrl}
+\toprule
+Selector & SR@1 & SR@20 & Validity & SR@20 difference [95\% CI] \\
+\midrule
+\multicolumn{5}{l}{\textbf{Mistral}} \\
+Vote & 36.43 & 39.26 & 90.10 & --- \\
+First proposal & 35.92 & 47.36 & 89.69 & +8.10 [+7.03, +9.22] \\
+Uniform position & 36.09 & 47.18 & 89.68 & +7.92 [+7.01, +8.96] \\
+Success upper bound & 47.53 & 55.46 & NA & +16.20 [+14.78, +17.70] \\
+\midrule
+\multicolumn{5}{l}{\textbf{Llama}} \\
+Vote & 32.37 & 36.60 & 85.54 & --- \\
+First proposal & 31.93 & 48.17 & 84.88 & +11.56 [+10.26, +13.08] \\
+Uniform position & 32.13 & 47.87 & 84.92 & +11.26 [+10.15, +12.52] \\
+Success upper bound & 47.40 & 60.14 & NA & +23.54 [+21.73, +25.53] \\
+\bottomrule
+\end{tabular}
+\end{table}

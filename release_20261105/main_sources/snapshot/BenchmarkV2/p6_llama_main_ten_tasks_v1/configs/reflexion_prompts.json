@@ -1,0 +1,10 @@
+{
+  "version": "ppro_reflexion_cot_molecular_v1",
+  "source": "MIT Noah Shinn CoT no-context prompt structures; necessary molecular task/field substitutions, no examples",
+  "actor": "Solve a molecular optimization task by having a Thought, then an Action with your final molecule. Thought can reason about the current task. Action returns exactly one molecule enclosed in <SMILES>...</SMILES> and finishes the trial. Modify the original molecule to achieve the listed property directions while keeping structural changes minimal.\n\n{reflections}\n\nTask:\n{question}{scratchpad}",
+  "reflection": "You are an advanced reasoning agent that can improve based on self reflection. You will be given a previous molecular optimization trial that was unsuccessful. In a few sentences, diagnose a possible reason for failure and devise a new, concise, high level plan that aims to mitigate the same failure. Use complete sentences.\n\nPrevious trial:\nTask:\n{question}{scratchpad}\n\nReflection:",
+  "experience_header": "You have attempted this molecular optimization task before and failed. The following reflections give a plan to avoid failing in the same way. Use them to improve your strategy for solving the same original task.\n",
+  "output_parsing": "Only Action first complete SMILES tag; preserve brackets and punctuation, strip surrounding whitespace only; missing/empty tag remains empty slot; no repair/fallback/alternative search",
+  "stop_mapping": "author newline stop and format_step newline removal replaced by existing model EOS and role cap250; multiline raw text retained; no vocabulary or chat template change",
+  "question_mapping": "existing seen Input/Adjust fields from Prompter; baseline output-only instruction replaced by CoT stage instruction to avoid conflicting with natural-language Thought"
+}

@@ -1,0 +1,44 @@
+{
+  "status": "VALIDATED_REPAIR_FROZEN",
+  "changes": {
+    "/REPOSITORY_ROOT/BenchmarkV2/benchmark_completion_20261023_v1/mistral_reflexion/property_service.py": {
+      "before": "74357b3c2afe6f93565778496b1f14faab0e4de2c3759d1dcf3dcdc72207808b",
+      "after": "ffe0f1ab381624ee3d178f4f58089c625d16dfa7e6b37f018286b7da89a91a40"
+    },
+    "/REPOSITORY_ROOT/BenchmarkV2/benchmark_completion_20261023_v1/mistral_reflexion/runtime.py": {
+      "before": "a24691a81c4cfa9effdef0e8f75f935561a33b81b1cc5a61d5dbc2fb0bd47c8a",
+      "after": "fbbaa4017cefcdf76d83fa9e1847cf598f02a64b9474341469febd14f1f009e8"
+    },
+    "/REPOSITORY_ROOT/BenchmarkV2/benchmark_completion_20261023_v1/llama_reflexion/aggregate.py": {
+      "before": "d2d7df8f42412402bf08d1b4abf46a769321a1f08820534b0c3269213107d6a6",
+      "after": "9051dccbdd24e196e9882972e0aeb1a2e71242e289f8639fdf4a5fb087f8bdce"
+    },
+    "/REPOSITORY_ROOT/BenchmarkV2/benchmark_completion_20261023_v1/llama_reflexion/common.py": {
+      "before": "a64ac378f68261dfb81d515bb288a365c6334d7ddb0786063d1064d359e0f16d",
+      "after": "b12422c00154d36f9d6d0d04c04342b2aabf05b3361db28c1d67f6a227f6a181"
+    },
+    "/REPOSITORY_ROOT/BenchmarkV2/benchmark_completion_20261023_v1/llama_reflexion/property_service.py": {
+      "before": "cb0e892d4ca30078d5e6c2bff295838c2bb445e7968151bd121bd31c16eff518",
+      "after": "037a2f3c7b668dfa2f2ee48b918cb44269da11d2fe11beee2f971e0a3bd06bc0"
+    },
+    "/REPOSITORY_ROOT/BenchmarkV2/benchmark_completion_20261023_v1/mistral_reflexion_evaluation/aggregate.py": {
+      "before": "cd8049cad4b6e67502323edd65aa12fc7dc2cf6c7d56e71632c06a5e3d2e3d06",
+      "after": "ae2a6caa743895143f77ff04225462dca172900e81bf3a3e85c20c3270163303"
+    },
+    "/REPOSITORY_ROOT/BenchmarkV2/benchmark_completion_20261023_v1/mistral_reflexion_evaluation/common.py": {
+      "before": "ea729bc1e01afa304baad662990e752bec5a699a1e1df8504550713a9321aa9a",
+      "after": "0b0dda350971c2ae374d406301a57be10e0791021287a8886ace812e2ba78511"
+    }
+  },
+  "new_freezes": {
+    "mistral_reflexion/continuation_freeze_v2.json": "bb95ec5d7a91a344bf6bf4ebeb9ba4529fd53d9ce1143cb0717d0de2d4bf5606",
+    "llama_reflexion/freeze_v4.json": "cd66157c4bec74abf83b5f04560f3c8b4b53f8c01a0f772af1dc3785114288b3",
+    "mistral_reflexion_evaluation/freeze_v2.json": "dfac3f347c9f0b059a6ab77cf72df6c5efc24cd3c3c3c5a0eb8cd0a0f1ae5a6f"
+  },
+  "validation_gate_sha256": "5a5c1a7b12896a57589011e08dca9ebd6a81b562e297fe50988a4afe89949fa6",
+  "previous_proposal_sha256": "ad43f9b7fa915cda771b0393f1231843a144dd9e8a282466b426a640721a1781",
+  "authorization": "User asked to repair this issue without changing core methods or fairness.",
+  "manuscript_changed": false,
+  "completed_results_rewritten": false,
+  "original_shared_scientific_sources_changed": false
+}

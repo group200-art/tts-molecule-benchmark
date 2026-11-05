@@ -1,0 +1,17 @@
+{
+  "status": "PASS_NORMAL_EQUIVALENCE_AND_KNOWN_FAILURE_RECOVERY",
+  "validation_job": "6935341",
+  "reports_sha256": {
+    "/REPOSITORY_ROOT/BenchmarkV2/benchmark_completion_20261023_v1/recovery_20261027_v1/validation_01/mistral/inf_validation.json": "bb2329f61a74e630abd11ab811bb06a0ba6f5ab067f5d9ad980eeac33a670e8d",
+    "/REPOSITORY_ROOT/BenchmarkV2/benchmark_completion_20261023_v1/recovery_20261027_v1/validation_01/mistral/standard_validation.json": "ea9fe3319c254df5fe8fd13efabd8d33b18df7d8257ddb7f51bc9720555af8c2",
+    "/REPOSITORY_ROOT/BenchmarkV2/benchmark_completion_20261023_v1/recovery_20261027_v1/validation_01/llama/inf_validation.json": "6db68c6472f7d1bfff49f5318f4e7074041dd1a96d4c9de53a71650ded4f4828",
+    "/REPOSITORY_ROOT/BenchmarkV2/benchmark_completion_20261023_v1/recovery_20261027_v1/validation_01/llama/standard_validation.json": "d4129827d2f9357929e3c65d18b7a0412d106ca7259ef4e1f296df50e766256e"
+  },
+  "normal_candidates": 160,
+  "normal_admet_requests": 133,
+  "known_failure_requests": 2,
+  "validation_repair_sha256": "8c5862358788598fec18e019b0cbdf5672d96eda5b55f76220e5d026e1445a9b",
+  "protocol": "Existing non-evaluable-output rule; only known RemoveHs KekulizeException isolated",
+  "methods_prompts_seeds_batch_sizes_trial_caps_and_slots_unchanged": true,
+  "original_freezes_retained": true
+}

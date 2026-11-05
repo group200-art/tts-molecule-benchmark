@@ -1,0 +1,51 @@
+--- original/build_statistics.py
++++ scripts/build_statistics_portable.py
+@@ -11,11 +11,11 @@
+ 
+ import numpy as np
+ 
+-ROOT = Path(__file__).resolve().parent
+-BENCH = ROOT.parent
+-PAPER = ROOT / 'paper'
+-DATA = PAPER / 'data'
+-FINAL = BENCH / 'benchmark_completion_20261023_v1/results'
++ROOT = Path(__file__).resolve().parents[1]
++BENCH = ROOT / 'inputs'
++DATA = Path(os.environ.get('MAIN_RESULTS_OUTPUT', str(ROOT / 'reproduced')))
++DATA.mkdir(parents=True, exist_ok=True)
++FINAL = BENCH / 'final'
+ TASKS = ['BDP', 'BDQ', 'BPQ', 'DPQ', 'BDPQ', 'MPQ', 'BDMQ', 'BHMQ', 'BMPQ', 'HMPQ']
+ MODELS = ['Mistral', 'Llama']
+ METHODS = ['beam', 'sampling', 'self_refine', 'tot', 'got', 's1', 'voting', 'icl', 'reflexion']
+@@ -64,11 +64,11 @@
+ 
+ 
+ def main():
+-    assert os.environ.get('SLURM_JOB_ID'), 'Bootstrap computation requires a CPU allocation'
++    # Standalone release: use the caller's CPU environment; no scheduler is required.
+     complete = read(FINAL / 'completion.json')
+     assert complete['status'] == 'COMPLETE_18_CONFIGURATIONS' and complete['missing_configurations'] == []
+     for name, expected_sha in complete['output_sha256'].items():
+-        assert sha(name) == expected_sha, name
++        assert sha(FINAL / Path(name).name) == expected_sha, name
+     expected = {}
+     for task in TASKS:
+         for record in jsonl(BENCH / 'manifests' / (task + '.test.seen.jsonl')):
+@@ -98,7 +98,7 @@
+     cluster_idx = np.array([cluster_map[expected[key]['source_molecule_uid']] for key in keys])
+     weights = np.random.default_rng(20261014).multinomial(
+         len(clusters), np.full(len(clusters), 1 / len(clusters)), size=2000)
+-    old_audit = read(ROOT / 'baseline_data/table3_consistency_audit.json')
++    old_audit = read(BENCH / 'baseline_data/table3_consistency_audit.json')
+     weights_sha = hashlib.sha256(weights.astype('<i8').tobytes()).hexdigest()
+     assert weights_sha == old_audit['cluster_weights_sha256_int64']
+     boot_task = []
+@@ -163,7 +163,7 @@
+         ('table3_k20_consistency.csv', consistency, ['IND_difference_pp', 'IND_CI95_low_pp', 'IND_CI95_high_pp', 'OOD_difference_pp', 'OOD_CI95_low_pp', 'OOD_CI95_high_pp', 'tasks_win', 'tasks_tie', 'tasks_loss', 'minimum_task_difference_pp']),
+     ]:
+         byconfig = {(r['model'], r['method_id']): r for r in new_rows}
+-        for old in rows(ROOT / 'baseline_data' / name):
++        for old in rows(BENCH / 'baseline_data' / name):
+             if old.get('status') not in (None, 'COMPLETE_EVALUATED_K20'):
+                 continue
+             for field in fields:

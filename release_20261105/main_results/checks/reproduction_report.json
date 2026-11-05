@@ -1,0 +1,161 @@
+{
+  "status": "PASS_MAIN_RESULTS_REPRODUCTION",
+  "scope": "Original two-backbone nine-method K20 comparison; excludes separate 500-input seed-1729 control",
+  "input_source_artifacts_verified": 45,
+  "configurations": 18,
+  "task_inputs_per_configuration": 3905,
+  "saved_metric_rows": 70290,
+  "fixed_output_slots": 1405800,
+  "task_sizes": {
+    "BDP": 500,
+    "BDQ": 500,
+    "BPQ": 500,
+    "DPQ": 500,
+    "BDPQ": 500,
+    "MPQ": 500,
+    "BDMQ": 500,
+    "BHMQ": 118,
+    "BMPQ": 191,
+    "HMPQ": 96
+  },
+  "source_clusters": 2860,
+  "aggregate_checks": {
+    "aggregated_per_task.csv": {
+      "rows": 180,
+      "numeric_values_checked": 1800,
+      "maximum_absolute_error": 0.0,
+      "actual_sha256": "d93721883fc558a17e645d218eb12daadab515e14ebdf0d7004c77bc3e73779d",
+      "reference_sha256": "d93721883fc558a17e645d218eb12daadab515e14ebdf0d7004c77bc3e73779d",
+      "byte_identical": true
+    },
+    "aggregated_macro.csv": {
+      "rows": 18,
+      "numeric_values_checked": 216,
+      "maximum_absolute_error": 0.0,
+      "actual_sha256": "45d458059b9531b5833806083aa28943f8ba2c6a5f1282eb476730ccc4c29fec",
+      "reference_sha256": "45d458059b9531b5833806083aa28943f8ba2c6a5f1282eb476730ccc4c29fec",
+      "byte_identical": true
+    },
+    "aggregated_prefix_coverage.csv": {
+      "rows": 720,
+      "numeric_values_checked": 2880,
+      "maximum_absolute_error": 0.0,
+      "actual_sha256": "1381950133a1577f59af03d28d13d4659b8510e7cd6ff32cc9af48ce2e7a6441",
+      "reference_sha256": "1381950133a1577f59af03d28d13d4659b8510e7cd6ff32cc9af48ce2e7a6441",
+      "byte_identical": true
+    }
+  },
+  "published_statistics_checks": {
+    "macro_uncertainty.csv": {
+      "rows": 18,
+      "numeric_values_checked": 126,
+      "maximum_absolute_error": 0.0,
+      "actual_sha256": "d382327fef6a82cc495a9a5bfc2fd6ab0be85918e148f29253c0a107ce3e86a8",
+      "reference_sha256": "d382327fef6a82cc495a9a5bfc2fd6ab0be85918e148f29253c0a107ce3e86a8",
+      "byte_identical": true
+    },
+    "paired_vs_beam.csv": {
+      "rows": 18,
+      "numeric_values_checked": 90,
+      "maximum_absolute_error": 0.0,
+      "actual_sha256": "efc82ac749648669c285b77bdcee319ecb0b6db9ec1c2df1271cb52721d685c1",
+      "reference_sha256": "efc82ac749648669c285b77bdcee319ecb0b6db9ec1c2df1271cb52721d685c1",
+      "byte_identical": true
+    },
+    "table3_k20_consistency.csv": {
+      "rows": 18,
+      "numeric_values_checked": 198,
+      "maximum_absolute_error": 0.0,
+      "actual_sha256": "347bf801ebf167b43218980f8f6248d3d9e5a60a187d80963afdebde01d10366",
+      "reference_sha256": "347bf801ebf167b43218980f8f6248d3d9e5a60a187d80963afdebde01d10366",
+      "byte_identical": true
+    },
+    "per_task.csv": {
+      "rows": 180,
+      "numeric_values_checked": 540,
+      "maximum_absolute_error": 0.0,
+      "actual_sha256": "073d6bedddca45583a04a087dba8929f1d0b65bb8a4ea8bb57f35ff2a2239436",
+      "reference_sha256": "073d6bedddca45583a04a087dba8929f1d0b65bb8a4ea8bb57f35ff2a2239436",
+      "byte_identical": true
+    },
+    "k20_prefix_macro.csv": {
+      "rows": 18,
+      "numeric_values_checked": 108,
+      "maximum_absolute_error": 0.0,
+      "actual_sha256": "32877dc6b15d45681f3a2e3dec35f5c388e7a2ffb6a6640951924170e18efaac",
+      "reference_sha256": "32877dc6b15d45681f3a2e3dec35f5c388e7a2ffb6a6640951924170e18efaac",
+      "byte_identical": true
+    },
+    "k20_prefix_coverage.csv": {
+      "rows": 720,
+      "numeric_values_checked": 2880,
+      "maximum_absolute_error": 0.0,
+      "actual_sha256": "1381950133a1577f59af03d28d13d4659b8510e7cd6ff32cc9af48ce2e7a6441",
+      "reference_sha256": "1381950133a1577f59af03d28d13d4659b8510e7cd6ff32cc9af48ce2e7a6441",
+      "byte_identical": true
+    },
+    "table3_k20_quality.csv": {
+      "rows": 18,
+      "numeric_values_checked": 162,
+      "maximum_absolute_error": 0.0,
+      "actual_sha256": "c5dd332d9db00141199f57541d060f7a07ee5436e93340001b82039dfbd913ee",
+      "reference_sha256": "c5dd332d9db00141199f57541d060f7a07ee5436e93340001b82039dfbd913ee",
+      "byte_identical": true
+    },
+    "table3_k20_quality_by_task.csv": {
+      "rows": 180,
+      "numeric_values_checked": 1800,
+      "maximum_absolute_error": 0.0,
+      "actual_sha256": "d93721883fc558a17e645d218eb12daadab515e14ebdf0d7004c77bc3e73779d",
+      "reference_sha256": "d93721883fc558a17e645d218eb12daadab515e14ebdf0d7004c77bc3e73779d",
+      "byte_identical": true
+    },
+    "table1_k20.csv": {
+      "rows": 9,
+      "numeric_values_checked": 90,
+      "maximum_absolute_error": 0.0,
+      "actual_sha256": "84573e69e07e16ccdcff19477620085707981aefde911d6a07d9bdcf10074b78",
+      "reference_sha256": "84573e69e07e16ccdcff19477620085707981aefde911d6a07d9bdcf10074b78",
+      "byte_identical": true
+    }
+  },
+  "workload": {
+    "comparison": {
+      "rows": 18,
+      "numeric_values_checked": 144,
+      "maximum_absolute_error": 0.0,
+      "actual_sha256": "a15d07543e91f9b092e76213e23cd2eb5324d6201200bf118af1729c2d96e74a",
+      "reference_sha256": "a15d07543e91f9b092e76213e23cd2eb5324d6201200bf118af1729c2d96e74a",
+      "byte_identical": true
+    },
+    "configurations_reaggregated_from_per_input": 4,
+    "configurations_retained_from_audited_totals": 14,
+    "per_input_records": 15620,
+    "limitation": "The other 14 totals are retained from audited aggregate records; their underlying traces are not bundled."
+  },
+  "bootstrap": {
+    "bootstrap_replicates": 2000,
+    "bootstrap_seed": 20261014,
+    "numpy_version": "2.2.6",
+    "cluster_weights_sha256_int64": "5763bd1ba349cbdd531adc4a7eabf5b370c42da865d84e3b5837ebcab634f067",
+    "unchanged_old_statistics_checked": 260,
+    "unchanged_old_statistics_max_error": 0.0,
+    "uncertainty_scope": "Paired source-cluster resampling conditional on fixed saved generations; no seed variance or multiplicity adjustment"
+  },
+  "generation_calls": 0,
+  "property_prediction_calls": 0,
+  "chemistry_calls": 0,
+  "plotting": "not requested",
+  "python_version": "3.10.20",
+  "execution": {
+    "scheduler": "SLURM",
+    "job_id": "8240848",
+    "state": "COMPLETED",
+    "exit_code": "0:0",
+    "cpus": 1,
+    "requested_memory": "4G",
+    "elapsed_seconds": 7,
+    "peak_rss_kib": 557976,
+    "interpreter_provenance": "/work/users/w/a/wanzhou/conda_envs/gellmo_mistral_gen/bin/python"
+  }
+}

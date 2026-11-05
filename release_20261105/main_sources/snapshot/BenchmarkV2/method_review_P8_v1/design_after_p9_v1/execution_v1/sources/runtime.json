@@ -1,0 +1,20 @@
+{
+  "base_path": "/MODEL_ROOT/Mistral-7B-Instruct-v0.3",
+  "adapter_path": "/MODEL_ROOT/GeLLMO-P6-Mistral",
+  "adapter_revision": "a6437ea4aedd75584bd9d30001c63e9808489531",
+  "base_revision": null,
+  "dtype_request": "bfloat16",
+  "autocast_adapter_dtype": true,
+  "low_cpu_mem_usage_adapter": false,
+  "device_map": {
+    "": "cuda:0"
+  },
+  "quantization": null,
+  "offload": false,
+  "torch_compile": false,
+  "pipeline": false,
+  "attention_backend_override": null,
+  "weight_verification_basis": "reuse successful RUN01 result; standard unchanged PEFT assembly; lightweight active adapter status only",
+  "run01_result_path": "/REPOSITORY_ROOT/BenchmarkV2/phase1c_minruntime_bdp0_v1/run_01/result.json",
+  "run01_result_sha256": "758f191a8666567d682633900148787f82cde8ebe11e347d72b4decfb6196e1f"
+}

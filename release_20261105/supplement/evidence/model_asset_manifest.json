@@ -1,0 +1,234 @@
+[
+  {
+    "backbone": "mistral",
+    "kind": "base_path",
+    "path": "/work/users/w/a/wanzhou/hf_models/Mistral-7B-Instruct-v0.3/config.json",
+    "sha256": "affafc6478ec0fd07a32f0ca57aa2fc57743f4d17d6730f86a96ac24d1507f99",
+    "bytes": 601,
+    "mtime_ns": 1776483438490697093
+  },
+  {
+    "backbone": "mistral",
+    "kind": "base_path",
+    "path": "/work/users/w/a/wanzhou/hf_models/Mistral-7B-Instruct-v0.3/consolidated.safetensors",
+    "sha256": "76d5729be995fb6510c7f103c5b8825d3d82f8126ac949db6be367a638694d1f",
+    "bytes": 14496078512,
+    "mtime_ns": 1776483479465500979
+  },
+  {
+    "backbone": "mistral",
+    "kind": "base_path",
+    "path": "/work/users/w/a/wanzhou/hf_models/Mistral-7B-Instruct-v0.3/generation_config.json",
+    "sha256": "b4669f1b8f4185324bd9b12a69e85a1ad2289bc48111ef739cfaaea3bba6b0a9",
+    "bytes": 116,
+    "mtime_ns": 1776483438425394155
+  },
+  {
+    "backbone": "mistral",
+    "kind": "base_path",
+    "path": "/work/users/w/a/wanzhou/hf_models/Mistral-7B-Instruct-v0.3/model-00001-of-00003.safetensors",
+    "sha256": "ce6fb6f6f4d0183f4813cbf4ece24109da629a08d4210da46f77e1d8b0bd5c19",
+    "bytes": 4949453792,
+    "mtime_ns": 1776483457244410657
+  },
+  {
+    "backbone": "mistral",
+    "kind": "base_path",
+    "path": "/work/users/w/a/wanzhou/hf_models/Mistral-7B-Instruct-v0.3/model-00002-of-00003.safetensors",
+    "sha256": "8c0e72f148366b6a3709e002a98706a33d31aec8515090c856c95b2044f92ae0",
+    "bytes": 4999819336,
+    "mtime_ns": 1776483456985927920
+  },
+  {
+    "backbone": "mistral",
+    "kind": "base_path",
+    "path": "/work/users/w/a/wanzhou/hf_models/Mistral-7B-Instruct-v0.3/model-00003-of-00003.safetensors",
+    "sha256": "905dd405363e43d95779c1c1155a2dbfd36155914ae95dbd934e12e490cfb4ca",
+    "bytes": 4546807800,
+    "mtime_ns": 1776483455833851942
+  },
+  {
+    "backbone": "mistral",
+    "kind": "base_path",
+    "path": "/work/users/w/a/wanzhou/hf_models/Mistral-7B-Instruct-v0.3/model.safetensors.index.json",
+    "sha256": "e489ba553b87cde188d921b1a8283c2e0b9d33d635b88147d96ff0fcd6250016",
+    "bytes": 23950,
+    "mtime_ns": 1776483438280527381
+  },
+  {
+    "backbone": "mistral",
+    "kind": "base_path",
+    "path": "/work/users/w/a/wanzhou/hf_models/Mistral-7B-Instruct-v0.3/params.json",
+    "sha256": "8a64b8657de37af1f828eef1517dc186247938d66e7fea2c78c31d5b9071efe6",
+    "bytes": 202,
+    "mtime_ns": 1776483438344420773
+  },
+  {
+    "backbone": "mistral",
+    "kind": "base_path",
+    "path": "/work/users/w/a/wanzhou/hf_models/Mistral-7B-Instruct-v0.3/special_tokens_map.json",
+    "sha256": "6fa06efa2785e450051989a6f8fb4416b10149ded485ddd3f127a40734f5cfd0",
+    "bytes": 414,
+    "mtime_ns": 1776483438484590617
+  },
+  {
+    "backbone": "mistral",
+    "kind": "base_path",
+    "path": "/work/users/w/a/wanzhou/hf_models/Mistral-7B-Instruct-v0.3/tokenizer.json",
+    "sha256": "e553af6fff7d7ad76e830608b218c5c0b0822998d5a1a96099a74cd3c1cb1a49",
+    "bytes": 1961548,
+    "mtime_ns": 1776483438497031643
+  },
+  {
+    "backbone": "mistral",
+    "kind": "base_path",
+    "path": "/work/users/w/a/wanzhou/hf_models/Mistral-7B-Instruct-v0.3/tokenizer.model",
+    "sha256": "37f00374dea48658ee8f5d0f21895b9bc55cb0103939607c8185bfd1c6ca1f89",
+    "bytes": 587404,
+    "mtime_ns": 1776483438589466415
+  },
+  {
+    "backbone": "mistral",
+    "kind": "base_path",
+    "path": "/work/users/w/a/wanzhou/hf_models/Mistral-7B-Instruct-v0.3/tokenizer_config.json",
+    "sha256": "0533dec9cfe319163801b6618d0f3ec9cfa126b6288e3df5deca6e32acb09cd2",
+    "bytes": 140874,
+    "mtime_ns": 1776483438615625917
+  },
+  {
+    "backbone": "mistral",
+    "kind": "adapter_path",
+    "path": "/work/users/w/a/wanzhou/hf_models/GeLLMO-P6-Mistral/adapter_config.json",
+    "sha256": "8dce3572321a2b5c5348b97cf0215bdce54f3ea15c1f383ca5a5d5f5f491f991",
+    "bytes": 823,
+    "mtime_ns": 1788564501305719928
+  },
+  {
+    "backbone": "mistral",
+    "kind": "adapter_path",
+    "path": "/work/users/w/a/wanzhou/hf_models/GeLLMO-P6-Mistral/adapter_model.safetensors",
+    "sha256": "0e4144bc79ccb76fb1c7cf6eab5ae2cfe84bcb175e26cfa889ba7dd2499698a6",
+    "bytes": 438627360,
+    "mtime_ns": 1788564548229019032
+  },
+  {
+    "backbone": "mistral",
+    "kind": "adapter_path",
+    "path": "/work/users/w/a/wanzhou/hf_models/GeLLMO-P6-Mistral/config.json",
+    "sha256": "9c45f36447ada15e1f5597a0ea817d5591712273655b3a2f027c5f162a6e1b94",
+    "bytes": 92,
+    "mtime_ns": 1788564548439802088
+  },
+  {
+    "backbone": "mistral",
+    "kind": "adapter_path",
+    "path": "/work/users/w/a/wanzhou/hf_models/GeLLMO-P6-Mistral/download_complete.json",
+    "sha256": "64954da2f32c48f5696c403965bdb03d326722a3f6b2a1f21bd22f61bec2f381",
+    "bytes": 348,
+    "mtime_ns": 1788564642293377693
+  },
+  {
+    "backbone": "llama",
+    "kind": "base_path",
+    "path": "/work/users/w/a/wanzhou/hf_models/Llama-3.1-8B-Instruct/config.json",
+    "sha256": "29e4c210b0d6ac178b16b2a255a568bdb23b581e50ca1ef6a6d071dd85704e6e",
+    "bytes": 855,
+    "mtime_ns": 1774656489045970961
+  },
+  {
+    "backbone": "llama",
+    "kind": "base_path",
+    "path": "/work/users/w/a/wanzhou/hf_models/Llama-3.1-8B-Instruct/generation_config.json",
+    "sha256": "189fb0c0d7fd8a527db217c0a60a0e013f0394cd8800f9697a666a9e75e5f7fd",
+    "bytes": 184,
+    "mtime_ns": 1774656489034064174
+  },
+  {
+    "backbone": "llama",
+    "kind": "base_path",
+    "path": "/work/users/w/a/wanzhou/hf_models/Llama-3.1-8B-Instruct/model-00001-of-00004.safetensors",
+    "sha256": "2b1879f356aed350030bb40eb45ad362c89d9891096f79a3ab323d3ba5607668",
+    "bytes": 4976698672,
+    "mtime_ns": 1774656509735428894
+  },
+  {
+    "backbone": "llama",
+    "kind": "base_path",
+    "path": "/work/users/w/a/wanzhou/hf_models/Llama-3.1-8B-Instruct/model-00002-of-00004.safetensors",
+    "sha256": "09d433f650646834a83c580877bd60c6d1f88f7755305c12576b5c7058f9af15",
+    "bytes": 4999802720,
+    "mtime_ns": 1774656510015611183
+  },
+  {
+    "backbone": "llama",
+    "kind": "base_path",
+    "path": "/work/users/w/a/wanzhou/hf_models/Llama-3.1-8B-Instruct/model-00003-of-00004.safetensors",
+    "sha256": "fc1cdddd6bfa91128d6e94ee73d0ce62bfcdb7af29e978ddcab30c66ae9ea7fa",
+    "bytes": 4915916176,
+    "mtime_ns": 1774656509854641754
+  },
+  {
+    "backbone": "llama",
+    "kind": "base_path",
+    "path": "/work/users/w/a/wanzhou/hf_models/Llama-3.1-8B-Instruct/model-00004-of-00004.safetensors",
+    "sha256": "92ecfe1a2414458b4821ac8c13cf8cb70aed66b5eea8dc5ad9eeb4ff309d6d7b",
+    "bytes": 1168138808,
+    "mtime_ns": 1774656495376039401
+  },
+  {
+    "backbone": "llama",
+    "kind": "base_path",
+    "path": "/work/users/w/a/wanzhou/hf_models/Llama-3.1-8B-Instruct/model.safetensors.index.json",
+    "sha256": "146776fce3f6db1103aa6f249e65ee5544c5923ce6f971b092eee79aa6e5d37b",
+    "bytes": 23950,
+    "mtime_ns": 1774656489039646730
+  },
+  {
+    "backbone": "llama",
+    "kind": "base_path",
+    "path": "/work/users/w/a/wanzhou/hf_models/Llama-3.1-8B-Instruct/special_tokens_map.json",
+    "sha256": "6f38c73729248f6c127296386e3cdde96e254636cc58b4169d3fd32328d9a8ec",
+    "bytes": 296,
+    "mtime_ns": 1774656489750274646
+  },
+  {
+    "backbone": "llama",
+    "kind": "base_path",
+    "path": "/work/users/w/a/wanzhou/hf_models/Llama-3.1-8B-Instruct/tokenizer.json",
+    "sha256": "79e3e522635f3171300913bb421464a87de6222182a0570b9b2ccba2a964b2b4",
+    "bytes": 9085657,
+    "mtime_ns": 1774656490120590555
+  },
+  {
+    "backbone": "llama",
+    "kind": "base_path",
+    "path": "/work/users/w/a/wanzhou/hf_models/Llama-3.1-8B-Instruct/tokenizer_config.json",
+    "sha256": "177c7b61e616fecb84c17ce0591acb92c6c4d60e9ac5ababfb940ff23bbcd424",
+    "bytes": 55351,
+    "mtime_ns": 1774656490014896291
+  },
+  {
+    "backbone": "llama",
+    "kind": "adapter_path",
+    "path": "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/p6_llama_main_ten_tasks_v1/models/GeLLMO-P6-Llama/adapter_config.json",
+    "sha256": "87b9fd6835f08d55c8a476b79f3dcc36d1e4e132989ba1b718dbc6c319e54cfc",
+    "bytes": 821,
+    "mtime_ns": 1790539984956106503
+  },
+  {
+    "backbone": "llama",
+    "kind": "adapter_path",
+    "path": "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/p6_llama_main_ten_tasks_v1/models/GeLLMO-P6-Llama/adapter_model.safetensors",
+    "sha256": "eec62a7365b6ff17fd99e5a4f73860418adee6a3572f282246e3319f5cd9147d",
+    "bytes": 1226976352,
+    "mtime_ns": 1790540002316866403
+  },
+  {
+    "backbone": "llama",
+    "kind": "adapter_path",
+    "path": "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/p6_llama_main_ten_tasks_v1/models/GeLLMO-P6-Llama/config.json",
+    "sha256": "5fceaa205949d1a533200d72f8548e0e3fc96a4a97f90d248192de365c8abdd7",
+    "bytes": 90,
+    "mtime_ns": 1790540002527063691
+  }
+]

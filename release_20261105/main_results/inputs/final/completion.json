@@ -1,0 +1,100 @@
+{
+  "status": "COMPLETE_18_CONFIGURATIONS",
+  "completed_utc": "2026-10-27T22:24:53.943899+00:00",
+  "configurations": 18,
+  "new_configurations": 5,
+  "task_groups": 180,
+  "task_inputs": 70290,
+  "output_slots": 1405800,
+  "missing_configurations": [],
+  "unknown_property_failures": 0,
+  "old_13_readouts_preserved_exactly": true,
+  "new_results": [
+    {
+      "model": "Llama",
+      "method_id": "self_refine",
+      "completion_record": "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/benchmark_completion_20261023_v1/llama_self_refine_properties/reports/completion.json",
+      "terminal_inputs": "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/benchmark_completion_20261023_v1/llama_self_refine_properties/results/terminal_inputs.jsonl.gz",
+      "metrics": "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/benchmark_completion_20261023_v1/llama_self_refine_properties/metrics/metrics.json"
+    },
+    {
+      "model": "Mistral",
+      "method_id": "tot",
+      "completion_record": "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/benchmark_completion_20261023_v1/tot/properties/mistral/reports/paired_audit.json",
+      "terminal_inputs": "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/benchmark_completion_20261023_v1/tot/properties/mistral/results/terminal_inputs.jsonl.gz",
+      "metrics": "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/benchmark_completion_20261023_v1/tot/properties/mistral/metrics/metrics.json"
+    },
+    {
+      "model": "Llama",
+      "method_id": "tot",
+      "completion_record": "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/benchmark_completion_20261023_v1/tot/properties/llama/reports/paired_audit.json",
+      "terminal_inputs": "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/benchmark_completion_20261023_v1/tot/properties/llama/results/terminal_inputs.jsonl.gz",
+      "metrics": "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/benchmark_completion_20261023_v1/tot/properties/llama/metrics/metrics.json"
+    },
+    {
+      "model": "Mistral",
+      "method_id": "reflexion",
+      "completion_record": "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/benchmark_completion_20261023_v1/mistral_reflexion_evaluation/reports/completion.json",
+      "terminal_inputs": "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/benchmark_completion_20261023_v1/mistral_reflexion_evaluation/results/terminal_inputs.jsonl.gz",
+      "metrics": "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/benchmark_completion_20261023_v1/mistral_reflexion_evaluation/metrics/metrics.json"
+    },
+    {
+      "model": "Llama",
+      "method_id": "reflexion",
+      "completion_record": "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/benchmark_completion_20261023_v1/llama_reflexion/reports/completion.json",
+      "terminal_inputs": "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/benchmark_completion_20261023_v1/llama_reflexion/results/terminal_inputs.jsonl.gz",
+      "metrics": "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/benchmark_completion_20261023_v1/llama_reflexion/metrics/metrics.json"
+    }
+  ],
+  "quality_aggregation": "Equal task means; undefined if any task has zero successful representatives",
+  "uncertainty_intervals_recomputed": false,
+  "manuscript_or_overleaf_modified": false,
+  "source_sha256": {
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/benchmark_completion_20261023_v1/finalize_benchmark.py": "8d69d3402310609044c6376d84e4e7f8b1c59892970b63527392740dfb00901b",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/benchmark_completion_20261023_v1/baseline_freeze.json": "1e579ef459413d25abacda292e347407a52b201b9ca70cd8702a59560b4dea61",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/manifests/BDP.test.seen.jsonl": "0c511a5096a3073e97f136db279d75f56c451b56ffe2ec2c850f0f323113fe6d",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/manifests/BDQ.test.seen.jsonl": "0e82627a5cd6226b36eaab3dbff5263fb1e40b1b6cc0ce64b297b3715d22d628",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/manifests/BPQ.test.seen.jsonl": "0ebd16ceec314f3cbd933054c626dda77cf91abfb15f97a8a2ae739f2696b6d5",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/manifests/DPQ.test.seen.jsonl": "dfb357759910a2b1719c2e7ccc5cc4226733943cd1dacc4c7bf624f214a05bb0",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/manifests/BDPQ.test.seen.jsonl": "5f10871232f7900e8fccc8a5627ff86efe1c1d3cb06ebec4c4b26d5c290b04f1",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/manifests/MPQ.test.seen.jsonl": "2fa40cde8cb1311fbed747a69a11711a2625f0f6f58e923fe8e6b32c703d98af",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/manifests/BDMQ.test.seen.jsonl": "f006228bc34f3d43f0b5e8e3f64690db5de2b052f36680153a7c3feb071c91b8",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/manifests/BHMQ.test.seen.jsonl": "0f35f585621778f66a821baa33aa7c98c4cb2a62036651732434e00118f23c9e",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/manifests/BMPQ.test.seen.jsonl": "29fb32e8afd59faf95ea90a9acd2866bd21ba8659f5f941be5eaf30f24fe6fa4",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/manifests/HMPQ.test.seen.jsonl": "bc8933875e188b0d5b650bc7448d464e81a5ba20b03cd1b12e22ff68d84af3e8",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/recomb_k20_three_tables_20261018_v1/data_audit.json": "5b5a8178bf73192325ce569d868fcb997658aeb3679d3574d1d5735f6f4b7a2f",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/recomb_k20_three_tables_20261018_v1/per_input_quality_and_prefix.jsonl.gz": "b7a2a435509d9d5faa7fa7615c078a082151eda52766b1e01d7a52ebdc3243a4",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/recomb_k20_three_tables_20261018_v1/build_data.py": "999b945ef966d3f51bf1423bc0343d2f0f5cf7ce42742d82bf89be75d16ca37b",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/benchmark_completion_20261023_v1/llama_self_refine_properties/reports/completion.json": "2226976d753bcbdaab5d1a9e2866a549e1c17d049a6d36401fad545557a64171",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/benchmark_completion_20261023_v1/llama_self_refine_properties/reports/final_audit.json": "a8af28c8ae838bfc1456b6b27922a76b081ea130539222f19c8ce2c7d1947ad6",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/benchmark_completion_20261023_v1/llama_self_refine_properties/metrics/audit.json": "898ec60dcac317411821950b28d5c79bd0915a89d3f77c7960dfbdfd35046e68",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/benchmark_completion_20261023_v1/llama_self_refine_properties/metrics/per_input.jsonl.gz": "d330d882c4bf2535b8e6702a0ea76000995e31ad6404ec68ec180ffe27b94f2f",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/benchmark_completion_20261023_v1/llama_self_refine_properties/results/terminal_inputs.jsonl.gz": "3eda96f49995095a57a535824006b57785ed092644b2fad869674584385e8333",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/benchmark_completion_20261023_v1/tot/properties/mistral/reports/paired_audit.json": "de2c64248f7e384a60b6a3a3b12ffdfabc3fb146c5d7607be6fa92c2e5d4e071",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/benchmark_completion_20261023_v1/tot/properties/mistral/reports/final_audit.json": "b77a6764f722e227d5970d2dcf7fd4c9bb65331f6c3ca4e42142326018947f71",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/benchmark_completion_20261023_v1/tot/properties/mistral/metrics/audit.json": "7f9f442d1de43f98750e496bf29dec250fd03f0e9215a2207f27c1993d10533f",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/benchmark_completion_20261023_v1/tot/properties/mistral/metrics/per_input.jsonl.gz": "789d0182eb0b725cfaea230af320295f4a1e5c54e6ea6b2919fd31a607ba4dbf",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/benchmark_completion_20261023_v1/tot/properties/mistral/results/terminal_inputs.jsonl.gz": "b5fcf1965f18f892f1e3a49a9170b8a7de0fcf972c0906e31dbdc59d47cedd43",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/benchmark_completion_20261023_v1/tot/properties/llama/reports/paired_audit.json": "f565b73e7d5f343760680bce08cd634295c374d77d688c3e168ca4b72939b8a8",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/benchmark_completion_20261023_v1/tot/properties/llama/reports/final_audit.json": "c47ec2fd33259f461f76e009f5fb25adc57f3f1b6a33100a2e074a9299403bd2",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/benchmark_completion_20261023_v1/tot/properties/llama/metrics/audit.json": "5383c6a84915411083aecf9c0ee6de5dced4aa233b68ba3651b18d0d025b104b",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/benchmark_completion_20261023_v1/tot/properties/llama/metrics/per_input.jsonl.gz": "cceb486334ff53297b757eabab3926c70d1ff1ab3536b28c03f021e8e48c904f",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/benchmark_completion_20261023_v1/tot/properties/llama/results/terminal_inputs.jsonl.gz": "ee36603770d0e0d06837d78b7ed3567c8fc5a6e2cffd057143b84745075bd9c0",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/benchmark_completion_20261023_v1/mistral_reflexion_evaluation/reports/completion.json": "ae222f583dcf1a9cf195ece1d39b896abb377da8e6631ab31e7105051923bbbf",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/benchmark_completion_20261023_v1/mistral_reflexion_evaluation/reports/final_audit.json": "f818469d431ba58a5170453f7d0755ad5f7684caa0ceacc27d081eaf5ca493d7",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/benchmark_completion_20261023_v1/mistral_reflexion_evaluation/metrics/audit.json": "42afab7d3af510d07082de4631cf3164b996ffcb3316d2421cf250329ce44f66",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/benchmark_completion_20261023_v1/mistral_reflexion_evaluation/metrics/per_input.jsonl.gz": "762e78c30bf5d47da33b2433ae2a4d978f39ddf098e37fbf68cd9df1d0c75773",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/benchmark_completion_20261023_v1/mistral_reflexion_evaluation/results/terminal_inputs.jsonl.gz": "76db5fcc7edbac0cffa8393e7831a177df1c93e5b346cecea71cb18f32552a50",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/benchmark_completion_20261023_v1/llama_reflexion/reports/completion.json": "62a803794fcb6dc164ae34aa3c9d8987b771525257902481e37a33d7168d5c5a",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/benchmark_completion_20261023_v1/llama_reflexion/reports/final_audit.json": "e93aa2c618412327d17add695f3d75d0efb4ff019a171cfdf76a126e23f25ec9",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/benchmark_completion_20261023_v1/llama_reflexion/metrics/audit.json": "deb0481e73fcf691d44e26d6fe9cafa720b7e13c8316440444d2d7bc0f4eb041",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/benchmark_completion_20261023_v1/llama_reflexion/metrics/per_input.jsonl.gz": "00dd319c613bdbfef9352148c3d3a46724c47c8cd1e05297229913dad039c24c",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/benchmark_completion_20261023_v1/llama_reflexion/results/terminal_inputs.jsonl.gz": "dd070d52a38c7733265468f408ce782935d87796d1a866910abf9573a21ee922"
+  },
+  "output_sha256": {
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/benchmark_completion_20261023_v1/results/per_task.csv": "d93721883fc558a17e645d218eb12daadab515e14ebdf0d7004c77bc3e73779d",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/benchmark_completion_20261023_v1/results/macro.csv": "45d458059b9531b5833806083aa28943f8ba2c6a5f1282eb476730ccc4c29fec",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/benchmark_completion_20261023_v1/results/prefix_coverage.csv": "1381950133a1577f59af03d28d13d4659b8510e7cd6ff32cc9af48ce2e7a6441",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/benchmark_completion_20261023_v1/results/per_input_quality_and_prefix.jsonl.gz": "404d2e7e12d37ca71f32e41c543162f31c34d2e375879f1f434c8e1b021aa215"
+  }
+}

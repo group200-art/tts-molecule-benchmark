@@ -1,0 +1,21 @@
+\begin{table}[!htbp]
+\centering
+\setlength{\tabcolsep}{4pt}
+\caption{GoT with the same twenty returned candidates in different orders, using all 3,905 inputs per backbone. Rates are percentages averaged equally over tasks. Uniform permutation reports its analytic expectation. The candidate multiset, SR@20 and validity are unchanged for every input. Differences are in percentage points relative to score order at $K=1$, with paired source bootstrap pointwise 95\% intervals. This diagnoses ordering within the fixed set; it does not test the contribution of generation.}
+\label{tab:supp-got-order}
+\begin{tabular}{lrrl}
+\toprule
+Order & SR@1 & SR@20 & SR@1 difference [95\% CI] \\
+\midrule
+\multicolumn{4}{l}{\textbf{Mistral}} \\
+Score order & 70.62 & 84.41 & --- \\
+Creation order & 30.49 & 84.41 & $-$40.13 [$-$42.23, $-$37.93] \\
+Uniform permutation & 36.41 & 84.41 & $-$34.21 [$-$35.57, $-$32.70] \\
+\midrule
+\multicolumn{4}{l}{\textbf{Llama}} \\
+Score order & 83.26 & 93.26 & --- \\
+Creation order & 32.14 & 93.26 & $-$51.12 [$-$53.16, $-$49.06] \\
+Uniform permutation & 41.76 & 93.26 & $-$41.50 [$-$42.78, $-$40.18] \\
+\bottomrule
+\end{tabular}
+\end{table}

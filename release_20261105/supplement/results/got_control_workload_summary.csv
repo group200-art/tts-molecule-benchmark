@@ -1,0 +1,57 @@
+backbone,arm,metric,n_inputs,mean_per_input,total,scope
+mistral,GoT,molecular_proposals_attempted,500,28.0,14000.0,Logical per-arm complete procedure; shared initial generation and evaluation count in each arm.
+mistral,GoT,model_response_sequences,500,28.0,14000.0,Logical per-arm complete procedure; shared initial generation and evaluation count in each arm.
+mistral,GoT,physical_batched_model_calls,500,2.0,1000.0,Logical per-arm complete procedure; shared initial generation and evaluation count in each arm.
+mistral,GoT,input_tokens,500,21549.07,10774535.0,Logical per-arm complete procedure; shared initial generation and evaluation count in each arm.
+mistral,GoT,output_tokens,500,3205.812,1602906.0,Logical per-arm complete procedure; shared initial generation and evaluation count in each arm.
+mistral,GoT,generation_seconds,500,24.66396168755111,12331.980843775556,Logical per-arm complete procedure; shared initial generation and evaluation count in each arm.
+mistral,GoT,property_seconds,500,0.6758352016403806,337.9176008201903,Logical per-arm complete procedure; shared initial generation and evaluation count in each arm.
+mistral,GoT,candidate_evaluation_attempts,500,28.0,14000.0,Logical per-arm complete procedure; shared initial generation and evaluation count in each arm.
+mistral,GoT,property_bundle_requests,500,28.0,14000.0,Logical per-arm complete procedure; shared initial generation and evaluation count in each arm.
+mistral,GoT,unique_bundle_requests,500,21.144,10572.0,Logical per-arm complete procedure; shared initial generation and evaluation count in each arm.
+mistral,GoT,cache_hits,500,6.856,3428.0,Logical per-arm complete procedure; shared initial generation and evaluation count in each arm.
+mistral,GoT,source_property_gets,500,2.0,1000.0,Logical per-arm complete procedure; shared initial generation and evaluation count in each arm.
+mistral,GoT,similarity_computations,500,14.95,7475.0,Logical per-arm complete procedure; shared initial generation and evaluation count in each arm.
+mistral,GoT,SAS_computations,500,25.324,12662.0,Logical per-arm complete procedure; shared initial generation and evaluation count in each arm.
+mistral,Sampling with GoT scoring,molecular_proposals_attempted,500,28.0,14000.0,Logical per-arm complete procedure; shared initial generation and evaluation count in each arm.
+mistral,Sampling with GoT scoring,model_response_sequences,500,28.0,14000.0,Logical per-arm complete procedure; shared initial generation and evaluation count in each arm.
+mistral,Sampling with GoT scoring,physical_batched_model_calls,500,2.0,1000.0,Logical per-arm complete procedure; shared initial generation and evaluation count in each arm.
+mistral,Sampling with GoT scoring,input_tokens,500,7029.848,3514924.0,Logical per-arm complete procedure; shared initial generation and evaluation count in each arm.
+mistral,Sampling with GoT scoring,output_tokens,500,3019.952,1509976.0,Logical per-arm complete procedure; shared initial generation and evaluation count in each arm.
+mistral,Sampling with GoT scoring,generation_seconds,500,15.361394098997815,7680.697049498907,Logical per-arm complete procedure; shared initial generation and evaluation count in each arm.
+mistral,Sampling with GoT scoring,property_seconds,500,0.7230472544699441,361.5236272349721,Logical per-arm complete procedure; shared initial generation and evaluation count in each arm.
+mistral,Sampling with GoT scoring,candidate_evaluation_attempts,500,28.0,14000.0,Logical per-arm complete procedure; shared initial generation and evaluation count in each arm.
+mistral,Sampling with GoT scoring,property_bundle_requests,500,28.0,14000.0,Logical per-arm complete procedure; shared initial generation and evaluation count in each arm.
+mistral,Sampling with GoT scoring,unique_bundle_requests,500,24.232,12116.0,Logical per-arm complete procedure; shared initial generation and evaluation count in each arm.
+mistral,Sampling with GoT scoring,cache_hits,500,3.768,1884.0,Logical per-arm complete procedure; shared initial generation and evaluation count in each arm.
+mistral,Sampling with GoT scoring,source_property_gets,500,2.0,1000.0,Logical per-arm complete procedure; shared initial generation and evaluation count in each arm.
+mistral,Sampling with GoT scoring,similarity_computations,500,16.352,8176.0,Logical per-arm complete procedure; shared initial generation and evaluation count in each arm.
+mistral,Sampling with GoT scoring,SAS_computations,500,27.708,13854.0,Logical per-arm complete procedure; shared initial generation and evaluation count in each arm.
+llama,GoT,molecular_proposals_attempted,500,28.0,14000.0,Logical per-arm complete procedure; shared initial generation and evaluation count in each arm.
+llama,GoT,model_response_sequences,500,28.0,14000.0,Logical per-arm complete procedure; shared initial generation and evaluation count in each arm.
+llama,GoT,physical_batched_model_calls,500,2.0,1000.0,Logical per-arm complete procedure; shared initial generation and evaluation count in each arm.
+llama,GoT,input_tokens,500,15154.974,7577487.0,Logical per-arm complete procedure; shared initial generation and evaluation count in each arm.
+llama,GoT,output_tokens,500,4674.566,2337283.0,Logical per-arm complete procedure; shared initial generation and evaluation count in each arm.
+llama,GoT,generation_seconds,500,21.767262252215296,10883.631126107648,Logical per-arm complete procedure; shared initial generation and evaluation count in each arm.
+llama,GoT,property_seconds,500,0.7360452146157622,368.0226073078811,Logical per-arm complete procedure; shared initial generation and evaluation count in each arm.
+llama,GoT,candidate_evaluation_attempts,500,28.0,14000.0,Logical per-arm complete procedure; shared initial generation and evaluation count in each arm.
+llama,GoT,property_bundle_requests,500,28.0,14000.0,Logical per-arm complete procedure; shared initial generation and evaluation count in each arm.
+llama,GoT,unique_bundle_requests,500,24.536,12268.0,Logical per-arm complete procedure; shared initial generation and evaluation count in each arm.
+llama,GoT,cache_hits,500,3.464,1732.0,Logical per-arm complete procedure; shared initial generation and evaluation count in each arm.
+llama,GoT,source_property_gets,500,2.0,1000.0,Logical per-arm complete procedure; shared initial generation and evaluation count in each arm.
+llama,GoT,similarity_computations,500,16.992,8496.0,Logical per-arm complete procedure; shared initial generation and evaluation count in each arm.
+llama,GoT,SAS_computations,500,28.81,14405.0,Logical per-arm complete procedure; shared initial generation and evaluation count in each arm.
+llama,Sampling with GoT scoring,molecular_proposals_attempted,500,28.0,14000.0,Logical per-arm complete procedure; shared initial generation and evaluation count in each arm.
+llama,Sampling with GoT scoring,model_response_sequences,500,28.0,14000.0,Logical per-arm complete procedure; shared initial generation and evaluation count in each arm.
+llama,Sampling with GoT scoring,physical_batched_model_calls,500,2.0,1000.0,Logical per-arm complete procedure; shared initial generation and evaluation count in each arm.
+llama,Sampling with GoT scoring,input_tokens,500,5428.696,2714348.0,Logical per-arm complete procedure; shared initial generation and evaluation count in each arm.
+llama,Sampling with GoT scoring,output_tokens,500,4590.344,2295172.0,Logical per-arm complete procedure; shared initial generation and evaluation count in each arm.
+llama,Sampling with GoT scoring,generation_seconds,500,15.665207576401531,7832.603788200766,Logical per-arm complete procedure; shared initial generation and evaluation count in each arm.
+llama,Sampling with GoT scoring,property_seconds,500,0.7457428897619247,372.8714448809624,Logical per-arm complete procedure; shared initial generation and evaluation count in each arm.
+llama,Sampling with GoT scoring,candidate_evaluation_attempts,500,28.0,14000.0,Logical per-arm complete procedure; shared initial generation and evaluation count in each arm.
+llama,Sampling with GoT scoring,property_bundle_requests,500,28.0,14000.0,Logical per-arm complete procedure; shared initial generation and evaluation count in each arm.
+llama,Sampling with GoT scoring,unique_bundle_requests,500,26.226,13113.0,Logical per-arm complete procedure; shared initial generation and evaluation count in each arm.
+llama,Sampling with GoT scoring,cache_hits,500,1.774,887.0,Logical per-arm complete procedure; shared initial generation and evaluation count in each arm.
+llama,Sampling with GoT scoring,source_property_gets,500,2.0,1000.0,Logical per-arm complete procedure; shared initial generation and evaluation count in each arm.
+llama,Sampling with GoT scoring,similarity_computations,500,17.16,8580.0,Logical per-arm complete procedure; shared initial generation and evaluation count in each arm.
+llama,Sampling with GoT scoring,SAS_computations,500,28.998,14499.0,Logical per-arm complete procedure; shared initial generation and evaluation count in each arm.

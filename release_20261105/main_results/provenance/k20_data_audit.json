@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "configurations": 18,
+  "task_groups": 180,
+  "task_inputs": 70290,
+  "output_slots": 1405800,
+  "missing_configurations": [],
+  "final_completion_sha256": "d14bdbde1e9b485d446f34ff221a69d8e030bfd311509290d5a64ad1f7fc19de",
+  "old_13_readouts_preserved_exactly": true,
+  "chemistry_or_model_inference": false,
+  "quality_precision": "Retained comparison-round2 Sim and SAS",
+  "quality_aggregation": "Within-task successful representative means, then equal ten-task macro"
+}

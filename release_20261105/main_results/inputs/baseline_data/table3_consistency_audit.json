@@ -1,0 +1,2930 @@
+{
+  "status": "PASS_REPRODUCED_OVERALL_CIS_AND_DERIVED_DOMAIN_CONSISTENCY",
+  "created_utc": "2026-10-19T12:16:34.003008+00:00",
+  "derivation_script": "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/recomb_three_main_tables_20261019_v2/build_consistency_table.py",
+  "derivation_script_sha256": "4268b1ebc3d95896ec8ad870531ffa6349b30ae339452c79d9d7228e2d197b72",
+  "numpy_version": "1.23.5",
+  "original_bootstrap_script": "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/recomb_k20_table_draft_20261018_v1/build_tables.py",
+  "input_sources": {
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/manifests/BDP.test.seen.jsonl": {
+      "sha256": "0c511a5096a3073e97f136db279d75f56c451b56ffe2ec2c850f0f323113fe6d",
+      "bytes": 376488
+    },
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/manifests/BDQ.test.seen.jsonl": {
+      "sha256": "0e82627a5cd6226b36eaab3dbff5263fb1e40b1b6cc0ce64b297b3715d22d628",
+      "bytes": 380351
+    },
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/manifests/BPQ.test.seen.jsonl": {
+      "sha256": "0ebd16ceec314f3cbd933054c626dda77cf91abfb15f97a8a2ae739f2696b6d5",
+      "bytes": 379818
+    },
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/manifests/DPQ.test.seen.jsonl": {
+      "sha256": "dfb357759910a2b1719c2e7ccc5cc4226733943cd1dacc4c7bf624f214a05bb0",
+      "bytes": 376404
+    },
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/manifests/BDPQ.test.seen.jsonl": {
+      "sha256": "5f10871232f7900e8fccc8a5627ff86efe1c1d3cb06ebec4c4b26d5c290b04f1",
+      "bytes": 399959
+    },
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/manifests/MPQ.test.seen.jsonl": {
+      "sha256": "2fa40cde8cb1311fbed747a69a11711a2625f0f6f58e923fe8e6b32c703d98af",
+      "bytes": 375561
+    },
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/manifests/BDMQ.test.seen.jsonl": {
+      "sha256": "f006228bc34f3d43f0b5e8e3f64690db5de2b052f36680153a7c3feb071c91b8",
+      "bytes": 398924
+    },
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/manifests/BHMQ.test.seen.jsonl": {
+      "sha256": "0f35f585621778f66a821baa33aa7c98c4cb2a62036651732434e00118f23c9e",
+      "bytes": 95329
+    },
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/manifests/BMPQ.test.seen.jsonl": {
+      "sha256": "29fb32e8afd59faf95ea90a9acd2866bd21ba8659f5f941be5eaf30f24fe6fa4",
+      "bytes": 150202
+    },
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/manifests/HMPQ.test.seen.jsonl": {
+      "sha256": "bc8933875e188b0d5b650bc7448d464e81a5ba20b03cd1b12e22ff68d84af3e8",
+      "bytes": 76003
+    },
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/recomb_k20_three_tables_20261018_v1/per_input_quality_and_prefix.jsonl.gz": {
+      "sha256": "b7a2a435509d9d5faa7fa7615c078a082151eda52766b1e01d7a52ebdc3243a4",
+      "bytes": 2880580
+    },
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/recomb_k20_table_draft_20261018_v1/build_tables.py": {
+      "sha256": "1674675e9f1b45844beaca3e6b793d0c1be10a13160f7e8bb82fe8b7a9eb6272",
+      "bytes": 15745
+    },
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/recomb_three_main_tables_20261019_v2/paper/data/per_task.csv": {
+      "sha256": "0d8ef0feee12e30de0419e9f3069aabec2da6c5da89b035c2cee7ccf6e8abe65",
+      "bytes": 5265
+    },
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/recomb_three_main_tables_20261019_v2/paper/data/macro_uncertainty.csv": {
+      "sha256": "64ecfc8e4378a7791cf5f799464d4251573701cbb4db877a6583a4ea2e104381",
+      "bytes": 2029
+    },
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/recomb_three_main_tables_20261019_v2/paper/data/paired_vs_beam.csv": {
+      "sha256": "5d70c382f14b6318f41271795ad1b94393e7c5cd9fb4372e0afca1792c3d8fe6",
+      "bytes": 1093
+    }
+  },
+  "task_order": [
+    "BDP",
+    "BDQ",
+    "BPQ",
+    "DPQ",
+    "BDPQ",
+    "MPQ",
+    "BDMQ",
+    "BHMQ",
+    "BMPQ",
+    "HMPQ"
+  ],
+  "IND_tasks": [
+    "BDP",
+    "BDQ",
+    "BPQ",
+    "DPQ",
+    "BDPQ"
+  ],
+  "OOD_tasks": [
+    "MPQ",
+    "BDMQ",
+    "BHMQ",
+    "BMPQ",
+    "HMPQ"
+  ],
+  "configuration_order": [
+    [
+      "Mistral",
+      "beam"
+    ],
+    [
+      "Mistral",
+      "sampling"
+    ],
+    [
+      "Mistral",
+      "self_refine"
+    ],
+    [
+      "Mistral",
+      "got"
+    ],
+    [
+      "Mistral",
+      "s1"
+    ],
+    [
+      "Mistral",
+      "voting"
+    ],
+    [
+      "Mistral",
+      "icl"
+    ],
+    [
+      "Llama",
+      "beam"
+    ],
+    [
+      "Llama",
+      "sampling"
+    ],
+    [
+      "Llama",
+      "got"
+    ],
+    [
+      "Llama",
+      "s1"
+    ],
+    [
+      "Llama",
+      "voting"
+    ],
+    [
+      "Llama",
+      "icl"
+    ]
+  ],
+  "completed_configurations": 13,
+  "pending_configurations": 5,
+  "task_input_pairs_per_configuration": 3905,
+  "source_clusters": 2860,
+  "cluster_identity": "manifest source_molecule_uid (raw SMILES hash)",
+  "cluster_order": "sorted lexicographically",
+  "seed": 20261014,
+  "replicates": 2000,
+  "cluster_weights_sha256_int64": "5763bd1ba349cbdd531adc4a7eabf5b370c42da865d84e3b5837ebcab634f067",
+  "bootstrap": "Same global multinomial source multiplicities for all tasks/models/methods; recompute each task denominator, equally average five tasks per domain, subtract same-model Beam per replicate, percentile [2.5,97.5].",
+  "uncertainty_scope": "Conditional on fixed saved generations; no generation-seed variance or multiplicity-adjusted significance inference.",
+  "win_tie_loss": "Sign of integer task success-count difference on identical denominators; no rounding or significance threshold.",
+  "minimum": "Minimum exact rational 100*(method successes-Beam successes)/task inputs across ten tasks; all exact minimizing task identifiers retained.",
+  "new_generation_calls": 0,
+  "new_property_calls": 0,
+  "existing_data_unchanged": true,
+  "existing_data_sha256": {
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/recomb_three_main_tables_20261019_v2/paper/data/k20_data_audit.json": "5b5a8178bf73192325ce569d868fcb997658aeb3679d3574d1d5735f6f4b7a2f",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/recomb_three_main_tables_20261019_v2/paper/data/k20_prefix_coverage.csv": "98bd39f2648badf690042e18234a66b7fb85b61afe21632fb2fba306e731eafa",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/recomb_three_main_tables_20261019_v2/paper/data/k20_prefix_macro.csv": "4950d7a74fe174906eec83e6baba24111b999fabd77ea57f142097d90e10f38a",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/recomb_three_main_tables_20261019_v2/paper/data/k20_workload_audit.json": "53d5af2fe24c077544ae255dc8011ab8ea2ad59cd6cd13e7be606623435ba3bd",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/recomb_three_main_tables_20261019_v2/paper/data/macro_uncertainty.csv": "64ecfc8e4378a7791cf5f799464d4251573701cbb4db877a6583a4ea2e104381",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/recomb_three_main_tables_20261019_v2/paper/data/main_table_task_counts.csv": "eab3b881c7147b1992d97bd80b0e0b9f44a69a8476871e63fe69a8225cb21106",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/recomb_three_main_tables_20261019_v2/paper/data/output_readout_diagnostics.csv": "cd73aaa76b5a768416931d37c01d30e4c70b54aa97c0ece27400aef05600eeb5",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/recomb_three_main_tables_20261019_v2/paper/data/paired_vs_beam.csv": "5d70c382f14b6318f41271795ad1b94393e7c5cd9fb4372e0afca1792c3d8fe6",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/recomb_three_main_tables_20261019_v2/paper/data/per_task.csv": "0d8ef0feee12e30de0419e9f3069aabec2da6c5da89b035c2cee7ccf6e8abe65",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/recomb_three_main_tables_20261019_v2/paper/data/shared_mistral_reference_membership.csv": "8a6ec7839eefdc3e76f702d3a775057ed0b94dad91f8b101a9f317d246beb76c",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/recomb_three_main_tables_20261019_v2/paper/data/table1_k20.csv": "419f02c35102f06a09f6d805e05fd63d6fa23b8696b0af2c63a032d6e1197266",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/recomb_three_main_tables_20261019_v2/paper/data/table2_k1_workload.csv": "05ab0f0f106b77c9fc005ba786e06d9e24a06d2dadbb67716d696e53c23603d6",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/recomb_three_main_tables_20261019_v2/paper/data/table2_k20_workload.csv": "92c4e7c0a9199d42fa37361b3d4eb51a82b680596fc1014415feee641e5cbeea",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/recomb_three_main_tables_20261019_v2/paper/data/table3_k1_quality.csv": "5551cebeae2e09ef33dc919c16274631d94ce6b1d3ae03b20d55f19dad4d0068",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/recomb_three_main_tables_20261019_v2/paper/data/table3_k20_quality.csv": "65dc4bd371bf60c677edaa7ddf467cff3cb6befe4a6227d6e10130c28b3273fd",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/recomb_three_main_tables_20261019_v2/paper/data/table3_k20_quality_by_task.csv": "612fa6ec83cad4a0b160292d87190c7af3179a0473c5a6c1a88417f58ebedeea",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/recomb_three_main_tables_20261019_v2/paper/data/table4_k1_difficulty.csv": "7515cba995182ad8fcdb96fbee2b3f943915a2a1e13792fb48999ec1e6117dd6"
+  },
+  "original_estimate_checks_count": 260,
+  "original_estimate_checks_max_error": 0.0,
+  "original_estimate_checks": [
+    {
+      "field": "task:Mistral:beam:BDP",
+      "actual": 81.2,
+      "reference": 81.2,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Mistral:beam:BDQ",
+      "actual": 86.2,
+      "reference": 86.2,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Mistral:beam:BPQ",
+      "actual": 95.0,
+      "reference": 95.0,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Mistral:beam:DPQ",
+      "actual": 60.0,
+      "reference": 60.0,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Mistral:beam:BDPQ",
+      "actual": 54.800000000000004,
+      "reference": 54.800000000000004,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Mistral:beam:MPQ",
+      "actual": 96.2,
+      "reference": 96.2,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Mistral:beam:BDMQ",
+      "actual": 81.2,
+      "reference": 81.2,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Mistral:beam:BHMQ",
+      "actual": 90.67796610169492,
+      "reference": 90.67796610169492,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Mistral:beam:BMPQ",
+      "actual": 90.57591623036649,
+      "reference": 90.57591623036649,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Mistral:beam:HMPQ",
+      "actual": 97.91666666666666,
+      "reference": 97.91666666666666,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Mistral:sampling:BDP",
+      "actual": 78.0,
+      "reference": 78.0,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Mistral:sampling:BDQ",
+      "actual": 81.0,
+      "reference": 81.0,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Mistral:sampling:BPQ",
+      "actual": 95.19999999999999,
+      "reference": 95.19999999999999,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Mistral:sampling:DPQ",
+      "actual": 58.4,
+      "reference": 58.4,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Mistral:sampling:BDPQ",
+      "actual": 52.2,
+      "reference": 52.2,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Mistral:sampling:MPQ",
+      "actual": 95.8,
+      "reference": 95.8,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Mistral:sampling:BDMQ",
+      "actual": 75.0,
+      "reference": 75.0,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Mistral:sampling:BHMQ",
+      "actual": 92.37288135593221,
+      "reference": 92.37288135593221,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Mistral:sampling:BMPQ",
+      "actual": 90.57591623036649,
+      "reference": 90.57591623036649,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Mistral:sampling:HMPQ",
+      "actual": 92.70833333333334,
+      "reference": 92.70833333333334,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Mistral:self_refine:BDP",
+      "actual": 90.60000000000001,
+      "reference": 90.60000000000001,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Mistral:self_refine:BDQ",
+      "actual": 91.8,
+      "reference": 91.8,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Mistral:self_refine:BPQ",
+      "actual": 98.4,
+      "reference": 98.4,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Mistral:self_refine:DPQ",
+      "actual": 73.2,
+      "reference": 73.2,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Mistral:self_refine:BDPQ",
+      "actual": 68.2,
+      "reference": 68.2,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Mistral:self_refine:MPQ",
+      "actual": 96.39999999999999,
+      "reference": 96.39999999999999,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Mistral:self_refine:BDMQ",
+      "actual": 85.6,
+      "reference": 85.6,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Mistral:self_refine:BHMQ",
+      "actual": 94.0677966101695,
+      "reference": 94.0677966101695,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Mistral:self_refine:BMPQ",
+      "actual": 97.38219895287958,
+      "reference": 97.38219895287958,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Mistral:self_refine:HMPQ",
+      "actual": 94.79166666666666,
+      "reference": 94.79166666666666,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Mistral:got:BDP",
+      "actual": 80.80000000000001,
+      "reference": 80.80000000000001,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Mistral:got:BDQ",
+      "actual": 79.80000000000001,
+      "reference": 79.80000000000001,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Mistral:got:BPQ",
+      "actual": 97.8,
+      "reference": 97.8,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Mistral:got:DPQ",
+      "actual": 67.80000000000001,
+      "reference": 67.80000000000001,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Mistral:got:BDPQ",
+      "actual": 56.599999999999994,
+      "reference": 56.599999999999994,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Mistral:got:MPQ",
+      "actual": 96.2,
+      "reference": 96.2,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Mistral:got:BDMQ",
+      "actual": 77.4,
+      "reference": 77.4,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Mistral:got:BHMQ",
+      "actual": 96.61016949152543,
+      "reference": 96.61016949152543,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Mistral:got:BMPQ",
+      "actual": 94.24083769633508,
+      "reference": 94.24083769633508,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Mistral:got:HMPQ",
+      "actual": 96.875,
+      "reference": 96.875,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Mistral:s1:BDP",
+      "actual": 93.8,
+      "reference": 93.8,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Mistral:s1:BDQ",
+      "actual": 94.39999999999999,
+      "reference": 94.39999999999999,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Mistral:s1:BPQ",
+      "actual": 99.2,
+      "reference": 99.2,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Mistral:s1:DPQ",
+      "actual": 79.2,
+      "reference": 79.2,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Mistral:s1:BDPQ",
+      "actual": 75.6,
+      "reference": 75.6,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Mistral:s1:MPQ",
+      "actual": 96.8,
+      "reference": 96.8,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Mistral:s1:BDMQ",
+      "actual": 91.60000000000001,
+      "reference": 91.60000000000001,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Mistral:s1:BHMQ",
+      "actual": 98.30508474576271,
+      "reference": 98.30508474576271,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Mistral:s1:BMPQ",
+      "actual": 98.42931937172776,
+      "reference": 98.42931937172776,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Mistral:s1:HMPQ",
+      "actual": 100.0,
+      "reference": 100.0,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Mistral:voting:BDP",
+      "actual": 31.8,
+      "reference": 31.8,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Mistral:voting:BDQ",
+      "actual": 33.0,
+      "reference": 33.0,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Mistral:voting:BPQ",
+      "actual": 64.2,
+      "reference": 64.2,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Mistral:voting:DPQ",
+      "actual": 17.0,
+      "reference": 17.0,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Mistral:voting:BDPQ",
+      "actual": 16.0,
+      "reference": 16.0,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Mistral:voting:MPQ",
+      "actual": 60.0,
+      "reference": 60.0,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Mistral:voting:BDMQ",
+      "actual": 25.8,
+      "reference": 25.8,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Mistral:voting:BHMQ",
+      "actual": 46.61016949152542,
+      "reference": 46.61016949152542,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Mistral:voting:BMPQ",
+      "actual": 50.26178010471204,
+      "reference": 50.26178010471204,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Mistral:voting:HMPQ",
+      "actual": 47.91666666666667,
+      "reference": 47.91666666666667,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Mistral:icl:BDP",
+      "actual": 86.0,
+      "reference": 86.0,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Mistral:icl:BDQ",
+      "actual": 82.6,
+      "reference": 82.6,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Mistral:icl:BPQ",
+      "actual": 97.8,
+      "reference": 97.8,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Mistral:icl:DPQ",
+      "actual": 83.6,
+      "reference": 83.6,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Mistral:icl:BDPQ",
+      "actual": 75.0,
+      "reference": 75.0,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Mistral:icl:MPQ",
+      "actual": 97.8,
+      "reference": 97.8,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Mistral:icl:BDMQ",
+      "actual": 83.8,
+      "reference": 83.8,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Mistral:icl:BHMQ",
+      "actual": 98.30508474576271,
+      "reference": 98.30508474576271,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Mistral:icl:BMPQ",
+      "actual": 93.19371727748691,
+      "reference": 93.19371727748691,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Mistral:icl:HMPQ",
+      "actual": 97.91666666666666,
+      "reference": 97.91666666666666,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Llama:beam:BDP",
+      "actual": 80.0,
+      "reference": 80.0,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Llama:beam:BDQ",
+      "actual": 71.0,
+      "reference": 71.0,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Llama:beam:BPQ",
+      "actual": 95.8,
+      "reference": 95.8,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Llama:beam:DPQ",
+      "actual": 58.599999999999994,
+      "reference": 58.599999999999994,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Llama:beam:BDPQ",
+      "actual": 49.8,
+      "reference": 49.8,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Llama:beam:MPQ",
+      "actual": 94.8,
+      "reference": 94.8,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Llama:beam:BDMQ",
+      "actual": 73.2,
+      "reference": 73.2,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Llama:beam:BHMQ",
+      "actual": 90.67796610169492,
+      "reference": 90.67796610169492,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Llama:beam:BMPQ",
+      "actual": 94.76439790575915,
+      "reference": 94.76439790575915,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Llama:beam:HMPQ",
+      "actual": 98.95833333333334,
+      "reference": 98.95833333333334,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Llama:sampling:BDP",
+      "actual": 84.8,
+      "reference": 84.8,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Llama:sampling:BDQ",
+      "actual": 79.80000000000001,
+      "reference": 79.80000000000001,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Llama:sampling:BPQ",
+      "actual": 98.2,
+      "reference": 98.2,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Llama:sampling:DPQ",
+      "actual": 72.8,
+      "reference": 72.8,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Llama:sampling:BDPQ",
+      "actual": 63.0,
+      "reference": 63.0,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Llama:sampling:MPQ",
+      "actual": 96.2,
+      "reference": 96.2,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Llama:sampling:BDMQ",
+      "actual": 77.8,
+      "reference": 77.8,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Llama:sampling:BHMQ",
+      "actual": 94.91525423728814,
+      "reference": 94.91525423728814,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Llama:sampling:BMPQ",
+      "actual": 97.38219895287958,
+      "reference": 97.38219895287958,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Llama:sampling:HMPQ",
+      "actual": 96.875,
+      "reference": 96.875,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Llama:got:BDP",
+      "actual": 91.4,
+      "reference": 91.4,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Llama:got:BDQ",
+      "actual": 90.60000000000001,
+      "reference": 90.60000000000001,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Llama:got:BPQ",
+      "actual": 99.6,
+      "reference": 99.6,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Llama:got:DPQ",
+      "actual": 83.6,
+      "reference": 83.6,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Llama:got:BDPQ",
+      "actual": 79.2,
+      "reference": 79.2,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Llama:got:MPQ",
+      "actual": 97.8,
+      "reference": 97.8,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Llama:got:BDMQ",
+      "actual": 91.4,
+      "reference": 91.4,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Llama:got:BHMQ",
+      "actual": 100.0,
+      "reference": 100.0,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Llama:got:BMPQ",
+      "actual": 98.95287958115183,
+      "reference": 98.95287958115183,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Llama:got:HMPQ",
+      "actual": 100.0,
+      "reference": 100.0,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Llama:s1:BDP",
+      "actual": 91.0,
+      "reference": 91.0,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Llama:s1:BDQ",
+      "actual": 92.4,
+      "reference": 92.4,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Llama:s1:BPQ",
+      "actual": 99.2,
+      "reference": 99.2,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Llama:s1:DPQ",
+      "actual": 85.0,
+      "reference": 85.0,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Llama:s1:BDPQ",
+      "actual": 76.2,
+      "reference": 76.2,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Llama:s1:MPQ",
+      "actual": 97.8,
+      "reference": 97.8,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Llama:s1:BDMQ",
+      "actual": 89.60000000000001,
+      "reference": 89.60000000000001,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Llama:s1:BHMQ",
+      "actual": 100.0,
+      "reference": 100.0,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Llama:s1:BMPQ",
+      "actual": 97.90575916230367,
+      "reference": 97.90575916230367,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Llama:s1:HMPQ",
+      "actual": 100.0,
+      "reference": 100.0,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Llama:voting:BDP",
+      "actual": 28.199999999999996,
+      "reference": 28.199999999999996,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Llama:voting:BDQ",
+      "actual": 21.0,
+      "reference": 21.0,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Llama:voting:BPQ",
+      "actual": 63.0,
+      "reference": 63.0,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Llama:voting:DPQ",
+      "actual": 17.4,
+      "reference": 17.4,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Llama:voting:BDPQ",
+      "actual": 13.600000000000001,
+      "reference": 13.600000000000001,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Llama:voting:MPQ",
+      "actual": 49.4,
+      "reference": 49.4,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Llama:voting:BDMQ",
+      "actual": 22.2,
+      "reference": 22.2,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Llama:voting:BHMQ",
+      "actual": 52.54237288135594,
+      "reference": 52.54237288135594,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Llama:voting:BMPQ",
+      "actual": 50.78534031413613,
+      "reference": 50.78534031413613,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Llama:voting:HMPQ",
+      "actual": 47.91666666666667,
+      "reference": 47.91666666666667,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Llama:icl:BDP",
+      "actual": 96.8,
+      "reference": 96.8,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Llama:icl:BDQ",
+      "actual": 94.0,
+      "reference": 94.0,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Llama:icl:BPQ",
+      "actual": 99.2,
+      "reference": 99.2,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Llama:icl:DPQ",
+      "actual": 92.4,
+      "reference": 92.4,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Llama:icl:BDPQ",
+      "actual": 91.60000000000001,
+      "reference": 91.60000000000001,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Llama:icl:MPQ",
+      "actual": 98.4,
+      "reference": 98.4,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Llama:icl:BDMQ",
+      "actual": 92.4,
+      "reference": 92.4,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Llama:icl:BHMQ",
+      "actual": 99.15254237288136,
+      "reference": 99.15254237288136,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Llama:icl:BMPQ",
+      "actual": 97.90575916230367,
+      "reference": 97.90575916230367,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "task:Llama:icl:HMPQ",
+      "actual": 100.0,
+      "reference": 100.0,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "macro:Mistral:beam:IND",
+      "actual": 75.44,
+      "reference": 75.44,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "macro:Mistral:beam:OOD",
+      "actual": 91.31410979974562,
+      "reference": 91.31410979974562,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "macro:Mistral:beam:Macro10",
+      "actual": 83.3770548998728,
+      "reference": 83.3770548998728,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "macro:Mistral:beam:CI95_low",
+      "actual": 82.04887264006022,
+      "reference": 82.04887264006022,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "macro:Mistral:beam:CI95_high",
+      "actual": 84.71555516220427,
+      "reference": 84.71555516220427,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "macro:Mistral:sampling:IND",
+      "actual": 72.96,
+      "reference": 72.96,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "macro:Mistral:sampling:OOD",
+      "actual": 89.2914261839264,
+      "reference": 89.2914261839264,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "macro:Mistral:sampling:Macro10",
+      "actual": 81.1257130919632,
+      "reference": 81.1257130919632,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "macro:Mistral:sampling:CI95_low",
+      "actual": 79.80972290069872,
+      "reference": 79.80972290069872,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "macro:Mistral:sampling:CI95_high",
+      "actual": 82.55635586755176,
+      "reference": 82.55635586755176,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "macro:Mistral:self_refine:IND",
+      "actual": 84.44,
+      "reference": 84.44,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "macro:Mistral:self_refine:OOD",
+      "actual": 93.64833244594313,
+      "reference": 93.64833244594313,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "macro:Mistral:self_refine:Macro10",
+      "actual": 89.04416622297157,
+      "reference": 89.04416622297157,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "macro:Mistral:self_refine:CI95_low",
+      "actual": 87.91772924723819,
+      "reference": 87.91772924723819,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "macro:Mistral:self_refine:CI95_high",
+      "actual": 90.16088457514839,
+      "reference": 90.16088457514839,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "macro:Mistral:got:IND",
+      "actual": 76.56000000000002,
+      "reference": 76.56000000000002,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "macro:Mistral:got:OOD",
+      "actual": 92.2652014375721,
+      "reference": 92.2652014375721,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "macro:Mistral:got:Macro10",
+      "actual": 84.41260071878607,
+      "reference": 84.41260071878607,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "macro:Mistral:got:CI95_low",
+      "actual": 83.20224828836923,
+      "reference": 83.20224828836923,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "macro:Mistral:got:CI95_high",
+      "actual": 85.54430171959652,
+      "reference": 85.54430171959652,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "macro:Mistral:s1:IND",
+      "actual": 88.43999999999998,
+      "reference": 88.43999999999998,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "macro:Mistral:s1:OOD",
+      "actual": 97.02688082349809,
+      "reference": 97.02688082349809,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "macro:Mistral:s1:Macro10",
+      "actual": 92.73344041174904,
+      "reference": 92.73344041174904,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "macro:Mistral:s1:CI95_low",
+      "actual": 91.90436428008562,
+      "reference": 91.90436428008562,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "macro:Mistral:s1:CI95_high",
+      "actual": 93.54427926942671,
+      "reference": 93.54427926942671,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "macro:Mistral:voting:IND",
+      "actual": 32.4,
+      "reference": 32.4,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "macro:Mistral:voting:OOD",
+      "actual": 46.117723252580824,
+      "reference": 46.117723252580824,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "macro:Mistral:voting:Macro10",
+      "actual": 39.25886162629042,
+      "reference": 39.25886162629042,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "macro:Mistral:voting:CI95_low",
+      "actual": 37.11775090940706,
+      "reference": 37.11775090940706,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "macro:Mistral:voting:CI95_high",
+      "actual": 41.3911217073991,
+      "reference": 41.3911217073991,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "macro:Mistral:icl:IND",
+      "actual": 85.0,
+      "reference": 85.0,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "macro:Mistral:icl:OOD",
+      "actual": 94.20309373798325,
+      "reference": 94.20309373798325,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "macro:Mistral:icl:Macro10",
+      "actual": 89.60154686899162,
+      "reference": 89.60154686899162,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "macro:Mistral:icl:CI95_low",
+      "actual": 88.64896502877784,
+      "reference": 88.64896502877784,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "macro:Mistral:icl:CI95_high",
+      "actual": 90.55568779768805,
+      "reference": 90.55568779768805,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "macro:Llama:beam:IND",
+      "actual": 71.03999999999999,
+      "reference": 71.03999999999999,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "macro:Llama:beam:OOD",
+      "actual": 90.48013946815747,
+      "reference": 90.48013946815747,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "macro:Llama:beam:Macro10",
+      "actual": 80.76006973407874,
+      "reference": 80.76006973407874,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "macro:Llama:beam:CI95_low",
+      "actual": 79.47076173953478,
+      "reference": 79.47076173953478,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "macro:Llama:beam:CI95_high",
+      "actual": 82.04471187777818,
+      "reference": 82.04471187777818,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "macro:Llama:sampling:IND",
+      "actual": 79.72,
+      "reference": 79.72,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "macro:Llama:sampling:OOD",
+      "actual": 92.63449063803355,
+      "reference": 92.63449063803355,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "macro:Llama:sampling:Macro10",
+      "actual": 86.17724531901678,
+      "reference": 86.17724531901678,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "macro:Llama:sampling:CI95_low",
+      "actual": 85.03467033186118,
+      "reference": 85.03467033186118,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "macro:Llama:sampling:CI95_high",
+      "actual": 87.26425657218529,
+      "reference": 87.26425657218529,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "macro:Llama:got:IND",
+      "actual": 88.88000000000001,
+      "reference": 88.88000000000001,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "macro:Llama:got:OOD",
+      "actual": 97.63057591623036,
+      "reference": 97.63057591623036,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "macro:Llama:got:Macro10",
+      "actual": 93.25528795811518,
+      "reference": 93.25528795811518,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "macro:Llama:got:CI95_low",
+      "actual": 92.55764906712366,
+      "reference": 92.55764906712366,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "macro:Llama:got:CI95_high",
+      "actual": 93.97464669817504,
+      "reference": 93.97464669817504,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "macro:Llama:s1:IND",
+      "actual": 88.76,
+      "reference": 88.76,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "macro:Llama:s1:OOD",
+      "actual": 97.06115183246072,
+      "reference": 97.06115183246072,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "macro:Llama:s1:Macro10",
+      "actual": 92.91057591623037,
+      "reference": 92.91057591623037,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "macro:Llama:s1:CI95_low",
+      "actual": 92.13821359418404,
+      "reference": 92.13821359418404,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "macro:Llama:s1:CI95_high",
+      "actual": 93.69150623184039,
+      "reference": 93.69150623184039,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "macro:Llama:voting:IND",
+      "actual": 28.639999999999997,
+      "reference": 28.639999999999997,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "macro:Llama:voting:OOD",
+      "actual": 44.56887597243175,
+      "reference": 44.56887597243175,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "macro:Llama:voting:Macro10",
+      "actual": 36.60443798621587,
+      "reference": 36.60443798621587,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "macro:Llama:voting:CI95_low",
+      "actual": 34.44824567284611,
+      "reference": 34.44824567284611,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "macro:Llama:voting:CI95_high",
+      "actual": 38.74531884887969,
+      "reference": 38.74531884887969,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "macro:Llama:icl:IND",
+      "actual": 94.8,
+      "reference": 94.8,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "macro:Llama:icl:OOD",
+      "actual": 97.57166030703699,
+      "reference": 97.57166030703699,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "macro:Llama:icl:Macro10",
+      "actual": 96.18583015351851,
+      "reference": 96.18583015351851,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "macro:Llama:icl:CI95_low",
+      "actual": 95.60400227913328,
+      "reference": 95.60400227913328,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "macro:Llama:icl:CI95_high",
+      "actual": 96.74009937122182,
+      "reference": 96.74009937122182,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "paired:Mistral:beam:Macro10_difference_pp",
+      "actual": 0.0,
+      "reference": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "paired:Mistral:beam:CI95_low_pp",
+      "actual": 0.0,
+      "reference": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "paired:Mistral:beam:CI95_high_pp",
+      "actual": 0.0,
+      "reference": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "paired:Mistral:beam:gained_task_inputs",
+      "actual": 0.0,
+      "reference": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "paired:Mistral:beam:lost_task_inputs",
+      "actual": 0.0,
+      "reference": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "paired:Mistral:sampling:Macro10_difference_pp",
+      "actual": -2.251341807909597,
+      "reference": -2.251341807909597,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "paired:Mistral:sampling:CI95_low_pp",
+      "actual": -3.3643853606300085,
+      "reference": -3.3643853606300085,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "paired:Mistral:sampling:CI95_high_pp",
+      "actual": -1.0929814195600713,
+      "reference": -1.0929814195600713,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "paired:Mistral:sampling:gained_task_inputs",
+      "actual": 170.0,
+      "reference": 170.0,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "paired:Mistral:sampling:lost_task_inputs",
+      "actual": 268.0,
+      "reference": 268.0,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "paired:Mistral:self_refine:Macro10_difference_pp",
+      "actual": 5.667111323098766,
+      "reference": 5.667111323098766,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "paired:Mistral:self_refine:CI95_low_pp",
+      "actual": 4.317472670958997,
+      "reference": 4.317472670958997,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "paired:Mistral:self_refine:CI95_high_pp",
+      "actual": 7.024541577607859,
+      "reference": 7.024541577607859,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "paired:Mistral:self_refine:gained_task_inputs",
+      "actual": 405.0,
+      "reference": 405.0,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "paired:Mistral:self_refine:lost_task_inputs",
+      "actual": 143.0,
+      "reference": 143.0,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "paired:Mistral:got:Macro10_difference_pp",
+      "actual": 1.0355458189132634,
+      "reference": 1.0355458189132634,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "paired:Mistral:got:CI95_low_pp",
+      "actual": -0.2504187476444958,
+      "reference": -0.2504187476444958,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "paired:Mistral:got:CI95_high_pp",
+      "actual": 2.2493617838687707,
+      "reference": 2.2493617838687707,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "paired:Mistral:got:gained_task_inputs",
+      "actual": 303.0,
+      "reference": 303.0,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "paired:Mistral:got:lost_task_inputs",
+      "actual": 281.0,
+      "reference": 281.0,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "paired:Mistral:s1:Macro10_difference_pp",
+      "actual": 9.35638551187624,
+      "reference": 9.35638551187624,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "paired:Mistral:s1:CI95_low_pp",
+      "actual": 8.137642281541684,
+      "reference": 8.137642281541684,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "paired:Mistral:s1:CI95_high_pp",
+      "actual": 10.576755335587078,
+      "reference": 10.576755335587078,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "paired:Mistral:s1:gained_task_inputs",
+      "actual": 498.0,
+      "reference": 498.0,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "paired:Mistral:s1:lost_task_inputs",
+      "actual": 92.0,
+      "reference": 92.0,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "paired:Mistral:voting:Macro10_difference_pp",
+      "actual": -44.118193273582385,
+      "reference": -44.118193273582385,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "paired:Mistral:voting:CI95_low_pp",
+      "actual": -46.22678216599754,
+      "reference": -46.22678216599754,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "paired:Mistral:voting:CI95_high_pp",
+      "actual": -42.021343850148284,
+      "reference": -42.021343850148284,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "paired:Mistral:voting:gained_task_inputs",
+      "actual": 14.0,
+      "reference": 14.0,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "paired:Mistral:voting:lost_task_inputs",
+      "actual": 1725.0,
+      "reference": 1725.0,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "paired:Mistral:icl:Macro10_difference_pp",
+      "actual": 6.224491969118816,
+      "reference": 6.224491969118816,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "paired:Mistral:icl:CI95_low_pp",
+      "actual": 4.775351920100246,
+      "reference": 4.775351920100246,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "paired:Mistral:icl:CI95_high_pp",
+      "actual": 7.638110840707774,
+      "reference": 7.638110840707774,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "paired:Mistral:icl:gained_task_inputs",
+      "actual": 563.0,
+      "reference": 563.0,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "paired:Mistral:icl:lost_task_inputs",
+      "actual": 289.0,
+      "reference": 289.0,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "paired:Llama:beam:Macro10_difference_pp",
+      "actual": 0.0,
+      "reference": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "paired:Llama:beam:CI95_low_pp",
+      "actual": 0.0,
+      "reference": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "paired:Llama:beam:CI95_high_pp",
+      "actual": 0.0,
+      "reference": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "paired:Llama:beam:gained_task_inputs",
+      "actual": 0.0,
+      "reference": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "paired:Llama:beam:lost_task_inputs",
+      "actual": 0.0,
+      "reference": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "paired:Llama:sampling:Macro10_difference_pp",
+      "actual": 5.417175584938036,
+      "reference": 5.417175584938036,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "paired:Llama:sampling:CI95_low_pp",
+      "actual": 4.203381419507413,
+      "reference": 4.203381419507413,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "paired:Llama:sampling:CI95_high_pp",
+      "actual": 6.603332836193673,
+      "reference": 6.603332836193673,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "paired:Llama:sampling:gained_task_inputs",
+      "actual": 432.0,
+      "reference": 432.0,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "paired:Llama:sampling:lost_task_inputs",
+      "actual": 177.0,
+      "reference": 177.0,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "paired:Llama:got:Macro10_difference_pp",
+      "actual": 12.495218224036435,
+      "reference": 12.495218224036435,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "paired:Llama:got:CI95_low_pp",
+      "actual": 11.220986084342977,
+      "reference": 11.220986084342977,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "paired:Llama:got:CI95_high_pp",
+      "actual": 13.729324897402481,
+      "reference": 13.729324897402481,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "paired:Llama:got:gained_task_inputs",
+      "actual": 675.0,
+      "reference": 675.0,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "paired:Llama:got:lost_task_inputs",
+      "actual": 103.0,
+      "reference": 103.0,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "paired:Llama:s1:Macro10_difference_pp",
+      "actual": 12.15050618215163,
+      "reference": 12.15050618215163,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "paired:Llama:s1:CI95_low_pp",
+      "actual": 10.874647087634893,
+      "reference": 10.874647087634893,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "paired:Llama:s1:CI95_high_pp",
+      "actual": 13.45318826847922,
+      "reference": 13.45318826847922,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "paired:Llama:s1:gained_task_inputs",
+      "actual": 660.0,
+      "reference": 660.0,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "paired:Llama:s1:lost_task_inputs",
+      "actual": 102.0,
+      "reference": 102.0,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "paired:Llama:voting:Macro10_difference_pp",
+      "actual": -44.15563174786287,
+      "reference": -44.15563174786287,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "paired:Llama:voting:CI95_low_pp",
+      "actual": -46.369284493727626,
+      "reference": -46.369284493727626,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "paired:Llama:voting:CI95_high_pp",
+      "actual": -42.16087370035528,
+      "reference": -42.16087370035528,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "paired:Llama:voting:gained_task_inputs",
+      "actual": 27.0,
+      "reference": 27.0,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "paired:Llama:voting:lost_task_inputs",
+      "actual": 1747.0,
+      "reference": 1747.0,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "paired:Llama:icl:Macro10_difference_pp",
+      "actual": 15.425760419439769,
+      "reference": 15.425760419439769,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "paired:Llama:icl:CI95_low_pp",
+      "actual": 14.091976271823755,
+      "reference": 14.091976271823755,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "paired:Llama:icl:CI95_high_pp",
+      "actual": 16.709411543699815,
+      "reference": 16.709411543699815,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "paired:Llama:icl:gained_task_inputs",
+      "actual": 813.0,
+      "reference": 813.0,
+      "absolute_error": 0.0
+    },
+    {
+      "field": "paired:Llama:icl:lost_task_inputs",
+      "actual": 88.0,
+      "reference": 88.0,
+      "absolute_error": 0.0
+    }
+  ],
+  "task_level_derivation": [
+    {
+      "model": "Mistral",
+      "method_id": "beam",
+      "minimum_tasks": [
+        "BDP",
+        "BDQ",
+        "BPQ",
+        "DPQ",
+        "BDPQ",
+        "MPQ",
+        "BDMQ",
+        "BHMQ",
+        "BMPQ",
+        "HMPQ"
+      ],
+      "tasks": [
+        {
+          "task_id": "BDP",
+          "n_inputs": 500,
+          "method_successes": 406,
+          "beam_successes": 406,
+          "count_difference": 0,
+          "difference_pp": 0.0
+        },
+        {
+          "task_id": "BDQ",
+          "n_inputs": 500,
+          "method_successes": 431,
+          "beam_successes": 431,
+          "count_difference": 0,
+          "difference_pp": 0.0
+        },
+        {
+          "task_id": "BPQ",
+          "n_inputs": 500,
+          "method_successes": 475,
+          "beam_successes": 475,
+          "count_difference": 0,
+          "difference_pp": 0.0
+        },
+        {
+          "task_id": "DPQ",
+          "n_inputs": 500,
+          "method_successes": 300,
+          "beam_successes": 300,
+          "count_difference": 0,
+          "difference_pp": 0.0
+        },
+        {
+          "task_id": "BDPQ",
+          "n_inputs": 500,
+          "method_successes": 274,
+          "beam_successes": 274,
+          "count_difference": 0,
+          "difference_pp": 0.0
+        },
+        {
+          "task_id": "MPQ",
+          "n_inputs": 500,
+          "method_successes": 481,
+          "beam_successes": 481,
+          "count_difference": 0,
+          "difference_pp": 0.0
+        },
+        {
+          "task_id": "BDMQ",
+          "n_inputs": 500,
+          "method_successes": 406,
+          "beam_successes": 406,
+          "count_difference": 0,
+          "difference_pp": 0.0
+        },
+        {
+          "task_id": "BHMQ",
+          "n_inputs": 118,
+          "method_successes": 107,
+          "beam_successes": 107,
+          "count_difference": 0,
+          "difference_pp": 0.0
+        },
+        {
+          "task_id": "BMPQ",
+          "n_inputs": 191,
+          "method_successes": 173,
+          "beam_successes": 173,
+          "count_difference": 0,
+          "difference_pp": 0.0
+        },
+        {
+          "task_id": "HMPQ",
+          "n_inputs": 96,
+          "method_successes": 94,
+          "beam_successes": 94,
+          "count_difference": 0,
+          "difference_pp": 0.0
+        }
+      ]
+    },
+    {
+      "model": "Mistral",
+      "method_id": "sampling",
+      "minimum_tasks": [
+        "BDMQ"
+      ],
+      "tasks": [
+        {
+          "task_id": "BDP",
+          "n_inputs": 500,
+          "method_successes": 390,
+          "beam_successes": 406,
+          "count_difference": -16,
+          "difference_pp": -3.2
+        },
+        {
+          "task_id": "BDQ",
+          "n_inputs": 500,
+          "method_successes": 405,
+          "beam_successes": 431,
+          "count_difference": -26,
+          "difference_pp": -5.2
+        },
+        {
+          "task_id": "BPQ",
+          "n_inputs": 500,
+          "method_successes": 476,
+          "beam_successes": 475,
+          "count_difference": 1,
+          "difference_pp": 0.2
+        },
+        {
+          "task_id": "DPQ",
+          "n_inputs": 500,
+          "method_successes": 292,
+          "beam_successes": 300,
+          "count_difference": -8,
+          "difference_pp": -1.6
+        },
+        {
+          "task_id": "BDPQ",
+          "n_inputs": 500,
+          "method_successes": 261,
+          "beam_successes": 274,
+          "count_difference": -13,
+          "difference_pp": -2.6
+        },
+        {
+          "task_id": "MPQ",
+          "n_inputs": 500,
+          "method_successes": 479,
+          "beam_successes": 481,
+          "count_difference": -2,
+          "difference_pp": -0.4
+        },
+        {
+          "task_id": "BDMQ",
+          "n_inputs": 500,
+          "method_successes": 375,
+          "beam_successes": 406,
+          "count_difference": -31,
+          "difference_pp": -6.2
+        },
+        {
+          "task_id": "BHMQ",
+          "n_inputs": 118,
+          "method_successes": 109,
+          "beam_successes": 107,
+          "count_difference": 2,
+          "difference_pp": 1.694915254237288
+        },
+        {
+          "task_id": "BMPQ",
+          "n_inputs": 191,
+          "method_successes": 173,
+          "beam_successes": 173,
+          "count_difference": 0,
+          "difference_pp": 0.0
+        },
+        {
+          "task_id": "HMPQ",
+          "n_inputs": 96,
+          "method_successes": 89,
+          "beam_successes": 94,
+          "count_difference": -5,
+          "difference_pp": -5.208333333333333
+        }
+      ]
+    },
+    {
+      "model": "Mistral",
+      "method_id": "self_refine",
+      "minimum_tasks": [
+        "HMPQ"
+      ],
+      "tasks": [
+        {
+          "task_id": "BDP",
+          "n_inputs": 500,
+          "method_successes": 453,
+          "beam_successes": 406,
+          "count_difference": 47,
+          "difference_pp": 9.4
+        },
+        {
+          "task_id": "BDQ",
+          "n_inputs": 500,
+          "method_successes": 459,
+          "beam_successes": 431,
+          "count_difference": 28,
+          "difference_pp": 5.6
+        },
+        {
+          "task_id": "BPQ",
+          "n_inputs": 500,
+          "method_successes": 492,
+          "beam_successes": 475,
+          "count_difference": 17,
+          "difference_pp": 3.4
+        },
+        {
+          "task_id": "DPQ",
+          "n_inputs": 500,
+          "method_successes": 366,
+          "beam_successes": 300,
+          "count_difference": 66,
+          "difference_pp": 13.2
+        },
+        {
+          "task_id": "BDPQ",
+          "n_inputs": 500,
+          "method_successes": 341,
+          "beam_successes": 274,
+          "count_difference": 67,
+          "difference_pp": 13.4
+        },
+        {
+          "task_id": "MPQ",
+          "n_inputs": 500,
+          "method_successes": 482,
+          "beam_successes": 481,
+          "count_difference": 1,
+          "difference_pp": 0.2
+        },
+        {
+          "task_id": "BDMQ",
+          "n_inputs": 500,
+          "method_successes": 428,
+          "beam_successes": 406,
+          "count_difference": 22,
+          "difference_pp": 4.4
+        },
+        {
+          "task_id": "BHMQ",
+          "n_inputs": 118,
+          "method_successes": 111,
+          "beam_successes": 107,
+          "count_difference": 4,
+          "difference_pp": 3.389830508474576
+        },
+        {
+          "task_id": "BMPQ",
+          "n_inputs": 191,
+          "method_successes": 186,
+          "beam_successes": 173,
+          "count_difference": 13,
+          "difference_pp": 6.806282722513089
+        },
+        {
+          "task_id": "HMPQ",
+          "n_inputs": 96,
+          "method_successes": 91,
+          "beam_successes": 94,
+          "count_difference": -3,
+          "difference_pp": -3.125
+        }
+      ]
+    },
+    {
+      "model": "Mistral",
+      "method_id": "got",
+      "minimum_tasks": [
+        "BDQ"
+      ],
+      "tasks": [
+        {
+          "task_id": "BDP",
+          "n_inputs": 500,
+          "method_successes": 404,
+          "beam_successes": 406,
+          "count_difference": -2,
+          "difference_pp": -0.4
+        },
+        {
+          "task_id": "BDQ",
+          "n_inputs": 500,
+          "method_successes": 399,
+          "beam_successes": 431,
+          "count_difference": -32,
+          "difference_pp": -6.4
+        },
+        {
+          "task_id": "BPQ",
+          "n_inputs": 500,
+          "method_successes": 489,
+          "beam_successes": 475,
+          "count_difference": 14,
+          "difference_pp": 2.8
+        },
+        {
+          "task_id": "DPQ",
+          "n_inputs": 500,
+          "method_successes": 339,
+          "beam_successes": 300,
+          "count_difference": 39,
+          "difference_pp": 7.8
+        },
+        {
+          "task_id": "BDPQ",
+          "n_inputs": 500,
+          "method_successes": 283,
+          "beam_successes": 274,
+          "count_difference": 9,
+          "difference_pp": 1.8
+        },
+        {
+          "task_id": "MPQ",
+          "n_inputs": 500,
+          "method_successes": 481,
+          "beam_successes": 481,
+          "count_difference": 0,
+          "difference_pp": 0.0
+        },
+        {
+          "task_id": "BDMQ",
+          "n_inputs": 500,
+          "method_successes": 387,
+          "beam_successes": 406,
+          "count_difference": -19,
+          "difference_pp": -3.8
+        },
+        {
+          "task_id": "BHMQ",
+          "n_inputs": 118,
+          "method_successes": 114,
+          "beam_successes": 107,
+          "count_difference": 7,
+          "difference_pp": 5.932203389830509
+        },
+        {
+          "task_id": "BMPQ",
+          "n_inputs": 191,
+          "method_successes": 180,
+          "beam_successes": 173,
+          "count_difference": 7,
+          "difference_pp": 3.6649214659685865
+        },
+        {
+          "task_id": "HMPQ",
+          "n_inputs": 96,
+          "method_successes": 93,
+          "beam_successes": 94,
+          "count_difference": -1,
+          "difference_pp": -1.0416666666666667
+        }
+      ]
+    },
+    {
+      "model": "Mistral",
+      "method_id": "s1",
+      "minimum_tasks": [
+        "MPQ"
+      ],
+      "tasks": [
+        {
+          "task_id": "BDP",
+          "n_inputs": 500,
+          "method_successes": 469,
+          "beam_successes": 406,
+          "count_difference": 63,
+          "difference_pp": 12.6
+        },
+        {
+          "task_id": "BDQ",
+          "n_inputs": 500,
+          "method_successes": 472,
+          "beam_successes": 431,
+          "count_difference": 41,
+          "difference_pp": 8.2
+        },
+        {
+          "task_id": "BPQ",
+          "n_inputs": 500,
+          "method_successes": 496,
+          "beam_successes": 475,
+          "count_difference": 21,
+          "difference_pp": 4.2
+        },
+        {
+          "task_id": "DPQ",
+          "n_inputs": 500,
+          "method_successes": 396,
+          "beam_successes": 300,
+          "count_difference": 96,
+          "difference_pp": 19.2
+        },
+        {
+          "task_id": "BDPQ",
+          "n_inputs": 500,
+          "method_successes": 378,
+          "beam_successes": 274,
+          "count_difference": 104,
+          "difference_pp": 20.8
+        },
+        {
+          "task_id": "MPQ",
+          "n_inputs": 500,
+          "method_successes": 484,
+          "beam_successes": 481,
+          "count_difference": 3,
+          "difference_pp": 0.6
+        },
+        {
+          "task_id": "BDMQ",
+          "n_inputs": 500,
+          "method_successes": 458,
+          "beam_successes": 406,
+          "count_difference": 52,
+          "difference_pp": 10.4
+        },
+        {
+          "task_id": "BHMQ",
+          "n_inputs": 118,
+          "method_successes": 116,
+          "beam_successes": 107,
+          "count_difference": 9,
+          "difference_pp": 7.627118644067797
+        },
+        {
+          "task_id": "BMPQ",
+          "n_inputs": 191,
+          "method_successes": 188,
+          "beam_successes": 173,
+          "count_difference": 15,
+          "difference_pp": 7.853403141361256
+        },
+        {
+          "task_id": "HMPQ",
+          "n_inputs": 96,
+          "method_successes": 96,
+          "beam_successes": 94,
+          "count_difference": 2,
+          "difference_pp": 2.0833333333333335
+        }
+      ]
+    },
+    {
+      "model": "Mistral",
+      "method_id": "voting",
+      "minimum_tasks": [
+        "BDMQ"
+      ],
+      "tasks": [
+        {
+          "task_id": "BDP",
+          "n_inputs": 500,
+          "method_successes": 159,
+          "beam_successes": 406,
+          "count_difference": -247,
+          "difference_pp": -49.4
+        },
+        {
+          "task_id": "BDQ",
+          "n_inputs": 500,
+          "method_successes": 165,
+          "beam_successes": 431,
+          "count_difference": -266,
+          "difference_pp": -53.2
+        },
+        {
+          "task_id": "BPQ",
+          "n_inputs": 500,
+          "method_successes": 321,
+          "beam_successes": 475,
+          "count_difference": -154,
+          "difference_pp": -30.8
+        },
+        {
+          "task_id": "DPQ",
+          "n_inputs": 500,
+          "method_successes": 85,
+          "beam_successes": 300,
+          "count_difference": -215,
+          "difference_pp": -43.0
+        },
+        {
+          "task_id": "BDPQ",
+          "n_inputs": 500,
+          "method_successes": 80,
+          "beam_successes": 274,
+          "count_difference": -194,
+          "difference_pp": -38.8
+        },
+        {
+          "task_id": "MPQ",
+          "n_inputs": 500,
+          "method_successes": 300,
+          "beam_successes": 481,
+          "count_difference": -181,
+          "difference_pp": -36.2
+        },
+        {
+          "task_id": "BDMQ",
+          "n_inputs": 500,
+          "method_successes": 129,
+          "beam_successes": 406,
+          "count_difference": -277,
+          "difference_pp": -55.4
+        },
+        {
+          "task_id": "BHMQ",
+          "n_inputs": 118,
+          "method_successes": 55,
+          "beam_successes": 107,
+          "count_difference": -52,
+          "difference_pp": -44.067796610169495
+        },
+        {
+          "task_id": "BMPQ",
+          "n_inputs": 191,
+          "method_successes": 96,
+          "beam_successes": 173,
+          "count_difference": -77,
+          "difference_pp": -40.31413612565445
+        },
+        {
+          "task_id": "HMPQ",
+          "n_inputs": 96,
+          "method_successes": 46,
+          "beam_successes": 94,
+          "count_difference": -48,
+          "difference_pp": -50.0
+        }
+      ]
+    },
+    {
+      "model": "Mistral",
+      "method_id": "icl",
+      "minimum_tasks": [
+        "BDQ"
+      ],
+      "tasks": [
+        {
+          "task_id": "BDP",
+          "n_inputs": 500,
+          "method_successes": 430,
+          "beam_successes": 406,
+          "count_difference": 24,
+          "difference_pp": 4.8
+        },
+        {
+          "task_id": "BDQ",
+          "n_inputs": 500,
+          "method_successes": 413,
+          "beam_successes": 431,
+          "count_difference": -18,
+          "difference_pp": -3.6
+        },
+        {
+          "task_id": "BPQ",
+          "n_inputs": 500,
+          "method_successes": 489,
+          "beam_successes": 475,
+          "count_difference": 14,
+          "difference_pp": 2.8
+        },
+        {
+          "task_id": "DPQ",
+          "n_inputs": 500,
+          "method_successes": 418,
+          "beam_successes": 300,
+          "count_difference": 118,
+          "difference_pp": 23.6
+        },
+        {
+          "task_id": "BDPQ",
+          "n_inputs": 500,
+          "method_successes": 375,
+          "beam_successes": 274,
+          "count_difference": 101,
+          "difference_pp": 20.2
+        },
+        {
+          "task_id": "MPQ",
+          "n_inputs": 500,
+          "method_successes": 489,
+          "beam_successes": 481,
+          "count_difference": 8,
+          "difference_pp": 1.6
+        },
+        {
+          "task_id": "BDMQ",
+          "n_inputs": 500,
+          "method_successes": 419,
+          "beam_successes": 406,
+          "count_difference": 13,
+          "difference_pp": 2.6
+        },
+        {
+          "task_id": "BHMQ",
+          "n_inputs": 118,
+          "method_successes": 116,
+          "beam_successes": 107,
+          "count_difference": 9,
+          "difference_pp": 7.627118644067797
+        },
+        {
+          "task_id": "BMPQ",
+          "n_inputs": 191,
+          "method_successes": 178,
+          "beam_successes": 173,
+          "count_difference": 5,
+          "difference_pp": 2.6178010471204187
+        },
+        {
+          "task_id": "HMPQ",
+          "n_inputs": 96,
+          "method_successes": 94,
+          "beam_successes": 94,
+          "count_difference": 0,
+          "difference_pp": 0.0
+        }
+      ]
+    },
+    {
+      "model": "Llama",
+      "method_id": "beam",
+      "minimum_tasks": [
+        "BDP",
+        "BDQ",
+        "BPQ",
+        "DPQ",
+        "BDPQ",
+        "MPQ",
+        "BDMQ",
+        "BHMQ",
+        "BMPQ",
+        "HMPQ"
+      ],
+      "tasks": [
+        {
+          "task_id": "BDP",
+          "n_inputs": 500,
+          "method_successes": 400,
+          "beam_successes": 400,
+          "count_difference": 0,
+          "difference_pp": 0.0
+        },
+        {
+          "task_id": "BDQ",
+          "n_inputs": 500,
+          "method_successes": 355,
+          "beam_successes": 355,
+          "count_difference": 0,
+          "difference_pp": 0.0
+        },
+        {
+          "task_id": "BPQ",
+          "n_inputs": 500,
+          "method_successes": 479,
+          "beam_successes": 479,
+          "count_difference": 0,
+          "difference_pp": 0.0
+        },
+        {
+          "task_id": "DPQ",
+          "n_inputs": 500,
+          "method_successes": 293,
+          "beam_successes": 293,
+          "count_difference": 0,
+          "difference_pp": 0.0
+        },
+        {
+          "task_id": "BDPQ",
+          "n_inputs": 500,
+          "method_successes": 249,
+          "beam_successes": 249,
+          "count_difference": 0,
+          "difference_pp": 0.0
+        },
+        {
+          "task_id": "MPQ",
+          "n_inputs": 500,
+          "method_successes": 474,
+          "beam_successes": 474,
+          "count_difference": 0,
+          "difference_pp": 0.0
+        },
+        {
+          "task_id": "BDMQ",
+          "n_inputs": 500,
+          "method_successes": 366,
+          "beam_successes": 366,
+          "count_difference": 0,
+          "difference_pp": 0.0
+        },
+        {
+          "task_id": "BHMQ",
+          "n_inputs": 118,
+          "method_successes": 107,
+          "beam_successes": 107,
+          "count_difference": 0,
+          "difference_pp": 0.0
+        },
+        {
+          "task_id": "BMPQ",
+          "n_inputs": 191,
+          "method_successes": 181,
+          "beam_successes": 181,
+          "count_difference": 0,
+          "difference_pp": 0.0
+        },
+        {
+          "task_id": "HMPQ",
+          "n_inputs": 96,
+          "method_successes": 95,
+          "beam_successes": 95,
+          "count_difference": 0,
+          "difference_pp": 0.0
+        }
+      ]
+    },
+    {
+      "model": "Llama",
+      "method_id": "sampling",
+      "minimum_tasks": [
+        "HMPQ"
+      ],
+      "tasks": [
+        {
+          "task_id": "BDP",
+          "n_inputs": 500,
+          "method_successes": 424,
+          "beam_successes": 400,
+          "count_difference": 24,
+          "difference_pp": 4.8
+        },
+        {
+          "task_id": "BDQ",
+          "n_inputs": 500,
+          "method_successes": 399,
+          "beam_successes": 355,
+          "count_difference": 44,
+          "difference_pp": 8.8
+        },
+        {
+          "task_id": "BPQ",
+          "n_inputs": 500,
+          "method_successes": 491,
+          "beam_successes": 479,
+          "count_difference": 12,
+          "difference_pp": 2.4
+        },
+        {
+          "task_id": "DPQ",
+          "n_inputs": 500,
+          "method_successes": 364,
+          "beam_successes": 293,
+          "count_difference": 71,
+          "difference_pp": 14.2
+        },
+        {
+          "task_id": "BDPQ",
+          "n_inputs": 500,
+          "method_successes": 315,
+          "beam_successes": 249,
+          "count_difference": 66,
+          "difference_pp": 13.2
+        },
+        {
+          "task_id": "MPQ",
+          "n_inputs": 500,
+          "method_successes": 481,
+          "beam_successes": 474,
+          "count_difference": 7,
+          "difference_pp": 1.4
+        },
+        {
+          "task_id": "BDMQ",
+          "n_inputs": 500,
+          "method_successes": 389,
+          "beam_successes": 366,
+          "count_difference": 23,
+          "difference_pp": 4.6
+        },
+        {
+          "task_id": "BHMQ",
+          "n_inputs": 118,
+          "method_successes": 112,
+          "beam_successes": 107,
+          "count_difference": 5,
+          "difference_pp": 4.237288135593221
+        },
+        {
+          "task_id": "BMPQ",
+          "n_inputs": 191,
+          "method_successes": 186,
+          "beam_successes": 181,
+          "count_difference": 5,
+          "difference_pp": 2.6178010471204187
+        },
+        {
+          "task_id": "HMPQ",
+          "n_inputs": 96,
+          "method_successes": 93,
+          "beam_successes": 95,
+          "count_difference": -2,
+          "difference_pp": -2.0833333333333335
+        }
+      ]
+    },
+    {
+      "model": "Llama",
+      "method_id": "got",
+      "minimum_tasks": [
+        "HMPQ"
+      ],
+      "tasks": [
+        {
+          "task_id": "BDP",
+          "n_inputs": 500,
+          "method_successes": 457,
+          "beam_successes": 400,
+          "count_difference": 57,
+          "difference_pp": 11.4
+        },
+        {
+          "task_id": "BDQ",
+          "n_inputs": 500,
+          "method_successes": 453,
+          "beam_successes": 355,
+          "count_difference": 98,
+          "difference_pp": 19.6
+        },
+        {
+          "task_id": "BPQ",
+          "n_inputs": 500,
+          "method_successes": 498,
+          "beam_successes": 479,
+          "count_difference": 19,
+          "difference_pp": 3.8
+        },
+        {
+          "task_id": "DPQ",
+          "n_inputs": 500,
+          "method_successes": 418,
+          "beam_successes": 293,
+          "count_difference": 125,
+          "difference_pp": 25.0
+        },
+        {
+          "task_id": "BDPQ",
+          "n_inputs": 500,
+          "method_successes": 396,
+          "beam_successes": 249,
+          "count_difference": 147,
+          "difference_pp": 29.4
+        },
+        {
+          "task_id": "MPQ",
+          "n_inputs": 500,
+          "method_successes": 489,
+          "beam_successes": 474,
+          "count_difference": 15,
+          "difference_pp": 3.0
+        },
+        {
+          "task_id": "BDMQ",
+          "n_inputs": 500,
+          "method_successes": 457,
+          "beam_successes": 366,
+          "count_difference": 91,
+          "difference_pp": 18.2
+        },
+        {
+          "task_id": "BHMQ",
+          "n_inputs": 118,
+          "method_successes": 118,
+          "beam_successes": 107,
+          "count_difference": 11,
+          "difference_pp": 9.322033898305085
+        },
+        {
+          "task_id": "BMPQ",
+          "n_inputs": 191,
+          "method_successes": 189,
+          "beam_successes": 181,
+          "count_difference": 8,
+          "difference_pp": 4.18848167539267
+        },
+        {
+          "task_id": "HMPQ",
+          "n_inputs": 96,
+          "method_successes": 96,
+          "beam_successes": 95,
+          "count_difference": 1,
+          "difference_pp": 1.0416666666666667
+        }
+      ]
+    },
+    {
+      "model": "Llama",
+      "method_id": "s1",
+      "minimum_tasks": [
+        "HMPQ"
+      ],
+      "tasks": [
+        {
+          "task_id": "BDP",
+          "n_inputs": 500,
+          "method_successes": 455,
+          "beam_successes": 400,
+          "count_difference": 55,
+          "difference_pp": 11.0
+        },
+        {
+          "task_id": "BDQ",
+          "n_inputs": 500,
+          "method_successes": 462,
+          "beam_successes": 355,
+          "count_difference": 107,
+          "difference_pp": 21.4
+        },
+        {
+          "task_id": "BPQ",
+          "n_inputs": 500,
+          "method_successes": 496,
+          "beam_successes": 479,
+          "count_difference": 17,
+          "difference_pp": 3.4
+        },
+        {
+          "task_id": "DPQ",
+          "n_inputs": 500,
+          "method_successes": 425,
+          "beam_successes": 293,
+          "count_difference": 132,
+          "difference_pp": 26.4
+        },
+        {
+          "task_id": "BDPQ",
+          "n_inputs": 500,
+          "method_successes": 381,
+          "beam_successes": 249,
+          "count_difference": 132,
+          "difference_pp": 26.4
+        },
+        {
+          "task_id": "MPQ",
+          "n_inputs": 500,
+          "method_successes": 489,
+          "beam_successes": 474,
+          "count_difference": 15,
+          "difference_pp": 3.0
+        },
+        {
+          "task_id": "BDMQ",
+          "n_inputs": 500,
+          "method_successes": 448,
+          "beam_successes": 366,
+          "count_difference": 82,
+          "difference_pp": 16.4
+        },
+        {
+          "task_id": "BHMQ",
+          "n_inputs": 118,
+          "method_successes": 118,
+          "beam_successes": 107,
+          "count_difference": 11,
+          "difference_pp": 9.322033898305085
+        },
+        {
+          "task_id": "BMPQ",
+          "n_inputs": 191,
+          "method_successes": 187,
+          "beam_successes": 181,
+          "count_difference": 6,
+          "difference_pp": 3.141361256544503
+        },
+        {
+          "task_id": "HMPQ",
+          "n_inputs": 96,
+          "method_successes": 96,
+          "beam_successes": 95,
+          "count_difference": 1,
+          "difference_pp": 1.0416666666666667
+        }
+      ]
+    },
+    {
+      "model": "Llama",
+      "method_id": "voting",
+      "minimum_tasks": [
+        "BDP"
+      ],
+      "tasks": [
+        {
+          "task_id": "BDP",
+          "n_inputs": 500,
+          "method_successes": 141,
+          "beam_successes": 400,
+          "count_difference": -259,
+          "difference_pp": -51.8
+        },
+        {
+          "task_id": "BDQ",
+          "n_inputs": 500,
+          "method_successes": 105,
+          "beam_successes": 355,
+          "count_difference": -250,
+          "difference_pp": -50.0
+        },
+        {
+          "task_id": "BPQ",
+          "n_inputs": 500,
+          "method_successes": 315,
+          "beam_successes": 479,
+          "count_difference": -164,
+          "difference_pp": -32.8
+        },
+        {
+          "task_id": "DPQ",
+          "n_inputs": 500,
+          "method_successes": 87,
+          "beam_successes": 293,
+          "count_difference": -206,
+          "difference_pp": -41.2
+        },
+        {
+          "task_id": "BDPQ",
+          "n_inputs": 500,
+          "method_successes": 68,
+          "beam_successes": 249,
+          "count_difference": -181,
+          "difference_pp": -36.2
+        },
+        {
+          "task_id": "MPQ",
+          "n_inputs": 500,
+          "method_successes": 247,
+          "beam_successes": 474,
+          "count_difference": -227,
+          "difference_pp": -45.4
+        },
+        {
+          "task_id": "BDMQ",
+          "n_inputs": 500,
+          "method_successes": 111,
+          "beam_successes": 366,
+          "count_difference": -255,
+          "difference_pp": -51.0
+        },
+        {
+          "task_id": "BHMQ",
+          "n_inputs": 118,
+          "method_successes": 62,
+          "beam_successes": 107,
+          "count_difference": -45,
+          "difference_pp": -38.13559322033898
+        },
+        {
+          "task_id": "BMPQ",
+          "n_inputs": 191,
+          "method_successes": 97,
+          "beam_successes": 181,
+          "count_difference": -84,
+          "difference_pp": -43.97905759162304
+        },
+        {
+          "task_id": "HMPQ",
+          "n_inputs": 96,
+          "method_successes": 46,
+          "beam_successes": 95,
+          "count_difference": -49,
+          "difference_pp": -51.041666666666664
+        }
+      ]
+    },
+    {
+      "model": "Llama",
+      "method_id": "icl",
+      "minimum_tasks": [
+        "HMPQ"
+      ],
+      "tasks": [
+        {
+          "task_id": "BDP",
+          "n_inputs": 500,
+          "method_successes": 484,
+          "beam_successes": 400,
+          "count_difference": 84,
+          "difference_pp": 16.8
+        },
+        {
+          "task_id": "BDQ",
+          "n_inputs": 500,
+          "method_successes": 470,
+          "beam_successes": 355,
+          "count_difference": 115,
+          "difference_pp": 23.0
+        },
+        {
+          "task_id": "BPQ",
+          "n_inputs": 500,
+          "method_successes": 496,
+          "beam_successes": 479,
+          "count_difference": 17,
+          "difference_pp": 3.4
+        },
+        {
+          "task_id": "DPQ",
+          "n_inputs": 500,
+          "method_successes": 462,
+          "beam_successes": 293,
+          "count_difference": 169,
+          "difference_pp": 33.8
+        },
+        {
+          "task_id": "BDPQ",
+          "n_inputs": 500,
+          "method_successes": 458,
+          "beam_successes": 249,
+          "count_difference": 209,
+          "difference_pp": 41.8
+        },
+        {
+          "task_id": "MPQ",
+          "n_inputs": 500,
+          "method_successes": 492,
+          "beam_successes": 474,
+          "count_difference": 18,
+          "difference_pp": 3.6
+        },
+        {
+          "task_id": "BDMQ",
+          "n_inputs": 500,
+          "method_successes": 462,
+          "beam_successes": 366,
+          "count_difference": 96,
+          "difference_pp": 19.2
+        },
+        {
+          "task_id": "BHMQ",
+          "n_inputs": 118,
+          "method_successes": 117,
+          "beam_successes": 107,
+          "count_difference": 10,
+          "difference_pp": 8.474576271186441
+        },
+        {
+          "task_id": "BMPQ",
+          "n_inputs": 191,
+          "method_successes": 187,
+          "beam_successes": 181,
+          "count_difference": 6,
+          "difference_pp": 3.141361256544503
+        },
+        {
+          "task_id": "HMPQ",
+          "n_inputs": 96,
+          "method_successes": 96,
+          "beam_successes": 95,
+          "count_difference": 1,
+          "difference_pp": 1.0416666666666667
+        }
+      ]
+    }
+  ],
+  "outputs": {
+    "table3_k20_consistency.csv": "ca1354b4724230901091277f2e64b742b01cfa81ece247c32d7aea382298eed2",
+    "table3_consistency.tex": "8a55421f226b488f4b3b99ef67f677f991f3f181b0a4ddde2f4cbba5e1cf27aa"
+  }
+}

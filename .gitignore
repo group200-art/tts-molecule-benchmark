@@ -23,3 +23,8 @@ analysis_output/
 *.pdf
 *.fdb_latexmk
 *.fls
+
+.venv/
+reproduced/
+quick_check/
+

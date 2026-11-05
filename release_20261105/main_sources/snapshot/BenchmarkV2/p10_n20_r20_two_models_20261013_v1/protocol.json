@@ -1,0 +1,24 @@
+{
+  "protocol_id": "EXACT_VOTING_N20_R20_TWO_MODELS_20261013_v1",
+  "authorization": "User approved 20 original groups of 20 votes and continue, 2026-10-13",
+  "created_utc": "2026-10-13T06:54:16.454385+00:00",
+  "models": [
+    "gellmo_p6_mistral",
+    "gellmo_p6_llama"
+  ],
+  "inputs_per_model": 3905,
+  "N_votes_per_round": 20,
+  "R_rounds": 20,
+  "Kout": 20,
+  "total_generated_proposals_reused_per_input": 400,
+  "new_LLM_generation_required": false,
+  "grouping": "original physical generation block b; original slots20*b..20*b+19; no sorting/filtering/regrouping by outcome",
+  "voter": "same frozen canonical identity + INVALID_RAW classes, per-group counts only, tied modal class earliest original position, earliest proposal in winning class",
+  "invalid_policy": "invalid and empty proposals retain votes; invalid/empty winners retain output slots and failure denominator; no refill",
+  "K1_same_configuration": "winner of original group0 only",
+  "K1_different_budget_reference": "old N400 single voting winner retained separately, never used as the same-configuration K1 contrast",
+  "evaluation": "all3905 inputs permodel; original strict all-target SR; K20anysuccess; quality metrics on common original-selector representative among20 complete winners, stable roundorder; K1actualfirstgroupwinner; original-code RI andlegacy rawSim/SAS/Novelty/APS",
+  "comparison_precision": "reuse frozen original pandas1.0.5/numpy1.18.5 round2CSV candidatevalues and originalstored sourcevalues",
+  "paper_mutation": false,
+  "generation_job_limit_all_methods": 2
+}

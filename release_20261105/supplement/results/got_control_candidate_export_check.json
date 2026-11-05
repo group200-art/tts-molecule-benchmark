@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "mode": "complete_formal_scope",
+  "completed_utc": "2026-11-04T08:19:02.178434+00:00",
+  "arm_candidate_positions": 56000,
+  "returned_positions": 40000,
+  "physical_response_records": 44000,
+  "complete_arm_inputs": 2000,
+  "physical_pair_inputs": 1000,
+  "candidate_records_sha256": "073c76a96c25479a44d903fbaab150ff980fac0f3afd16477b681a5cdb5b265e",
+  "paired_records_sha256": "0a240da3e02a717dd71e70531aaddcbae9d1fc8d8be2f75918efcf31db1441cd",
+  "workload_source_sha256": "871252321ac8927dd8dc074da8a08f92ab8bdf5c6fc0197d0af751a997162479",
+  "exporter_sha256": "29e71d7cda854dc0e3d1084c8cc39caef7cc901db0d632badf69c5cb30fa6dd3",
+  "original_candidate_objects_preserved": true,
+  "missing_labels_imputed": false,
+  "physical_property_cost_deduplicates_shared_initial": true
+}

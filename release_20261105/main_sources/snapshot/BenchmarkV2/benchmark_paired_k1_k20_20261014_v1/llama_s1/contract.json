@@ -1,0 +1,410 @@
+{
+  "execution_id": "GELLMO-LLAMA-S1-B512-SAMPLED-R20-20261014-v1",
+  "label": "s1-style B512 sampled R20",
+  "model_id": "gellmo_p6_llama",
+  "inputs": 3905,
+  "repeats": 20,
+  "total_endpoints": 78100,
+  "context_limit": 32768,
+  "thinking_budget": 512,
+  "max_wait_insertions": 1,
+  "final_answer_cap": 256,
+  "model_assembly": {
+    "models": {
+      "mistral": {
+        "base_path": "/MODEL_ROOT/Mistral-7B-Instruct-v0.3",
+        "adapter_path": "/MODEL_ROOT/GeLLMO-P6-Mistral",
+        "adapter_revision": "a6437ea4aedd75584bd9d30001c63e9808489531",
+        "base_revision": null,
+        "dtype_request": "bfloat16",
+        "autocast_adapter_dtype": true,
+        "low_cpu_mem_usage_adapter": false,
+        "device_map": {
+          "": "cuda:0"
+        },
+        "quantization": null,
+        "offload": false,
+        "torch_compile": false,
+        "pipeline": false,
+        "attention_backend_override": null,
+        "weight_verification_basis": "reuse successful RUN01 result; standard unchanged PEFT assembly; lightweight active adapter status only",
+        "run01_result_path": "/REPOSITORY_ROOT/BenchmarkV2/phase1c_minruntime_bdp0_v1/run_01/result.json",
+        "run01_result_sha256": "758f191a8666567d682633900148787f82cde8ebe11e347d72b4decfb6196e1f"
+      },
+      "llama": {
+        "base_path": "/MODEL_ROOT/Llama-3.1-8B-Instruct",
+        "adapter_path": "/REPOSITORY_ROOT/BenchmarkV2/p6_llama_main_ten_tasks_v1/models/GeLLMO-P6-Llama",
+        "adapter_revision": "6a5b6ab53b8e6d3c2016370a980d57c39c749592",
+        "base_revision": null,
+        "dtype_request": "bfloat16",
+        "autocast_adapter_dtype": true,
+        "low_cpu_mem_usage_adapter": false,
+        "device_map": {
+          "": "cuda:0"
+        },
+        "quantization": null,
+        "offload": false,
+        "torch_compile": false,
+        "pipeline": false,
+        "attention_backend_override": null,
+        "weight_verification_basis": "complete local SHA256 and adapter/base safetensor header compatibility; real assembly checked in each worker"
+      }
+    },
+    "tokenizer": {
+      "mistral": {
+        "use_fast": false,
+        "bos": 1,
+        "eos": 2,
+        "pad": 2
+      },
+      "llama": {
+        "use_fast": true,
+        "bos": 128000,
+        "eos": 128009,
+        "pad": 128009
+      }
+    },
+    "generation_defaults_path": "/REPOSITORY_ROOT/BenchmarkV2/p6_llama_main_ten_tasks_v1/configs/mistral_generation_defaults.json"
+  },
+  "decoding": {
+    "do_sample": true,
+    "temperature": 1.0,
+    "top_p": 1.0,
+    "top_k": 0,
+    "num_beams": 1,
+    "num_return_sequences": 1,
+    "min_new_tokens": 0,
+    "max_new_tokens": 512
+  },
+  "physical_batch": "Four consecutive manifest inputs x20 independent sampled rows; last batch may be smaller.",
+  "generation_semantics": "Unchanged native Llama run_one_budget; cumulative512 countsEOS, one Wait iff initialEOS with budget left, continuation min1, final256.",
+  "controller_source": "/REPOSITORY_ROOT/BenchmarkV2/p6_llama_main_ten_tasks_v1/src/s1bf.py",
+  "prompt_parser_source": "/REPOSITORY_ROOT/BenchmarkV2/p6_llama_main_ten_tasks_v1/src/p9_adapters.py",
+  "sampling": "All initial/continuation/final roles use native categorical T1/top_p1/top_k0/beam1; batched RNG streams are not serial-seed bitwise equivalence.",
+  "readouts": {
+    "K1": "Fixed repeat0 terminal, never selected by task success.",
+    "K20": "All20 complete trajectory terminals; preserve invalid/empty/duplicate slots."
+  },
+  "old_greedy_K1_reused": false,
+  "property_feedback": false,
+  "properties": "Separate CPU evaluation after generation; do not call predictors during generation.",
+  "seed": "first15hex SHA256 sortedCompactJSON([execution,batch_id,ordered request keys]) modulo2147483647",
+  "tokenizer_binding": "Native fast Llama tokenizer, BOS128000/EOS128009/PAD128009, left-padding attention-mask0, no truncation/chat template.",
+  "immutable_sources": {
+    "/REPOSITORY_ROOT/BenchmarkV2/benchmark_paired_k1_k20_20261014_v1/llama_s1/runner.py": "b9a8343ad5f981dd8dd8af8e331cda2a22c731205a150c3525888995bfa8f007",
+    "/REPOSITORY_ROOT/BenchmarkV2/benchmark_paired_k1_k20_20261014_v1/llama_s1/prepare.py": "6c3315a320635b0a402981f805733c3e082081a5d495b42646050c73e6ad1b81",
+    "/REPOSITORY_ROOT/BenchmarkV2/benchmark_paired_k1_k20_20261014_v1/llama_s1/validate.py": "1ac8a50515ea4e7ac5fe4b75af8d1a27f79132f11ab86ecabc53890f5c6f37cc",
+    "/REPOSITORY_ROOT/BenchmarkV2/benchmark_paired_k1_k20_20261014_v1/llama_s1/run.sbatch": "83276819e87692a1cf9ca1b2d936457121268173caea45484e06f6c5dd481d51",
+    "/REPOSITORY_ROOT/BenchmarkV2/p10_n20_r20_two_models_20261013_v1/next_k20/llama_icl_sampled/contract.json": "1a2f350165d971eeb9520853e5e4b93a32ce2023c9da6369685422ce6963b85b",
+    "/REPOSITORY_ROOT/BenchmarkV2/p6_llama_main_ten_tasks_v1/src/contracts.py": "b41bc3ce8f651854d30e401a7374f7d761475b889f030419ac26011dcd8d652f",
+    "/REPOSITORY_ROOT/BenchmarkV2/p6_llama_main_ten_tasks_v1/src/s1bf.py": "5bc7635d6d55f60c330645ce75ceabee0575c069119d969d835788b0602274d9",
+    "/REPOSITORY_ROOT/BenchmarkV2/p6_llama_main_ten_tasks_v1/src/p9_adapters.py": "646e9a545fe9039cc6d19e97008e2b135250f858e1982f96046f23ad96f6b63d",
+    "/REPOSITORY_ROOT/BenchmarkV2/p6_llama_main_ten_tasks_v1/configs/p9_prompt.json": "a1c74a32cddd8f1497283f888d650a171034bf6c5cf6cc362653a86a08ef3fcf",
+    "/REPOSITORY_ROOT/BenchmarkV2/p6_llama_main_ten_tasks_v1/configs/p9_original_science.json": "5060ff2d2ca18033617e71daa3ab28d598fe178a4b3844dbedfc4ce8eb084fa9",
+    "/REPOSITORY_ROOT/BenchmarkV2/p6_llama_main_ten_tasks_v1/evidence/read_set.json": "e57c354b321aebbe5497995f4a93e84104e3bd384b71a516030a39b6d6a0ec81",
+    "/REPOSITORY_ROOT/BenchmarkV2/registries/task_registry.draft.json": "439a6229ff92113d92c3ec4a7c36f795050ea4d675b55df472efc4e04b5afe87",
+    "/REPOSITORY_ROOT/BenchmarkV2/k1_nine_methods_execution_20261011_v2/code/tot_backend.py": "3cbc18494c316cc70e0b442c4fc53e25c8803380539d6f97a6a8038565e1e97e",
+    "/REPOSITORY_ROOT/BenchmarkV2/k1_nine_methods_execution_20261011_v2/code/tot_protocol.py": "9be012cbf9d65db62f85c4387d0144dc87e1c03439eaeab12be79cac5670cf09",
+    "/REPOSITORY_ROOT/BenchmarkV2/k20_remaining_three_v1/plan.json": "ce53e1bdb1baca77ec1765daa3e52592f3f69a093720612f101212a1a9acdcf0",
+    "/REPOSITORY_ROOT/BenchmarkV2/k20_alignment_20261002_v1/src/s1bf.py": "1d2b7d6378ec694d52b2eb02bf8aa910df36b09e3a36745c47f7181ff40492d0",
+    "/REPOSITORY_ROOT/BenchmarkV2/p6_llama_main_ten_tasks_v1/configs/mistral_generation_defaults.json": "b4669f1b8f4185324bd9b12a69e85a1ad2289bc48111ef739cfaaea3bba6b0a9",
+    "/REPOSITORY_ROOT/BenchmarkV2/manifests/BDP.test.seen.jsonl": "0c511a5096a3073e97f136db279d75f56c451b56ffe2ec2c850f0f323113fe6d",
+    "/REPOSITORY_ROOT/BenchmarkV2/manifests/BDQ.test.seen.jsonl": "0e82627a5cd6226b36eaab3dbff5263fb1e40b1b6cc0ce64b297b3715d22d628",
+    "/REPOSITORY_ROOT/BenchmarkV2/manifests/BPQ.test.seen.jsonl": "0ebd16ceec314f3cbd933054c626dda77cf91abfb15f97a8a2ae739f2696b6d5",
+    "/REPOSITORY_ROOT/BenchmarkV2/manifests/DPQ.test.seen.jsonl": "dfb357759910a2b1719c2e7ccc5cc4226733943cd1dacc4c7bf624f214a05bb0",
+    "/REPOSITORY_ROOT/BenchmarkV2/manifests/BDPQ.test.seen.jsonl": "5f10871232f7900e8fccc8a5627ff86efe1c1d3cb06ebec4c4b26d5c290b04f1",
+    "/REPOSITORY_ROOT/BenchmarkV2/manifests/MPQ.test.seen.jsonl": "2fa40cde8cb1311fbed747a69a11711a2625f0f6f58e923fe8e6b32c703d98af",
+    "/REPOSITORY_ROOT/BenchmarkV2/manifests/BDMQ.test.seen.jsonl": "f006228bc34f3d43f0b5e8e3f64690db5de2b052f36680153a7c3feb071c91b8",
+    "/REPOSITORY_ROOT/BenchmarkV2/manifests/BHMQ.test.seen.jsonl": "0f35f585621778f66a821baa33aa7c98c4cb2a62036651732434e00118f23c9e",
+    "/REPOSITORY_ROOT/BenchmarkV2/manifests/BMPQ.test.seen.jsonl": "29fb32e8afd59faf95ea90a9acd2866bd21ba8659f5f941be5eaf30f24fe6fa4",
+    "/REPOSITORY_ROOT/BenchmarkV2/manifests/HMPQ.test.seen.jsonl": "bc8933875e188b0d5b650bc7448d464e81a5ba20b03cd1b12e22ff68d84af3e8"
+  },
+  "model_files_metadata": [
+    {
+      "path": "/MODEL_ROOT/Llama-3.1-8B-Instruct/.cache/huggingface/download/LICENSE.lock",
+      "bytes": 0,
+      "mtime_ns": 1774656488734554525
+    },
+    {
+      "path": "/MODEL_ROOT/Llama-3.1-8B-Instruct/.cache/huggingface/download/LICENSE.metadata",
+      "bytes": 100,
+      "mtime_ns": 1774654082303517947
+    },
+    {
+      "path": "/MODEL_ROOT/Llama-3.1-8B-Instruct/.cache/huggingface/download/README.md.lock",
+      "bytes": 0,
+      "mtime_ns": 1774656488731883337
+    },
+    {
+      "path": "/MODEL_ROOT/Llama-3.1-8B-Instruct/.cache/huggingface/download/README.md.metadata",
+      "bytes": 101,
+      "mtime_ns": 1774654082446649834
+    },
+    {
+      "path": "/MODEL_ROOT/Llama-3.1-8B-Instruct/.cache/huggingface/download/USE_POLICY.md.lock",
+      "bytes": 0,
+      "mtime_ns": 1774656488926306761
+    },
+    {
+      "path": "/MODEL_ROOT/Llama-3.1-8B-Instruct/.cache/huggingface/download/USE_POLICY.md.metadata",
+      "bytes": 101,
+      "mtime_ns": 1774656488937796165
+    },
+    {
+      "path": "/MODEL_ROOT/Llama-3.1-8B-Instruct/.cache/huggingface/download/config.json.lock",
+      "bytes": 0,
+      "mtime_ns": 1774656489133513563
+    },
+    {
+      "path": "/MODEL_ROOT/Llama-3.1-8B-Instruct/.cache/huggingface/download/config.json.metadata",
+      "bytes": 101,
+      "mtime_ns": 1774656489467718164
+    },
+    {
+      "path": "/MODEL_ROOT/Llama-3.1-8B-Instruct/.cache/huggingface/download/generation_config.json.lock",
+      "bytes": 0,
+      "mtime_ns": 1774656489078801534
+    },
+    {
+      "path": "/MODEL_ROOT/Llama-3.1-8B-Instruct/.cache/huggingface/download/generation_config.json.metadata",
+      "bytes": 101,
+      "mtime_ns": 1774656489120152861
+    },
+    {
+      "path": "/MODEL_ROOT/Llama-3.1-8B-Instruct/.cache/huggingface/download/model-00001-of-00004.safetensors.lock",
+      "bytes": 0,
+      "mtime_ns": 1774656509794203691
+    },
+    {
+      "path": "/MODEL_ROOT/Llama-3.1-8B-Instruct/.cache/huggingface/download/model-00001-of-00004.safetensors.metadata",
+      "bytes": 125,
+      "mtime_ns": 1774656509838572408
+    },
+    {
+      "path": "/MODEL_ROOT/Llama-3.1-8B-Instruct/.cache/huggingface/download/model-00002-of-00004.safetensors.lock",
+      "bytes": 0,
+      "mtime_ns": 1774656510082914173
+    },
+    {
+      "path": "/MODEL_ROOT/Llama-3.1-8B-Instruct/.cache/huggingface/download/model-00002-of-00004.safetensors.metadata",
+      "bytes": 125,
+      "mtime_ns": 1774656510129927269
+    },
+    {
+      "path": "/MODEL_ROOT/Llama-3.1-8B-Instruct/.cache/huggingface/download/model-00003-of-00004.safetensors.lock",
+      "bytes": 0,
+      "mtime_ns": 1774656509923595238
+    },
+    {
+      "path": "/MODEL_ROOT/Llama-3.1-8B-Instruct/.cache/huggingface/download/model-00003-of-00004.safetensors.metadata",
+      "bytes": 124,
+      "mtime_ns": 1774656510001589748
+    },
+    {
+      "path": "/MODEL_ROOT/Llama-3.1-8B-Instruct/.cache/huggingface/download/model-00004-of-00004.safetensors.lock",
+      "bytes": 0,
+      "mtime_ns": 1774656495961453682
+    },
+    {
+      "path": "/MODEL_ROOT/Llama-3.1-8B-Instruct/.cache/huggingface/download/model-00004-of-00004.safetensors.metadata",
+      "bytes": 125,
+      "mtime_ns": 1774656496049093888
+    },
+    {
+      "path": "/MODEL_ROOT/Llama-3.1-8B-Instruct/.cache/huggingface/download/model.safetensors.index.json.lock",
+      "bytes": 0,
+      "mtime_ns": 1774656489073353218
+    },
+    {
+      "path": "/MODEL_ROOT/Llama-3.1-8B-Instruct/.cache/huggingface/download/model.safetensors.index.json.metadata",
+      "bytes": 101,
+      "mtime_ns": 1774656489083245759
+    },
+    {
+      "path": "/MODEL_ROOT/Llama-3.1-8B-Instruct/.cache/huggingface/download/original/consolidated.00.pth.lock",
+      "bytes": 0,
+      "mtime_ns": 1774656536757005083
+    },
+    {
+      "path": "/MODEL_ROOT/Llama-3.1-8B-Instruct/.cache/huggingface/download/original/consolidated.00.pth.metadata",
+      "bytes": 125,
+      "mtime_ns": 1774656536765254853
+    },
+    {
+      "path": "/MODEL_ROOT/Llama-3.1-8B-Instruct/.cache/huggingface/download/original/params.json.lock",
+      "bytes": 0,
+      "mtime_ns": 1774656489789402656
+    },
+    {
+      "path": "/MODEL_ROOT/Llama-3.1-8B-Instruct/.cache/huggingface/download/original/params.json.metadata",
+      "bytes": 101,
+      "mtime_ns": 1774656489852798180
+    },
+    {
+      "path": "/MODEL_ROOT/Llama-3.1-8B-Instruct/.cache/huggingface/download/original/tokenizer.model.lock",
+      "bytes": 0,
+      "mtime_ns": 1774656489445017826
+    },
+    {
+      "path": "/MODEL_ROOT/Llama-3.1-8B-Instruct/.cache/huggingface/download/original/tokenizer.model.metadata",
+      "bytes": 125,
+      "mtime_ns": 1774656489457124699
+    },
+    {
+      "path": "/MODEL_ROOT/Llama-3.1-8B-Instruct/.cache/huggingface/download/special_tokens_map.json.lock",
+      "bytes": 0,
+      "mtime_ns": 1774656489800484105
+    },
+    {
+      "path": "/MODEL_ROOT/Llama-3.1-8B-Instruct/.cache/huggingface/download/special_tokens_map.json.metadata",
+      "bytes": 101,
+      "mtime_ns": 1774656489846956176
+    },
+    {
+      "path": "/MODEL_ROOT/Llama-3.1-8B-Instruct/.cache/huggingface/download/tokenizer.json.lock",
+      "bytes": 0,
+      "mtime_ns": 1774656490193977035
+    },
+    {
+      "path": "/MODEL_ROOT/Llama-3.1-8B-Instruct/.cache/huggingface/download/tokenizer.json.metadata",
+      "bytes": 100,
+      "mtime_ns": 1774656490244954496
+    },
+    {
+      "path": "/MODEL_ROOT/Llama-3.1-8B-Instruct/.cache/huggingface/download/tokenizer_config.json.lock",
+      "bytes": 0,
+      "mtime_ns": 1774656490045073045
+    },
+    {
+      "path": "/MODEL_ROOT/Llama-3.1-8B-Instruct/.cache/huggingface/download/tokenizer_config.json.metadata",
+      "bytes": 101,
+      "mtime_ns": 1774656490058651613
+    },
+    {
+      "path": "/MODEL_ROOT/Llama-3.1-8B-Instruct/LICENSE",
+      "bytes": 7627,
+      "mtime_ns": 1774654082050768627
+    },
+    {
+      "path": "/MODEL_ROOT/Llama-3.1-8B-Instruct/README.md",
+      "bytes": 44044,
+      "mtime_ns": 1774654082270893987
+    },
+    {
+      "path": "/MODEL_ROOT/Llama-3.1-8B-Instruct/USE_POLICY.md",
+      "bytes": 4691,
+      "mtime_ns": 1774656488892161176
+    },
+    {
+      "path": "/MODEL_ROOT/Llama-3.1-8B-Instruct/config.json",
+      "bytes": 855,
+      "mtime_ns": 1774656489045970961
+    },
+    {
+      "path": "/MODEL_ROOT/Llama-3.1-8B-Instruct/generation_config.json",
+      "bytes": 184,
+      "mtime_ns": 1774656489034064174
+    },
+    {
+      "path": "/MODEL_ROOT/Llama-3.1-8B-Instruct/model-00001-of-00004.safetensors",
+      "bytes": 4976698672,
+      "mtime_ns": 1774656509735428894
+    },
+    {
+      "path": "/MODEL_ROOT/Llama-3.1-8B-Instruct/model-00002-of-00004.safetensors",
+      "bytes": 4999802720,
+      "mtime_ns": 1774656510015611183
+    },
+    {
+      "path": "/MODEL_ROOT/Llama-3.1-8B-Instruct/model-00003-of-00004.safetensors",
+      "bytes": 4915916176,
+      "mtime_ns": 1774656509854641754
+    },
+    {
+      "path": "/MODEL_ROOT/Llama-3.1-8B-Instruct/model-00004-of-00004.safetensors",
+      "bytes": 1168138808,
+      "mtime_ns": 1774656495376039401
+    },
+    {
+      "path": "/MODEL_ROOT/Llama-3.1-8B-Instruct/model.safetensors.index.json",
+      "bytes": 23950,
+      "mtime_ns": 1774656489039646730
+    },
+    {
+      "path": "/MODEL_ROOT/Llama-3.1-8B-Instruct/original/consolidated.00.pth",
+      "bytes": 16060617592,
+      "mtime_ns": 1774656536713747301
+    },
+    {
+      "path": "/MODEL_ROOT/Llama-3.1-8B-Instruct/original/params.json",
+      "bytes": 199,
+      "mtime_ns": 1774656489692758746
+    },
+    {
+      "path": "/MODEL_ROOT/Llama-3.1-8B-Instruct/original/tokenizer.model",
+      "bytes": 2183982,
+      "mtime_ns": 1774656489398151667
+    },
+    {
+      "path": "/MODEL_ROOT/Llama-3.1-8B-Instruct/special_tokens_map.json",
+      "bytes": 296,
+      "mtime_ns": 1774656489750274646
+    },
+    {
+      "path": "/MODEL_ROOT/Llama-3.1-8B-Instruct/tokenizer.json",
+      "bytes": 9085657,
+      "mtime_ns": 1774656490120590555
+    },
+    {
+      "path": "/MODEL_ROOT/Llama-3.1-8B-Instruct/tokenizer_config.json",
+      "bytes": 55351,
+      "mtime_ns": 1774656490014896291
+    },
+    {
+      "path": "/REPOSITORY_ROOT/BenchmarkV2/p6_llama_main_ten_tasks_v1/models/GeLLMO-P6-Llama/README.md",
+      "bytes": 1846,
+      "mtime_ns": 1790539984733230208
+    },
+    {
+      "path": "/REPOSITORY_ROOT/BenchmarkV2/p6_llama_main_ten_tasks_v1/models/GeLLMO-P6-Llama/adapter_config.json",
+      "bytes": 821,
+      "mtime_ns": 1790539984956106503
+    },
+    {
+      "path": "/REPOSITORY_ROOT/BenchmarkV2/p6_llama_main_ten_tasks_v1/models/GeLLMO-P6-Llama/adapter_model.safetensors",
+      "bytes": 1226976352,
+      "mtime_ns": 1790540002316866403
+    },
+    {
+      "path": "/REPOSITORY_ROOT/BenchmarkV2/p6_llama_main_ten_tasks_v1/models/GeLLMO-P6-Llama/config.json",
+      "bytes": 90,
+      "mtime_ns": 1790540002527063691
+    }
+  ],
+  "units_sha256": "fa7137b48acac2ad0605addebe5b3e91482cfb5df834e06beb707feb691ae004",
+  "probe_unit_indices": [
+    0,
+    28,
+    49
+  ],
+  "probe_scope": "First4 consecutive manifest inputs of BDP/BDPQ/BHMQ,20 trajectories each:12inputs240terminals. Reuse exact formal batches; engineering/time/memory only, no score tuning.",
+  "full_run_gate": "engineering_gate statusPASS matching contract and runnerSHA; root coordinator authorizes one GPU worker.",
+  "requested_resources": {
+    "gpus_per_worker": 1,
+    "max_concurrent_gpu_workers": 1,
+    "cpus_per_worker": 8,
+    "mem": "64G",
+    "probe_time": "01:00:00",
+    "full_unit_time": "02:00:00"
+  },
+  "estimated_generation": {
+    "terminal_slots": 78100,
+    "logical_responses_min": 156200,
+    "logical_responses_max": 234300,
+    "generated_token_cap": 59980800,
+    "formal_physical_batches": 977,
+    "time_basis": "Do not extrapolate ICL100token latency to s1; measure Llama12input probe first."
+  },
+  "historical_results_observed": true,
+  "preregistration_claim": false
+}

@@ -1,0 +1,18 @@
+{
+  "base_path": "/MODEL_ROOT/Llama-3.1-8B-Instruct",
+  "adapter_path": "/REPOSITORY_ROOT/BenchmarkV2/p6_llama_main_ten_tasks_v1/models/GeLLMO-P6-Llama",
+  "adapter_revision": "6a5b6ab53b8e6d3c2016370a980d57c39c749592",
+  "base_revision": null,
+  "dtype_request": "bfloat16",
+  "autocast_adapter_dtype": true,
+  "low_cpu_mem_usage_adapter": false,
+  "device_map": {
+    "": "cuda:0"
+  },
+  "quantization": null,
+  "offload": false,
+  "torch_compile": false,
+  "pipeline": false,
+  "attention_backend_override": null,
+  "weight_verification_basis": "complete local SHA256 and adapter/base safetensor header compatibility; real assembly checked in each worker"
+}

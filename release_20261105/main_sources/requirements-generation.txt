@@ -1,0 +1,12 @@
+# Recorded direct dependencies, Python 3.10.20. This is not a cross-platform lock.
+# Install the CUDA 12.8 PyTorch build from its matching wheel index.
+torch==2.7.0+cu128
+transformers==4.46.3
+peft==0.14.0
+accelerate==1.13.0
+tokenizers==0.20.3
+numpy==2.2.6
+pandas==2.3.3
+sentencepiece==0.2.1
+safetensors==0.7.0
+networkx==3.4.2

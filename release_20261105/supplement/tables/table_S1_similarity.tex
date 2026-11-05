@@ -1,0 +1,33 @@
+\begin{table}[!htbp]
+\centering
+\setlength{\tabcolsep}{4pt}
+\caption{Success rates on the original returned sequences, with and without the strict Tanimoto $T>0.6$ requirement between a candidate and its source molecule. All 3,905 inputs and twenty original positions are retained for each configuration. Rates are percentages averaged equally over ten tasks. The difference subtracts original SR@20 from constrained SR@20, in percentage points. Brackets show paired source bootstrap pointwise 95\% intervals conditional on saved outputs. Bold marks the highest observed rate in each column and backbone, without a significance claim.}
+\label{tab:supp-similarity}
+\begin{tabular}{lrrrrl}
+\toprule
+Method & SR@1 & $T>0.6$ @1 & SR@20 & $T>0.6$ @20 & Difference [95\% CI] \\
+\midrule
+\multicolumn{6}{l}{\textbf{Mistral}} \\
+Beam & 35.74 & \textbf{21.30} & 83.38 & \textbf{65.73} & $-$17.65 [$-$19.51, $-$15.86] \\
+Sampling & 32.36 & 15.26 & 81.13 & 55.94 & $-$25.19 [$-$27.14, $-$23.20] \\
+Self-Refine & 34.49 & 11.12 & 89.04 & 53.28 & $-$35.76 [$-$37.79, $-$33.72] \\
+ToT & 29.43 & 7.36 & 87.27 & 47.68 & $-$39.59 [$-$41.74, $-$37.49] \\
+GoT & \textbf{70.62} & 10.19 & 84.41 & 50.82 & $-$33.59 [$-$35.61, $-$31.52] \\
+s1 & 29.18 & 5.21 & 92.73 & 44.87 & $-$47.86 [$-$49.95, $-$45.72] \\
+Vote & 36.43 & 20.46 & 39.26 & 22.48 & $-$16.78 [$-$18.62, $-$15.08] \\
+ICL & 21.39 & 3.50 & 89.60 & 34.28 & $-$55.32 [$-$57.21, $-$53.25] \\
+Reflexion & 43.10 & 7.05 & \textbf{97.24} & 53.99 & $-$43.25 [$-$45.30, $-$41.24] \\
+\midrule
+\multicolumn{6}{l}{\textbf{Llama}} \\
+Beam & 33.03 & \textbf{14.49} & 80.76 & \textbf{51.63} & $-$29.13 [$-$31.53, $-$26.92] \\
+Sampling & 28.04 & 7.61 & 86.18 & 40.26 & $-$45.92 [$-$48.08, $-$43.72] \\
+Self-Refine & 31.99 & 4.37 & 92.13 & 31.03 & $-$61.10 [$-$63.12, $-$59.07] \\
+ToT & 25.98 & 2.69 & 87.68 & 18.75 & $-$68.93 [$-$70.66, $-$67.32] \\
+GoT & \textbf{83.26} & 2.63 & 93.26 & 28.62 & $-$64.64 [$-$66.54, $-$62.65] \\
+s1 & 27.04 & 1.96 & 92.91 & 20.59 & $-$72.32 [$-$74.00, $-$70.55] \\
+Vote & 32.37 & 10.17 & 36.60 & 11.42 & $-$25.19 [$-$27.19, $-$23.17] \\
+ICL & 26.23 & 1.32 & 96.19 & 14.87 & $-$81.32 [$-$82.77, $-$79.73] \\
+Reflexion & 48.56 & 2.64 & \textbf{99.32} & 26.01 & $-$73.31 [$-$75.10, $-$71.43] \\
+\bottomrule
+\end{tabular}
+\end{table}

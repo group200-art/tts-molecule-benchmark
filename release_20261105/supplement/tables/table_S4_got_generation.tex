@@ -1,0 +1,19 @@
+\begin{table}[!htbp]
+\centering
+\setlength{\tabcolsep}{4pt}
+\caption{GoT and independent Sampling with the same molecular scorer on the fixed 500-input subset (50 per task), both backbones, and generation seed 1729. Each pair actually shares twelve initial candidates, then generates sixteen additional candidates per arm; each complete pool is scored separately and its top twenty returned. The arms use the same scoring code, temperature, candidate caps and evaluation precision. Rates are percentages with equal task weights. Mean input and output tokens per input count the shared initial generation in each arm. Intervals are conditional on this single generation run; no three-seed stability claim is made.}
+\label{tab:supp-got-generation}
+\begin{tabular}{lrrrrrr}
+\toprule
+Configuration & SR@1 & SR@20 & $>0.6$ @20 & Validity & \shortstack{Input\\tokens} & \shortstack{Output\\tokens} \\
+\midrule
+\multicolumn{7}{l}{\textbf{Mistral}} \\
+GoT & 65.20 & 81.80 & 49.80 & 95.91 & 21549 & 3206 \\
+Sampling, same scorer & 68.40 & 85.00 & 57.40 & 91.09 & 7030 & 3020 \\
+\midrule
+\multicolumn{7}{l}{\textbf{Llama}} \\
+GoT & 83.00 & 94.00 & 30.60 & 91.52 & 15155 & 4675 \\
+Sampling, same scorer & 79.60 & 90.40 & 36.80 & 86.16 & 5429 & 4590 \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,8 @@
+{
+  "candidate_records": "candidate_records.jsonl.gz",
+  "candidate_records_sha256": "073c76a96c25479a44d903fbaab150ff980fac0f3afd16477b681a5cdb5b265e",
+  "paired_records": "paired_records.jsonl.gz",
+  "paired_records_sha256": "0a240da3e02a717dd71e70531aaddcbae9d1fc8d8be2f75918efcf31db1441cd",
+  "included_in_compact_package": false,
+  "note": "Separate retained author archives, not distributed in this compact repository; checksums permit verification if obtained separately."
+}

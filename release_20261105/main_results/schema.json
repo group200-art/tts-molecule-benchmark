@@ -1,0 +1,164 @@
+{
+  "schema_version": 1,
+  "scope": "Original full main comparison: 18 configurations (two backbones x nine methods), each 3905 task-input pairs x20 output positions. Separate 500-input seed-1729 control excluded.",
+  "models": [
+    "Mistral",
+    "Llama"
+  ],
+  "methods": {
+    "beam": "Beam",
+    "sampling": "Sampling",
+    "self_refine": "Self-Refine",
+    "tot": "ToT",
+    "got": "GoT",
+    "s1": "s1",
+    "voting": "Exact Voting",
+    "icl": "4-shot ICL",
+    "reflexion": "Reflexion"
+  },
+  "tasks": [
+    {
+      "task_id": "BDP",
+      "domain": "IND",
+      "n_inputs": 500
+    },
+    {
+      "task_id": "BDQ",
+      "domain": "IND",
+      "n_inputs": 500
+    },
+    {
+      "task_id": "BPQ",
+      "domain": "IND",
+      "n_inputs": 500
+    },
+    {
+      "task_id": "DPQ",
+      "domain": "IND",
+      "n_inputs": 500
+    },
+    {
+      "task_id": "BDPQ",
+      "domain": "IND",
+      "n_inputs": 500
+    },
+    {
+      "task_id": "MPQ",
+      "domain": "OOD",
+      "n_inputs": 500
+    },
+    {
+      "task_id": "BDMQ",
+      "domain": "OOD",
+      "n_inputs": 500
+    },
+    {
+      "task_id": "BHMQ",
+      "domain": "OOD",
+      "n_inputs": 118
+    },
+    {
+      "task_id": "BMPQ",
+      "domain": "OOD",
+      "n_inputs": 191
+    },
+    {
+      "task_id": "HMPQ",
+      "domain": "OOD",
+      "n_inputs": 96
+    }
+  ],
+  "metric_archive": {
+    "path": "inputs/final/per_input_quality_and_prefix.jsonl.gz",
+    "format": "gzip-compressed UTF-8 JSON lines",
+    "rows": 70290,
+    "key": [
+      "model",
+      "method_id",
+      "task_id",
+      "input_uid"
+    ],
+    "fields": {
+      "model": "Backbone label; Mistral or Llama.",
+      "method_id": "One of nine frozen main method identifiers.",
+      "task_id": "One of ten task identifiers.",
+      "input_uid": "Stable task-input identity; join with corresponding task manifest.",
+      "success": "Boolean: any successful output among original20slots; identical to SR_K20.",
+      "delta": "Boolean: any same-candidate all-target threshold success among20slots; may concern a different candidate than representative_slot.",
+      "n_valid_slots": "Integer0..20; nonempty RDKit-valid output positions. Duplicates count at each position.",
+      "representative_slot": "Zero-based successful representative original slot (0..19), or null when unsuccessful.",
+      "RI_01": "Stabilized signed relative-improvement mean across target properties for the representative; null for failures.",
+      "Sim": "Saved comparison-round2 source/representative similarity; null for failures. Not a full-precision candidate-level similarity threshold.",
+      "SAS": "Saved comparison-round2 synthetic-accessibility score of representative; lower means less estimated synthetic difficulty; null for failures.",
+      "SR_K1": "Boolean any-success in first1saved output position.",
+      "SR_K5": "Boolean any-success in first5saved output positions.",
+      "SR_K10": "Boolean any-success in first10saved output positions.",
+      "SR_K20": "Boolean any-success in all20saved output positions."
+    }
+  },
+  "input_manifests": {
+    "path_pattern": "inputs/manifests/{task_id}.test.seen.jsonl",
+    "records_total": 3905,
+    "key": [
+      "task_id",
+      "input_uid"
+    ],
+    "source_cluster_field": "source_molecule_uid",
+    "distinct_source_clusters": 2860,
+    "identity_note": "Uses original saved source identity, including shared molecules across tasks. Clustering is not regenerated or canonicalized here.",
+    "source_file_field": "Historical source location, recorded only; not required to execute reproduction."
+  },
+  "aggregation": {
+    "success_percent": "100 * successful_inputs / all_task_inputs; macro is equal mean over ten task rates; IND/OOD each mean over five respective tasks.",
+    "valid_slots_percent": "100 * sum(n_valid_slots) / (20*n_task_inputs); then equal ten-task mean.",
+    "threshold_percent": "100 * sum(delta) / n_task_inputs; then equal ten-task mean.",
+    "successful_descriptors": "Within-task arithmetic mean over inputs where success=true, then equal mean of ten task means. Undefined if any task has no successful representative; current data have successful representatives in every group.",
+    "relative_improvement": "mean_j d_j*(candidate_j-source_j)/max(abs(source_j),0.1)",
+    "representative_rule": "Successful candidate maximizing sum of relative property gains; source value zero uses candidate property value; exact score tie selects later original slot. This compact archive does not rerun selection.",
+    "thresholds": {
+      "bbbp": 0.2,
+      "drd2": 0.2,
+      "plogp": 1.0,
+      "qed": 0.1,
+      "hia": 0.1,
+      "mutagenicity": 0.1
+    },
+    "property_direction": "Decrease mutagenicity; increase all other targets. Directional success is strict; threshold success uses >= the stated positive improvement."
+  },
+  "bootstrap": {
+    "replicates": 2000,
+    "seed": 20261014,
+    "numpy_validated": "2.2.6",
+    "cluster_count": 2860,
+    "cluster_weights_sha256_int64": "5763bd1ba349cbdd531adc4a7eabf5b370c42da865d84e3b5837ebcab634f067",
+    "method": "Original NumPy default_rng multinomial cluster resampling; same sampled source-cluster multiplicities shared across methods/tasks; rates recomputed with resampled task denominators; equal task means;2.5th/97.5th percentile intervals.",
+    "scope": "Paired source-cluster resampling conditional on fixed saved generations; no seed variance or multiplicity adjustment"
+  },
+  "workload": {
+    "per_input_archive": "inputs/workload/new_workload_per_input.jsonl.gz",
+    "per_input_records": 15620,
+    "per_input_configurations": [
+      "Mistral/tot",
+      "Mistral/reflexion",
+      "Llama/tot",
+      "Llama/reflexion"
+    ],
+    "fields": {
+      "proposals": "Molecular proposals generated in the evaluated configuration.",
+      "responses": "Returned model response sequences, including reasoning/feedback/judging as applicable.",
+      "tokens": "Returned output tokens with the corresponding backbone tokenizer."
+    },
+    "remaining_configurations": "14 configurations retain previously audited totals from inputs/workload/baseline_table2_k20_workload.csv; no per-input reconstruction for these in this component.",
+    "excluded": "Prompt processing, property computation, unreturned beam work, model loading, discarded attempts, historical branches outside evaluated configuration."
+  },
+  "not_reproduced": [
+    "Generation or training",
+    "Property prediction or independent RDKit validity checks",
+    "Raw candidate-level threshold/representative reevaluation",
+    "Unrecorded prefix sizes",
+    "Full-precision similarity-constrained success from candidates",
+    "Fourteen configurations underlying workload trace recount",
+    "Generation-seed uncertainty",
+    "Separate500-input seed1729control"
+  ]
+}

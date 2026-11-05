@@ -1,0 +1,24 @@
+{
+  "schema": "deployment-path-normalization-v1",
+  "path": "evidence/environment_versions.json",
+  "source_repository_path": "results/supplementary/recomb_deadline_freeze_20261104/release_bundle/evidence/environment_versions.json",
+  "original_sha256": "24cdd657dda552450df68abe2b6badc5052494a777f0cfd07fafd1ac17a89bb7",
+  "released_sha256": "f6ccd05ab33aaaa129e0242729b5b3e0c59015521955f5c7b8949f5402280d8b",
+  "normalizations": [
+    {
+      "replacement": "/ENVIRONMENT_ROOT",
+      "occurrences": 3,
+      "field": "environments.*.python_executable",
+      "source_prefix_type": "local_environment_installation"
+    },
+    {
+      "replacement": "/ENVIRONMENT_ROOT",
+      "occurrences": 1,
+      "field": "environments.*.python_executable",
+      "source_prefix_type": "local_environment_installation"
+    }
+  ],
+  "scientific_version_and_platform_metadata_unchanged": true,
+  "other_json_fields_unchanged": true,
+  "purpose": "Remove local executable installation paths; preserve all observed package and Python versions"
+}

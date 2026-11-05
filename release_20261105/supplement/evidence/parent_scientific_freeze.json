@@ -1,0 +1,300 @@
+{
+  "status": "APPROVED_ENGINEERING_GATE",
+  "meaning": "Implementation gate under the user-authorized fixed protocol; not a substitute for user approval of substantive plan changes",
+  "profile": "subset_100",
+  "created_utc": "2026-11-03T10:00:52Z",
+  "generation_code": {
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/experiments/supplementary/common.py": "c4d155775f5d70d1919d2417bb8ff675ce2a7e402e804ad6e714ba16569bc84e",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/experiments/supplementary/bridges.py": "d933bcf269067c0299ad8af2c323a29413b4458897074db20a944bacd6139c70",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/experiments/supplementary/backend.py": "1b5f878f71dac5884ff6c49146a7db83b43926bd1703783022f6422896b89a31",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/experiments/supplementary/generation.py": "0c653a4d80b4d60b308000540fb55242785daa06605149833c364370112564dc",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/experiments/supplementary/chemistry.py": "fa99751ac1b8695fb6f11083ceb1b9c8e1dd4477de07f3b4fe4545ed7b42fc66",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/experiments/supplementary/property_worker.py": "e1e6ae393eee43c5397faf46dc183b3920ffc37227bac897bc93c54c373ed5be",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/experiments/supplementary/producer_guard.py": "16e2a056bb42c682d3c161df1501e39bdf4636930f3f752319996a71d07976ef",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/experiments/supplementary/property_counts.py": "f3309f6de27e502e83805678951756008637747233b3bf90f91508625fd57149",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/experiments/supplementary/generation_similarity.py": "91af347b3f079126e912fb028bfd9605916d27f6e55343e62c66096de6d7c799",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/experiments/supplementary/run.py": "683fdce8c82ee04eec860cb27f6c7f154cd2b755116cda6caaa832fde4583b98"
+  },
+  "scientific_assets": {
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/benchmark_completion_20261023_v1/recovery_20261027_v1/property_repair.py": "8c5862358788598fec18e019b0cbdf5672d96eda5b55f76220e5d026e1445a9b",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/method_review_P8_v1/design_after_p9_v1/execution_v1/sources/runtime.json": "115fd309c2f0201825256c9a75ceec1edd7f47e5bef30388338fed1c681fe789",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/p10_n20_r20_two_models_20261013_v1/voting/extract.py": "038211157379b1777e9d318db78fea06fbf5b4d82145dce34460b0aaa0d4b431",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/p6_llama_failure_recovery_20261003_v1/admet_worker.py": "bdb3ebc4c0d7a4c26e23c5aeb0ca1520ab414bd5a3a4d53fef6e0eb2189a3bc4",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/p6_llama_failure_recovery_20261003_v1/code/graph_adapter.py": "1812073c2ca3b1bab38e9ac398ebc74a2846732b91802a46c661eec14fcf10c5",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/p6_llama_failure_recovery_20261003_v1/code/metrics_kernel.py": "00acb727adecd58b84f434dcf82c18053bc817858d52079fbcc9c7125896ad07",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/p6_llama_failure_recovery_20261003_v1/code/precision.py": "1bac2fdbe31cebb59ef6e2683bd17ae25ebe7f4e41ec8016df3c03c09593f2b5",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/p6_llama_failure_recovery_20261003_v1/code/property_service.py": "68266f36a227e6360f86a4430d3a2820f8637c4bd9913c265d6616e860e277f1",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/p6_llama_failure_recovery_20261003_v1/code/scorer.py": "47f9e6d7c16862eb4bb4c029b15028688b73b3fe38540c7d04b02bd0d392c300",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/p6_llama_failure_recovery_20261003_v1/configs/design_contract.json": "08f34c0bbca6b7010ffab4b9d01766b4056c4b6f85cbe7fb8dbc87f374077286",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/p6_llama_failure_recovery_20261003_v1/configs/mistral_generation_defaults.json": "b4669f1b8f4185324bd9b12a69e85a1ad2289bc48111ef739cfaaea3bba6b0a9",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/p6_llama_failure_recovery_20261003_v1/sources/properties.json": "660c5da6e752e7dfd2611e566bd01ba877f59f4e47ce3f76f07735f3731eed36",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/p6_llama_failure_recovery_20261003_v1/sources/runtime.json": "ca91a317d1321011faa3263a3a7619ce79e7e0c8dcf211210dfae3bea91ae093",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/p6_llama_failure_recovery_20261003_v1/src/contracts.py": "b41bc3ce8f651854d30e401a7374f7d761475b889f030419ac26011dcd8d652f",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/p6_llama_failure_recovery_20261003_v1/src/property_bridge.py": "4c9d96d7dc1115f56c5b7422ac3346c162ff90e349d4f7e427012d9c32d27f07",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/p6_llama_failure_recovery_20261003_v1/src/property_error_isolation.py": "fd182c75919026d0d25a557bf5829dbe76652997b1a332ee3b02fffb57893684",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/p6_llama_failure_recovery_20261003_v1/standard_producer.py": "461b7d28243be5d873a3e9252db291599c24be1c22d3ea43343ca8a495af782d",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/p6_llama_main_ten_tasks_v1/configs/properties_reflexion.json": "c8ee6bc4e8800d992fccd97ce09f9edb477829ba26bcf5b29a27cdcb4b181ee3",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/p6_llama_main_ten_tasks_v1/configs/reflexion_prompts.json": "6a2d922e8c644549a4484c7368535a1c985e8c1239a3e3f4d1f1b25b0fc2ba85",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/p6_llama_main_ten_tasks_v1/src/reflexion.py": "d8dce0b317b7f9df51423c0a92231d15be7efcbaca18fe4f3d7c197046c54451",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/recomb_full_results_20261028_v1/build_statistics.py": "5d0c05af7bcf11b99379b01c93dbd042b23be1d52aa757bb31a55a8a416eea3c",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/data/props/__init__.py": "7cfcd4e0c706996ccfd1dc2a446601f1f2bfed588b4afd703c6d7f28fb0c90c6",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/data/props/clf_py36.pkl": "dbc473fca922c834dbaee6eaba832caaff26d4f891734078fb1af359a111100f",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/data/props/drd2_scorer.py": "54cd87c364fbe865d8376063dd64204a13c1e1cbda7368c6f5fc5a38c7c021e0",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/data/props/fpscores.pkl.gz": "10dcef9340c873e7b987924461b0af5365eb8dd96be607203debe8ddf80c1e73",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/data/props/properties.py": "771722423bdb76955724e6d8a3c8298cedf29c55cf631b847640b4dfc6bec812",
+    "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/data/props/sascorer.py": "343dfb39a99e78d4d1b552e25d3de48d90e68947d337057b281d4c0c9d4370a8",
+    "/work/users/w/a/wanzhou/conda_envs/gellmo_inf/lib/python3.10/site-packages/admet_ai/admet_model.py": "d4a3397ae069a1bc831019d51313763bfaa4050a03931a0a7b2945e0492c95cd",
+    "/work/users/w/a/wanzhou/conda_envs/gellmo_inf/lib/python3.10/site-packages/admet_ai/constants.py": "6643981d71dd05aa9070755e445228a2dbc726f34d0ba7b4bef080563c0a67f9",
+    "/work/users/w/a/wanzhou/conda_envs/gellmo_inf/lib/python3.10/site-packages/admet_ai/physchem.py": "8905bb64d58f2a40d49de9c075264992d68a9a0c1b7ae358bde13854c390be0c",
+    "/work/users/w/a/wanzhou/conda_envs/gellmo_inf/lib/python3.10/site-packages/admet_ai/resources/data/drugbank_approved.csv": "0cf42db285b0657b024d9b7e30ca99ecca12f4283c271b5d7da6a27e334d94ee",
+    "/work/users/w/a/wanzhou/conda_envs/gellmo_inf/lib/python3.10/site-packages/admet_ai/resources/models/admet_classification/model_0.pt": "48ed42c3ec284b027dbc054ceae76b0520eb9aff8bf0b3e37b26a446ee537137",
+    "/work/users/w/a/wanzhou/conda_envs/gellmo_inf/lib/python3.10/site-packages/admet_ai/resources/models/admet_classification/model_1.pt": "52a6bdac71c851ea8325c4860e913d3ed79017dd03b3d40116481dd6e1a48433",
+    "/work/users/w/a/wanzhou/conda_envs/gellmo_inf/lib/python3.10/site-packages/admet_ai/resources/models/admet_classification/model_2.pt": "28be5980c28b2618da25fa6dbabc7f92ede130c675c66b75b259d4beb2d449cb",
+    "/work/users/w/a/wanzhou/conda_envs/gellmo_inf/lib/python3.10/site-packages/admet_ai/resources/models/admet_classification/model_3.pt": "6a34383cd726e51aa8f87ba3d65debba448a43ffee9b1f8dfdaf42d034b7b187",
+    "/work/users/w/a/wanzhou/conda_envs/gellmo_inf/lib/python3.10/site-packages/admet_ai/resources/models/admet_classification/model_4.pt": "766dffd5317e575752758444eccca96181d50a9cd47eb5faf0b46b5081b23c0c",
+    "/work/users/w/a/wanzhou/conda_envs/gellmo_inf/lib/python3.10/site-packages/admet_ai/resources/models/admet_regression/model_0.pt": "2b6093958103bf0876f75599a94aee6ec7848ac4bed22b39201e63071833cdfe",
+    "/work/users/w/a/wanzhou/conda_envs/gellmo_inf/lib/python3.10/site-packages/admet_ai/resources/models/admet_regression/model_1.pt": "7ef5ab57bc28c2b3ed13b08ddf8e6a201135abd98456c0eef3b4af1baad71254",
+    "/work/users/w/a/wanzhou/conda_envs/gellmo_inf/lib/python3.10/site-packages/admet_ai/resources/models/admet_regression/model_2.pt": "7e68e5b08587f6fe99cc794bd37e359a9bed28b2d95486ed50016be85c1ac42d",
+    "/work/users/w/a/wanzhou/conda_envs/gellmo_inf/lib/python3.10/site-packages/admet_ai/resources/models/admet_regression/model_3.pt": "cd5e074bb000ce615673448333a92ce71fdda05d72b0bf2d4caedb881841c341",
+    "/work/users/w/a/wanzhou/conda_envs/gellmo_inf/lib/python3.10/site-packages/admet_ai/resources/models/admet_regression/model_4.pt": "0142b80c70f175a1275cce98904658d17cabafa42cdfe197ecc090d7c11d9640"
+  },
+  "model_hashes": [
+    {
+      "backbone": "mistral",
+      "kind": "base_path",
+      "path": "/work/users/w/a/wanzhou/hf_models/Mistral-7B-Instruct-v0.3/config.json",
+      "sha256": "affafc6478ec0fd07a32f0ca57aa2fc57743f4d17d6730f86a96ac24d1507f99",
+      "bytes": 601,
+      "mtime_ns": 1776483438490697093
+    },
+    {
+      "backbone": "mistral",
+      "kind": "base_path",
+      "path": "/work/users/w/a/wanzhou/hf_models/Mistral-7B-Instruct-v0.3/consolidated.safetensors",
+      "sha256": "76d5729be995fb6510c7f103c5b8825d3d82f8126ac949db6be367a638694d1f",
+      "bytes": 14496078512,
+      "mtime_ns": 1776483479465500979
+    },
+    {
+      "backbone": "mistral",
+      "kind": "base_path",
+      "path": "/work/users/w/a/wanzhou/hf_models/Mistral-7B-Instruct-v0.3/generation_config.json",
+      "sha256": "b4669f1b8f4185324bd9b12a69e85a1ad2289bc48111ef739cfaaea3bba6b0a9",
+      "bytes": 116,
+      "mtime_ns": 1776483438425394155
+    },
+    {
+      "backbone": "mistral",
+      "kind": "base_path",
+      "path": "/work/users/w/a/wanzhou/hf_models/Mistral-7B-Instruct-v0.3/model-00001-of-00003.safetensors",
+      "sha256": "ce6fb6f6f4d0183f4813cbf4ece24109da629a08d4210da46f77e1d8b0bd5c19",
+      "bytes": 4949453792,
+      "mtime_ns": 1776483457244410657
+    },
+    {
+      "backbone": "mistral",
+      "kind": "base_path",
+      "path": "/work/users/w/a/wanzhou/hf_models/Mistral-7B-Instruct-v0.3/model-00002-of-00003.safetensors",
+      "sha256": "8c0e72f148366b6a3709e002a98706a33d31aec8515090c856c95b2044f92ae0",
+      "bytes": 4999819336,
+      "mtime_ns": 1776483456985927920
+    },
+    {
+      "backbone": "mistral",
+      "kind": "base_path",
+      "path": "/work/users/w/a/wanzhou/hf_models/Mistral-7B-Instruct-v0.3/model-00003-of-00003.safetensors",
+      "sha256": "905dd405363e43d95779c1c1155a2dbfd36155914ae95dbd934e12e490cfb4ca",
+      "bytes": 4546807800,
+      "mtime_ns": 1776483455833851942
+    },
+    {
+      "backbone": "mistral",
+      "kind": "base_path",
+      "path": "/work/users/w/a/wanzhou/hf_models/Mistral-7B-Instruct-v0.3/model.safetensors.index.json",
+      "sha256": "e489ba553b87cde188d921b1a8283c2e0b9d33d635b88147d96ff0fcd6250016",
+      "bytes": 23950,
+      "mtime_ns": 1776483438280527381
+    },
+    {
+      "backbone": "mistral",
+      "kind": "base_path",
+      "path": "/work/users/w/a/wanzhou/hf_models/Mistral-7B-Instruct-v0.3/params.json",
+      "sha256": "8a64b8657de37af1f828eef1517dc186247938d66e7fea2c78c31d5b9071efe6",
+      "bytes": 202,
+      "mtime_ns": 1776483438344420773
+    },
+    {
+      "backbone": "mistral",
+      "kind": "base_path",
+      "path": "/work/users/w/a/wanzhou/hf_models/Mistral-7B-Instruct-v0.3/special_tokens_map.json",
+      "sha256": "6fa06efa2785e450051989a6f8fb4416b10149ded485ddd3f127a40734f5cfd0",
+      "bytes": 414,
+      "mtime_ns": 1776483438484590617
+    },
+    {
+      "backbone": "mistral",
+      "kind": "base_path",
+      "path": "/work/users/w/a/wanzhou/hf_models/Mistral-7B-Instruct-v0.3/tokenizer.json",
+      "sha256": "e553af6fff7d7ad76e830608b218c5c0b0822998d5a1a96099a74cd3c1cb1a49",
+      "bytes": 1961548,
+      "mtime_ns": 1776483438497031643
+    },
+    {
+      "backbone": "mistral",
+      "kind": "base_path",
+      "path": "/work/users/w/a/wanzhou/hf_models/Mistral-7B-Instruct-v0.3/tokenizer.model",
+      "sha256": "37f00374dea48658ee8f5d0f21895b9bc55cb0103939607c8185bfd1c6ca1f89",
+      "bytes": 587404,
+      "mtime_ns": 1776483438589466415
+    },
+    {
+      "backbone": "mistral",
+      "kind": "base_path",
+      "path": "/work/users/w/a/wanzhou/hf_models/Mistral-7B-Instruct-v0.3/tokenizer_config.json",
+      "sha256": "0533dec9cfe319163801b6618d0f3ec9cfa126b6288e3df5deca6e32acb09cd2",
+      "bytes": 140874,
+      "mtime_ns": 1776483438615625917
+    },
+    {
+      "backbone": "mistral",
+      "kind": "adapter_path",
+      "path": "/work/users/w/a/wanzhou/hf_models/GeLLMO-P6-Mistral/adapter_config.json",
+      "sha256": "8dce3572321a2b5c5348b97cf0215bdce54f3ea15c1f383ca5a5d5f5f491f991",
+      "bytes": 823,
+      "mtime_ns": 1788564501305719928
+    },
+    {
+      "backbone": "mistral",
+      "kind": "adapter_path",
+      "path": "/work/users/w/a/wanzhou/hf_models/GeLLMO-P6-Mistral/adapter_model.safetensors",
+      "sha256": "0e4144bc79ccb76fb1c7cf6eab5ae2cfe84bcb175e26cfa889ba7dd2499698a6",
+      "bytes": 438627360,
+      "mtime_ns": 1788564548229019032
+    },
+    {
+      "backbone": "mistral",
+      "kind": "adapter_path",
+      "path": "/work/users/w/a/wanzhou/hf_models/GeLLMO-P6-Mistral/config.json",
+      "sha256": "9c45f36447ada15e1f5597a0ea817d5591712273655b3a2f027c5f162a6e1b94",
+      "bytes": 92,
+      "mtime_ns": 1788564548439802088
+    },
+    {
+      "backbone": "mistral",
+      "kind": "adapter_path",
+      "path": "/work/users/w/a/wanzhou/hf_models/GeLLMO-P6-Mistral/download_complete.json",
+      "sha256": "64954da2f32c48f5696c403965bdb03d326722a3f6b2a1f21bd22f61bec2f381",
+      "bytes": 348,
+      "mtime_ns": 1788564642293377693
+    },
+    {
+      "backbone": "llama",
+      "kind": "base_path",
+      "path": "/work/users/w/a/wanzhou/hf_models/Llama-3.1-8B-Instruct/config.json",
+      "sha256": "29e4c210b0d6ac178b16b2a255a568bdb23b581e50ca1ef6a6d071dd85704e6e",
+      "bytes": 855,
+      "mtime_ns": 1774656489045970961
+    },
+    {
+      "backbone": "llama",
+      "kind": "base_path",
+      "path": "/work/users/w/a/wanzhou/hf_models/Llama-3.1-8B-Instruct/generation_config.json",
+      "sha256": "189fb0c0d7fd8a527db217c0a60a0e013f0394cd8800f9697a666a9e75e5f7fd",
+      "bytes": 184,
+      "mtime_ns": 1774656489034064174
+    },
+    {
+      "backbone": "llama",
+      "kind": "base_path",
+      "path": "/work/users/w/a/wanzhou/hf_models/Llama-3.1-8B-Instruct/model-00001-of-00004.safetensors",
+      "sha256": "2b1879f356aed350030bb40eb45ad362c89d9891096f79a3ab323d3ba5607668",
+      "bytes": 4976698672,
+      "mtime_ns": 1774656509735428894
+    },
+    {
+      "backbone": "llama",
+      "kind": "base_path",
+      "path": "/work/users/w/a/wanzhou/hf_models/Llama-3.1-8B-Instruct/model-00002-of-00004.safetensors",
+      "sha256": "09d433f650646834a83c580877bd60c6d1f88f7755305c12576b5c7058f9af15",
+      "bytes": 4999802720,
+      "mtime_ns": 1774656510015611183
+    },
+    {
+      "backbone": "llama",
+      "kind": "base_path",
+      "path": "/work/users/w/a/wanzhou/hf_models/Llama-3.1-8B-Instruct/model-00003-of-00004.safetensors",
+      "sha256": "fc1cdddd6bfa91128d6e94ee73d0ce62bfcdb7af29e978ddcab30c66ae9ea7fa",
+      "bytes": 4915916176,
+      "mtime_ns": 1774656509854641754
+    },
+    {
+      "backbone": "llama",
+      "kind": "base_path",
+      "path": "/work/users/w/a/wanzhou/hf_models/Llama-3.1-8B-Instruct/model-00004-of-00004.safetensors",
+      "sha256": "92ecfe1a2414458b4821ac8c13cf8cb70aed66b5eea8dc5ad9eeb4ff309d6d7b",
+      "bytes": 1168138808,
+      "mtime_ns": 1774656495376039401
+    },
+    {
+      "backbone": "llama",
+      "kind": "base_path",
+      "path": "/work/users/w/a/wanzhou/hf_models/Llama-3.1-8B-Instruct/model.safetensors.index.json",
+      "sha256": "146776fce3f6db1103aa6f249e65ee5544c5923ce6f971b092eee79aa6e5d37b",
+      "bytes": 23950,
+      "mtime_ns": 1774656489039646730
+    },
+    {
+      "backbone": "llama",
+      "kind": "base_path",
+      "path": "/work/users/w/a/wanzhou/hf_models/Llama-3.1-8B-Instruct/special_tokens_map.json",
+      "sha256": "6f38c73729248f6c127296386e3cdde96e254636cc58b4169d3fd32328d9a8ec",
+      "bytes": 296,
+      "mtime_ns": 1774656489750274646
+    },
+    {
+      "backbone": "llama",
+      "kind": "base_path",
+      "path": "/work/users/w/a/wanzhou/hf_models/Llama-3.1-8B-Instruct/tokenizer.json",
+      "sha256": "79e3e522635f3171300913bb421464a87de6222182a0570b9b2ccba2a964b2b4",
+      "bytes": 9085657,
+      "mtime_ns": 1774656490120590555
+    },
+    {
+      "backbone": "llama",
+      "kind": "base_path",
+      "path": "/work/users/w/a/wanzhou/hf_models/Llama-3.1-8B-Instruct/tokenizer_config.json",
+      "sha256": "177c7b61e616fecb84c17ce0591acb92c6c4d60e9ac5ababfb940ff23bbcd424",
+      "bytes": 55351,
+      "mtime_ns": 1774656490014896291
+    },
+    {
+      "backbone": "llama",
+      "kind": "adapter_path",
+      "path": "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/p6_llama_main_ten_tasks_v1/models/GeLLMO-P6-Llama/adapter_config.json",
+      "sha256": "87b9fd6835f08d55c8a476b79f3dcc36d1e4e132989ba1b718dbc6c319e54cfc",
+      "bytes": 821,
+      "mtime_ns": 1790539984956106503
+    },
+    {
+      "backbone": "llama",
+      "kind": "adapter_path",
+      "path": "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/p6_llama_main_ten_tasks_v1/models/GeLLMO-P6-Llama/adapter_model.safetensors",
+      "sha256": "eec62a7365b6ff17fd99e5a4f73860418adee6a3572f282246e3319f5cd9147d",
+      "bytes": 1226976352,
+      "mtime_ns": 1790540002316866403
+    },
+    {
+      "backbone": "llama",
+      "kind": "adapter_path",
+      "path": "/work/users/w/a/wanzhou/GeLLMO_main_orig/GeLLMO-main/BenchmarkV2/p6_llama_main_ten_tasks_v1/models/GeLLMO-P6-Llama/config.json",
+      "sha256": "5fceaa205949d1a533200d72f8548e0e3fc96a4a97f90d248192de365c8abdd7",
+      "bytes": 90,
+      "mtime_ns": 1790540002527063691
+    }
+  ],
+  "config_sha256": "f9091b76b3c7dd69cc73494225d146023ceb2a7dae14663728c61fa8d080b419",
+  "subset_sha256": "46f8abbb6740de56304fb8530dde9e5407c4c0cf0dbc07346147709e369f7af1",
+  "engineering_gate_sha256": "dc5c623eb53995f975e89601515937788d141a7029c527f16ebeff924f6cc6f3",
+  "review_condition": "Any substantive change to controls, definitions, scope or statistics requires user review before submission.",
+  "new_unknown_property_failure_policy": false
+}

@@ -1,0 +1,27 @@
+{
+  "status": "PASS_RENDERED_CURRENT_PAPER_COMPOSITE",
+  "matplotlib_version": "3.10.8",
+  "numpy_plot_environment": "1.26.4",
+  "source_figure": "figures/prefix_coverage_reference.png",
+  "source_png_sha256": "ced7c6edec88f787a4571295dc5227123992bf252ce4c067f732264707568a38",
+  "rendered_png_sha256": "34213b398e434e819c55e943b83709e6863720547603832dc7d289bd43dbb9c9",
+  "same_dimensions": true,
+  "source_dimensions": [
+    825,
+    1430,
+    4
+  ],
+  "rendered_dimensions": [
+    825,
+    1430,
+    4
+  ],
+  "pixel_identical": true,
+  "inputs": {
+    "k20_prefix_macro.csv": "32877dc6b15d45681f3a2e3dec35f5c388e7a2ffb6a6640951924170e18efaac",
+    "table2_k20_workload.csv": "a15d07543e91f9b092e76213e23cd2eb5324d6201200bf118af1729c2d96e74a",
+    "table3_k20_quality.csv": "c5dd332d9db00141199f57541d060f7a07ee5436e93340001b82039dfbd913ee"
+  },
+  "pdf_note": "PDF regenerated successfully; binary identity is not expected because creation metadata varies.",
+  "different_channel_values": 0
+}
